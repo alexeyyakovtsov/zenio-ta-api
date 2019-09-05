@@ -3,50 +3,92 @@ package user_controller;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Cookies;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.config.RedirectConfig.redirectConfig;
-import static parameters.Configurations.*;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 
 public class TestGetAllUsers {
 
     private static Cookies cookies;
 
-    @BeforeClass
-    public static void exampleOfLogin() {
-        String body = "login_password.json";
+    @Before
+    public void Login() {
         cookies = RestAssured.given()
-                .contentType(ContentType.JSON)
+                .baseUri("https://dev.zenio.co")
+                .urlEncodingEnabled(true)
+                .param("email", "zenio@zensoft.io")
+                .param("password", "12345678")
                 .when()
-                .body(body)
-                .post(URL_Dev_Login)
+                .post("/login")
                 .then()
-                .statusCode(200)
+                .statusCode(302)
                 .extract()
                 .response()
                 .getDetailedCookies();
     }
 
-    @BeforeEach
-    public void configureRestAssured() {
-        RestAssured.baseURI = "https://dev.zenio.co";
-        RestAssured.requestSpecification = given()
-                .header("Language", "en");
-    }
 
     @Test
-    public void getAllUsers() {
+    public void getAllUsers_status200() {
         given()
-                .config(RestAssured.config().redirect(redirectConfig().followRedirects(false)))
+                .baseUri("https://dev.zenio.co")
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()
-                .get( URL_Dev_API + "/users")
+                .get( "/api/users")
                 .then()
-                .statusCode(200);
+                .statusCode(200)
+                .and()
+                .body(matchesJsonSchemaInClasspath("getAllUsers.json"));
+    }
+
+    @Test
+    public void getAllUsers_status401() {
+        given()
+                .baseUri("https://dev.zenio.co")
+                .when()
+                .get("/api/users")
+                .then()
+                .statusCode(401);
+    }
+
+    @Test
+    public void getAllUsers_status403() {
+        cookies = RestAssured.given()
+                .baseUri("https://dev.zenio.co")
+                .urlEncodingEnabled(true)
+                .param("email", "alexey.yakovtsov@zensoft.io")
+                .param("password", "12345678")
+                .when()
+                .post("/login")
+                .then()
+                .statusCode(302)
+                .extract()
+                .response()
+                .getDetailedCookies();
+
+        given()
+                .baseUri("https://dev.zenio.co")
+                .cookies(cookies)
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/api/users")
+                .then()
+                .statusCode(403);
+    }
+
+    @Test
+    public void getAllUsers_status404(){
+        given()
+                .baseUri("https://dev.zenio.co")
+                .cookies(cookies)
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/api/useers")
+                .then()
+                .statusCode(404);
     }
 }

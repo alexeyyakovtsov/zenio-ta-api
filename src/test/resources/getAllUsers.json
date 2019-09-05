@@ -1,0 +1,11 @@
+  {
+    "active": true,
+    "email": "string",
+    "enabled": true,
+    "id": "integer",
+    "lastVisit": "string",
+    "roles": [
+      "string"
+    ],
+    "username": "string"
+  }
