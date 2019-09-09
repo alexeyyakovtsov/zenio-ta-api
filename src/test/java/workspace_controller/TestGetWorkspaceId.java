@@ -1,23 +1,22 @@
-package user_controller;
+package workspace_controller;
 
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Cookies;
 import org.junit.Before;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.URL_Dev;
-import static parameters.Configurations.User_restore_password_email;
+import static parameters.Configurations.Workspace_update_id;
 
-public class TestPostRestorePassword {
+public class TestGetWorkspaceId {
 
     private static Cookies cookies;
 
     @Before
     public void Login() {
-        cookies = RestAssured.given()
+        cookies = given()
                 .baseUri(URL_Dev)
                 .urlEncodingEnabled(true)
                 .param("email", "zenio@zensoft.io")
@@ -32,38 +31,38 @@ public class TestPostRestorePassword {
     }
 
     @Test
-    public void postRestorePassword_200() {
+    public void getWorkspaceId_status200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
-                .body(User_restore_password_email)
                 .when()
-                .post("/api/users/restore")
-                .then().log().all()
+                .get("/api/workspaces/" + Workspace_update_id)
+                .then()
                 .statusCode(200)
-                .body(matchesJsonSchemaInClasspath("postRestorePassword.json"));
+                .and().body("id", equalTo(27))
+                .and().body("owned", equalTo(true));
     }
 
     @Test
-    public void postRestorePassword_401() {
+    public void getWorkspaceId_status401() {
         given()
                 .baseUri(URL_Dev)
+                .contentType(ContentType.JSON)
                 .when()
-                .post("/api/users/restore")
+                .get("/api/workspaces/" + Workspace_update_id)
                 .then()
                 .statusCode(401);
     }
 
     @Test
-    public void postRestorePassword_404() {
+    public void getWorkspaceId_status404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
-                .body(User_restore_password_email)
                 .when()
-                .post("/api/users/restoore")
+                .get("/api/workspacess/" + Workspace_update_id)
                 .then()
                 .statusCode(404);
     }

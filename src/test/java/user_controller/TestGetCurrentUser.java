@@ -9,6 +9,7 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.core.IsEqual.equalTo;
+import static parameters.Configurations.URL_Dev;
 
 public class TestGetCurrentUser {
 
@@ -17,7 +18,7 @@ public class TestGetCurrentUser {
     @Before
     public void Login() {
         cookies = given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .urlEncodingEnabled(true)
                 .param("email", "zenio@zensoft.io")
                 .param("password", "12345678")
@@ -33,7 +34,7 @@ public class TestGetCurrentUser {
     @Test
     public void getCurrentUser_200() {
         given()
-                .baseUri("https://dev.zenio.co/")
+                .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()
@@ -52,7 +53,7 @@ public class TestGetCurrentUser {
     @Test
     public void getCurrentUser_status401() {
         given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .when()
                 .get("/api/users/me")
                 .then()
@@ -62,7 +63,7 @@ public class TestGetCurrentUser {
     @Test
     public void getCurrentUser_status404() {
         given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()

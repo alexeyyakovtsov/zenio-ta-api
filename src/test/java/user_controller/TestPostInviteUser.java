@@ -7,6 +7,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
+import static parameters.Configurations.URL_Dev;
+
 import parameters.Configurations;
 
 public class TestPostInviteUser {
@@ -16,7 +18,7 @@ public class TestPostInviteUser {
     @Before
     public void Login() {
         cookies = given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .urlEncodingEnabled(true)
                 .param("email", "zenio@zensoft.io")
                 .param("password", "12345678")
@@ -33,7 +35,7 @@ public class TestPostInviteUser {
     public void postInviteUser_status200() {
 
         given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .body(Configurations.BodyEmail)
@@ -47,7 +49,7 @@ public class TestPostInviteUser {
     public void postInviteUser_status401() {
 
         given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .when()
                 .post("/api/users/invite")
                 .then()
@@ -57,7 +59,7 @@ public class TestPostInviteUser {
     @Test
     public void postInviteUser_status403() {
         cookies = RestAssured.given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .urlEncodingEnabled(true)
                 .param("email", "alexey.yakovtsov@zensoft.io")
                 .param("password", "12345678")
@@ -70,7 +72,7 @@ public class TestPostInviteUser {
                 .getDetailedCookies();
 
         given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .body(Configurations.BodyEmail)
@@ -83,7 +85,7 @@ public class TestPostInviteUser {
     @Test
     public void postInviteUser_status404() {
         given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .body(Configurations.BodyEmail)

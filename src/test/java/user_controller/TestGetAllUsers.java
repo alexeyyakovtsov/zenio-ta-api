@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static parameters.Configurations.URL_Dev;
 
 
 public class TestGetAllUsers {
@@ -17,7 +18,7 @@ public class TestGetAllUsers {
     @Before
     public void Login() {
         cookies = RestAssured.given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .urlEncodingEnabled(true)
                 .param("email", "zenio@zensoft.io")
                 .param("password", "12345678")
@@ -33,7 +34,7 @@ public class TestGetAllUsers {
     @Test
     public void getAllUsers_status200() {
         given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()
@@ -47,7 +48,7 @@ public class TestGetAllUsers {
     @Test
     public void getAllUsers_status401() {
         given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .when()
                 .get("/api/users")
                 .then()
@@ -57,7 +58,7 @@ public class TestGetAllUsers {
     @Test
     public void getAllUsers_status403() {
         cookies = RestAssured.given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .urlEncodingEnabled(true)
                 .param("email", "alexey.yakovtsov@zensoft.io")
                 .param("password", "12345678")
@@ -70,7 +71,7 @@ public class TestGetAllUsers {
                 .getDetailedCookies();
 
         given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()
@@ -82,7 +83,7 @@ public class TestGetAllUsers {
     @Test
     public void getAllUsers_status404(){
         given()
-                .baseUri("https://dev.zenio.co")
+                .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()

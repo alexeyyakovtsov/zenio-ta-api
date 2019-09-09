@@ -6,10 +6,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-import static parameters.Configurations.URL_Dev;
-import static parameters.Configurations.WorkspaceNew;
+import static parameters.Configurations.*;
 
-public class TestPostCreateWorkspace {
+public class TestPutUpdateWorkspace {
 
     private static Cookies cookies;
 
@@ -30,26 +29,26 @@ public class TestPostCreateWorkspace {
     }
 
     @Test
-    public void postCreateWorkspace_status200() {
-            given()
+    public void putUpdateWorkspace_status200() {
+        given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
-                .when()
                 .contentType(ContentType.JSON)
                 .body(WorkspaceNew)
-                .post("/api/workspaces")
+                .when()
+                .put("/api/workspaces/" + Workspace_update_id)
                 .then()
-                .statusCode(201);
+                .statusCode(200);
     }
 
     @Test
-    public void postCreateWorkspace_status401() {
+    public void putUpdateWorkspace_status401() {
         given()
                 .baseUri(URL_Dev)
-                .when()
                 .contentType(ContentType.JSON)
                 .body(WorkspaceNew)
-                .post("/api/workspaces")
+                .when()
+                .put("/api/workspaces/" + Workspace_update_id)
                 .then()
                 .statusCode(401);
     }
