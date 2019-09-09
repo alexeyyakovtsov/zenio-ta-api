@@ -40,19 +40,9 @@ public class TestPostRestorePassword {
                 .body(User_restore_password_email)
                 .when()
                 .post("/api/users/restore")
-                .then().log().all()
+                .then()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("postRestorePassword.json"));
-    }
-
-    @Test
-    public void postRestorePassword_401() {
-        given()
-                .baseUri(URL_Dev)
-                .when()
-                .post("/api/users/restore")
-                .then()
-                .statusCode(401);
     }
 
     @Test

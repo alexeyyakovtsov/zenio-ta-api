@@ -87,7 +87,7 @@ public class TestGetAllUsers {
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()
-                .get("/api/useers")
+                .get("/api/us1eers")
                 .then()
                 .statusCode(404);
     }
