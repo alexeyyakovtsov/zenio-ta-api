@@ -1,4 +1,4 @@
-package user_controller;
+package workspace_controller;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -8,15 +8,14 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static parameters.Configurations.User_restore_password_email;
 
-public class TestPostRestorePassword {
+public class TestGetWorkspace {
 
     private static Cookies cookies;
 
     @Before
     public void Login() {
-        cookies = RestAssured.given()
+        cookies = given()
                 .baseUri("https://dev.zenio.co")
                 .urlEncodingEnabled(true)
                 .param("email", "zenio@zensoft.io")
@@ -31,38 +30,61 @@ public class TestPostRestorePassword {
     }
 
     @Test
-    public void postRestorePassword_200() {
+    public void getUserWorkspaces_status200() {
         given()
                 .baseUri("https://dev.zenio.co")
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
-                .body(User_restore_password_email)
                 .when()
-                .post("/api/users/restore")
-                .then().log().all()
-                .statusCode(200)
-                .body(matchesJsonSchemaInClasspath("postRestorePassword.json"));
+                .get("/api/workspaces")
+                .then()
+                .statusCode(200);
     }
 
     @Test
-    public void postRestorePassword_401() {
+    public void getUserWorkspaces_status401() {
         given()
                 .baseUri("https://dev.zenio.co")
+                .contentType(ContentType.JSON)
                 .when()
-                .post("/api/users/restore")
+                .get("/api/workspaces")
                 .then()
                 .statusCode(401);
     }
 
     @Test
-    public void postRestorePassword_404() {
+    public void getUserWorkspaces_status403() {
+        cookies = RestAssured.given()
+                .baseUri("https://dev.zenio.co")
+                .urlEncodingEnabled(true)
+                .param("email", "alexey.yakovtsov@zensoft.io")
+                .param("password", "12345678")
+                .when()
+                .post("/login")
+                .then()
+                .statusCode(302)
+                .extract()
+                .response()
+                .getDetailedCookies();
+
         given()
                 .baseUri("https://dev.zenio.co")
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
-                .body(User_restore_password_email)
                 .when()
-                .post("/api/users/restoore")
+                .get("/api/workspaces")
+                .then()
+                .statusCode(200);
+    }
+
+    @Test
+    public void getUserWorkspaces_status404() {
+        given()
+                .baseUri("https://dev.zenio.co")
+                .cookies(cookies)
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/api/workspacees")
                 .then()
                 .statusCode(404);
     }

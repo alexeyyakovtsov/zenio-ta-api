@@ -76,7 +76,7 @@ public class TestPostInviteUser {
                 .body(Configurations.BodyEmail)
                 .when()
                 .post("/api/users/invite")
-                .then()
+                .then().log().all()
                 .statusCode(403);
     }
 

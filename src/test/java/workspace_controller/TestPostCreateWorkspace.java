@@ -1,4 +1,4 @@
-package user_controller;
+package workspace_controller;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -7,16 +7,16 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static parameters.Configurations.User_restore_password_email;
+import static parameters.Configurations.WorkspaceNew;
+import static parameters.Configurations.Workspace_name;
 
-public class TestPostRestorePassword {
+public class TestPostCreateWorkspace {
 
     private static Cookies cookies;
 
     @Before
     public void Login() {
-        cookies = RestAssured.given()
+        cookies = given()
                 .baseUri("https://dev.zenio.co")
                 .urlEncodingEnabled(true)
                 .param("email", "zenio@zensoft.io")
@@ -31,38 +31,39 @@ public class TestPostRestorePassword {
     }
 
     @Test
-    public void postRestorePassword_200() {
-        given()
+    public void postCreateWorkspace_status200() {
+            given()
                 .baseUri("https://dev.zenio.co")
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
-                .body(User_restore_password_email)
                 .when()
-                .post("/api/users/restore")
-                .then().log().all()
-                .statusCode(200)
-                .body(matchesJsonSchemaInClasspath("postRestorePassword.json"));
+                .contentType(ContentType.JSON)
+                .body(WorkspaceNew)
+                .post("/api/workspaces")
+                .then()
+                .statusCode(201);
     }
 
     @Test
-    public void postRestorePassword_401() {
+    public void postCreateWorkspace_status401() {
         given()
                 .baseUri("https://dev.zenio.co")
                 .when()
-                .post("/api/users/restore")
+                .contentType(ContentType.JSON)
+                .body(WorkspaceNew)
+                .post("/api/workspaces")
                 .then()
                 .statusCode(401);
     }
 
     @Test
-    public void postRestorePassword_404() {
+    public void postCreateWorkspace_status404() {
         given()
                 .baseUri("https://dev.zenio.co")
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
-                .body(User_restore_password_email)
                 .when()
-                .post("/api/users/restoore")
+                .contentType(ContentType.JSON)
+                .body(WorkspaceNew)
+                .post("/api/workspacesss")
                 .then()
                 .statusCode(404);
     }
