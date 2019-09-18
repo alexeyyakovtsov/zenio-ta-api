@@ -1,0 +1,17 @@
+  {
+    "id": "integer",
+    "membersCount": "integer",
+    "name": "string",
+    "owned": true,
+    "projects": [
+      {
+        "acronym": "string",
+        "deleted": true,
+        "id": "integer",
+        "membersCount": "integer",
+        "name": "string",
+        "ownerId": "integer",
+        "workspaceId": "integer"
+      }
+    ]
+  }

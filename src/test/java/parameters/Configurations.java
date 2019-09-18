@@ -13,8 +13,11 @@ public class Configurations {
         User_restore_password_email = "alexey.yakovtsov@mail.ru",
 
         Workspace_update_id = "27",
+        Workspace_id = "4",
 
         Workspace_name = "Test QA Workspace";
+
+
 
     private static String randomString() {
         return (RandomStringUtils.randomAlphabetic(12));
@@ -22,6 +25,7 @@ public class Configurations {
 
     public static String email = randomString() + "@gmail.com";
     private static String WorkspaceName = randomString();
+    public static String ProjectName = randomString();
 
     public static String BodyEmail = ("{\"emails\":" + "[\"" + email + "\"]}");
     public static String WorkspaceNew = ("{\"name\":" + "\"" + WorkspaceName + "\"}");

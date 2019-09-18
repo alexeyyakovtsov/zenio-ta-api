@@ -1,0 +1,14 @@
+{
+  "list": [
+    {
+      "acronym": "string",
+      "deleted": true,
+      "id": "integer",
+      "membersCount": "integer",
+      "name": "string",
+      "ownerId": "integer",
+      "workspaceId": "integer"
+    }
+  ],
+  "totalCount": "integer"
+}
