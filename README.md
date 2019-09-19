@@ -17,3 +17,4 @@ workspace_controller | Workspace endpoint
 1. Project controller
 2. User controller
 3. Workspace controller
+4. Project Health
