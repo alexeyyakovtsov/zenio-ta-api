@@ -2,8 +2,7 @@ package TestSuite;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import project_controller.TestGetUserProjects;
-import project_controller.TestPostCreateProject;
+import project_controller.*;
 import user_controller.*;
 import workspace_controller.*;
 
@@ -21,7 +20,10 @@ import workspace_controller.*;
         TestGetWorkspaceMembers.class,
 
         TestGetUserProjects.class,
-        TestPostCreateProject.class
+        TestPostCreateProject.class,
+        TestPutUpdateProject.class,
+        TestGetProjectsId.class,
+        //TestDeleteProjectId.class
 } )
 
 public class SuiteTest {

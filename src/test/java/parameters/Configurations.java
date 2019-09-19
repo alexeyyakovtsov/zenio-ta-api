@@ -7,7 +7,6 @@ public class Configurations {
 
     public static String
         URL_Dev = "https://dev.zenio.co",
-        URL_Dev_API = "https://dev.zenio.co/api",
         URL_Dev_Login = "https://dev.zenio.co/login",
 
         User_restore_password_email = "alexey.yakovtsov@mail.ru",
@@ -18,6 +17,9 @@ public class Configurations {
         Workspace_name = "Test QA Workspace";
 
 
+    public static int Project_update_id = 16;
+    public static int Project_id = 31;
+    public static int Project_deleted_id = 586;
 
     private static String randomString() {
         return (RandomStringUtils.randomAlphabetic(12));
