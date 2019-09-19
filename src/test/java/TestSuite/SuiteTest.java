@@ -5,6 +5,7 @@ import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import project_controller.*;
+import project_health_controller.*;
 import user_controller.*;
 import workspace_controller.*;
 
@@ -29,7 +30,10 @@ import static parameters.Configurations.*;
         TestPutUpdateProject.class,
         TestGetProjectsId.class,
         //TestDeleteProjectId.class
-        TestGetProjectIdUser.class
+        TestGetProjectIdUser.class,
+
+        TestGetProjectIdHealth.class,
+        TestPutUpdateMembersCount.class
 } )
 
 public class SuiteTest {
