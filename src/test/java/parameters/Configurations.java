@@ -10,14 +10,11 @@ public class Configurations {
 
     public static String
         URL_Dev = "https://dev.zenio.co",
-        URL_Dev_Login = "https://dev.zenio.co/login",
 
         User_restore_password_email = "alexey.yakovtsov@mail.ru",
 
         Workspace_update_id = "27",
         Workspace_id = "4",
-
-        Workspace_name = "Test QA Workspace",
 
         email = randomString() + "@gmail.com",
         WorkspaceName = randomString(),
@@ -29,8 +26,4 @@ public class Configurations {
             Project_update_id = 16,
             Project_id = 31,
             Project_deleted_id = 586;
-
-
-    //----------------------------------
-
 }
