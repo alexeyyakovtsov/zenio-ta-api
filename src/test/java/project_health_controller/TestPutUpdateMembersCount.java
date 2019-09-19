@@ -3,7 +3,6 @@ package project_health_controller;
 import io.restassured.http.ContentType;
 import org.junit.Test;
 
-import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;
