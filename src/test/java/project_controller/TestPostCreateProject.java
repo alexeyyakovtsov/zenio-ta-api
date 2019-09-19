@@ -1,46 +1,26 @@
 package project_controller;
 
 import io.restassured.http.ContentType;
-import io.restassured.http.Cookies;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
+import static TestSuite.SuiteTest.*;
 
 public class TestPostCreateProject {
-
-    private static Cookies cookies;
-
-    @Before
-    public void Login() {
-        cookies = given()
-                .baseUri(URL_Dev)
-                .urlEncodingEnabled(true)
-                .param("email", "zenio@zensoft.io")
-                .param("password", "12345678")
-                .when()
-                .post("/login")
-                .then()
-                .statusCode(302)
-                .extract()
-                .response()
-                .getDetailedCookies();
-    }
 
     @Test
     public void postCreateProject_status200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
-                .when()
                 .contentType(ContentType.JSON)
-                .body(
-                        "{" +
-                                "\"name\":" + "\"" + ProjectName + "\"," +
-                                "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
+                .body("{" +
+                        "\"name\":" + "\"" + ProjectName + "\"," +
+                        "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
                         "}")
+                .when()
                 .post("/api/projects")
                 .then()
                 .statusCode(200)

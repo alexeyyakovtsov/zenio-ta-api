@@ -1,33 +1,14 @@
 package project_controller;
 
 import io.restassured.http.ContentType;
-import io.restassured.http.Cookies;
-import org.junit.Before;
 import org.junit.Test;
 
+import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static parameters.Configurations.*;
+import static TestSuite.SuiteTest.*;
 
 public class TestPutUpdateProject {
-
-    private static Cookies cookies;
-
-    @Before
-    public void Login() {
-        cookies = given()
-                .baseUri(URL_Dev)
-                .urlEncodingEnabled(true)
-                .param("email", "zenio@zensoft.io")
-                .param("password", "12345678")
-                .when()
-                .post("/login")
-                .then()
-                .statusCode(302)
-                .extract()
-                .response()
-                .getDetailedCookies();
-    }
 
     @Test
     public void putUpdateProject_status200() {
@@ -36,14 +17,14 @@ public class TestPutUpdateProject {
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .body("{" +
-                                "\"id\":" + "\"" + Project_update_id + "\"," +
-                                "\"name\":" + "\"" + ProjectName + "\"" +
+                        "\"id\":" + "\"" + Project_update_id + "\"," +
+                        "\"name\":" + "\"" + ProjectName + "\"" +
                         "}")
                 .when()
                 .put("/api/projects")
                 .then()
                 .statusCode(200)
-                .and().body("id" ,equalTo(Project_update_id ))
+                .and().body("id", equalTo(Project_update_id))
                 .and().body("workspaceId", equalTo(4))
                 .and().body("deleted", equalTo(false))
                 .and().body("ownerId", equalTo(1));

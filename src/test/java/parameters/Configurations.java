@@ -4,6 +4,9 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 public class Configurations {
 
+    private static String randomString() {
+        return (RandomStringUtils.randomAlphabetic(12));
+    }
 
     public static String
         URL_Dev = "https://dev.zenio.co",
@@ -14,21 +17,20 @@ public class Configurations {
         Workspace_update_id = "27",
         Workspace_id = "4",
 
-        Workspace_name = "Test QA Workspace";
+        Workspace_name = "Test QA Workspace",
+
+        email = randomString() + "@gmail.com",
+        WorkspaceName = randomString(),
+        ProjectName = randomString(),
+        BodyEmail = ("{\"emails\":" + "[\"" + email + "\"]}"),
+        WorkspaceNew = ("{\"name\":" + "\"" + WorkspaceName + "\"}");
+
+    public static int
+            Project_update_id = 16,
+            Project_id = 31,
+            Project_deleted_id = 586;
 
 
-    public static int Project_update_id = 16;
-    public static int Project_id = 31;
-    public static int Project_deleted_id = 586;
+    //----------------------------------
 
-    private static String randomString() {
-        return (RandomStringUtils.randomAlphabetic(12));
-    }
-
-    public static String email = randomString() + "@gmail.com";
-    private static String WorkspaceName = randomString();
-    public static String ProjectName = randomString();
-
-    public static String BodyEmail = ("{\"emails\":" + "[\"" + email + "\"]}");
-    public static String WorkspaceNew = ("{\"name\":" + "\"" + WorkspaceName + "\"}");
 }

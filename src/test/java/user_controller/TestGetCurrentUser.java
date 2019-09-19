@@ -1,35 +1,16 @@
 package user_controller;
 
 import io.restassured.http.ContentType;
-import io.restassured.http.Cookies;
-import org.junit.Before;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static parameters.Configurations.URL_Dev;
+import static parameters.Configurations.*;
+import static TestSuite.SuiteTest.*;
 
 public class TestGetCurrentUser {
-
-    private static Cookies cookies;
-
-    @Before
-    public void Login() {
-        cookies = given()
-                .baseUri(URL_Dev)
-                .urlEncodingEnabled(true)
-                .param("email", "zenio@zensoft.io")
-                .param("password", "12345678")
-                .when()
-                .post("/login")
-                .then()
-                .statusCode(302)
-                .extract()
-                .response()
-                .getDetailedCookies();
-    }
 
     @Test
     public void getCurrentUser_200() {
@@ -42,7 +23,6 @@ public class TestGetCurrentUser {
                 .then()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("getCurrentUser.json"))
-                .and().body("id", equalTo(1))
                 .and().body("username", equalTo("zenio"))
                 .and().body("email", equalTo("zenio@zensoft.io"))
                 .and().body("active", equalTo(true))
