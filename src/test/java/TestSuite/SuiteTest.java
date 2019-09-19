@@ -28,8 +28,8 @@ import static parameters.Configurations.*;
         TestGetUserProjects.class,
         TestPutUpdateProject.class,
         TestGetProjectsId.class,
-
         //TestDeleteProjectId.class
+        TestGetProjectIdUser.class
 } )
 
 public class SuiteTest {
