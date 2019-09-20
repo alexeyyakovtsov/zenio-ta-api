@@ -20,10 +20,16 @@ public class Configurations {
         WorkspaceName = randomString(),
         ProjectName = randomString(),
         BodyEmail = ("{\"emails\":" + "[\"" + email + "\"]}"),
-        WorkspaceNew = ("{\"name\":" + "\"" + WorkspaceName + "\"}");
+        WorkspaceNew = ("{\"name\":" + "\"" + WorkspaceName + "\"}"),
+
+        Checksum = randomString(),
+
+        AreaName = randomString();
 
     public static int
             Project_update_id = 16,
             Project_id = 31,
-            Project_deleted_id = 586;
+            Project_deleted_id = 586,
+
+            AreaId = 67;
 }

@@ -1,5 +1,7 @@
 package TestSuite;
 
+import area_controller.TestGetAreaId;
+import area_controller.TestPostCreateArea;
 import io.restassured.http.Cookies;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
@@ -14,17 +16,20 @@ import static parameters.Configurations.*;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
+        //User controller
         TestGetAllUsers.class,
         TestGetCurrentUser.class,
         TestPostInviteUser.class,
         TestPostRestorePassword.class,
 
+        //Workspace controller
         TestGetWorkspace.class,
         //TestPostCreateWorkspace.class,
         TestGetWorkspaceId.class,
         TestPutUpdateWorkspace.class,
         TestGetWorkspaceMembers.class,
 
+        //Project controller
         TestPostCreateProject.class,
         TestGetUserProjects.class,
         TestPutUpdateProject.class,
@@ -32,8 +37,13 @@ import static parameters.Configurations.*;
         //TestDeleteProjectId.class
         TestGetProjectIdUser.class,
 
+        //Project Health controller
         TestGetProjectIdHealth.class,
-        TestPutUpdateMembersCount.class
+        TestPutUpdateMembersCount.class,
+
+        //Area controller
+        TestGetAreaId.class,
+        TestPostCreateArea.class
 } )
 
 public class SuiteTest {

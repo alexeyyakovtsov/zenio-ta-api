@@ -1,4 +1,4 @@
-package project_health_controller;
+package area_controller;
 
 import io.restassured.http.ContentType;
 import org.junit.Test;
@@ -8,43 +8,41 @@ import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;
 
-public class TestGetProjectIdHealth {
+public class TestGetAreaId {
 
     @Test
-    public void getProjectIdHealth_status200() {
+    public void getAreaId_status200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()
-                .get("/api/projects/" + Project_id + "/health")
+                .get("/api/projects/" + Project_id + "/areas/" + AreaId)
                 .then()
                 .statusCode(200)
-                .and().body("id", equalTo(Project_id))
-                .and().body("name", equalTo("Empty"))
-                .and().body("membersCount", equalTo(1))
-                .and().body("wipStoriesCount", equalTo(0));
+                .and().body("id", equalTo(AreaId))
+                .and().body("projectId", equalTo(Project_id));
     }
 
     @Test
-    public void getProjectIdHealth_status401() {
+    public void getAreaId_status401() {
         given()
                 .baseUri(URL_Dev)
                 .contentType(ContentType.JSON)
                 .when()
-                .get("/api/projects/" + Project_id + "/health")
+                .get("/api/projects/" + Project_id + "/areas/" + AreaId)
                 .then()
                 .statusCode(401);
     }
 
     @Test
-    public void getProjectIdHealth_status404() {
+    public void getAreaId_status404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()
-                .get("/api/projectts/" + Project_id + "/health")
+                .get("/api/projects/" + Project_id + "/areaas/" + AreaId)
                 .then()
                 .statusCode(404);
     }
