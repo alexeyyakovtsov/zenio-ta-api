@@ -2,6 +2,7 @@ package TestSuite;
 
 import area_controller.TestGetAreaId;
 import area_controller.TestPostCreateArea;
+import area_controller.TestPutUpdateArea;
 import io.restassured.http.Cookies;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
@@ -43,7 +44,8 @@ import static parameters.Configurations.*;
 
         //Area controller
         TestGetAreaId.class,
-        TestPostCreateArea.class
+        TestPostCreateArea.class,
+        TestPutUpdateArea.class
 } )
 
 public class SuiteTest {
