@@ -17,3 +17,4 @@ TestSuite            | Script launch test suite
 4. Project Health
 5. Area controller
 6. Activity controller
+7. Story controller

@@ -9,7 +9,7 @@ public class Configurations {
     }
 
     public static String
-        URL_Dev = "https://dev.zenio.co",
+            URL_Dev = "https://dev.zenio.co",
 
         User_restore_password_email = "alexey.yakovtsov@mail.ru",
 
@@ -33,5 +33,6 @@ public class Configurations {
             Project_deleted_id = 586,
 
             AreaId = 67,
-            ActivityId = 1053;
+            ActivityId = 1053,
+            MajorRelease = 982;
 }

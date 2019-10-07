@@ -8,10 +8,13 @@ import area_controller.TestPostCreateArea;
 import area_controller.TestPutUpdateArea;
 import io.restassured.http.Cookies;
 import org.junit.BeforeClass;
+import org.junit.Test;
 import org.junit.runner.*;
 import org.junit.runners.Suite;
 import project_controller.*;
 import project_health_controller.*;
+import story_controller.TestGetAllStories;
+import story_controller.TestPostCreateStory;
 import user_controller.*;
 import workspace_controller.*;
 
@@ -52,8 +55,12 @@ import static parameters.Configurations.*;
 
         //Activity controller
         TestGetActivityId.class,
-        TestPostCreateActivity.class
+        TestPostCreateActivity.class,
         //TestPutUpdateActivityId.class
+
+        //Story controller
+        TestGetAllStories.class,
+        TestPostCreateStory.class
 } )
 
 public class SuiteTest {
