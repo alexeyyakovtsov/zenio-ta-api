@@ -8,10 +8,7 @@
 Folder name          | File content
 ---------------------|----------------------
 parameters           | Project variables
-project_controller   | Project endpoint
 TestSuite            | Script launch test suite
-user_controller      | User endpoint
-workspace_controller | Workspace endpoint
 
 ## Tested Endpoints
 1. Project controller
@@ -19,3 +16,4 @@ workspace_controller | Workspace endpoint
 3. Workspace controller
 4. Project Health
 5. Area controller
+6. Activity controller
