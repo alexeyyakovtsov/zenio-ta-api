@@ -10,7 +10,7 @@ import static TestSuite.SuiteTest.*;
 public class TestPutUpdateWorkspace {
 
     @Test
-    public void putUpdateWorkspace_status200() {
+    public void putUpdateWorkspace_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -23,7 +23,7 @@ public class TestPutUpdateWorkspace {
     }
 
     @Test
-    public void putUpdateWorkspace_status401() {
+    public void putUpdateWorkspace_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .contentType(ContentType.JSON)

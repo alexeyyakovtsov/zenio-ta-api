@@ -11,7 +11,7 @@ import static TestSuite.SuiteTest.*;
 public class TestPutUpdateProject {
 
     @Test
-    public void putUpdateProject_status200() {
+    public void putUpdateProject_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -31,7 +31,7 @@ public class TestPutUpdateProject {
     }
 
     @Test
-    public void putUpdateProject_status401() {
+    public void putUpdateProject_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .contentType(ContentType.JSON)
@@ -46,7 +46,7 @@ public class TestPutUpdateProject {
     }
 
     @Test
-    public void putUpdateProject_status404() {
+    public void putUpdateProject_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)

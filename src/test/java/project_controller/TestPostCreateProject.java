@@ -11,7 +11,7 @@ import static TestSuite.SuiteTest.*;
 public class TestPostCreateProject {
 
     @Test
-    public void postCreateProject_status200() {
+    public void postCreateProject_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -31,7 +31,7 @@ public class TestPostCreateProject {
     }
 
     @Test
-    public void postCreateProject_status401() {
+    public void postCreateProject_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .when()
@@ -47,7 +47,7 @@ public class TestPostCreateProject {
     }
 
     @Test
-    public void postCreateProject_status404() {
+    public void postCreateProject_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)

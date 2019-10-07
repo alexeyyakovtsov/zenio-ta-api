@@ -1,45 +1,49 @@
-package project_controller;
+package activity_controller;
 
 import io.restassured.http.ContentType;
 import org.junit.Test;
 
-import static io.restassured.RestAssured.given;
+import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.*;
+import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;
 
-public class TestDeleteProjectId {
+public class TestGetActivityId {
 
     @Test
-    public void deleteProjectId_status_200() {
+    public void getActivityId_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()
-                .delete("/api/projects/" + Project_deleted_id)
+                .get("/api/projects/" + Project_id + "/activities/" + ActivityId)
                 .then()
-                .statusCode(204);
+                .statusCode(200)
+                .and().body("id", equalTo(ActivityId))
+                .and().body("areaId", equalTo(AreaId))
+                .and().body("projectId", equalTo(Project_id));
     }
 
     @Test
-    public void deleteProjectId_status_401() {
+    public void getActivityId_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .contentType(ContentType.JSON)
                 .when()
-                .delete("/api/projects" + Project_deleted_id)
+                .get("/api/projects/" + Project_id + "/activities/" + ActivityId)
                 .then()
                 .statusCode(401);
     }
 
     @Test
-    public void deleteProjectId_status_404() {
+    public void getActivityId_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .when()
-                .delete("/api/projectts" + Project_deleted_id)
+                .get("/api/projectss/" + Project_id + "/activities/" + ActivityId)
                 .then()
                 .statusCode(404);
     }

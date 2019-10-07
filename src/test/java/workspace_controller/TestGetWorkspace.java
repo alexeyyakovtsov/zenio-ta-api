@@ -11,7 +11,7 @@ import static TestSuite.SuiteTest.*;
 public class TestGetWorkspace {
 
     @Test
-    public void getUserWorkspaces_status200() {
+    public void getUserWorkspaces_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -23,7 +23,7 @@ public class TestGetWorkspace {
     }
 
     @Test
-    public void getUserWorkspaces_status401() {
+    public void getUserWorkspaces_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .contentType(ContentType.JSON)
@@ -34,7 +34,7 @@ public class TestGetWorkspace {
     }
 
     @Test
-    public void getUserWorkspaces_status404() {
+    public void getUserWorkspaces_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)

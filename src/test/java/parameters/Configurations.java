@@ -24,12 +24,14 @@ public class Configurations {
 
         Checksum = randomString(),
 
-        AreaName = randomString();
+        AreaName = randomString(),
+        ActivityName = randomString();
 
     public static int
             Project_update_id = 16,
             Project_id = 31,
             Project_deleted_id = 586,
 
-            AreaId = 67;
+            AreaId = 67,
+            ActivityId = 1053;
 }

@@ -10,7 +10,7 @@ import static TestSuite.SuiteTest.*;
 public class TestPutUpdateMembersCount {
 
     @Test
-    public void putUpdateMembersCount_status200() {
+    public void putUpdateMembersCount_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -25,7 +25,7 @@ public class TestPutUpdateMembersCount {
     }
 
     @Test
-    public void putUpdateMembersCount_status401() {
+    public void putUpdateMembersCount_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .contentType(ContentType.JSON)
@@ -39,7 +39,7 @@ public class TestPutUpdateMembersCount {
     }
 
     @Test
-    public void putUpdateMembersCount_status404() {
+    public void putUpdateMembersCount_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)

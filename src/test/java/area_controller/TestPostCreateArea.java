@@ -11,7 +11,7 @@ import static TestSuite.SuiteTest.*;
 public class TestPostCreateArea {
 
     @Test
-    public void postCreateArea_status200() {
+    public void postCreateArea_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -30,7 +30,7 @@ public class TestPostCreateArea {
     }
 
     @Test
-    public void postCreateArea_status401() {
+    public void postCreateArea_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .contentType(ContentType.JSON)
@@ -47,7 +47,7 @@ public class TestPostCreateArea {
     }
 
     @Test
-    public void postCreateArea_status404() {
+    public void postCreateArea_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)

@@ -11,7 +11,7 @@ import static TestSuite.SuiteTest.*;
 public class TestGetProjectIdUser {
 
     @Test
-    public void getProjectIdUser_status200() {
+    public void getProjectIdUser_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -24,7 +24,7 @@ public class TestGetProjectIdUser {
     }
 
     @Test
-    public void getProjectIdUser_status401() {
+    public void getProjectIdUser_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .contentType(ContentType.JSON)
@@ -35,7 +35,7 @@ public class TestGetProjectIdUser {
     }
 
     @Test
-    public void getProjectIdUser_status404() {
+    public void getProjectIdUser_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)

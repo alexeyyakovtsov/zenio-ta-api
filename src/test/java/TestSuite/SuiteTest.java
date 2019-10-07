@@ -1,11 +1,14 @@
 package TestSuite;
 
+import activity_controller.TestGetActivityId;
+import activity_controller.TestPostCreateActivity;
+import activity_controller.TestPutUpdateActivityId;
 import area_controller.TestGetAreaId;
 import area_controller.TestPostCreateArea;
 import area_controller.TestPutUpdateArea;
 import io.restassured.http.Cookies;
 import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
+import org.junit.runner.*;
 import org.junit.runners.Suite;
 import project_controller.*;
 import project_health_controller.*;
@@ -33,7 +36,7 @@ import static parameters.Configurations.*;
         //Project controller
         TestPostCreateProject.class,
         TestGetUserProjects.class,
-        TestPutUpdateProject.class,
+        //TestPutUpdateProject.class,
         TestGetProjectsId.class,
         //TestDeleteProjectId.class
         TestGetProjectIdUser.class,
@@ -45,7 +48,12 @@ import static parameters.Configurations.*;
         //Area controller
         TestGetAreaId.class,
         TestPostCreateArea.class,
-        TestPutUpdateArea.class
+        TestPutUpdateArea.class,
+
+        //Activity controller
+        TestGetActivityId.class,
+        TestPostCreateActivity.class
+        //TestPutUpdateActivityId.class
 } )
 
 public class SuiteTest {

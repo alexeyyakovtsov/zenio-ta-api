@@ -12,7 +12,7 @@ public class TestPostRestorePassword {
 
 
     @Test
-    public void postRestorePassword_200() {
+    public void postRestorePassword_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -26,7 +26,7 @@ public class TestPostRestorePassword {
     }
 
     @Test
-    public void postRestorePassword_404() {
+    public void postRestorePassword_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)

@@ -11,7 +11,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 public class TestGetUserProjects {
 
     @Test
-    public void getUserProjects_status200() {
+    public void getUserProjects_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -25,7 +25,7 @@ public class TestGetUserProjects {
     }
 
     @Test
-    public void getUserProjects_status401() {
+    public void getUserProjects_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .contentType(ContentType.JSON)
@@ -36,7 +36,7 @@ public class TestGetUserProjects {
     }
 
     @Test
-    public void getUserProjects_status404() {
+    public void getUserProjects_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)

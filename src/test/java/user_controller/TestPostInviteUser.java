@@ -12,7 +12,7 @@ import parameters.Configurations;
 public class TestPostInviteUser {
 
     @Test
-    public void postInviteUser_status200() {
+    public void postInviteUser_status_200() {
 
         given()
                 .baseUri(URL_Dev)
@@ -26,7 +26,7 @@ public class TestPostInviteUser {
     }
 
     @Test
-    public void postInviteUser_status401() {
+    public void postInviteUser_status_401() {
 
         given()
                 .baseUri(URL_Dev)
@@ -37,7 +37,7 @@ public class TestPostInviteUser {
     }
 
     @Test
-    public void postInviteUser_status404() {
+    public void postInviteUser_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)

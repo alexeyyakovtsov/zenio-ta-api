@@ -13,7 +13,7 @@ import static TestSuite.SuiteTest.*;
 public class TestGetCurrentUser {
 
     @Test
-    public void getCurrentUser_200() {
+    public void getCurrentUser_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -31,7 +31,7 @@ public class TestGetCurrentUser {
     }
 
     @Test
-    public void getCurrentUser_status401() {
+    public void getCurrentUser_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .when()
@@ -41,7 +41,7 @@ public class TestGetCurrentUser {
     }
 
     @Test
-    public void getCurrentUser_status404() {
+    public void getCurrentUser_status_404() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)

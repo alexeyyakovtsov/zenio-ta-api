@@ -11,7 +11,7 @@ import static TestSuite.SuiteTest.*;
 public class TestGetAllUsers {
 
     @Test
-    public void getAllUsers_status200() {
+    public void getAllUsers_status_200() {
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
@@ -25,7 +25,7 @@ public class TestGetAllUsers {
     }
 
     @Test
-    public void getAllUsers_status401() {
+    public void getAllUsers_status_401() {
         given()
                 .baseUri(URL_Dev)
                 .when()
@@ -35,7 +35,7 @@ public class TestGetAllUsers {
     }
 
     @Test
-    public void getAllUsers_status404(){
+    public void getAllUsers_status_404(){
         given()
                 .baseUri(URL_Dev)
                 .cookies(cookies)
