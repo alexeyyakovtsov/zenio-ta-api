@@ -15,6 +15,7 @@ import project_controller.*;
 import project_health_controller.*;
 import story_controller.TestGetAllStories;
 import story_controller.TestPostCreateStory;
+import story_controller.TestPutUpdateStory;
 import user_controller.*;
 import workspace_controller.*;
 
@@ -61,6 +62,7 @@ import static parameters.Configurations.*;
         //Story controller
         TestGetAllStories.class,
         TestPostCreateStory.class
+        //TestPutUpdateStory.class
 } )
 
 public class SuiteTest {
