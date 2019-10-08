@@ -7,15 +7,15 @@ import area_controller.TestGetAreaId;
 import area_controller.TestPostCreateArea;
 import area_controller.TestPutUpdateArea;
 import io.restassured.http.Cookies;
+import major_release_controller.TestPostCreateMajorRelease;
+import major_release_controller.TestPutUpdateMajorRelease;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.*;
 import org.junit.runners.Suite;
 import project_controller.*;
 import project_health_controller.*;
-import story_controller.TestGetAllStories;
-import story_controller.TestPostCreateStory;
-import story_controller.TestPutUpdateStory;
+import story_controller.*;
 import user_controller.*;
 import workspace_controller.*;
 
@@ -61,8 +61,14 @@ import static parameters.Configurations.*;
 
         //Story controller
         TestGetAllStories.class,
-        TestPostCreateStory.class
+        TestPostCreateStory.class,
         //TestPutUpdateStory.class
+        TestGetStoryId.class,
+        TestGetDeletedStories.class,
+
+        //Major release controller
+        TestPostCreateMajorRelease.class
+        //TestPutUpdateMajorRelease.class
 } )
 
 public class SuiteTest {

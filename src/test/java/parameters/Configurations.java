@@ -27,7 +27,8 @@ public class Configurations {
         AreaName = randomString(),
         ActivityName = randomString(),
         StoryName = randomString(),
-        Description = randomString();
+        Description = randomString(),
+        MajorReleaseName = randomString();
 
     public static int
             Project_update_id = 16,
@@ -36,6 +37,6 @@ public class Configurations {
 
             AreaId = 67,
             ActivityId = 1053,
-            MajorRelease = 982,
+            MajorRelease = 2216,
             StoryId = 6199;
 }
