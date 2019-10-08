@@ -9,6 +9,9 @@ import area_controller.TestPutUpdateArea;
 import io.restassured.http.Cookies;
 import major_release_controller.TestPostCreateMajorRelease;
 import major_release_controller.TestPutUpdateMajorRelease;
+import minor_release_controller.TestGetMinorReleaseId;
+import minor_release_controller.TestPostCreateMinorRelease;
+import minor_release_controller.TestPutUpdateMinorRelease;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.*;
@@ -57,18 +60,23 @@ import static parameters.Configurations.*;
         //Activity controller
         TestGetActivityId.class,
         TestPostCreateActivity.class,
-        //TestPutUpdateActivityId.class
+        //TestPutUpdateActivityId.class,
 
         //Story controller
         TestGetAllStories.class,
         TestPostCreateStory.class,
-        //TestPutUpdateStory.class
+        //TestPutUpdateStory.class,
         TestGetStoryId.class,
         TestGetDeletedStories.class,
 
         //Major release controller
-        TestPostCreateMajorRelease.class
-        //TestPutUpdateMajorRelease.class
+        TestPostCreateMajorRelease.class,
+        //TestPutUpdateMajorRelease.class,
+
+        //Minor Release
+        TestGetMinorReleaseId.class,
+        TestPostCreateMinorRelease.class,
+        TestPutUpdateMinorRelease.class
 } )
 
 public class SuiteTest {

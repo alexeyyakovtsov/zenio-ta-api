@@ -9,7 +9,7 @@ public class Configurations {
     }
 
     public static String
-            URL_Dev = "https://dev.zenio.co",
+        URL_Dev = "https://dev.zenio.co",
 
         User_restore_password_email = "alexey.yakovtsov@mail.ru",
 
@@ -28,7 +28,8 @@ public class Configurations {
         ActivityName = randomString(),
         StoryName = randomString(),
         Description = randomString(),
-        MajorReleaseName = randomString();
+        MajorReleaseName = randomString(),
+        MinorReleaseName = randomString();
 
     public static int
             Project_update_id = 16,
@@ -38,5 +39,6 @@ public class Configurations {
             AreaId = 67,
             ActivityId = 1053,
             MajorRelease = 2216,
+            MinorRelease = 6200,
             StoryId = 6199;
 }

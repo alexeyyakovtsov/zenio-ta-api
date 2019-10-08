@@ -18,3 +18,5 @@ TestSuite            | Script launch test suite
 5. Area controller
 6. Activity controller
 7. Story controller
+8. Major release controller
+9. Minor release controller
