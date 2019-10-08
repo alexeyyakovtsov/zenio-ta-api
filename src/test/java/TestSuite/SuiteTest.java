@@ -2,18 +2,19 @@ package TestSuite;
 
 import activity_controller.TestGetActivityId;
 import activity_controller.TestPostCreateActivity;
-import activity_controller.TestPutUpdateActivityId;
 import area_controller.TestGetAreaId;
 import area_controller.TestPostCreateArea;
 import area_controller.TestPutUpdateArea;
+import integration_controller.TestGetAllIntegrationsProjects;
+import integration_controller.TestGetIntegrations;
+import integration_controller.TestPostCreateIntegrationJira;
+import integration_controller.TestPostCreateIntegrationPivotal;
 import io.restassured.http.Cookies;
 import major_release_controller.TestPostCreateMajorRelease;
-import major_release_controller.TestPutUpdateMajorRelease;
 import minor_release_controller.TestGetMinorReleaseId;
 import minor_release_controller.TestPostCreateMinorRelease;
 import minor_release_controller.TestPutUpdateMinorRelease;
 import org.junit.BeforeClass;
-import org.junit.Test;
 import org.junit.runner.*;
 import org.junit.runners.Suite;
 import project_controller.*;
@@ -76,7 +77,13 @@ import static parameters.Configurations.*;
         //Minor Release
         TestGetMinorReleaseId.class,
         TestPostCreateMinorRelease.class,
-        TestPutUpdateMinorRelease.class
+        TestPutUpdateMinorRelease.class,
+
+        //Integration controller
+        TestGetAllIntegrationsProjects.class,
+        TestGetIntegrations.class,
+        TestPostCreateIntegrationPivotal.class,
+        TestPostCreateIntegrationJira.class
 } )
 
 public class SuiteTest {

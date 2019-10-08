@@ -22,8 +22,15 @@ public class Configurations {
         BodyEmail = ("{\"emails\":" + "[\"" + email + "\"]}"),
         WorkspaceNew = ("{\"name\":" + "\"" + WorkspaceName + "\"}"),
 
-        Checksum = randomString(),
+        ApiTokenPivotal = "3901cf4de092d5cbe830d88f977ee565",
+        ApiTokenJira = "ZwapUqRrCnWXbzXZKJRQFEC6",
+        EmailJiraIntegration = "alexey.yakovtsov@zenio.co",
+        UrlJiraIntegration = "https://zenio.atlassian.net/",
+        UrlPivotalIntegration = "https://www.pivotaltracker.com/services/v5/",
+        ApiProviderPivotal = "PIVOTAL",
+        ApiProviderJira = "JIRA",
 
+        Checksum = randomString(),
         AreaName = randomString(),
         ActivityName = randomString(),
         StoryName = randomString(),

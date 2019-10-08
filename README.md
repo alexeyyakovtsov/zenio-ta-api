@@ -20,3 +20,4 @@ TestSuite            | Script launch test suite
 7. Story controller
 8. Major release controller
 9. Minor release controller
+10. Integration controller
