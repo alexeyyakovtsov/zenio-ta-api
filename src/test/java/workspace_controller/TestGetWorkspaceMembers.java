@@ -20,8 +20,7 @@ public class TestGetWorkspaceMembers {
                 .get("/api/workspaces/" + Workspace_id + "/users")
                 .then()
                 .statusCode(200)
-                .and()
-                .body(matchesJsonSchemaInClasspath("getWorkspaceMembers.json"));
+                .and().body(matchesJsonSchemaInClasspath("getWorkspaceMembers.json"));
     }
 
     @Test

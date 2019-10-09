@@ -3,6 +3,7 @@ package story_controller;
 import io.restassured.http.ContentType;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.hasItems;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -22,7 +23,8 @@ public class TestGetStoryId {
                 .statusCode(200)
                 .and().body("id", equalTo(StoryId))
                 .and().body("projectId", equalTo(Project_id))
-                .and().body("majorReleaseId", equalTo(MajorRelease));
+                .and().body("majorReleaseId", equalTo(MajorRelease))
+                .and().body("activityIds", hasItems(1053));
     }
 
     @Test

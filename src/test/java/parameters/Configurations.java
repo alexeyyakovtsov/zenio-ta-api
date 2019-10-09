@@ -13,9 +13,6 @@ public class Configurations {
 
         User_restore_password_email = "alexey.yakovtsov@mail.ru",
 
-        Workspace_update_id = "27",
-        Workspace_id = "4",
-
         email = randomString() + "@gmail.com",
         WorkspaceName = randomString(),
         ProjectName = randomString(),
@@ -39,6 +36,9 @@ public class Configurations {
         MinorReleaseName = randomString();
 
     public static int
+            Workspace_update_id = 27,
+            Workspace_id = 4,
+
             Project_update_id = 16,
             Project_id = 31,
             Project_deleted_id = 586,

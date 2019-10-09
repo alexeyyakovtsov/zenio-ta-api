@@ -4,6 +4,7 @@ import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.*;
 import static TestSuite.SuiteTest.*;

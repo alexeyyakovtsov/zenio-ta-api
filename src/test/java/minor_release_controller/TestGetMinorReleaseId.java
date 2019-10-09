@@ -4,6 +4,7 @@ import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
+import static org.hamcrest.CoreMatchers.hasItems;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
 import static TestSuite.SuiteTest.*;
@@ -22,7 +23,8 @@ public class TestGetMinorReleaseId {
                 .statusCode(200)
                 .and().body("id", equalTo(MinorRelease))
                 .and().body("projectId", equalTo(Project_id))
-                .and().body("majorReleaseId", equalTo(MajorRelease));
+                .and().body("majorReleaseId", equalTo(MajorRelease))
+                .and().body("activityIds", hasItems(1643));
     }
 
     @Test

@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
+import static org.hamcrest.CoreMatchers.hasItems;
 import static parameters.Configurations.*;
 import static TestSuite.SuiteTest.*;
 
@@ -20,8 +21,10 @@ public class TestGetWorkspaceId {
                 .get("/api/workspaces/" + Workspace_update_id)
                 .then()
                 .statusCode(200)
-                .and().body("id", equalTo(27))
-                .and().body("owned", equalTo(true));
+                .and().body("id", equalTo(Workspace_update_id))
+                .and().body("owned", equalTo(true))
+                .and().body("projects.id", hasItems(1334))
+                .and().body("projects.workspaceId", hasItems(Workspace_update_id));
     }
 
     @Test

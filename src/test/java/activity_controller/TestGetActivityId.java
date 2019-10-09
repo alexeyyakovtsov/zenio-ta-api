@@ -3,6 +3,7 @@ package activity_controller;
 import io.restassured.http.ContentType;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
@@ -22,7 +23,8 @@ public class TestGetActivityId {
                 .statusCode(200)
                 .and().body("id", equalTo(ActivityId))
                 .and().body("areaId", equalTo(AreaId))
-                .and().body("projectId", equalTo(Project_id));
+                .and().body("projectId", equalTo(Project_id))
+                .and().body("majorReleases.id", hasItems(2216, 2229));
     }
 
     @Test

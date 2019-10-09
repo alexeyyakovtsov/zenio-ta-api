@@ -1,9 +1,9 @@
 package workspace_controller;
 
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.hasItems;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;

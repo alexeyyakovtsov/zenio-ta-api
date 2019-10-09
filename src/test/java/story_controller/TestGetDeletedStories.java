@@ -4,6 +4,7 @@ import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
+import static org.hamcrest.CoreMatchers.hasItems;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
 import static TestSuite.SuiteTest.*;
@@ -19,7 +20,8 @@ public class TestGetDeletedStories {
                 .when()
                 .get("/api/projects/" + Project_id + "/stories/deleted")
                 .then()
-                .statusCode(200);
+                .statusCode(200)
+                .and().body("stories.id", hasItems(15975, 15976));
     }
 
     @Test

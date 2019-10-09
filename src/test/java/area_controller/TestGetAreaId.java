@@ -3,6 +3,7 @@ package area_controller;
 import io.restassured.http.ContentType;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
@@ -21,7 +22,8 @@ public class TestGetAreaId {
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(AreaId))
-                .and().body("projectId", equalTo(Project_id));
+                .and().body("projectId", equalTo(Project_id))
+                .and().body("activityIds", hasItems(1639, 1643, 1053));
     }
 
     @Test
