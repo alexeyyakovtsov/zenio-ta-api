@@ -89,12 +89,13 @@ public class SuiteTest {
     @BeforeClass
     public static void Login() {
         spec = new RequestSpecBuilder()
-                .setContentType(ContentType.JSON)
                 .setBaseUri(URL_Dev)
+                .setBasePath("/api/")
+                .setAccept(ContentType.JSON)
+                .setContentType(ContentType.JSON)
                 .addFilter(new ResponseLoggingFilter())
                 .addFilter(new RequestLoggingFilter())
                 .build();
-
 
         cookies = given()
                 .baseUri(URL_Dev)

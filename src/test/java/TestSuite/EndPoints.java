@@ -4,40 +4,40 @@ import static parameters.Configurations.*;
 
 public class EndPoints {
     public static String
-            GetActivityId = "/api/projects/" + Project_id + "/activities/" + ActivityId,
-            Activity = "/api/projects/" + Project_id + "/activities",
+            GetActivityId = "projects/" + Project_id + "/activities/" + ActivityId,
+            Activity = "projects/" + Project_id + "/activities",
 
-            GetAreaId = "/api/projects/" + Project_id + "/areas/" + AreaId,
-            Area = "/api/projects/" + Project_id + "/areas",
+            GetAreaId = "projects/" + Project_id + "/areas/" + AreaId,
+            Area = "projects/" + Project_id + "/areas",
 
-            GetAllIntegrations = "/api/integrations/projects",
-            Integrations = "/api/integrations",
+            GetAllIntegrations = "integrations/projects",
+            Integrations = "integrations",
 
-            PostCreateMajorRelease = "/api/projects/" + Project_id + "/releases/major",
-            PutUpdateMajorRelease = "/api/projects/" + Project_id + "/releases/major/" + MajorRelease,
+            PostCreateMajorRelease = "projects/" + Project_id + "/releases/major",
+            PutUpdateMajorRelease = "projects/" + Project_id + "/releases/major/" + MajorRelease,
 
-            GetMinorReleaseId = "/api/projects/" + Project_id + "/releases/minor/" + MinorRelease,
-            CreateMinorRelease = "/api/projects/" + Project_id + "/releases/minor",
+            GetMinorReleaseId = "projects/" + Project_id + "/releases/minor/" + MinorRelease,
+            CreateMinorRelease = "projects/" + Project_id + "/releases/minor",
 
-            DeleteProjectId = "/api/projects/" + Project_deleted_id,
-            GetProjectIdUser = "/api/projects/" +  Project_id + "/users",
-            GetProjectId = "/api/projects/" + Project_id,
-            UserProjects = "/api/projects",
+            DeleteProjectId = "projects/" + Project_deleted_id,
+            GetProjectIdUser = "projects/" +  Project_id + "/users",
+            GetProjectId = "projects/" + Project_id,
+            UserProjects = "projects",
 
-            GetProjectHealth = "/api/projects/" + Project_id + "/health",
-            PutUpdateMembersCount = "/api/projects/" + Project_id + "/health" + "/members",
+            GetProjectHealth = "projects/" + Project_id + "/health",
+            PutUpdateMembersCount = "projects/" + Project_id + "/health" + "/members",
 
-            AllStories = "/api/projects/" + Project_id + "/stories",
-            GetDeletedStories = "/api/projects/" + Project_id + "/stories/deleted",
-            GetStoryId = "/api/projects/" + Project_id + "/stories/" + StoryId,
+            AllStories = "projects/" + Project_id + "/stories",
+            GetDeletedStories = "projects/" + Project_id + "/stories/deleted",
+            GetStoryId = "projects/" + Project_id + "/stories/" + StoryId,
 
-            GetAllUsers = "/api/users",
-            GetCurrentUser = "/api/users/me",
-            InviteUser = "/api/users/invite",
-            RestorePassword = "/api/users/restore",
+            GetAllUsers = "users",
+            GetCurrentUser = "users/me",
+            InviteUser = "users/invite",
+            RestorePassword = "users/restore",
 
-            Workspaces = "/api/workspaces",
-            GetWorkspaceId = "/api/workspaces/" + Workspace_update_id,
-            GetWorkspaceMembers = "/api/workspaces/" + Workspace_id + "/users",
-            UpdateWorkspaceId = "/api/workspaces/" + Workspace_update_id;
+            Workspaces = "workspaces",
+            GetWorkspaceId = "workspaces/" + Workspace_update_id,
+            GetWorkspaceMembers = "workspaces/" + Workspace_id + "/users",
+            UpdateWorkspaceId = "workspaces/" + Workspace_update_id;
 }
