@@ -1,10 +1,8 @@
 package project_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.hasItems;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static parameters.Configurations.*;
 import static TestSuite.SuiteTest.*;
@@ -14,9 +12,8 @@ public class TestGetProjectIdUser {
     @Test
     public void getProjectIdUser_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projects/" +  Project_id + "/users")
                 .then()
@@ -27,8 +24,7 @@ public class TestGetProjectIdUser {
     @Test
     public void getProjectIdUser_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .when()
                 .get("/api/projects/" +  Project_id + "/users")
                 .then()
@@ -38,9 +34,8 @@ public class TestGetProjectIdUser {
     @Test
     public void getProjectIdUser_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projectss/" +  Project_id + "/users")
                 .then()

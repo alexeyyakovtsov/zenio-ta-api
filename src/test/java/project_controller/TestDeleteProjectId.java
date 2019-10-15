@@ -1,6 +1,5 @@
 package project_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -12,9 +11,8 @@ public class TestDeleteProjectId {
     @Test
     public void deleteProjectId_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .delete("/api/projects/" + Project_deleted_id)
                 .then()
@@ -24,8 +22,7 @@ public class TestDeleteProjectId {
     @Test
     public void deleteProjectId_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .when()
                 .delete("/api/projects" + Project_deleted_id)
                 .then()
@@ -35,9 +32,8 @@ public class TestDeleteProjectId {
     @Test
     public void deleteProjectId_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .delete("/api/projectts" + Project_deleted_id)
                 .then()

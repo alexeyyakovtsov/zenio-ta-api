@@ -1,8 +1,6 @@
 package workspace_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.CoreMatchers.hasItems;
@@ -14,9 +12,8 @@ public class TestGetWorkspaceId {
     @Test
     public void getWorkspaceId_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/workspaces/" + Workspace_update_id)
                 .then()
@@ -30,8 +27,7 @@ public class TestGetWorkspaceId {
     @Test
     public void getWorkspaceId_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .when()
                 .get("/api/workspaces/" + Workspace_update_id)
                 .then()
@@ -41,9 +37,8 @@ public class TestGetWorkspaceId {
     @Test
     public void getWorkspaceId_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/workspacess/" + Workspace_update_id)
                 .then()

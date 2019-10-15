@@ -1,6 +1,5 @@
 package activity_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.hasItems;
@@ -14,9 +13,8 @@ public class TestGetActivityId {
     @Test
     public void getActivityId_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projects/" + Project_id + "/activities/" + ActivityId)
                 .then()
@@ -30,8 +28,7 @@ public class TestGetActivityId {
     @Test
     public void getActivityId_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .when()
                 .get("/api/projects/" + Project_id + "/activities/" + ActivityId)
                 .then()
@@ -41,9 +38,8 @@ public class TestGetActivityId {
     @Test
     public void getActivityId_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projectss/" + Project_id + "/activities/" + ActivityId)
                 .then()

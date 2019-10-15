@@ -1,28 +1,23 @@
 package TestSuite;
 
-import activity_controller.TestGetActivityId;
-import activity_controller.TestPostCreateActivity;
-import area_controller.TestGetAreaId;
-import area_controller.TestPostCreateArea;
-import area_controller.TestPutUpdateArea;
-import integration_controller.TestGetAllIntegrationsProjects;
-import integration_controller.TestGetIntegrations;
-import integration_controller.TestPostCreateIntegrationJira;
-import integration_controller.TestPostCreateIntegrationPivotal;
-import io.restassured.http.Cookies;
-import major_release_controller.TestPostCreateMajorRelease;
-import minor_release_controller.TestGetMinorReleaseId;
-import minor_release_controller.TestPostCreateMinorRelease;
-import minor_release_controller.TestPutUpdateMinorRelease;
-import org.junit.BeforeClass;
-import org.junit.runner.*;
-import org.junit.runners.Suite;
+import activity_controller.*;
+import area_controller.*;
+import integration_controller.*;
+import major_release_controller.*;
+import minor_release_controller.*;
 import project_controller.*;
 import project_health_controller.*;
 import story_controller.*;
 import user_controller.*;
 import workspace_controller.*;
 
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.filter.log.*;
+import io.restassured.http.*;
+import io.restassured.specification.RequestSpecification;
+import org.junit.BeforeClass;
+import org.junit.runner.*;
+import org.junit.runners.Suite;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
 
@@ -89,9 +84,18 @@ import static parameters.Configurations.*;
 public class SuiteTest {
 
     public static Cookies cookies;
+    public static RequestSpecification spec;
 
     @BeforeClass
     public static void Login() {
+        spec = new RequestSpecBuilder()
+                .setContentType(ContentType.JSON)
+                .setBaseUri(URL_Dev)
+                .addFilter(new ResponseLoggingFilter())
+                .addFilter(new RequestLoggingFilter())
+                .build();
+
+
         cookies = given()
                 .baseUri(URL_Dev)
                 .urlEncodingEnabled(true)

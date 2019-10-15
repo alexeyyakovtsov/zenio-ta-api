@@ -1,6 +1,5 @@
 package project_health_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -13,9 +12,8 @@ public class TestGetProjectIdHealth {
     @Test
     public void getProjectIdHealth_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projects/" + Project_id + "/health")
                 .then()
@@ -29,8 +27,7 @@ public class TestGetProjectIdHealth {
     @Test
     public void getProjectIdHealth_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .when()
                 .get("/api/projects/" + Project_id + "/health")
                 .then()
@@ -40,9 +37,8 @@ public class TestGetProjectIdHealth {
     @Test
     public void getProjectIdHealth_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projectts/" + Project_id + "/health")
                 .then()

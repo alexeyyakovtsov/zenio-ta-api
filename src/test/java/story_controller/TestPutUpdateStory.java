@@ -1,6 +1,5 @@
 package story_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -13,9 +12,8 @@ public class TestPutUpdateStory {
     @Test
     public void putUpdateStory_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"id\":" + StoryId + "," +
                         "\"name\":" + "\"" + StoryName + "\"," +
@@ -35,8 +33,7 @@ public class TestPutUpdateStory {
     @Test
     public void putUpdateStory_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .body("{" +
                         "\"id\":" + "\"" + Project_update_id + "\"," +
                         "\"name\":" + "\"" + StoryName + "\"," +
@@ -51,9 +48,8 @@ public class TestPutUpdateStory {
     @Test
     public void putUpdateStory_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"id\":" + "\"" + Project_update_id + "\"," +
                         "\"name\":" + "\"" + StoryName + "\"," +

@@ -1,6 +1,5 @@
 package project_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static parameters.Configurations.*;
@@ -13,9 +12,8 @@ public class TestPutUpdateProject {
     @Test
     public void putUpdateProject_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"id\":" + "\"" + Project_update_id + "\"," +
                         "\"name\":" + "\"" + ProjectName + "\"" +
@@ -33,8 +31,7 @@ public class TestPutUpdateProject {
     @Test
     public void putUpdateProject_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .body("{" +
                         "\"id\":" + "\"" + Project_update_id + "\"," +
                         "\"name\":" + "\"" + ProjectName + "\"" +
@@ -48,9 +45,8 @@ public class TestPutUpdateProject {
     @Test
     public void putUpdateProject_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"id\":" + "\"" + Project_update_id + "\"," +
                         "\"name\":" + "\"" + ProjectName + "\"" +

@@ -1,6 +1,5 @@
 package activity_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static io.restassured.RestAssured.given;
@@ -12,9 +11,8 @@ public class TestPostCreateActivity {
     @Test
      public void postCreateActivity_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"name\":" + "\"" + ActivityName + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"," +
@@ -31,8 +29,7 @@ public class TestPostCreateActivity {
     @Test
     public void postCreateActivity_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .body("{" +
                         "\"name\":" + "\"" + ActivityName + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"" +
@@ -46,9 +43,8 @@ public class TestPostCreateActivity {
     @Test
     public void postCreateActivity_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"name\":" + "\"" + ActivityName + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"" +

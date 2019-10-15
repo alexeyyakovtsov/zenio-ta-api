@@ -1,6 +1,5 @@
 package major_release_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -13,9 +12,8 @@ public class TestPutUpdateMajorRelease {
     @Test
     public void putUpdateMajorRelease_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"name\":" + "\"" + MajorReleaseName + "\"" +
                         "}")
@@ -29,8 +27,7 @@ public class TestPutUpdateMajorRelease {
     @Test
     public void putUpdateMajorRelease_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .body("{" +
                         "\"name\":" + "\"" + MajorReleaseName + "\"" +
                         "}")
@@ -43,9 +40,8 @@ public class TestPutUpdateMajorRelease {
     @Test
     public void putUpdateMajorRelease_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"name\":" + "\"" + MajorReleaseName + "\"" +
                         "}")

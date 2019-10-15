@@ -1,6 +1,5 @@
 package minor_release_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -14,9 +13,8 @@ public class TestGetMinorReleaseId {
     @Test
     public void getMinorRelease_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projects/" + Project_id + "/releases/minor/" + MinorRelease)
                 .then()
@@ -30,8 +28,7 @@ public class TestGetMinorReleaseId {
     @Test
     public void getMinorRelease_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .when()
                 .get("/api/projects/" + Project_id + "/releases/minor/" + MinorRelease)
                 .then()
@@ -41,9 +38,8 @@ public class TestGetMinorReleaseId {
     @Test
     public void getMinorRelease_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projects/" + Project_id + "/releases/minorr/" + MinorRelease)
                 .then()

@@ -1,8 +1,6 @@
 package workspace_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
-
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;
@@ -12,10 +10,9 @@ public class TestPostCreateWorkspace {
     @Test
     public void postCreateWorkspace_status_200() {
             given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
                 .when()
-                .contentType(ContentType.JSON)
                 .body(WorkspaceNew)
                 .post("/api/workspaces")
                 .then()
@@ -25,9 +22,8 @@ public class TestPostCreateWorkspace {
     @Test
     public void postCreateWorkspace_status_401() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .when()
-                .contentType(ContentType.JSON)
                 .body(WorkspaceNew)
                 .post("/api/workspaces")
                 .then()

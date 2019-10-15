@@ -1,6 +1,5 @@
 package integration_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static parameters.Configurations.*;
@@ -13,9 +12,8 @@ public class TestPostCreateIntegrationJira {
     @Test
     public void postCreateIntegrationJira_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"apiToken\":" + "\"" + ApiTokenJira + "\"," +
                         "\"emailNotEmpty\":" + "\"" + true + "\"," +
@@ -35,8 +33,7 @@ public class TestPostCreateIntegrationJira {
     @Test
     public void postCreateIntegrationJira_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .body("{" +
                         "\"apiToken\":" + "\"" + ApiTokenJira + "\"," +
                         "\"emailNotEmpty\":" + "\"" + true + "\"," +
@@ -53,9 +50,8 @@ public class TestPostCreateIntegrationJira {
     @Test
     public void postCreateIntegrationJira_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"apiToken\":" + "\"" + ApiTokenJira + "\"," +
                         "\"emailNotEmpty\":" + "\"" + true + "\"," +

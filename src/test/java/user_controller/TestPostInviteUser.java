@@ -1,10 +1,7 @@
 package user_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.given;
-import static parameters.Configurations.*;
 import static TestSuite.SuiteTest.*;
 
 import parameters.Configurations;
@@ -13,11 +10,9 @@ public class TestPostInviteUser {
 
     @Test
     public void postInviteUser_status_200() {
-
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body(Configurations.BodyEmail)
                 .when()
                 .post("/api/users/invite")
@@ -27,9 +22,8 @@ public class TestPostInviteUser {
 
     @Test
     public void postInviteUser_status_401() {
-
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .when()
                 .post("/api/users/invite")
                 .then()
@@ -39,9 +33,8 @@ public class TestPostInviteUser {
     @Test
     public void postInviteUser_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body(Configurations.BodyEmail)
                 .when()
                 .post("/api/users/invitee")

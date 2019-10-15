@@ -1,6 +1,5 @@
 package minor_release_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static parameters.Configurations.*;
@@ -13,9 +12,8 @@ public class TestPutUpdateMinorRelease {
     @Test
     public void putUpdateMinorRelease_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"id\":" + "\"" + MinorRelease + "\"," +
                         "\"name\":" + "\"" + MinorReleaseName + "\"," +
@@ -34,8 +32,7 @@ public class TestPutUpdateMinorRelease {
     @Test
     public void putUpdateMinorRelease_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .body("{" +
                         "\"id\":" + "\"" + MinorRelease + "\"," +
                         "\"name\":" + "\"" + MinorReleaseName + "\"," +
@@ -51,9 +48,8 @@ public class TestPutUpdateMinorRelease {
     @Test
     public void putUpdateMinorRelease_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"id\":" + "\"" + MinorRelease + "\"," +
                         "\"name\":" + "\"" + MinorReleaseName + "\"," +

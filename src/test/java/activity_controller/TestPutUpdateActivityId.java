@@ -1,6 +1,5 @@
 package activity_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static parameters.Configurations.*;
@@ -13,9 +12,8 @@ public class TestPutUpdateActivityId {
     @Test
     public void putUpdateActivity_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"id\":" + "\"" + ActivityId + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"," +
@@ -35,8 +33,7 @@ public class TestPutUpdateActivityId {
     @Test
     public void putUpdateActivity_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .body("{" +
                         "\"id\":" + "\"" + ActivityId + "\"," +
                         "\"name\":" + "\"" + ActivityName + "\"," +
@@ -52,9 +49,8 @@ public class TestPutUpdateActivityId {
     @Test
     public void putUpdateActivity_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"id\":" + "\"" + ActivityId + "\"," +
                         "\"name\":" + "\"" + ActivityName + "\"," +

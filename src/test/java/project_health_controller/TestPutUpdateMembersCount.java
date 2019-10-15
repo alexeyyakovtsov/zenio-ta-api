@@ -1,6 +1,5 @@
 package project_health_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static parameters.Configurations.*;
@@ -12,11 +11,10 @@ public class TestPutUpdateMembersCount {
     @Test
     public void putUpdateMembersCount_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
-                                "\"membersCount\":" + "\"" + "1" + "\"" +
+                        "\"membersCount\":" + "\"" + "1" + "\"" +
                         "}")
                 .when()
                 .put("/api/projects/" + Project_id + "/health" + "/members")
@@ -27,8 +25,7 @@ public class TestPutUpdateMembersCount {
     @Test
     public void putUpdateMembersCount_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .body("{" +
                         "\"membersCount\":" + "\"" + "1" + "\"" +
                         "}")
@@ -41,9 +38,8 @@ public class TestPutUpdateMembersCount {
     @Test
     public void putUpdateMembersCount_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"membersCount\":" + "\"" + "1" + "\"" +
                         "}")

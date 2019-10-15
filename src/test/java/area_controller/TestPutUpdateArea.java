@@ -1,6 +1,5 @@
 package area_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -13,9 +12,8 @@ public class TestPutUpdateArea {
     @Test
     public void putUpdateArea_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"id\":" + "\"" + AreaId + "\"," +
                         "\"name\":" + "\"" + AreaName + "\"," +
@@ -34,8 +32,7 @@ public class TestPutUpdateArea {
     @Test
     public void putUpdateArea_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .body("{" +
                         "\"id\":" + "\"" + AreaId + "\"," +
                         "\"name\":" + "\"" + AreaName + "\"," +
@@ -51,9 +48,8 @@ public class TestPutUpdateArea {
     @Test
     public void putUpdateArea_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"id\":" + "\"" + AreaId + "\"," +
                         "\"name\":" + "\"" + AreaName + "\"," +

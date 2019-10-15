@@ -1,6 +1,5 @@
 package project_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -13,9 +12,8 @@ public class TestPostCreateProject {
     @Test
     public void postCreateProject_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"name\":" + "\"" + ProjectName + "\"," +
                         "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
@@ -33,14 +31,12 @@ public class TestPostCreateProject {
     @Test
     public void postCreateProject_status_401() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .when()
-                .contentType(ContentType.JSON)
-                .body(
-                        "{" +
-                                "\"name\":" + "\"" + ProjectName + "\"," +
-                                "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
-                                "}")
+                .body("{" +
+                        "\"name\":" + "\"" + ProjectName + "\"," +
+                        "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
+                        "}")
                 .post("/api/projects")
                 .then()
                 .statusCode(401);
@@ -49,15 +45,13 @@ public class TestPostCreateProject {
     @Test
     public void postCreateProject_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
                 .when()
-                .contentType(ContentType.JSON)
-                .body(
-                        "{" +
-                                "\"name\":" + "\"" + ProjectName + "\"," +
-                                "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
-                                "}")
+                .body("{" +
+                        "\"name\":" + "\"" + ProjectName + "\"," +
+                        "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
+                        "}")
                 .post("/api/projectss")
                 .then()
                 .statusCode(404);

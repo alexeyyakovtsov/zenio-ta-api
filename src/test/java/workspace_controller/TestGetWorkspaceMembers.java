@@ -1,8 +1,6 @@
 package workspace_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static parameters.Configurations.*;
@@ -13,9 +11,8 @@ public class TestGetWorkspaceMembers {
     @Test
     public void getWorkspaceMembers_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/workspaces/" + Workspace_id + "/users")
                 .then()
@@ -26,8 +23,7 @@ public class TestGetWorkspaceMembers {
     @Test
     public void getWorkspaceMembers_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .when()
                 .get("/api/workspaces/" + Workspace_id + "/users")
                 .then()
@@ -37,9 +33,8 @@ public class TestGetWorkspaceMembers {
     @Test
     public void getWorkspaceMembers_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/workspaces" + Workspace_id + "/userrs")
                 .then()

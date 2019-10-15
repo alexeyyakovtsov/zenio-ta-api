@@ -1,6 +1,5 @@
 package story_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.hasItems;
@@ -14,9 +13,8 @@ public class TestGetStoryId {
     @Test
     public void getStoryId_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projects/" + Project_id + "/stories/" + StoryId)
                 .then()
@@ -30,8 +28,7 @@ public class TestGetStoryId {
     @Test
     public void getStoryId_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .when()
                 .get("/api/projects/" + Project_id + "/stories/" + StoryId)
                 .then()
@@ -41,9 +38,8 @@ public class TestGetStoryId {
     @Test
     public void getStoryId_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projects/" + Project_id + "/storiess/" + StoryId)
                 .then()

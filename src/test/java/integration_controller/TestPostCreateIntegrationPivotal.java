@@ -1,6 +1,5 @@
 package integration_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -13,9 +12,8 @@ public class TestPostCreateIntegrationPivotal {
     @Test
     public void postCreateIntegrationPivotal_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"apiToken\":" + "\"" + ApiTokenPivotal + "\"," +
                         "\"apiUrl\":" + "\"" + UrlPivotalIntegration+ "\"," +
@@ -33,8 +31,7 @@ public class TestPostCreateIntegrationPivotal {
     @Test
     public void postCreateIntegrationPivotal_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .body("{" +
                         "\"apiToken\":" + "\"" + ApiTokenPivotal + "\"," +
                         "\"apiUrl\":" + "\"" + UrlPivotalIntegration+ "\"," +
@@ -49,9 +46,8 @@ public class TestPostCreateIntegrationPivotal {
     @Test
     public void postCreateIntegrationPivotal_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .body("{" +
                         "\"apiToken\":" + "\"" + ApiTokenPivotal + "\"," +
                         "\"apiUrl\":" + "\"" + UrlPivotalIntegration+ "\"," +

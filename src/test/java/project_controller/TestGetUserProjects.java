@@ -1,10 +1,8 @@
 package project_controller;
 
-import io.restassured.http.ContentType;
 import org.junit.Test;
 
 import static TestSuite.SuiteTest.*;
-import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
@@ -13,9 +11,8 @@ public class TestGetUserProjects {
     @Test
     public void getUserProjects_status_200() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projects")
                 .then()
@@ -27,8 +24,7 @@ public class TestGetUserProjects {
     @Test
     public void getUserProjects_status_401() {
         given()
-                .baseUri(URL_Dev)
-                .contentType(ContentType.JSON)
+                .spec(spec)
                 .when()
                 .get("/api/projects")
                 .then()
@@ -38,9 +34,8 @@ public class TestGetUserProjects {
     @Test
     public void getUserProjects_status_404() {
         given()
-                .baseUri(URL_Dev)
+                .spec(spec)
                 .cookies(cookies)
-                .contentType(ContentType.JSON)
                 .when()
                 .get("/api/projectss")
                 .then()
