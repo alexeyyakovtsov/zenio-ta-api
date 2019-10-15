@@ -1,5 +1,6 @@
 package story_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -21,7 +22,7 @@ public class TestPostCreateStory {
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
                 .when()
-                .post("/api/projects/" + Project_id + "/stories")
+                .post(EndPoints.AllStories)
                 .then()
                 .statusCode(200)
                 .and().body("projectId", equalTo(Project_id))
@@ -39,7 +40,7 @@ public class TestPostCreateStory {
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
                 .when()
-                .post("/api/projects/" + Project_id + "/stories")
+                .post(EndPoints.AllStories)
                 .then()
                 .statusCode(401);
     }

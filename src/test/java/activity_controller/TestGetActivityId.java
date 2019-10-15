@@ -1,5 +1,6 @@
 package activity_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.hasItems;
@@ -16,13 +17,12 @@ public class TestGetActivityId {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/projects/" + Project_id + "/activities/" + ActivityId)
+                .get(EndPoints.GetActivityId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(ActivityId))
                 .and().body("areaId", equalTo(AreaId))
-                .and().body("projectId", equalTo(Project_id))
-                .and().body("majorReleases.id", hasItems(2216, 2229));
+                .and().body("projectId", equalTo(Project_id));
     }
 
     @Test
@@ -30,7 +30,7 @@ public class TestGetActivityId {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/projects/" + Project_id + "/activities/" + ActivityId)
+                .get(EndPoints.GetActivityId)
                 .then()
                 .statusCode(401);
     }

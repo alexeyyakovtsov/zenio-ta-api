@@ -1,5 +1,6 @@
 package workspace_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
@@ -14,7 +15,7 @@ public class TestPostCreateWorkspace {
                 .cookies(cookies)
                 .when()
                 .body(WorkspaceNew)
-                .post("/api/workspaces")
+                .post(EndPoints.Workspaces)
                 .then()
                 .statusCode(201);
     }
@@ -25,7 +26,7 @@ public class TestPostCreateWorkspace {
                 .spec(spec)
                 .when()
                 .body(WorkspaceNew)
-                .post("/api/workspaces")
+                .post(EndPoints.Workspaces)
                 .then()
                 .statusCode(401);
     }

@@ -1,5 +1,6 @@
 package story_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -22,7 +23,7 @@ public class TestPutUpdateStory {
                         "\"activityIds\":" + "[" + ActivityId + "]" +
                         "}")
                 .when()
-                .put("/api/projects/" + Project_id + "/stories")
+                .put(EndPoints.AllStories)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(StoryId))
@@ -40,7 +41,7 @@ public class TestPutUpdateStory {
                         "\"description\":" + "\"" + Description + "\"" +
                         "}")
                 .when()
-                .put("/api/projects/" + Project_id + "/stories")
+                .put(EndPoints.AllStories)
                 .then()
                 .statusCode(401);
     }

@@ -1,5 +1,6 @@
 package user_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;
@@ -15,7 +16,7 @@ public class TestPostInviteUser {
                 .cookies(cookies)
                 .body(Configurations.BodyEmail)
                 .when()
-                .post("/api/users/invite")
+                .post(EndPoints.InviteUser)
                 .then()
                 .statusCode(200);
     }
@@ -25,7 +26,7 @@ public class TestPostInviteUser {
         given()
                 .spec(spec)
                 .when()
-                .post("/api/users/invite")
+                .post(EndPoints.InviteUser)
                 .then()
                 .statusCode(401);
     }

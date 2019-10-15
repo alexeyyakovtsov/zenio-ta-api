@@ -1,5 +1,6 @@
 package major_release_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -17,7 +18,7 @@ public class TestPostCreateMajorRelease {
                         "\"name\":" + "\"" + MajorReleaseName + "\"" +
                         "}")
                 .when()
-                .post("/api/projects/" + Project_id + "/releases/major")
+                .post(EndPoints.PostCreateMajorRelease)
                 .then()
                 .statusCode(201);
     }
@@ -30,7 +31,7 @@ public class TestPostCreateMajorRelease {
                         "\"name\":" + "\"" + MajorReleaseName + "\"" +
                         "}")
                 .when()
-                .post("/api/projects/" + Project_id + "/releases/major")
+                .post(EndPoints.PostCreateMajorRelease)
                 .then()
                 .statusCode(401);
     }

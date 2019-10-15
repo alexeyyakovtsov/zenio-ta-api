@@ -1,5 +1,6 @@
 package story_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.hasItems;
@@ -15,7 +16,7 @@ public class TestGetDeletedStories {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/projects/" + Project_id + "/stories/deleted")
+                .get(EndPoints.GetDeletedStories)
                 .then()
                 .statusCode(200)
                 .and().body("stories.id", hasItems(15975, 15976));
@@ -26,7 +27,7 @@ public class TestGetDeletedStories {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/projects/" + Project_id + "/stories/deleted")
+                .get(EndPoints.GetDeletedStories)
                 .then()
                 .statusCode(401);
     }

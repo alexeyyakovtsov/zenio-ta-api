@@ -1,5 +1,6 @@
 package project_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static TestSuite.SuiteTest.*;
@@ -14,7 +15,7 @@ public class TestGetUserProjects {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/projects")
+                .get(EndPoints.UserProjects)
                 .then()
                 .statusCode(200)
                 .and()
@@ -26,7 +27,7 @@ public class TestGetUserProjects {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/projects")
+                .get(EndPoints.UserProjects)
                 .then()
                 .statusCode(401);
     }

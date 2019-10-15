@@ -1,5 +1,6 @@
 package project_health_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static parameters.Configurations.*;
@@ -17,7 +18,7 @@ public class TestPutUpdateMembersCount {
                         "\"membersCount\":" + "\"" + "1" + "\"" +
                         "}")
                 .when()
-                .put("/api/projects/" + Project_id + "/health" + "/members")
+                .put(EndPoints.PutUpdateMembersCount)
                 .then()
                 .statusCode(200);
     }
@@ -30,7 +31,7 @@ public class TestPutUpdateMembersCount {
                         "\"membersCount\":" + "\"" + "1" + "\"" +
                         "}")
                 .when()
-                .put("/api/projects/" + Project_id + "/health" + "/members")
+                .put(EndPoints.PutUpdateMembersCount)
                 .then()
                 .statusCode(401);
     }

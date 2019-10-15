@@ -1,5 +1,6 @@
 package project_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -15,7 +16,7 @@ public class TestGetProjectsId {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/projects/" + Project_id)
+                .get(EndPoints.GetProjectId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(Project_id))
@@ -29,7 +30,7 @@ public class TestGetProjectsId {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/projects/" + Project_id)
+                .get(EndPoints.GetProjectId)
                 .then()
                 .statusCode(401);
     }

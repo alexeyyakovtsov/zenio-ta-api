@@ -1,5 +1,6 @@
 package project_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static parameters.Configurations.*;
@@ -19,7 +20,7 @@ public class TestPutUpdateProject {
                         "\"name\":" + "\"" + ProjectName + "\"" +
                         "}")
                 .when()
-                .put("/api/projects")
+                .put(EndPoints.UserProjects)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(Project_update_id))
@@ -37,7 +38,7 @@ public class TestPutUpdateProject {
                         "\"name\":" + "\"" + ProjectName + "\"" +
                         "}")
                 .when()
-                .put("/api/projects")
+                .put(EndPoints.UserProjects)
                 .then()
                 .statusCode(401);
     }

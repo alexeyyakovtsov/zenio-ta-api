@@ -1,5 +1,6 @@
 package project_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -19,7 +20,7 @@ public class TestPostCreateProject {
                         "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
                         "}")
                 .when()
-                .post("/api/projects")
+                .post(EndPoints.UserProjects)
                 .then()
                 .statusCode(200)
                 .and().body("workspaceId", equalTo(4))
@@ -37,7 +38,7 @@ public class TestPostCreateProject {
                         "\"name\":" + "\"" + ProjectName + "\"," +
                         "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
                         "}")
-                .post("/api/projects")
+                .post(EndPoints.UserProjects)
                 .then()
                 .statusCode(401);
     }

@@ -1,5 +1,6 @@
 package integration_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;
@@ -12,7 +13,7 @@ public class TestGetIntegrations {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/integrations")
+                .get(EndPoints.Integrations)
                 .then()
                 .statusCode(200);
     }
@@ -22,7 +23,7 @@ public class TestGetIntegrations {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/integrations")
+                .get(EndPoints.Integrations)
                 .then()
                 .statusCode(401);
     }

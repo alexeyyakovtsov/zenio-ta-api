@@ -1,5 +1,6 @@
 package area_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -21,7 +22,7 @@ public class TestPostCreateArea {
                         "\"position\":" + "\"" + "AFTER" + "\"" +
                         "}")
                 .when()
-                .post("/api/projects/" + Project_id + "/areas")
+                .post(EndPoints.Area)
                 .then()
                 .statusCode(200)
                 .and().body("projectId", equalTo(31));
@@ -38,7 +39,7 @@ public class TestPostCreateArea {
                         "\"position\":" + "\"" + "AFTER" + "\"" +
                         "}")
                 .when()
-                .post("/api/projects/" + Project_id + "/areas")
+                .post(EndPoints.Area)
                 .then()
                 .statusCode(401);
     }

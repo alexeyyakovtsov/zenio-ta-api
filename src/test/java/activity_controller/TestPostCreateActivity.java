@@ -1,5 +1,6 @@
 package activity_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static io.restassured.RestAssured.given;
@@ -19,7 +20,7 @@ public class TestPostCreateActivity {
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
                 .when()
-                .post("/api/projects/" + Project_id + "/activities")
+                .post(EndPoints.Activity)
                 .then()
                 .statusCode(200)
                 .and().body("areaId", equalTo(AreaId))
@@ -35,7 +36,7 @@ public class TestPostCreateActivity {
                         "\"areaId\":" + "\"" + AreaId + "\"" +
                         "}")
                 .when()
-                .post("/api/projects/" + Project_id + "/activities")
+                .post(EndPoints.Activity)
                 .then()
                 .statusCode(401);
     }

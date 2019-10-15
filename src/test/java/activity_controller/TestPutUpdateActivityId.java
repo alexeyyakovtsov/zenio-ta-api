@@ -1,7 +1,7 @@
 package activity_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
-
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -22,7 +22,7 @@ public class TestPutUpdateActivityId {
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")
                 .when()
-                .put("/api/projects/" + Project_id + "/activities")
+                .put(EndPoints.Activity)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(ActivityId))
@@ -41,7 +41,7 @@ public class TestPutUpdateActivityId {
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")
                 .when()
-                .put("/api/projects/" + Project_id + "/activities")
+                .put(EndPoints.Activity)
                 .then()
                 .statusCode(401);
     }

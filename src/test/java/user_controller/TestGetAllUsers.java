@@ -1,5 +1,6 @@
 package user_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -13,7 +14,7 @@ public class TestGetAllUsers {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get( "/api/users")
+                .get(EndPoints.GetAllUsers)
                 .then()
                 .statusCode(200)
                 .and()
@@ -25,7 +26,7 @@ public class TestGetAllUsers {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/users")
+                .get(EndPoints.GetAllUsers)
                 .then()
                 .statusCode(401);
     }

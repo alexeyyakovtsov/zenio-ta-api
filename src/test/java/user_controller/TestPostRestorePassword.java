@@ -1,5 +1,6 @@
 package user_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -16,7 +17,7 @@ public class TestPostRestorePassword {
                 .cookies(cookies)
                 .body(User_restore_password_email)
                 .when()
-                .post("/api/users/restore")
+                .post(EndPoints.RestorePassword)
                 .then()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("postRestorePassword.json"));

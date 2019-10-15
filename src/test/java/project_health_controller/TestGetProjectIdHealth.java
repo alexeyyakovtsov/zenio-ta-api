@@ -1,5 +1,6 @@
 package project_health_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -15,7 +16,7 @@ public class TestGetProjectIdHealth {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/projects/" + Project_id + "/health")
+                .get(EndPoints.GetProjectHealth)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(Project_id))
@@ -29,7 +30,7 @@ public class TestGetProjectIdHealth {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/projects/" + Project_id + "/health")
+                .get(EndPoints.GetProjectHealth)
                 .then()
                 .statusCode(401);
     }

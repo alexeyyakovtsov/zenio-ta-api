@@ -1,5 +1,6 @@
 package minor_release_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static parameters.Configurations.*;
@@ -21,7 +22,7 @@ public class TestPutUpdateMinorRelease {
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
                 .when()
-                .put("/api/projects/" + Project_id + "/releases/minor")
+                .put(EndPoints.CreateMinorRelease)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(MinorRelease))
@@ -40,7 +41,7 @@ public class TestPutUpdateMinorRelease {
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
                 .when()
-                .put("/api/projects/" + Project_id + "/releases/minor")
+                .put(EndPoints.CreateMinorRelease)
                 .then()
                 .statusCode(401);
     }

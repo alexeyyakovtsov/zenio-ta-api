@@ -1,5 +1,6 @@
 package integration_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static parameters.Configurations.*;
@@ -22,7 +23,7 @@ public class TestPostCreateIntegrationJira {
                         "\"apiProvider\":" + "\"" + ApiProviderJira + "\"" +
                         "}")
                 .when()
-                .post("/api/integrations")
+                .post(EndPoints.Integrations)
                 .then()
                 .statusCode(200)
                 .and().body("apiToken", equalTo( EmailJiraIntegration + ":" + ApiTokenJira))
@@ -42,7 +43,7 @@ public class TestPostCreateIntegrationJira {
                         "\"apiProvider\":" + "\"" + ApiProviderJira + "\"" +
                         "}")
                 .when()
-                .post("/api/integrations")
+                .post(EndPoints.Integrations)
                 .then()
                 .statusCode(401);
     }

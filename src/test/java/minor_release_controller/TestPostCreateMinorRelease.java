@@ -1,7 +1,7 @@
 package minor_release_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
-
 import static org.hamcrest.core.IsEqual.equalTo;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
@@ -21,7 +21,7 @@ public class TestPostCreateMinorRelease {
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
                 .when()
-                .post("/api/projects/" + Project_id + "/releases/minor")
+                .post(EndPoints.CreateMinorRelease)
                 .then()
                 .statusCode(200)
                 .and().body("projectId", equalTo(Project_id))
@@ -39,7 +39,7 @@ public class TestPostCreateMinorRelease {
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
                 .when()
-                .post("/api/projects/" + Project_id + "/releases/minor")
+                .post(EndPoints.CreateMinorRelease)
                 .then()
                 .statusCode(401);
     }

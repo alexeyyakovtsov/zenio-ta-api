@@ -1,5 +1,6 @@
 package workspace_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -14,7 +15,7 @@ public class TestGetWorkspaceMembers {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/workspaces/" + Workspace_id + "/users")
+                .get(EndPoints.GetWorkspaceMembers)
                 .then()
                 .statusCode(200)
                 .and().body(matchesJsonSchemaInClasspath("getWorkspaceMembers.json"));
@@ -25,7 +26,7 @@ public class TestGetWorkspaceMembers {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/workspaces/" + Workspace_id + "/users")
+                .get(EndPoints.GetWorkspaceMembers)
                 .then()
                 .statusCode(401);
     }

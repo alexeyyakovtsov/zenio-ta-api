@@ -1,5 +1,6 @@
 package story_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -14,7 +15,7 @@ public class TestGetAllStories {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/projects/" + Project_id + "/stories")
+                .get(EndPoints.AllStories)
                 .then()
                 .statusCode(200);
     }
@@ -24,7 +25,7 @@ public class TestGetAllStories {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/projects/" + Project_id + "/stories")
+                .get(EndPoints.AllStories)
                 .then()
                 .statusCode(401);
     }

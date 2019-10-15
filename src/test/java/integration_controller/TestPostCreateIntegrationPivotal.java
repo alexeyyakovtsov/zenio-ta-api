@@ -1,7 +1,7 @@
 package integration_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
-
 import static org.hamcrest.core.IsEqual.equalTo;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
@@ -20,7 +20,7 @@ public class TestPostCreateIntegrationPivotal {
                         "\"apiProvider\":" + "\"" + ApiProviderPivotal + "\"" +
                         "}")
                 .when()
-                .post("/api/integrations")
+                .post(EndPoints.Integrations)
                 .then()
                 .statusCode(200)
                 .and().body("apiToken", equalTo(ApiTokenPivotal))
@@ -38,7 +38,7 @@ public class TestPostCreateIntegrationPivotal {
                         "\"apiProvider\":" + "\"" + ApiProviderPivotal + "\"" +
                         "}")
                 .when()
-                .post("/api/integrations")
+                .post(EndPoints.Integrations)
                 .then()
                 .statusCode(401);
     }

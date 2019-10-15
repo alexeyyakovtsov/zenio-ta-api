@@ -1,5 +1,6 @@
 package project_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -14,7 +15,7 @@ public class TestDeleteProjectId {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .delete("/api/projects/" + Project_deleted_id)
+                .delete(EndPoints.DeleteProjectId)
                 .then()
                 .statusCode(204);
     }
@@ -24,7 +25,7 @@ public class TestDeleteProjectId {
         given()
                 .spec(spec)
                 .when()
-                .delete("/api/projects" + Project_deleted_id)
+                .delete(EndPoints.DeleteProjectId)
                 .then()
                 .statusCode(401);
     }

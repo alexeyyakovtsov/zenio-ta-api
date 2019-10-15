@@ -1,5 +1,6 @@
 package workspace_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;
@@ -12,7 +13,7 @@ public class TestGetWorkspace {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/workspaces")
+                .get(EndPoints.Workspaces)
                 .then()
                 .statusCode(200);
     }
@@ -22,7 +23,7 @@ public class TestGetWorkspace {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/workspaces")
+                .get(EndPoints.Workspaces)
                 .then()
                 .statusCode(401);
     }

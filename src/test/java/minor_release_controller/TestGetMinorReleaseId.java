@@ -1,5 +1,6 @@
 package minor_release_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -16,7 +17,7 @@ public class TestGetMinorReleaseId {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/projects/" + Project_id + "/releases/minor/" + MinorRelease)
+                .get(EndPoints.GetMinorReleaseId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(MinorRelease))
@@ -30,7 +31,7 @@ public class TestGetMinorReleaseId {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/projects/" + Project_id + "/releases/minor/" + MinorRelease)
+                .get(EndPoints.GetMinorReleaseId)
                 .then()
                 .statusCode(401);
     }

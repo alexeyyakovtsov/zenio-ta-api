@@ -1,5 +1,6 @@
 package user_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
@@ -16,7 +17,7 @@ public class TestGetCurrentUser {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/users/me")
+                .get(EndPoints.GetCurrentUser)
                 .then()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("getCurrentUser.json"))
@@ -32,7 +33,7 @@ public class TestGetCurrentUser {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/users/me")
+                .get(EndPoints.GetCurrentUser)
                 .then()
                 .statusCode(401);
     }

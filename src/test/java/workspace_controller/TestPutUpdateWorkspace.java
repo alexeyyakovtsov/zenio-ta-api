@@ -1,5 +1,6 @@
 package workspace_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
@@ -14,7 +15,7 @@ public class TestPutUpdateWorkspace {
                 .cookies(cookies)
                 .body(WorkspaceNew)
                 .when()
-                .put("/api/workspaces/" + Workspace_update_id)
+                .put(EndPoints.UpdateWorkspaceId)
                 .then()
                 .statusCode(200);
     }
@@ -25,7 +26,7 @@ public class TestPutUpdateWorkspace {
                 .spec(spec)
                 .body(WorkspaceNew)
                 .when()
-                .put("/api/workspaces/" + Workspace_update_id)
+                .put(EndPoints.UpdateWorkspaceId)
                 .then()
                 .statusCode(401);
     }

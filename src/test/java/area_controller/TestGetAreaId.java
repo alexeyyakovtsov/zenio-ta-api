@@ -1,7 +1,7 @@
 package area_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
-
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.*;
@@ -16,7 +16,7 @@ public class TestGetAreaId {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/projects/" + Project_id + "/areas/" + AreaId)
+                .get(EndPoints.GetAreaId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(AreaId))
@@ -29,7 +29,7 @@ public class TestGetAreaId {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/projects/" + Project_id + "/areas/" + AreaId)
+                .get(EndPoints.GetAreaId)
                 .then()
                 .statusCode(401);
     }

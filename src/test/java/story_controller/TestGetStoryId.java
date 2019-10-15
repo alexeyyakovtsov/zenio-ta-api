@@ -1,5 +1,6 @@
 package story_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.hasItems;
@@ -16,7 +17,7 @@ public class TestGetStoryId {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/projects/" + Project_id + "/stories/" + StoryId)
+                .get(EndPoints.GetStoryId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(StoryId))
@@ -30,7 +31,7 @@ public class TestGetStoryId {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/projects/" + Project_id + "/stories/" + StoryId)
+                .get(EndPoints.GetStoryId)
                 .then()
                 .statusCode(401);
     }

@@ -1,5 +1,6 @@
 package workspace_controller;
 
+import TestSuite.EndPoints;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
@@ -15,7 +16,7 @@ public class TestGetWorkspaceId {
                 .spec(spec)
                 .cookies(cookies)
                 .when()
-                .get("/api/workspaces/" + Workspace_update_id)
+                .get(EndPoints.GetWorkspaceId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(Workspace_update_id))
@@ -29,7 +30,7 @@ public class TestGetWorkspaceId {
         given()
                 .spec(spec)
                 .when()
-                .get("/api/workspaces/" + Workspace_update_id)
+                .get(EndPoints.GetWorkspaceId)
                 .then()
                 .statusCode(401);
     }
