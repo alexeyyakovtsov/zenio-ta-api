@@ -16,11 +16,10 @@ public class TestPutUpdateProject {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"id\":" + "\"" + Project_update_id + "\"," +
-                        "\"name\":" + "\"" + ProjectName + "\"" +
+                        "\"name\":" + "\"" + ProjectUpdateName + "\"" +
                         "}")
                 .when()
-                .put(EndPoints.UserProjects)
+                .put(EndPoints.UpdateProjectId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(Project_update_id))
@@ -34,11 +33,10 @@ public class TestPutUpdateProject {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"id\":" + "\"" + Project_update_id + "\"," +
-                        "\"name\":" + "\"" + ProjectName + "\"" +
+                        "\"name\":" + "\"" + ProjectUpdateName + "\"" +
                         "}")
                 .when()
-                .put(EndPoints.UserProjects)
+                .put(EndPoints.UpdateProjectId)
                 .then()
                 .statusCode(401);
     }
@@ -49,8 +47,7 @@ public class TestPutUpdateProject {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"id\":" + "\"" + Project_update_id + "\"," +
-                        "\"name\":" + "\"" + ProjectName + "\"" +
+                        "\"name\":" + "\"" + ProjectUpdateName + "\"" +
                         "}")
                 .when()
                 .put("/api/projectts")

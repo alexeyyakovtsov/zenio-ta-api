@@ -39,7 +39,7 @@ import static parameters.Configurations.*;
         //Project controller
         TestPostCreateProject.class,
         TestGetUserProjects.class,
-        //TestPutUpdateProject.class,
+        TestPutUpdateProject.class,
         TestGetProjectsId.class,
         //TestDeleteProjectId.class
         TestGetProjectIdUser.class,
@@ -56,18 +56,18 @@ import static parameters.Configurations.*;
         //Activity controller
         TestGetActivityId.class,
         TestPostCreateActivity.class,
-        //TestPutUpdateActivityId.class,
+        TestPutUpdateActivityId.class,
 
         //Story controller
         TestGetAllStories.class,
         TestPostCreateStory.class,
-        //TestPutUpdateStory.class,
+        TestPutUpdateStory.class,
         TestGetStoryId.class,
         TestGetDeletedStories.class,
 
         //Major release controller
         TestPostCreateMajorRelease.class,
-        //TestPutUpdateMajorRelease.class,
+        TestPutUpdateMajorRelease.class,
 
         //Minor Release
         TestGetMinorReleaseId.class,

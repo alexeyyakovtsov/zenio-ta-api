@@ -16,14 +16,13 @@ public class TestPutUpdateStory {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"id\":" + StoryId + "," +
                         "\"name\":" + "\"" + StoryName + "\"," +
                         "\"description\":" + "\"" + Description + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"activityIds\":" + "[" + ActivityId + "]" +
                         "}")
                 .when()
-                .put(EndPoints.AllStories)
+                .put(EndPoints.GetStoryId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(StoryId))
@@ -36,12 +35,13 @@ public class TestPutUpdateStory {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"id\":" + "\"" + Project_update_id + "\"," +
                         "\"name\":" + "\"" + StoryName + "\"," +
-                        "\"description\":" + "\"" + Description + "\"" +
+                        "\"description\":" + "\"" + Description + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"," +
+                        "\"activityIds\":" + "[" + ActivityId + "]" +
                         "}")
                 .when()
-                .put(EndPoints.AllStories)
+                .put(EndPoints.GetStoryId)
                 .then()
                 .statusCode(401);
     }
@@ -52,9 +52,10 @@ public class TestPutUpdateStory {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"id\":" + "\"" + Project_update_id + "\"," +
                         "\"name\":" + "\"" + StoryName + "\"," +
-                        "\"description\":" + "\"" + Description + "\"" +
+                        "\"description\":" + "\"" + Description + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"," +
+                        "\"activityIds\":" + "[" + ActivityId + "]" +
                         "}")
                 .when()
                 .put("/api/projects/" + Project_id + "/storiess")

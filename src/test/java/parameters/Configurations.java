@@ -16,6 +16,7 @@ public class Configurations {
         email = randomString() + "@gmail.com",
         WorkspaceName = randomString(),
         ProjectName = randomString(),
+        ProjectUpdateName = randomString() + " Update name",
         BodyEmail = ("{\"emails\":" + "[\"" + email + "\"]}"),
         WorkspaceNew = ("{\"name\":" + "\"" + WorkspaceName + "\"}"),
 
@@ -39,7 +40,7 @@ public class Configurations {
             Workspace_update_id = 27,
             Workspace_id = 4,
 
-            Project_update_id = 16,
+            Project_update_id = 1460,
             Project_id = 31,
             Project_deleted_id = 586,
 

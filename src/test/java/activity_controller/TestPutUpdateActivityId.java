@@ -15,14 +15,13 @@ public class TestPutUpdateActivityId {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"id\":" + "\"" + ActivityId + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"," +
                         "\"name\":" + "\"" + ActivityName + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")
                 .when()
-                .put(EndPoints.Activity)
+                .put(EndPoints.UpdateActivityId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(ActivityId))
@@ -35,13 +34,12 @@ public class TestPutUpdateActivityId {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"id\":" + "\"" + ActivityId + "\"," +
                         "\"name\":" + "\"" + ActivityName + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")
                 .when()
-                .put(EndPoints.Activity)
+                .put(EndPoints.UpdateActivityId)
                 .then()
                 .statusCode(401);
     }
@@ -52,7 +50,6 @@ public class TestPutUpdateActivityId {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"id\":" + "\"" + ActivityId + "\"," +
                         "\"name\":" + "\"" + ActivityName + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +

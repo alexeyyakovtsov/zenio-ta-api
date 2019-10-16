@@ -6,6 +6,7 @@ public class EndPoints {
     public static String
             GetActivityId = "projects/" + Project_id + "/activities/" + ActivityId,
             Activity = "projects/" + Project_id + "/activities",
+            UpdateActivityId = "projects/" + Project_id + "/activities/" + ActivityId,
 
             GetAreaId = "projects/" + Project_id + "/areas/" + AreaId,
             Area = "projects/" + Project_id + "/areas",
@@ -23,6 +24,7 @@ public class EndPoints {
             GetProjectIdUser = "projects/" +  Project_id + "/users",
             GetProjectId = "projects/" + Project_id,
             UserProjects = "projects",
+            UpdateProjectId = "projects/" + Project_update_id,
 
             GetProjectHealth = "projects/" + Project_id + "/health",
             PutUpdateMembersCount = "projects/" + Project_id + "/health" + "/members",

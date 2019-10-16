@@ -20,7 +20,7 @@ public class TestPutUpdateMajorRelease {
                 .when()
                 .put(EndPoints.PutUpdateMajorRelease)
                 .then()
-                .statusCode(202)
+                .statusCode(200)
                 .and().body("id", equalTo(MajorRelease));
     }
 
