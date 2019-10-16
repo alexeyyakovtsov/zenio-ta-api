@@ -24,7 +24,7 @@ public class TestPostCreateStory {
                 .when()
                 .post(EndPoints.AllStories)
                 .then()
-                .statusCode(200)
+                .statusCode(201)
                 .and().body("projectId", equalTo(Project_id))
                 .and().body("majorReleaseId", equalTo(MajorRelease));
     }

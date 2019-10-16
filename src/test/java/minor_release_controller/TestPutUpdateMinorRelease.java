@@ -16,13 +16,12 @@ public class TestPutUpdateMinorRelease {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"id\":" + "\"" + MinorRelease + "\"," +
                         "\"name\":" + "\"" + MinorReleaseName + "\"," +
                         "\"description\":" + "\"" + Description + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
                 .when()
-                .put(EndPoints.CreateMinorRelease)
+                .put(EndPoints.GetMinorReleaseId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(MinorRelease))
@@ -35,13 +34,12 @@ public class TestPutUpdateMinorRelease {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"id\":" + "\"" + MinorRelease + "\"," +
                         "\"name\":" + "\"" + MinorReleaseName + "\"," +
                         "\"description\":" + "\"" + Description + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
                 .when()
-                .put(EndPoints.CreateMinorRelease)
+                .put(EndPoints.GetMinorReleaseId)
                 .then()
                 .statusCode(401);
     }
@@ -52,7 +50,6 @@ public class TestPutUpdateMinorRelease {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"id\":" + "\"" + MinorRelease + "\"," +
                         "\"name\":" + "\"" + MinorReleaseName + "\"," +
                         "\"description\":" + "\"" + Description + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +

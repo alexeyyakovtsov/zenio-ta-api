@@ -22,7 +22,7 @@ public class TestPostCreateActivity {
                 .when()
                 .post(EndPoints.Activity)
                 .then()
-                .statusCode(200)
+                .statusCode(201)
                 .and().body("areaId", equalTo(AreaId))
                 .and().body("projectId", equalTo(Project_id));
     }

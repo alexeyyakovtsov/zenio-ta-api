@@ -24,7 +24,7 @@ public class TestPostCreateArea {
                 .when()
                 .post(EndPoints.Area)
                 .then()
-                .statusCode(200)
+                .statusCode(201)
                 .and().body("projectId", equalTo(31));
     }
 

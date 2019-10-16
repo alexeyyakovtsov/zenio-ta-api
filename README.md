@@ -9,6 +9,7 @@ Folder name          | File content
 ---------------------|----------------------
 parameters           | Project variables
 TestSuite            | Script launch test suite
+EndPoints            | Project API Endpoints
 
 ## Tested Endpoints
 1. Project controller

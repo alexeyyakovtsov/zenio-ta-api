@@ -15,13 +15,12 @@ public class TestPutUpdateArea {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"id\":" + "\"" + AreaId + "\"," +
                         "\"name\":" + "\"" + AreaName + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")
                 .when()
-                .put(EndPoints.Area)
+                .put(EndPoints.GetAreaId)
                 .then()
                 .statusCode(200)
                 .and().body("id", equalTo(AreaId))
@@ -34,13 +33,12 @@ public class TestPutUpdateArea {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"id\":" + "\"" + AreaId + "\"," +
                         "\"name\":" + "\"" + AreaName + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")
                 .when()
-                .put(EndPoints.Area)
+                .put(EndPoints.GetAreaId)
                 .then()
                 .statusCode(401);
     }
@@ -51,7 +49,6 @@ public class TestPutUpdateArea {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"id\":" + "\"" + AreaId + "\"," +
                         "\"name\":" + "\"" + AreaName + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +

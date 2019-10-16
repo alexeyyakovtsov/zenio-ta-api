@@ -22,7 +22,7 @@ public class TestPostCreateProject {
                 .when()
                 .post(EndPoints.UserProjects)
                 .then()
-                .statusCode(200)
+                .statusCode(201)
                 .and().body("workspaceId", equalTo(4))
                 .and().body("deleted", equalTo(false))
                 .and().body("ownerId", equalTo(1))

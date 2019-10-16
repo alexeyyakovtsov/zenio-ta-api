@@ -25,7 +25,7 @@ public class TestPostCreateIntegrationJira {
                 .when()
                 .post(EndPoints.Integrations)
                 .then()
-                .statusCode(200)
+                .statusCode(201)
                 .and().body("apiToken", equalTo( EmailJiraIntegration + ":" + ApiTokenJira))
                 .and().body("apiUrl", equalTo(UrlJiraIntegration))
                 .and().body("apiProvider", equalTo(ApiProviderJira));

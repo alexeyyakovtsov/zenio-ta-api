@@ -23,7 +23,7 @@ public class TestPostCreateMinorRelease {
                 .when()
                 .post(EndPoints.CreateMinorRelease)
                 .then()
-                .statusCode(200)
+                .statusCode(201)
                 .and().body("projectId", equalTo(Project_id))
                 .and().body("majorReleaseId", equalTo(MajorRelease));
     }

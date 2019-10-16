@@ -22,7 +22,7 @@ public class TestPostCreateIntegrationPivotal {
                 .when()
                 .post(EndPoints.Integrations)
                 .then()
-                .statusCode(200)
+                .statusCode(201)
                 .and().body("apiToken", equalTo(ApiTokenPivotal))
                 .and().body("apiUrl", equalTo(UrlPivotalIntegration))
                 .and().body("apiProvider", equalTo(ApiProviderPivotal));
