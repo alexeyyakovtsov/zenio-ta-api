@@ -1,11 +1,11 @@
 package workspace_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetWorkspace {
+public class TestGetWorkspace extends SuiteTest {
 
     @Test
     public void getUserWorkspaces_status_200() {

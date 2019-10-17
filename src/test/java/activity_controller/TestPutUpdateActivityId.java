@@ -1,13 +1,14 @@
 package activity_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static TestSuite.SuiteTest.*;
 
-public class TestPutUpdateActivityId {
+public class TestPutUpdateActivityId extends SuiteTest {
 
     @Test
     public void putUpdateActivity_status_200() {

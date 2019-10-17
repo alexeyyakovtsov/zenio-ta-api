@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="project_controller.TestGetUserProjects" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T11:48:36" hostname="zenio" time="2.781">
+  <properties/>
+  <testcase name="getUserProjects_status_200" classname="project_controller.TestGetUserProjects" time="1.373"/>
+  <testcase name="getUserProjects_status_401" classname="project_controller.TestGetUserProjects" time="0.691"/>
+  <testcase name="getUserProjects_status_404" classname="project_controller.TestGetUserProjects" time="0.713"/>
+  <system-out><![CDATA[Request method:	GET
+Request URI:	https://dev.zenio.co/api/projects
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=654019E995531746C429A0C30803984B;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: nginx/1.17.4
+Date: Thu, 17 Oct 2019 11:48:37 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+
+{
+    "totalCount": 205,
+    "list": [
+        {
+            "id": 16,
+            "name": "ZBghowSefJbi",
+            "acronym": "ZBG",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 30,
+            "name": "string123",
+            "acronym": "STR",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 31,
+            "name": "QA Test API",
+            "acronym": "QA ",
+            "workspaceId": 4,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 112,
+            "name": "dsfdfgfdg",
+            "acronym": "DSF",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 178,
+            "name": "Comma, as",
+            "acronym": "COM",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 182,
+            "name": "AProject",
+            "acronym": "APR",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 208,
+            "name": "DROP TABLE Users",
+            "acronym": "DRO",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 215,
+            "name": "amqp",
+            "acronym": "AMQ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 234,
+            "name": "www",
+            "acronym": "WWW",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 239,
+            "name": "AS",
+            "acronym": "AS",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 270,
+            "name": "1111",
+            "acronym": "111",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 279,
+            "name": "ZAQWSX",
+            "acronym": "ZAQ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 327,
+            "name": "r23r",
+            "acronym": "R23",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 329,
+            "name": "PT",
+            "acronym": "PT",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 331,
+            "name": "1",
+            "acronym": "1",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 343,
+            "name": "j",
+            "acronym": "J",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 411,
+            "name": "Projectfortest",
+            "acronym": "PRO",
+            "workspaceId": 4,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 430,
+            "name": "Very QImport Very Very",
+            "acronym": "VER",
+            "workspaceId": 4,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 465,
+            "name": "Tunc Tunc",
+            "acronym": "TUN",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 503,
+            "name": "ewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+            "acronym": "EWW",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 507,
+            "name": "11123232",
+            "acronym": "111",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 508,
+            "name": "343434",
+            "acronym": "343",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 524,
+            "name": "12121212121212121212121212",
+            "acronym": "121",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 525,
+            "name": "qw",
+            "acronym": "QW",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 527,
+            "name": "Long Story",
+            "acronym": "LON",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 531,
+            "name": "12312",
+            "acronym": "123",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 585,
+            "name": "3",
+            "acronym": "3",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 586,
+            "name": "33",
+            "acronym": "33",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 587,
+            "name": "4312121",
+            "acronym": "431",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 696,
+            "name": "чсчя",
+            "acronym": "ЧСЧ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 732,
+            "name": "22",
+            "acronym": "22",
+            "workspaceId": 10,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 824,
+            "name": "jii",
+            "acronym": "JII",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 882,
+            "name": "3232",
+            "acronym": "323",
+            "workspaceId": 10,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1120,
+            "name": "QA AY Project",
+            "acronym": "QA ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 27,
+            "membersCount": 0
+        },
+        {
+            "id": 1121,
+            "name": "Hoba",
+            "acronym": "HOB",
+            "workspaceId": 4,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1122,
+            "name": "443",
+            "acronym": "443",
+            "workspaceId": 10,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1226,
+            "name": "Many to many",
+            "acronym": "MAN",
+            "workspaceId": 28,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1241,
+            "name": "NdQAsNqWCrHT",
+            "acronym": "NDQ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1242,
+            "name": "3334",
+            "acronym": "333",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1243,
+            "name": "nPephFARndLY",
+            "acronym": "NPE",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1244,
+            "name": "stiJhXStNEQg",
+            "acronym": "STI",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1245,
+            "name": "RtJzlNWVEyPB",
+            "acronym": "RTJ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1246,
+            "name": "CSxhtvMlZYXe",
+            "acronym": "CSX",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1247,
+            "name": "lSxVmethuZUy",
+            "acronym": "LSX",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1248,
+            "name": "ioryVVFOCpIA",
+            "acronym": "IOR",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1249,
+            "name": "dkFUYfeOAwtu",
+            "acronym": "DKF",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1250,
+            "name": "vLjdCaTCNIzb",
+            "acronym": "VLJ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1251,
+            "name": "SBMTHzgTThES",
+            "acronym": "SBM",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1252,
+            "name": "tIKSsgKYUytu",
+            "acronym": "TIK",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1253,
+            "name": "pfxpLjhjqEbt",
+            "acronym": "PFX",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1254,
+            "name": "KoAsuUIaNhUF",
+            "acronym": "KOA",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1255,
+            "name": "ShROBZHGdYbG",
+            "acronym": "SHR",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1256,
+            "name": "KBFJwRytuuzJ",
+            "acronym": "KBF",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1257,
+            "name": "VtVpbPhYmuRP",
+            "acronym": "VTV",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 27,
+            "membersCount": 0
+        },
+        {
+            "id": 1258,
+            "name": "lSjjIZZTmZiJ",
+            "acronym": "LSJ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 27,
+            "membersCount": 0
+        },
+        {
+            "id": 1259,
+            "name": "ItTYsURWszEF",
+            "acronym": "ITT",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 27,
+            "membersCount": 0
+        },
+        {
+            "id": 1260,
+            "name": "TReEVgQWKcWq",
+            "acronym": "TRE",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 27,
+            "membersCount": 0
+        },
+        {
+            "id": 1261,
+            "name": "XPLKlQSHlMNJ",
+            "acronym": "XPL",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 27,
+            "membersCount": 0
+        },
+        {
+            "id": 1262,
+            "name": "fBdjdlEUYzVG",
+            "acronym": "FBD",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1263,
+            "name": "bDfgOztUwSWI",
+            "acronym": "BDF",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1264,
+            "name": "TlmCbPnxCosb",
+            "acronym": "TLM",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1265,
+            "name": "QIWKdthofwSd",
+            "acronym": "QIW",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1266,
+            "name": "kWrnaMZQraIY",
+            "acronym": "KWR",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1267,
+            "name": "zactemBGCALE",
+            "acronym": "ZAC",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1268,
+            "name": "CALfqetoNfrY",
+            "acronym": "CAL",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1269,
+            "name": "MBQxqfCyBlrB",
+            "acronym": "MBQ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1270,
+            "name": "FBKafijQtjjj",
+            "acronym": "FBK",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1271,
+            "name": "WtOACCWFqfNd",
+            "acronym": "WTO",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1272,
+            "name": "GHLKKoOLAGdf",
+            "acronym": "GHL",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1273,
+            "name": "KcJYnTfBOVIc",
+            "acronym": "KCJ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1274,
+            "name": "aiNYcoMRktzo",
+            "acronym": "AIN",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1275,
+            "name": "oYJlNrtThRFl",
+            "acronym": "OYJ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1276,
+            "name": "VBxQzIYXzprX",
+            "acronym": "VBX",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1277,
+            "name": "GoZfjGMBJEQr",
+            "acronym": "GOZ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1278,
+            "name": "bvJFcvbficRd",
+            "acronym": "BVJ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1279,
+            "name": "iQbmopSLlRmk",
+            "acronym": "IQB",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1281,
+            "name": "Jira test",
+            "acronym": "JIR",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1282,
+            "name": "zPjAsLJqHdgU",
+            "acronym": "ZPJ",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1283,
+            "name": "1",
+            "acronym": "1",
+            "workspaceId": 30,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1285,
+            "name": "Jira test",
+            "acronym": "JIR",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1286,
+            "name": "Jira test dev",
+            "acronym": "JTD",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1287,
+            "name": "Jira test dev",
+            "acronym": "JTD",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1289,
+            "name": "12",
+            "acronym": "12",
+            "workspaceId": 31,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1290,
+            "name": "Jira test dev",
+            "acronym": "JTD",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1291,
+            "name": "1",
+            "acronym": "1",
+            "workspaceId": 31,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1292,
+            "name": "Jira test",
+            "acronym": "JIR",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1293,
+            "name": "Jira test",
+            "acronym": "JIR",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1294,
+            "name": "Pivotal QA",
+            "acronym": "PIV",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1295,
+            "name": "Pivotal QA",
+            "acronym": "PIV",
+            "workspaceId": 4,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1297,
+            "name": "test",
+            "acronym": "TES",
+            "workspaceId": 31,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1298,
+            "name": "34",
+            "acronym": "34",
+            "workspaceId": 31,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1301,
+            "name": "bugs",
+            "acronym": "BUG",
+            "workspaceId": 31,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1302,
+            "name": "Test Scrum Project",
+            "acronym": "TES",
+            "workspaceId": 4,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1316,
+            "name": "Hobana",
+            "acronym": "HOB",
+            "workspaceId": 31,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1317,
+            "name": "4534543",
+            "acronym": "453",
+            "workspaceId": 31,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1319,
+            "name": "3",
+            "acronym": "3",
+            "workspaceId": 31,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1320,
+            "name": "54353245234",
+            "acronym": "543",
+            "workspaceId": 31,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1321,
+            "name": "Лев Николаевич Толстой На главную  Все авторы  Поиск произведения   Главная → Л. Н. Толстой → Война и мир ВОЙНА И МИР. Л. Н. ТОЛСТОЙ Роман-эпопея «Война и мир» Л. Н. Толстого (1863-69) с иллюстрациями А. П. Апсита (1911-12) РОМАН-ЭПОПЕЯ «ВОЙНА И МИР» Л. Н. ТОЛСТОГО (1863-69) С ИЛЛЮСТРАЦИЯМИ А. П. АПСИТА (1911-12) СОДЕРЖАНИЕ Том первый         Часть первая         Часть вторая         Часть третья Том второй         Часть первая         Часть вторая         Часть третья         Часть четвёртая         Часть пятая Том третий         Часть первая         Часть вторая         Часть третья Том четвёртый         Часть первая         Часть вторая         Часть третья         Часть четвёртая Эпилог         Часть первая         Часть вторая  ТОМ ПЕРВЫЙ Анна Павловна Шерер. Иллюстрация А. П. Апсита к роману Л. Н. Толстого «Война и мир»  ЧАСТЬ ПЕРВАЯ I E  h bien, mon prince. Gênes et Lucques ne sont plus que des apanages, des поместья, de la famille Buonaparte. Non, je vous préviens que si vous ne me dites pas que nous avons la guerre, si vous vous permettez encore de pallier toutes les infamies, toutes les atrocités de cet Antichrist (ma parole, j’y crois) — je ne vous connais plus, vous n’êtes plus mon ami, vous n’êtes plus мой верный раб, comme vous dites[1]. Ну, здравствуйте, здравствуйте. Je vois que je vous fais peur[2], садитесь и рассказывайте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех:  «Si vous n’avez rien de mieux à faire, Monsieur le comte (или mon prince), et si la perspective de passer la soirée chez une pauvre malade ne vous effraye pas trop, je serai charmée de vous voir chez moi entre 7 et 10 heures. Annette Scherer»[3].  — Dieu, quelle virulente sortie![4] — отвечал, нисколько не смутясь такою встречей, вошедший князь, в придворном, шитом мундире, в чулках, башмаках и звездах, с светлым выражением плоского лица.  Он говорил на том изысканном французском языке, на котором не только говорили, но и думали наши деды, и с теми, тихими, покровительственными интонациями, которые свойственны состаревшемуся в свете и при дворе значительному человеку. Он подошел к Анне Павловне, поцеловал ее руку, подставив ей свою надушенную и сияющую лысину, и покойно уселся на диване.  — Avant tout dites-moi, comment vous allez, chère amie?[5] Успокойте меня, — сказал он, не изменяя голоса и тоном, в котором из-за приличия и участия просвечивало равнодушие и даже насмешка.  — Как можно быть здоровой... когда нравственно страдаешь? Разве можно, имея чувство, оставаться спокойною в наше время? — сказала Анна Павловна. — Вы весь вечер у меня, надеюсь?  — А праздник английского посланника? Нынче середа. Мне надо показаться там, — сказал князь. — Дочь заедет за мной и повезет меня.  — Я думала, что нынешний праздник отменен, Je vous avoue que toutes ces fêtes et tous ces feux d’artifice commencent à devenir insipides[6].  — Ежели бы знали, что вы этого хотите, праздник бы отменили, — сказал князь по привычке, как заведенные часы, говоря вещи, которым он и не хотел, чтобы верили.  — Ne me tourmentez pas. Eh bien, qu’a-t-on décidé par rapport à la dépêche de Novosilzoff? Vous savez tout[7].  — Как вам сказать? — сказал князь холодным, скучающим тоном. — Qu’a-t-on décidé? On a décidé que Buonaparte a brûlé ses vaisseaux, et je crois que nous sommes en train de brûler les nôtres[8].  Князь Василий говорил всегда лениво, как актер говорит роль старой пиесы. Анна Павловна Шерер, напротив, несмотря на свои сорок лет, была преисполнена оживления и порывов.  Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она, чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой. Сдержанная улыбка, игравшая постоянно на лице Анны Павловны, хотя и не шла к ее отжившим чертам, выражала, как у избалованных детей, постоянное сознание своего милого недостатка, от которого она не хочет, не может и не находит нужным исправляться.  В середине разговора про политические действия Анна Павловна разгорячилась.  — Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает свое высокое призвание и будет верен ему. Вот одно, во что я верю. Нашему доброму и чудному государю предстоит величайшая роль в мире, и он так добродетелен и хорош, что Бог не оставит его, и он исполнит свое призвание задавить гидру революции, которая теперь еще ужаснее в лице этого убийцы и злодея. Мы одни должны искупить кровь праведника. На кого нам надеяться, я вас спрашиваю?.. Англия с своим коммерческим духом не поймет и не может понять всю высоту души императора Александра. Она отказалась очистить Мальту. Она хочет видеть, ищет заднюю мысль наших действий. Что они сказали Новосильцеву? Ничего. Они не поняли, они не могли понять самоотвержения нашего императора, который ничего не хочет для себя и все хочет для блага мира. И что они обещали? Ничего. И что обещали, и того не будет! Пруссия уже объявила, что Бонапарте непобедим и что вся Европа ничего не может против него... И я не верю ни в одном слове ни Гарденбергу, ни Гаугвицу. Cette fameuse neutralité prussienne, ce n’est qu’un piège[9]. Я верю в одного Бога и в высокую судьбу нашего милого императора. Он спасет Европу!.. — Она вдруг остановилась с улыбкой насмешки над своею горячностью.  — Я думаю, — сказал князь, улыбаясь, — что, ежели бы вас послали вместо нашего милого Винценгероде, вы бы взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю?  — Сейчас. A propos, — прибавила она, опять успокоиваясь, — нынче у меня два очень интересные человека, le vicomte de Mortemart, il est allié aux Montmorency par les Rohans[10], одна из лучших фамилий Франции. Это один из хороших эмигрантов, из настоящих. И потом l’abbé Morio;[11] вы знаете этот глубокий ум? Он был принят государем. Вы знаете?  — А! Я очень рад буду, — сказал князь. — Скажите, — прибавил он, как будто только что вспомнив что-то и особенно-небрежно, тогда как то, о чем он спрашивал, было главной целью его посещения, — правда, что l’impératrice-mère[12] желает назначения барона Функе первым секретарем в Вену? C’est un pauvre sire, ce baron, à ce qu’il paraît[13]. — Князь Василий желал определить сына на это место, которое через императрицу Марию Феодоровну старались доставить барону.  Анна Павловна почти закрыла глаза в знак того, что ни она, ни кто другой не могут судить про то, что угодно или нравится императрице.  — Monsieur le baron de Funke a été recommandé à l’impératrice-mère par sa sur[14], — только сказала она грустным, сухим тоном. В то время как Анна Павловна назвала императрицу, лицо ее вдруг представило глубокое и искреннее выражение преданности и уважения, соединенное с грустью, что с ней бывало каждый раз, когда она в разговоре упоминала о своей высокой покровительнице. Она сказала, что ее величество изволила оказать барону Функе beaucoup d’estime[15], и опять взгляд ее подернулся грустью.  Князь равнодушно замолк, Анна Павловна, с свойственною ей придворною и женскою ловкостью и быстротою такта, захотела и щелкануть князя за то, что он дерзнул так отозваться о лице, рекомендованном императрице, и в то же время утешить его.  — Mais à propos de votre famille, — сказала она, — знаете ли, что ваша дочь, с тех пор как выезжает, fait les délices de tout le monde. On la trouve belle comme le jour[16].  Князь наклонился в знак уважения и признательности.  — Я часто думаю, — продолжала Анна Павловна после минутного молчания, придвигаясь к князю и ласково улыбаясь ему, как будто выказывая этим, что политические и светские разговоры кончены и теперь начинается задушевный, — я часто думаю, как иногда несправедливо распределяется счастие жизни. За что вам дала судьба таких двух славных детей (исключая Анатоля, вашего меньшого, я его не люблю, — вставила она безапелляционно, приподняв брови), — таких прелестных детей? А вы, право, менее всех цените их и потому их не сто́ите.  И она улыбнулась своею восторженной улыбкой.  — Que voulez-vous? Lafater aurait dit que je n’ai pas la bosse de la paternité[17], — сказал князь.  — Перестаньте шутить. Я хотела серьезно поговорить с вами. Знаете, я недовольна вашим меньшим сыном. Между нами будь сказано (лицо ее приняло грустное выражение), о нем говорили у ее величества и жалеют вас...  Князь не отвечал, но она молча, значительно глядя на него, ждала ответа. Князь Василий поморщился.  — Что ж мне делать? — сказал он наконец. — Вы знаете, я сделал для их воспитания все, что может отец, и оба вышли des imbéciles[18]. Ипполит, по крайней мере, покойный дурак, а Анатоль — беспокойный. Вот одно различие, — сказал он, улыбаясь более неестественно и одушевленно, чем обыкновенно, и при этом особенно резко выказывая в сложившихся около его рта морщинах что-то неожиданно-грубое и неприятное.  — И зачем родятся дети у таких людей, как вы? Ежели бы вы не были отец, я бы ни в чем не могла упрекнуть вас, — сказала Анна Павловна, задумчиво поднимая глаза.  — Je suis votre верный раб, et à vous seule je puis l’avouer. Мои дети — ce sont les entraves de mon existence[19]. Это мой крест. Я так себе объясняю. Que voulez-vous?..[20] — Он помолчал, выражая жестом свою покорность жестокой судьбе.  Анна Павловна задумалась.  — Вы никогда не думали о том, чтобы женить вашего блудного сына Анатоля. Говорят, — сказала она, — что старые девицы ont la manie des mariages[21]. Я еще не чувствую за собою этой слабости, но у меня есть одна petite personne, которая очень несчастлива с отцом, une parente à nous, une princesse[22] Болконская. — Князь Василий не отвечал, хотя с свойственной светским людям быстротой соображения и памятью движением головы показал, что он принял к соображению это сведенье.  — Нет, вы знаете ли, что этот Анатоль мне стоит сорок тысяч в год, — сказал он, видимо не в силах удерживать печальный ход своих мыслей. Он помолчал.  — Что будет через пять лет, ежели это пойдет так? Voilà l’avantage d’être père[23]. Она богата, ваша княжна?  — Отец очень богат и скуп. Он живет в деревне. Знаете, этот известный князь Болконский, отставленный еще при покойном императоре и прозванный прусским королем. Он очень умный человек, но со странностями и тяжелый. La pauvre petite est malheureuse comme les pierres[24]. У нее брат, вот что недавно женился на Lise Мейнен, адъютант Кутузова. Он будет нынче у меня.  — Ecoutez, chère Annette[25], — сказал князь, взяв вдруг свою собеседницу за руку и пригибая ее почему-то книзу. — Arrangez-moi cette affaire et je suis votre вернейший раб à tout jamais (рап — comme mon староста m’écrit des[26] донесенья: покой-ер-п). Она хорошей фамилии и богата. Все, что мне нужно.  И он с теми свободными и фамильярными грациозными движениями, которые его отличали, взял за руку фрейлину, поцеловал ее и, поцеловав, помахал фрейлинскою рукой, развалившись на креслах и глядя в сторону.  — Attendez[27], — сказала Анна Павловна, соображая. — Я нынче же поговорю Lise (la femme du jeune Болконский)[28]. И, может быть, это уладится. Ce sera dans votre famille que je ferai mon apprentissage de vieille fille[29].  Факсимиле первой страницы первоначальной рукописи «Войны и мира» ФАКСИМИЛЕ ПЕРВОЙ СТРАНИЦЫ ПЕРВОНАЧАЛЬНОЙ РУКОПИСИ «ВОЙНЫ И МИРА» Следующая страница →  ₽  Футбольные мячи Adidas, Nike, Select Цены от 42 руб. Размеры 3,4,5. Инновационные материалы и технологии! Доставка Минск, РБ sporttovar.deal.by    Война и мир 2 стр. →  Страницы: 1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  → Всего 361 страниц  © «Онлайн-Читать.РФ» Обратная связь",
+            "acronym": "ЛЕВ",
+            "workspaceId": 31,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1322,
+            "name": "Лев Николаевич Толстой На главную  Все 1авторы  Поиск произведения   Главная → Л. Н. Толстой → Война и мир ВОЙНА И МИР. Л. Н. ТОЛСТОЙ Роман-эпопея «Война и мир» Л. Н. Толстого (1863-69) с иллюстрациями А. П. Апсита (1911-12) РОМАН-ЭПОПЕЯ «ВОЙНА И МИР» Л. Н. ТОЛСТОГО (1863-69) С ИЛЛЮСТРАЦИЯМИ А. П. АПСИТА (1911-12) СОДЕРЖАНИЕ Том первый         Часть первая         Часть вторая         Часть третья Том второй         Часть первая         Часть вторая         Часть третья         Часть четвёртая         Часть пятая Том третий         Часть первая         Часть вторая         Часть третья Том четвёртый         Часть первая         Часть вторая         Часть третья         Часть четвёртая Эпилог         Часть первая         Часть вторая  ТОМ ПЕРВЫЙ Анна Павловна Шерер. Иллюстрация А. П. Апсита к роману Л. Н. Толстого «Война и мир»  ЧАСТЬ ПЕРВАЯ I E  h bien, mon prince. Gênes et Lucques ne sont plus que des apanages, des поместья, de la famille Buonaparte. Non, je vous préviens que si vous ne me dites pas que nous avons la guerre, si vous vous permettez encore de pallier toutes les infamies, toutes les atrocités de cet Antichrist (ma parole, j’y crois) — je ne vous connais plus, vous n’êtes plus mon ami, vous n’êtes plus мой верный раб, comme vous dites[1]. Ну, здравствуйте, здравствуйте. Je vois que je vous fais peur[2], садитесь и рассказывайте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех:  «Si vous n’avez rien de mieux à faire, Monsieur le comte (или mon prince), et si la perspective de passer la soirée chez une pauvre malade ne vous effraye pas trop, je serai charmée de vous voir chez moi entre 7 et 10 heures. Annette Scherer»[3].  — Dieu, quelle virulente sortie![4] — отвечал, нисколько не смутясь такою встречей, вошедший князь, в придворном, шитом мундире, в чулках, башмаках и звездах, с светлым выражением плоского лица.  Он говорил на том изысканном французском языке, на котором не только говорили, но и думали наши деды, и с теми, тихими, покровительственными интонациями, которые свойственны состаревшемуся в свете и при дворе значительному человеку. Он подошел к Анне Павловне, поцеловал ее руку, подставив ей свою надушенную и сияющую лысину, и покойно уселся на диване.  — Avant tout dites-moi, comment vous allez, chère amie?[5] Успокойте меня, — сказал он, не изменяя голоса и тоном, в котором из-за приличия и участия просвечивало равнодушие и даже насмешка.  — Как можно быть здоровой... когда нравственно страдаешь? Разве можно, имея чувство, оставаться спокойною в наше время? — сказала Анна Павловна. — Вы весь вечер у меня, надеюсь?  — А праздник английского посланника? Нынче середа. Мне надо показаться там, — сказал князь. — Дочь заедет за мной и повезет меня.  — Я думала, что нынешний праздник отменен, Je vous avoue que toutes ces fêtes et tous ces feux d’artifice commencent à devenir insipides[6].  — Ежели бы знали, что вы этого хотите, праздник бы отменили, — сказал князь по привычке, как заведенные часы, говоря вещи, которым он и не хотел, чтобы верили.  — Ne me tourmentez pas. Eh bien, qu’a-t-on décidé par rapport à la dépêche de Novosilzoff? Vous savez tout[7].  — Как вам сказать? — сказал князь холодным, скучающим тоном. — Qu’a-t-on décidé? On a décidé que Buonaparte a brûlé ses vaisseaux, et je crois que nous sommes en train de brûler les nôtres[8].  Князь Василий говорил всегда лениво, как актер говорит роль старой пиесы. Анна Павловна Шерер, напротив, несмотря на свои сорок лет, была преисполнена оживления и порывов.  Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она, чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой. Сдержанная улыбка, игравшая постоянно на лице Анны Павловны, хотя и не шла к ее отжившим чертам, выражала, как у избалованных детей, постоянное сознание своего милого недостатка, от которого она не хочет, не может и не находит нужным исправляться.  В середине разговора про политические действия Анна Павловна разгорячилась.  — Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает свое высокое призвание и будет верен ему. Вот одно, во что я верю. Нашему доброму и чудному государю предстоит величайшая роль в мире, и он так добродетелен и хорош, что Бог не оставит его, и он исполнит свое призвание задавить гидру революции, которая теперь еще ужаснее в лице этого убийцы и злодея. Мы одни должны искупить кровь праведника. На кого нам надеяться, я вас спрашиваю?.. Англия с своим коммерческим духом не поймет и не может понять всю высоту души императора Александра. Она отказалась очистить Мальту. Она хочет видеть, ищет заднюю мысль наших действий. Что они сказали Новосильцеву? Ничего. Они не поняли, они не могли понять самоотвержения нашего императора, который ничего не хочет для себя и все хочет для блага мира. И что они обещали? Ничего. И что обещали, и того не будет! Пруссия уже объявила, что Бонапарте непобедим и что вся Европа ничего не может против него... И я не верю ни в одном слове ни Гарденбергу, ни Гаугвицу. Cette fameuse neutralité prussienne, ce n’est qu’un piège[9]. Я верю в одного Бога и в высокую судьбу нашего милого императора. Он спасет Европу!.. — Она вдруг остановилась с улыбкой насмешки над своею горячностью.  — Я думаю, — сказал князь, улыбаясь, — что, ежели бы вас послали вместо нашего милого Винценгероде, вы бы взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю?  — Сейчас. A propos, — прибавила она, опять успокоиваясь, — нынче у меня два очень интересные человека, le vicomte de Mortemart, il est allié aux Montmorency par les Rohans[10], одна из лучших фамилий Франции. Это один из хороших эмигрантов, из настоящих. И потом l’abbé Morio;[11] вы знаете этот глубокий ум? Он был принят государем. Вы знаете?  — А! Я очень рад буду, — сказал князь. — Скажите, — прибавил он, как будто только что вспомнив что-то и особенно-небрежно, тогда как то, о чем он спрашивал, было главной целью его посещения, — правда, что l’impératrice-mère[12] желает назначения барона Функе первым секретарем в Вену? C’est un pauvre sire, ce baron, à ce qu’il paraît[13]. — Князь Василий желал определить сына на это место, которое через императрицу Марию Феодоровну старались доставить барону.  Анна Павловна почти закрыла глаза в знак того, что ни она, ни кто другой не могут судить про то, что угодно или нравится императрице.  — Monsieur le baron de Funke a été recommandé à l’impératrice-mère par sa sur[14], — только сказала она грустным, сухим тоном. В то время как Анна Павловна назвала императрицу, лицо ее вдруг представило глубокое и искреннее выражение преданности и уважения, соединенное с грустью, что с ней бывало каждый раз, когда она в разговоре упоминала о своей высокой покровительнице. Она сказала, что ее величество изволила оказать барону Функе beaucoup d’estime[15], и опять взгляд ее подернулся грустью.  Князь равнодушно замолк, Анна Павловна, с свойственною ей придворною и женскою ловкостью и быстротою такта, захотела и щелкануть князя за то, что он дерзнул так отозваться о лице, рекомендованном императрице, и в то же время утешить его.  — Mais à propos de votre famille, — сказала она, — знаете ли, что ваша дочь, с тех пор как выезжает, fait les délices de tout le monde. On la trouve belle comme le jour[16].  Князь наклонился в знак уважения и признательности.  — Я часто думаю, — продолжала Анна Павловна после минутного молчания, придвигаясь к князю и ласково улыбаясь ему, как будто выказывая этим, что политические и светские разговоры кончены и теперь начинается задушевный, — я часто думаю, как иногда несправедливо распределяется счастие жизни. За что вам дала судьба таких двух славных детей (исключая Анатоля, вашего меньшого, я его не люблю, — вставила она безапелляционно, приподняв брови), — таких прелестных детей? А вы, право, менее всех цените их и потому их не сто́ите.  И она улыбнулась своею восторженной улыбкой.  — Que voulez-vous? Lafater aurait dit que je n’ai pas la bosse de la paternité[17], — сказал князь.  — Перестаньте шутить. Я хотела серьезно поговорить с вами. Знаете, я недовольна вашим меньшим сыном. Между нами будь сказано (лицо ее приняло грустное выражение), о нем говорили у ее величества и жалеют вас...  Князь не отвечал, но она молча, значительно глядя на него, ждала ответа. Князь Василий поморщился.  — Что ж мне делать? — сказал он наконец. — Вы знаете, я сделал для их воспитания все, что может отец, и оба вышли des imbéciles[18]. Ипполит, по крайней мере, покойный дурак, а Анатоль — беспокойный. Вот одно различие, — сказал он, улыбаясь более неестественно и одушевленно, чем обыкновенно, и при этом особенно резко выказывая в сложившихся около его рта морщинах что-то неожиданно-грубое и неприятное.  — И зачем родятся дети у таких людей, как вы? Ежели бы вы не были отец, я бы ни в чем не могла упрекнуть вас, — сказала Анна Павловна, задумчиво поднимая глаза.  — Je suis votre верный раб, et à vous seule je puis l’avouer. Мои дети — ce sont les entraves de mon existence[19]. Это мой крест. Я так себе объясняю. Que voulez-vous?..[20] — Он помолчал, выражая жестом свою покорность жестокой судьбе.  Анна Павловна задумалась.  — Вы никогда не думали о том, чтобы женить вашего блудного сына Анатоля. Говорят, — сказала она, — что старые девицы ont la manie des mariages[21]. Я еще не чувствую за собою этой слабости, но у меня есть одна petite personne, которая очень несчастлива с отцом, une parente à nous, une princesse[22] Болконская. — Князь Василий не отвечал, хотя с свойственной светским людям быстротой соображения и памятью движением головы показал, что он принял к соображению это сведенье.  — Нет, вы знаете ли, что этот Анатоль мне стоит сорок тысяч в год, — сказал он, видимо не в силах удерживать печальный ход своих мыслей. Он помолчал.  — Что будет через пять лет, ежели это пойдет так? Voilà l’avantage d’être père[23]. Она богата, ваша княжна?  — Отец очень богат и скуп. Он живет в деревне. Знаете, этот известный князь Болконский, отставленный еще при покойном императоре и прозванный прусским королем. Он очень умный человек, но со странностями и тяжелый. La pauvre petite est malheureuse comme les pierres[24]. У нее брат, вот что недавно женился на Lise Мейнен, адъютант Кутузова. Он будет нынче у меня.  — Ecoutez, chère Annette[25], — сказал князь, взяв вдруг свою собеседницу за руку и пригибая ее почему-то книзу. — Arrangez-moi cette affaire et je suis votre вернейший раб à tout jamais (рап — comme mon староста m’écrit des[26] донесенья: покой-ер-п). Она хорошей фамилии и богата. Все, что мне нужно.  И он с теми свободными и фамильярными грациозными движениями, которые его отличали, взял за руку фрейлину, поцеловал ее и, поцеловав, помахал фрейлинскою рукой, развалившись на креслах и глядя в сторону.  — Attendez[27], — сказала Анна Павловна, соображая. — Я нынче же поговорю Lise (la femme du jeune Болконский)[28]. И, может быть, это уладится. Ce sera dans votre famille que je ferai mon apprentissage de vieille fille[29].  Факсимиле первой страницы первоначальной рукописи «Войны и мира» ФАКСИМИЛЕ ПЕРВОЙ СТРАНИЦЫ ПЕРВОНАЧАЛЬНОЙ РУКОПИСИ «ВОЙНЫ И МИРА» Следующая страница →  ₽  Футбольные мячи Adidas, Nike, Select Цены от 42 руб. Размеры 3,4,5. Инновационные материалы и технологии! Доставка Минск, РБ sporttovar.deal.by    Война и мир 2 стр. →  Страницы: 1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  → Всего 361 страниц  © «Онлайн-Читать.РФ» Обратная связь",
+            "acronym": "ЛЕВ",
+            "workspaceId": 31,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        },
+        {
+            "id": 1323,
+            "name": "Лев Николаевич Толстой На главную  Все авторы  Поиск произведения   Главная → Л. Н. Толстой → Война и мир ВОЙНА И МИР. Л. Н. ТОЛСТОЙ Роман-эпопея «Война и мир» Л. Н. Толстого (1863-69) с иллюстрациями А. П. Апсита (1911-12) РОМАН-ЭПОПЕЯ «ВОЙНА И МИР» Л. Н. ТОЛСТОГО (1863-69) С ИЛЛЮСТРАЦИЯМИ А. П. АПСИТА (1911-12) СОДЕРЖАНИЕ Том первый         Часть первая         Часть вторая         Часть третья Том второй         Часть первая         Часть вторая         Часть третья         Часть четвёртая         Часть пятая Том третий         Часть первая         Часть вторая         Часть третья Том четвёртый         Часть первая         Часть вторая         Часть третья         Часть четвёртая Эпилог         Часть первая         Часть вторая  ТОМ ПЕРВЫЙ Анна Павловна Шерер. Иллюстрация А. П. Апсита к роману Л. Н. Толстого «Война и мир»  ЧАСТЬ ПЕРВАЯ I E  h bien, mon prince. Gênes et Lucques ne sont plus que des apanages, des поместья, de la famille Buonaparte. Non, je vous préviens que si vous ne me dites pas que nous avons la guerre, si vous vous permettez encore de pallier toutes les infamies, toutes les atrocités de cet Antichrist (ma parole, j’y crois) — je ne vous connais plus, vous n’êtes plus mon ami, vous n’êtes plus мой верный раб, comme vous dites[1]. Ну, здравствуйте, здравствуйте. Je vois que je vous fais peur[2], садитесь и рассказывайте. Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими). В записочках, разосланных утром с красным лакеем, было написано без различия во всех:  «Si vous n’avez rien de mieux à faire, Monsieur le comte (или mon prince), et si la perspective de passer la soirée chez une pauvre malade ne vous effraye pas trop, je serai charmée de vous voir chez moi entre 7 et 10 heures. Annette Scherer»[3].  — Dieu, quelle virulente sortie![4] — отвечал, нисколько не смутясь такою встречей, вошедший князь, в придворном, шитом мундире, в чулках, башмаках и звездах, с светлым выражением плоского лица.  Он говорил на том изысканном французском языке, на котором не только говорили, но и думали наши деды, и с теми, тихими, покровительственными интонациями, которые свойственны состаревшемуся в свете и при дворе значительному человеку. Он подошел к Анне Павловне, поцеловал ее руку, подставив ей свою надушенную и сияющую лысину, и покойно уселся на диване.  — Avant tout dites-moi, comment vous allez, chère amie?[5] Успокойте меня, — сказал он, не изменяя голоса и тоном, в котором из-за приличия и участия просвечивало равнодушие и даже насмешка.  — Как можно быть здоровой... когда нравственно страдаешь? Разве можно, имея чувство, оставаться спокойною в наше время? — сказала Анна Павловна. — Вы весь вечер у меня, надеюсь?  — А праздник английского посланника? Нынче середа. Мне надо показаться там, — сказал князь. — Дочь заедет за мной и повезет меня.  — Я думала, что нынешний праздник отменен, Je vous avoue que toutes ces fêtes et tous ces feux d’artifice commencent à devenir insipides[6].  — Ежели бы знали, что вы этого хотите, праздник бы отменили, — сказал князь по привычке, как заведенные часы, говоря вещи, которым он и не хотел, чтобы верили.  — Ne me tourmentez pas. Eh bien, qu’a-t-on décidé par rapport à la dépêche de Novosilzoff? Vous savez tout[7].  — Как вам сказать? — сказал князь холодным, скучающим тоном. — Qu’a-t-on décidé? On a décidé que Buonaparte a brûlé ses vaisseaux, et je crois que nous sommes en train de brûler les nôtres[8].  Князь Василий говорил всегда лениво, как актер говорит роль старой пиесы. Анна Павловна Шерер, напротив, несмотря на свои сорок лет, была преисполнена оживления и порывов.  Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она, чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой. Сдержанная улыбка, игравшая постоянно на лице Анны Павловны, хотя и не шла к ее отжившим чертам, выражала, как у избалованных детей, постоянное сознание своего милого недостатка, от которого она не хочет, не может и не находит нужным исправляться.  В середине разговора про политические действия Анна Павловна разгорячилась.  — Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает свое высокое призвание и будет верен ему. Вот одно, во что я верю. Нашему доброму и чудному государю предстоит величайшая роль в мире, и он так добродетелен и хорош, что Бог не оставит его, и он исполнит свое призвание задавить гидру революции, которая теперь еще ужаснее в лице этого убийцы и злодея. Мы одни должны искупить кровь праведника. На кого нам надеяться, я вас спрашиваю?.. Англия с своим коммерческим духом не поймет и не может понять всю высоту души императора Александра. Она отказалась очистить Мальту. Она хочет видеть, ищет заднюю мысль наших действий. Что они сказали Новосильцеву? Ничего. Они не поняли, они не могли понять самоотвержения нашего императора, который ничего не хочет для себя и все хочет для блага мира. И что они обещали? Ничего. И что обещали, и того не будет! Пруссия уже объявила, что Бонапарте непобедим и что вся Европа ничего не может против него... И я не верю ни в одном слове ни Гарденбергу, ни Гаугвицу. Cette fameuse neutralité prussienne, ce n’est qu’un piège[9]. Я верю в одного Бога и в высокую судьбу нашего милого императора. Он спасет Европу!.. — Она вдруг остановилась с улыбкой насмешки над своею горячностью.  — Я думаю, — сказал князь, улыбаясь, — что, ежели бы вас послали вместо нашего милого Винценгероде, вы бы взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю?  — Сейчас. A propos, — прибавила она, опять успокоиваясь, — нынче у меня два очень интересные человека, le vicomte de Mortemart, il est allié aux Montmorency par les Rohans[10], одна из лучших фамилий Франции. Это один из хороших эмигрантов, из настоящих. И потом l’abbé Morio;[11] вы знаете этот глубокий ум? Он был принят государем. Вы знаете?  — А! Я очень рад буду, — сказал князь. — Скажите, — прибавил он, как будто только что вспомнив что-то и особенно-небрежно, тогда как то, о чем он спрашивал, было главной целью его посещения, — правда, что l’impératrice-mère[12] желает назначения барона Функе первым секретарем в Вену? C’est un pauvre sire, ce baron, à ce qu’il paraît[13]. — Князь Василий желал определить сына на это место, которое через императрицу Марию Феодоровну старались доставить барону.  Анна Павловна почти закрыла глаза в знак того, что ни она, ни кто другой не могут судить про то, что угодно или нравится императрице.  — Monsieur le baron de Funke a été recommandé à l’impératrice-mère par sa sur[14], — только сказала она грустным, сухим тоном. В то время как Анна Павловна назвала императрицу, лицо ее вдруг представило глубокое и искреннее выражение преданности и уважения, соединенное с грустью, что с ней бывало каждый раз, когда она в разговоре упоминала о своей высокой покровительнице. Она сказала, что ее величество изволила оказать барону Функе beaucoup d’estime[15], и опять взгляд ее подернулся грустью.  Князь равнодушно замолк, Анна Павловна, с свойственною ей придворною и женскою ловкостью и быстротою такта, захотела и щелкануть князя за то, что он дерзнул так отозваться о лице, рекомендованном императрице, и в то же время утешить его.  — Mais à propos de votre famille, — сказала она, — знаете ли, что ваша дочь, с тех пор как выезжает, fait les délices de tout le monde. On la trouve belle comme le jour[16].  Князь наклонился в знак уважения и признательности.  — Я часто думаю, — продолжала Анна Павловна после минутного молчания, придвигаясь к князю и ласково улыбаясь ему, как будто выказывая этим, что политические и светские разговоры кончены и теперь начинается задушевный, — я часто думаю, как иногда несправедливо распределяется счастие жизни. За что вам дала судьба таких двух славных детей (исключая Анатоля, вашего меньшого, я его не люблю, — вставила она безапелляционно, приподняв брови), — таких прелестных детей? А вы, право, менее всех цените их и потому их не сто́ите.  И она улыбнулась своею восторженной улыбкой.  — Que voulez-vous? Lafater aurait dit que je n’ai pas la bosse de la paternité[17], — сказал князь.  — Перестаньте шутить. Я хотела серьезно поговорить с вами. Знаете, я недовольна вашим меньшим сыном. Между нами будь сказано (лицо ее приняло грустное выражение), о нем говорили у ее величества и жалеют вас...  Князь не отвечал, но она молча, значительно глядя на него, ждала ответа. Князь Василий поморщился.  — Что ж мне делать? — сказал он наконец. — Вы знаете, я сделал для их воспитания все, что может отец, и оба вышли des imbéciles[18]. Ипполит, по крайней мере, покойный дурак, а Анатоль — беспокойный. Вот одно различие, — сказал он, улыбаясь более неестественно и одушевленно, чем обыкновенно, и при этом особенно резко выказывая в сложившихся около его рта морщинах что-то неожиданно-грубое и неприятное.  — И зачем родятся дети у таких людей, как вы? Ежели бы вы не были отец, я бы ни в чем не могла упрекнуть вас, — сказала Анна Павловна, задумчиво поднимая глаза.  — Je suis votre верный раб, et à vous seule je puis l’avouer. Мои дети — ce sont les entraves de mon existence[19]. Это мой крест. Я так себе объясняю. Que voulez-vous?..[20] — Он помолчал, выражая жестом свою покорность жестокой судьбе.  Анна Павловна задумалась.  — Вы никогда не думали о том, чтобы женить вашего блудного сына Анатоля. Говорят, — сказала она, — что старые девицы ont la manie des mariages[21]. Я еще не чувствую за собою этой слабости, но у меня есть одна petite personne, которая очень несчастлива с отцом, une parente à nous, une princesse[22] Болконская. — Князь Василий не отвечал, хотя с свойственной светским людям быстротой соображения и памятью движением головы показал, что он принял к соображению это сведенье.  — Нет, вы знаете ли, что этот Анатоль мне стоит сорок тысяч в год, — сказал он, видимо не в силах удерживать печальный ход своих мыслей. Он помолчал.  — Что будет через пять лет, ежели это пойдет так? Voilà l’avantage d’être père[23]. Она богата, ваша княжна?  — Отец очень богат и скуп. Он живет в деревне. Знаете, этот известный князь Болконский, отставленный еще при покойном императоре и прозванный прусским королем. Он очень умный человек, но со странностями и тяжелый. La pauvre petite est malheureuse comme les pierres[24]. У нее брат, вот что недавно женился на Lise Мейнен, адъютант Кутузова. Он будет нынче у меня.  — Ecoutez, chère Annette[25], — сказал князь, взяв вдруг свою собеседницу за руку и пригибая ее почему-то книзу. — Arrangez-moi cette affaire et je suis votre вернейший раб à tout jamais (рап — comme mon староста m’écrit des[26] донесенья: покой-ер-п). Она хорошей фамилии и богата. Все, что мне нужно.  И он с теми свободными и фамильярными грациозными движениями, которые его отличали, взял за руку фрейлину, поцеловал ее и, поцеловав, помахал фрейлинскою рукой, развалившись на креслах и глядя в сторону.  — Attendez[27], — сказала Анна Павловна, соображая. — Я нынче же поговорю Lise (la femme du jeune Болконский)[28]. И, может быть, это уладится. Ce sera dans votre famille que je ferai mon apprentissage de vieille fille[29].  Факсимиле первой страницы первоначальной рукописи «Войны и мира» ФАКСИМИЛЕ ПЕРВОЙ СТРАНИЦЫ ПЕРВОНАЧАЛЬНОЙ РУКОПИСИ «ВОЙНЫ И МИРА» Следующая страница →  ₽  Футбольные мячи Adidas, Nike, Select Цены от 42 руб. Размеры 3,4,5. Инновационные материалы и технологии! Доставка Минск, РБ sporttovar.deal.by    Война и мир 2 стр. →  Страницы: 1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  → Всего 361 страниц  © «Онлайн-Читать.2РФ» Обратная связь",
+            "acronym": "ЛЕВ",
+            "workspaceId": 31,
+            "deleted": true,
+            "ownerId": 1,
+            "membersCount": 0
+        }
+    ]
+}
+Request method:	GET
+Request URI:	https://dev.zenio.co/api/projects
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 401 
+Server: nginx/1.17.4
+Date: Thu, 17 Oct 2019 11:48:38 GMT
+Content-Length: 0
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Request method:	GET
+Request URI:	https://dev.zenio.co/api/api/projectss
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=654019E995531746C429A0C30803984B;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 
+Server: nginx/1.17.4
+Date: Thu, 17 Oct 2019 11:48:39 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title/>
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,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"/>
+    <script src="https://js.stripe.com/v3/"/>
+  </head>
+  <body>
+    <div class="start-preloader">
+      <style>
+      html {
+        font-size: 10px;
+      }
+
+      @keyframes pulse {
+        from {
+          opacity: 0.9;
+          box-shadow: 0 0 48px #427DD6;
+        }
+        16% {
+          opacity: 0.1;
+          box-shadow: 0 0 48px #427DD6;
+        }
+        16.6% {
+          box-shadow: 0 0 48px #6E55D9;
+        }
+        32.6% {
+          opacity: 0.9;
+          box-shadow: 0 0 48px #6E55D9;
+        }
+        48.6% {
+          opacity: 0.1;
+          box-shadow: 0 0 48px #6E55D9;
+        }
+        49.2% {
+          box-shadow: 0 0 48px #F4B923;
+        }
+
+        65.2% {
+          opacity: 0.9;
+          box-shadow: 0 0 48px #F4B923;
+        }
+        81.2% {
+          opacity: 0.1;
+          box-shadow: 0 0 48px #F4B923;
+        }
+        81.8% {
+          box-shadow: 0 0 48px #427DD6;
+        }
+        to {
+          opacity: 0.9;
+          box-shadow: 0 0 48px #427DD6;
+        }
+      }
+
+      .start-preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: #FFFFFF;
+        z-index: 1000000000000000000000000;
+      }
+
+      .logo {
+        width: 23rem;
+        height: 23rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.5);
+        border-radius: 0 4.5rem 0 4.5rem;
+        background: linear-gradient(45deg, rgba(40, 47, 78, 1) 0%, rgba(51, 59, 106, 1) 100%);
+      }
+
+      .logo:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 4.5rem 0 4.5rem;
+        animation: pulse infinite 5.8s linear;
+      }
+
+      .z {
+        width: 12.8rem;
+        height: 12.8rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .blue-rect {
+        width: 12.8rem;
+        height: 3.2rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 0 1.6rem 1.6rem 0;
+        overflow: hidden;
+        z-index: 2;
+        background: linear-gradient(to right, rgba(0, 194, 255, 1) 0%, rgba(0, 194, 255, 1) 16%, rgba(60, 114, 225, 1) 78%, rgba(60, 114, 225, 1) 100%);
+      }
+
+      .blue-drop {
+        width: 10rem;
+        height: 3.2rem;
+        position: absolute;
+        right: -10px;
+        top: 24px;
+        transform: rotate(-45deg);
+        border-radius: 0 1.6rem 1.6rem 0;
+        background: linear-gradient(to right, rgba(3, 236, 255, 1) 0%, rgba(3, 236, 255, 1) 42%, rgba(3, 236, 255, 1) 54%, rgba(47, 172, 254, 1) 100%);
+      }
+
+      .violet-rect {
+        width: 138px;
+        height: 3.2rem;
+        position: absolute;
+        right: -5px;
+        top: 48px;
+        transform: rotate(-45deg);
+        background: linear-gradient(45deg, rgba(96, 89, 173, 1) 0%, rgba(157, 112, 255, 1) 100%);
+      }
+
+      .orange-drop {
+        width: 5.5rem;
+        height: 3.2rem;
+        position: absolute;
+        left: -4px;
+        bottom: 8px;
+        transform: rotate(-45deg);
+        border-radius: 1.6rem 0 0 1.6rem;
+        background: linear-gradient(to right, rgba(255, 232, 23, 1) 0%, rgba(254, 175, 23, 1) 100%);
+      }
+
+      .orange-rect {
+        width: 12.8rem;
+        height: 3.2rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-radius: 1.6rem 0 0 1.6rem;
+        overflow: hidden;
+        z-index: 2;
+        background: linear-gradient(to right, rgba(253, 197, 55, 1) 0%, rgba(255, 138, 0, 1) 100%);
+      }
+    </style>
+      <div class="logo">
+        <div class="z">
+          <div class="blue-rect">
+            <div class="blue-drop"/>
+          </div>
+          <div class="violet-rect"/>
+          <div class="orange-rect">
+            <div class="orange-drop"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="root"/>
+    <div id="popup-root"/>
+    <div id="split-text-container"/>
+    <div id="dnd-container"/>
+    <script type="text/javascript" src="/runtime.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/vendor.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/main.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+  </body>
+</html>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

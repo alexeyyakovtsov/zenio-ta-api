@@ -1,14 +1,13 @@
 package project_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.*;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetProjectsId {
+public class TestGetProjectsId extends SuiteTest {
 
     @Test
     public void getProjectId_status_200() {

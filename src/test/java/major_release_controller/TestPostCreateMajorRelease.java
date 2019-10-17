@@ -1,13 +1,13 @@
 package major_release_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
 import static TestSuite.SuiteTest.*;
 
-public class TestPostCreateMajorRelease {
+public class TestPostCreateMajorRelease extends SuiteTest {
 
     @Test
     public void postCreateMajorRelease_status_200() {

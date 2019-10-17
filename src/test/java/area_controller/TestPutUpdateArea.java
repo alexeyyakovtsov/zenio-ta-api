@@ -1,13 +1,13 @@
 package area_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
-import static TestSuite.SuiteTest.*;
 
-public class TestPutUpdateArea {
+public class TestPutUpdateArea extends SuiteTest {
 
     @Test
     public void putUpdateArea_status_200() {

@@ -1,13 +1,13 @@
 package user_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
-import static TestSuite.SuiteTest.*;
 
 import parameters.Configurations;
 
-public class TestPostInviteUser {
+public class TestPostInviteUser extends SuiteTest {
 
     @Test
     public void postInviteUser_status_200() {

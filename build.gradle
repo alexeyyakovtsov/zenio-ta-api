@@ -1,5 +1,17 @@
+buildscript {
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath "io.qameta.allure:allure-gradle:2.8.1"
+    }
+}
+
 plugins {
     id 'java'
+    id "io.qameta.allure" version "2.8.1"
 }
 
 group 'zenio-ta-api'
@@ -9,12 +21,28 @@ sourceCompatibility = 1.8
 
 repositories {
     jcenter()
+    mavenCentral()
+    mavenLocal()
+}
+
+allure {
+    version = '2.13.0'
+    autoconfigure = true
+    aspectjweaver = true
+    resultsDir = file('/home/alexey/Projects/zenio-ta-api/build/allure-results')
+    reportDir = file('build/reports/allure-report')
 }
 
 dependencies {
-    testCompile group: 'org.junit.jupiter', name: 'junit', version: '4.12'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.1.0'
     testCompile group: 'io.rest-assured', name: 'json-schema-validator', version: '4.1.0'
     testCompile group: 'io.rest-assured', name: 'json-path', version: '4.1.0'
     testCompile group: 'io.rest-assured', name: 'rest-assured-common', version: '4.1.0'
+    testCompile group: 'io.qameta.allure', name: 'allure-commandline', version: '2.13.0'
+    testCompile group: 'io.qameta.allure', name: 'allure-gradle', version: '2.8.1'
+    testCompile group: 'io.qameta.allure', name: 'allure-rest-assured', version: '2.13.0'
+    testCompile group: 'io.qameta.allure', name: 'allure-model', version: '2.13.0'
+    testCompile group: 'io.qameta.allure', name: 'allure-junit4', version: '2.13.0'
+    testCompile group: 'io.qameta.allure', name: 'allure-java-commons', version: '2.13.0'
 }

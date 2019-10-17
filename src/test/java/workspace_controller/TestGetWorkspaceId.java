@@ -1,14 +1,14 @@
 package workspace_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static parameters.Configurations.*;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetWorkspaceId {
+public class TestGetWorkspaceId extends SuiteTest {
 
     @Test
     public void getWorkspaceId_status_200() {

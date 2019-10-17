@@ -1,14 +1,14 @@
 package area_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
 import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;
 
-public class TestPostCreateArea {
+public class TestPostCreateArea extends SuiteTest {
 
     @Test
     public void postCreateArea_status_200() {

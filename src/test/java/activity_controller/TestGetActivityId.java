@@ -1,15 +1,14 @@
 package activity_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetActivityId {
+public class TestGetActivityId extends SuiteTest {
 
     @Test
     public void getActivityId_status_200() {

@@ -1,14 +1,15 @@
 package project_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
+import org.junit.Ignore;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
-import static TestSuite.SuiteTest.*;
 
-public class TestDeleteProjectId {
+public class TestDeleteProjectId extends SuiteTest {
 
+    @Ignore
     @Test
     public void deleteProjectId_status_200() {
         given()
@@ -20,6 +21,7 @@ public class TestDeleteProjectId {
                 .statusCode(204);
     }
 
+    @Ignore
     @Test
     public void deleteProjectId_status_401() {
         given()
@@ -30,6 +32,7 @@ public class TestDeleteProjectId {
                 .statusCode(401);
     }
 
+    @Ignore
     @Test
     public void deleteProjectId_status_404() {
         given()

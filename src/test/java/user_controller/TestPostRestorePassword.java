@@ -1,13 +1,12 @@
 package user_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static parameters.Configurations.*;
-import static TestSuite.SuiteTest.*;
 
-public class TestPostRestorePassword {
+public class TestPostRestorePassword extends SuiteTest {
 
 
     @Test
@@ -19,8 +18,7 @@ public class TestPostRestorePassword {
                 .when()
                 .post(EndPoints.RestorePassword)
                 .then()
-                .statusCode(200)
-                .body(matchesJsonSchemaInClasspath("postRestorePassword.json"));
+                .statusCode(200);
     }
 
     @Test

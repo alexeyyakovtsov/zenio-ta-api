@@ -1,15 +1,14 @@
 package story_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
 import static org.hamcrest.CoreMatchers.hasItems;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetStoryId {
+public class TestGetStoryId extends SuiteTest {
 
     @Test
     public void getStoryId_status_200() {

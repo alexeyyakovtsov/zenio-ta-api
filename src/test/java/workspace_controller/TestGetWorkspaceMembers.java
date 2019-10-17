@@ -1,13 +1,12 @@
 package workspace_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static parameters.Configurations.*;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetWorkspaceMembers {
+public class TestGetWorkspaceMembers extends SuiteTest {
 
     @Test
     public void getWorkspaceMembers_status_200() {
@@ -17,8 +16,7 @@ public class TestGetWorkspaceMembers {
                 .when()
                 .get(EndPoints.GetWorkspaceMembers)
                 .then()
-                .statusCode(200)
-                .and().body(matchesJsonSchemaInClasspath("getWorkspaceMembers.json"));
+                .statusCode(200);
     }
 
     @Test

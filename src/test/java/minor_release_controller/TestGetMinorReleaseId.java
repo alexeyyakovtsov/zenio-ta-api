@@ -1,15 +1,14 @@
 package minor_release_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetMinorReleaseId {
+public class TestGetMinorReleaseId extends SuiteTest {
 
     @Test
     public void getMinorRelease_status_200() {

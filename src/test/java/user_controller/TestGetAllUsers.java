@@ -1,12 +1,11 @@
 package user_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetAllUsers {
+public class TestGetAllUsers extends SuiteTest {
 
     @Test
     public void getAllUsers_status_200() {
@@ -16,9 +15,7 @@ public class TestGetAllUsers {
                 .when()
                 .get(EndPoints.GetAllUsers)
                 .then()
-                .statusCode(200)
-                .and()
-                .body(matchesJsonSchemaInClasspath("getAllUsers.json"));
+                .statusCode(200);
     }
 
     @Test

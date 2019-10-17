@@ -1,14 +1,14 @@
 package minor_release_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static TestSuite.SuiteTest.*;
 
-public class TestPutUpdateMinorRelease {
+
+public class TestPutUpdateMinorRelease extends SuiteTest {
 
     @Test
     public void putUpdateMinorRelease_status_200() {

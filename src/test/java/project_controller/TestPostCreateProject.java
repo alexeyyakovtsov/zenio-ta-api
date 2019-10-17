@@ -1,14 +1,14 @@
 package project_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
 import static org.hamcrest.core.IsEqual.equalTo;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
 import static TestSuite.SuiteTest.*;
 
-public class TestPostCreateProject {
+public class TestPostCreateProject extends SuiteTest {
 
     @Test
     public void postCreateProject_status_200() {

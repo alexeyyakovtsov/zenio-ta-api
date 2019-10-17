@@ -1,14 +1,13 @@
 package project_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static parameters.Configurations.*;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetProjectIdUser {
+public class TestGetProjectIdUser extends SuiteTest {
 
     @Test
     public void getProjectIdUser_status_200() {

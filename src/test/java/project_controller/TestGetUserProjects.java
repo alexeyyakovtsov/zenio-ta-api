@@ -1,13 +1,11 @@
 package project_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
-import static TestSuite.SuiteTest.*;
 import static io.restassured.RestAssured.given;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
-public class TestGetUserProjects {
+public class TestGetUserProjects extends SuiteTest {
 
     @Test
     public void getUserProjects_status_200() {
@@ -17,9 +15,7 @@ public class TestGetUserProjects {
                 .when()
                 .get(EndPoints.UserProjects)
                 .then()
-                .statusCode(200)
-                .and()
-                .body(matchesJsonSchemaInClasspath("getUserProjects.json"));
+                .statusCode(200);
     }
 
     @Test

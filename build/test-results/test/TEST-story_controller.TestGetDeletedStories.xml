@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="story_controller.TestGetDeletedStories" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-17T11:48:00" hostname="zenio" time="1.898">
+  <properties/>
+  <testcase name="getDeletedStories_status_200" classname="story_controller.TestGetDeletedStories" time="1.076"/>
+  <testcase name="getDeletedStories_status_401" classname="story_controller.TestGetDeletedStories" time="0.822"/>
+  <system-out><![CDATA[Request method:	GET
+Request URI:	https://dev.zenio.co/api/projects/31/stories/deleted
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=E7D95E69F253475FA27EE3674BB360A8;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: nginx/1.17.4
+Date: Thu, 17 Oct 2019 11:48:01 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+
+{
+    "stories": [
+        {
+            "id": 16557,
+            "name": "eMBLQtncmwqC",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGVNQkxRdG5jbXdxQ251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16098,
+            "name": "miWpLTeKDybi",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MG1pV3BMVGVLRHliaW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16096,
+            "name": "jcPwCTBlrhnq",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGpjUHdDVEJscmhucW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16094,
+            "name": "nfOmKcKXNquk",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MG5mT21LY0tYTnF1a251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16559,
+            "name": "yggalkYDVqVi",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHlnZ2Fsa1lEVnFWaW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16561,
+            "name": "sFdTwtphEQRL",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHNGZFR3dHBoRVFSTG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16563,
+            "name": "mgniFjRMxRAz",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MG1nbmlGalJNeFJBem51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16565,
+            "name": "nIKKediwZarz",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MG5JS0tlZGl3WmFyem51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16567,
+            "name": "kkbfkZbgNTFw",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGtrYmZrWmJnTlRGd251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16569,
+            "name": "ncDREIndzHMv",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MG5jRFJFSW5kekhNdm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16571,
+            "name": "HhgsepsoCwuY",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEhoZ3NlcHNvQ3d1WW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16573,
+            "name": "MpvWAmilOAfC",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "ME1wdldBbWlsT0FmQ251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16575,
+            "name": "AmIWyzXTejgg",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEFtSVd5elhUZWpnZ251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16578,
+            "name": "JNQFHTXVUlSL",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEpOUUZIVFhWVWxTTG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16580,
+            "name": "kjZIkMahEqXs",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGtqWklrTWFoRXFYc251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16582,
+            "name": "swkluHQOPbGO",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHN3a2x1SFFPUGJHT251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16584,
+            "name": "vZHkgvCIkXVn",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHZaSGtndkNJa1hWbm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15975,
+            "name": "fdhsdfhsdfh",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGZkaHNkZmhzZGZobnVsbDBudWxsbnVsbDBmYWxzZQ==",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15976,
+            "name": "pzVgnYIWgiQP",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHB6VmduWUlXZ2lRUG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15977,
+            "name": "EgpSGrGXxjzH",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEVncFNHckdYeGp6SG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15978,
+            "name": "jGpaMuzpYiug",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGpHcGFNdXpwWWl1Z251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16601,
+            "name": "iiMwfUvJQyrq",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGlpTXdmVXZKUXlycW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15983,
+            "name": "SfNVJopmBPOA",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFNmTlZKb3BtQlBPQW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15982,
+            "name": "EPMIJwRBBllF",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEVQTUlKd1JCQmxsRm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15981,
+            "name": "KubLOdZGscwA",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEt1YkxPZFpHc2N3QW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15980,
+            "name": "AmwQfBGdBffI",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEFtd1FmQkdkQmZmSW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15979,
+            "name": "BbUSjSDMhfAL",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEJiVVNqU0RNaGZBTG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15984,
+            "name": "syacUMogRbHC",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHN5YWNVTW9nUmJIQ251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15985,
+            "name": "KWFaHAlfGPWq",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEtXRmFIQWxmR1BXcW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15986,
+            "name": "PXgGaEdfKEPh",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFBYZ0dhRWRmS0VQaG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16603,
+            "name": "TgrFddARSyPv",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFRnckZkZEFSU3lQdm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 15987,
+            "name": "UkfDdsnoreAH",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFVrZkRkc25vcmVBSG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16605,
+            "name": "GoyhnPLqYezd",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEdveWhuUExxWWV6ZG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16607,
+            "name": "SGcKzJFTziZQ",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFNHY0t6SkZUemlaUW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16609,
+            "name": "YMxztGaaVzvg",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFlNeHp0R2FhVnp2Z251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16611,
+            "name": "vtnTKguQCQlT",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHZ0blRLZ3VRQ1FsVG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16615,
+            "name": "uTPizWEgijgz",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHVUUGl6V0VnaWpnem51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16056,
+            "name": "QcmkoLmCaWtK",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFFjbWtvTG1DYVd0S251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16613,
+            "name": "whseHucjkRGP",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHdoc2VIdWNqa1JHUG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16060,
+            "name": "XkfLIoveyrnp",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFhrZkxJb3ZleXJucG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16058,
+            "name": "IdhOdoYrvTRr",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MElkaE9kb1lydlRScm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16062,
+            "name": "FnDDJVrcwYLy",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEZuRERKVnJjd1lMeW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16064,
+            "name": "mlINRWZkxsRG",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MG1sSU5SV1preHNSR251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16617,
+            "name": "veXsBiMJBZsw",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHZlWHNCaU1KQlpzd251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16619,
+            "name": "xdEOoCqXAzBL",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHhkRU9vQ3FYQXpCTG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16621,
+            "name": "PJdSlNVqakqy",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFBKZFNsTlZxYWtxeW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16623,
+            "name": "PgWpSjEROIcu",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFBnV3BTakVST0ljdW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16625,
+            "name": "JpLnoKOwOsgj",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEpwTG5vS093T3Nnam51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16627,
+            "name": "GPpAHkWxauPT",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEdQcEFIa1d4YXVQVG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16629,
+            "name": "SLHblnIzEPld",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFNMSGJsbkl6RVBsZG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16631,
+            "name": "qwxehUFFVIWy",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHF3eGVoVUZGVklXeW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16633,
+            "name": "GrfCsiULQwtq",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEdyZkNzaVVMUXd0cW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16637,
+            "name": "dJVqLZXszpNd",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGRKVnFMWlhzenBOZG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16635,
+            "name": "sjaElaxJEdoz",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHNqYUVsYXhKRWRvem51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16639,
+            "name": "clUnUIMJMAUr",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGNsVW5VSU1KTUFVcm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16641,
+            "name": "CoiDxxjlNqeV",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MENvaUR4eGpsTnFlVm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16643,
+            "name": "ncrhxbikwwBy",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MG5jcmh4Ymlrd3dCeW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16645,
+            "name": "vEMocnrNHXJR",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHZFTW9jbnJOSFhKUm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16647,
+            "name": "tLPuEJevnkMZ",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHRMUHVFSmV2bmtNWm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16649,
+            "name": "JtCSuSsOfhAH",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEp0Q1N1U3NPZmhBSG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16092,
+            "name": "brMzFBfEGZho",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGJyTXpGQmZFR1pob251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16651,
+            "name": "DkNLYXhdrWou",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MERrTkxZWGhkcldvdW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16653,
+            "name": "VyVELHQNJxAJ",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFZ5VkVMSFFOSnhBSm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16655,
+            "name": "fRhoHmRkDCMk",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGZSaG9IbVJrRENNa251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16657,
+            "name": "yGKyjuxxnTpT",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHlHS3lqdXh4blRwVG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16660,
+            "name": "CrRHmhubzdiL",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MENyUkhtaHViemRpTG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 5282,
+            "name": "222",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 5281,
+            "name": "111",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16662,
+            "name": "WRBWaluDawyO",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFdSQldhbHVEYXd5T251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16664,
+            "name": "KdQAXYkOOmBO",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEtkUUFYWWtPT21CT251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16668,
+            "name": "xTrXOaUIEAXx",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHhUclhPYVVJRUFYeG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16672,
+            "name": "owhsvbxdLCWw",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MG93aHN2YnhkTENXd251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16670,
+            "name": "gyqzHnmMRsmT",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGd5cXpIbm1NUnNtVG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16674,
+            "name": "NGauxCkYWDwL",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "ME5HYXV4Q2tZV0R3TG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16678,
+            "name": "VnIIaXuSfSnT",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFZuSUlhWHVTZlNuVG51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16680,
+            "name": "TsWpclgGhSkz",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MFRzV3BjbGdHaFNrem51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16666,
+            "name": "yhrJWxzhwXSF",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MHlockpXeHpod1hTRm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16676,
+            "name": "AgyItuUfHQwK",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MEFneUl0dVVmSFF3S251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        }
+    ]
+}
+Request method:	GET
+Request URI:	https://dev.zenio.co/api/projects/31/stories/deleted
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 401 
+Server: nginx/1.17.4
+Date: Thu, 17 Oct 2019 11:48:02 GMT
+Content-Length: 0
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

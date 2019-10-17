@@ -2,7 +2,6 @@ package project_health_controller;
 
 import TestSuite.EndPoints;
 import org.junit.Test;
-
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;

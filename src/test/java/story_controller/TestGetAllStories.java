@@ -1,13 +1,12 @@
 package story_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetAllStories {
+public class TestGetAllStories extends SuiteTest {
 
     @Test
     public void getAllStories_status_200() {

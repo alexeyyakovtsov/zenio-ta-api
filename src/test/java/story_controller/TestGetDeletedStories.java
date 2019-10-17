@@ -1,14 +1,12 @@
 package story_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
-
 import static org.hamcrest.CoreMatchers.hasItems;
 import static io.restassured.RestAssured.given;
-import static parameters.Configurations.*;
-import static TestSuite.SuiteTest.*;
 
-public class TestGetDeletedStories {
+public class TestGetDeletedStories extends SuiteTest {
 
     @Test
     public void getDeletedStories_status_200() {

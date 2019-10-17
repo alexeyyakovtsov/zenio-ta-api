@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="workspace_controller.TestPutUpdateWorkspace" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-17T11:48:49" hostname="zenio" time="1.565">
+  <properties/>
+  <testcase name="putUpdateWorkspace_status_200" classname="workspace_controller.TestPutUpdateWorkspace" time="0.904"/>
+  <testcase name="putUpdateWorkspace_status_401" classname="workspace_controller.TestPutUpdateWorkspace" time="0.658"/>
+  <system-out><![CDATA[Request method:	PUT
+Request URI:	https://dev.zenio.co/api/workspaces/27
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=72E73CFC422ABB5286B2645C1386BCE7;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "name": "dTjTnusmYpCO"
+}
+HTTP/1.1 200 
+Server: nginx/1.17.4
+Date: Thu, 17 Oct 2019 11:48:50 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+
+{
+    "id": 27,
+    "owned": true,
+    "name": "dTjTnusmYpCO",
+    "projects": [
+        {
+            "id": 1334,
+            "name": "test anna",
+            "acronym": "TES",
+            "workspaceId": 27,
+            "deleted": false,
+            "ownerId": 1,
+            "membersCount": 1
+        }
+    ],
+    "membersCount": 0
+}
+Request method:	PUT
+Request URI:	https://dev.zenio.co/api/workspaces/27
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "dTjTnusmYpCO"
+}
+HTTP/1.1 401 
+Server: nginx/1.17.4
+Date: Thu, 17 Oct 2019 11:48:51 GMT
+Content-Length: 0
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,13 +1,14 @@
 package activity_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
 import static TestSuite.SuiteTest.*;
 
-public class TestPostCreateActivity {
+public class TestPostCreateActivity extends SuiteTest {
 
     @Test
      public void postCreateActivity_status_200() {

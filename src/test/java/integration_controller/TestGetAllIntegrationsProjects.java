@@ -1,11 +1,12 @@
 package integration_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static TestSuite.SuiteTest.*;
 
-public class TestGetAllIntegrationsProjects {
+public class TestGetAllIntegrationsProjects extends SuiteTest {
 
     @Test
     public void getAllIntegrationsProjects_status_200() {

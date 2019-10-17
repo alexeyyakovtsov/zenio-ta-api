@@ -1,13 +1,15 @@
 package workspace_controller;
 
 import TestSuite.EndPoints;
+import TestSuite.SuiteTest;
+import org.junit.Ignore;
 import org.junit.Test;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
-import static TestSuite.SuiteTest.*;
 
-public class TestPostCreateWorkspace {
+public class TestPostCreateWorkspace extends SuiteTest {
 
+    @Ignore
     @Test
     public void postCreateWorkspace_status_200() {
             given()
@@ -20,6 +22,7 @@ public class TestPostCreateWorkspace {
                 .statusCode(201);
     }
 
+    @Ignore
     @Test
     public void postCreateWorkspace_status_401() {
         given()
