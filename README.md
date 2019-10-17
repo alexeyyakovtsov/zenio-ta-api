@@ -3,6 +3,7 @@
 ## Technology stack used
 1. Java
 2. Rest Assured
+3. Allure reports
 
 ## Project structure
 Folder name          | File content
