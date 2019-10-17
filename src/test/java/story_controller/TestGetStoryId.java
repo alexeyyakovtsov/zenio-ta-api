@@ -2,6 +2,7 @@ package story_controller;
 
 import TestSuite.EndPoints;
 import TestSuite.SuiteTest;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static parameters.Configurations.*;
@@ -11,6 +12,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
 public class TestGetStoryId extends SuiteTest {
 
     @Test
+    @DisplayName("GET Story ID status = 200")
     public void getStoryId_status_200() {
         given()
                 .spec(spec)
@@ -26,6 +28,7 @@ public class TestGetStoryId extends SuiteTest {
     }
 
     @Test
+    @DisplayName("GET Story ID status = 401")
     public void getStoryId_status_401() {
         given()
                 .spec(spec)
@@ -36,6 +39,7 @@ public class TestGetStoryId extends SuiteTest {
     }
 
     @Test
+    @DisplayName("GET Story ID status = 404")
     public void getStoryId_status_404() {
         given()
                 .spec(spec)

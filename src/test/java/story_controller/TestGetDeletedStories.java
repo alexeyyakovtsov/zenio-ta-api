@@ -2,6 +2,7 @@ package story_controller;
 
 import TestSuite.EndPoints;
 import TestSuite.SuiteTest;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static io.restassured.RestAssured.given;
@@ -9,6 +10,7 @@ import static io.restassured.RestAssured.given;
 public class TestGetDeletedStories extends SuiteTest {
 
     @Test
+    @DisplayName("GET Deleted Stories status = 200")
     public void getDeletedStories_status_200() {
         given()
                 .spec(spec)
@@ -21,6 +23,7 @@ public class TestGetDeletedStories extends SuiteTest {
     }
 
     @Test
+    @DisplayName("GET Deleted Stories status = 401")
     public void getDeletedStories_status_401() {
         given()
                 .spec(spec)

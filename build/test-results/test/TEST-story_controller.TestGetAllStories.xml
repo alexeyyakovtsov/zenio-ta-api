@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="story_controller.TestGetAllStories" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T11:48:11" hostname="zenio" time="3.162">
+<testsuite name="story_controller.TestGetAllStories" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:50:53" hostname="zenio" time="2.191">
   <properties/>
-  <testcase name="getAllStories_status_200" classname="story_controller.TestGetAllStories" time="1.594"/>
-  <testcase name="getAllStories_status_401" classname="story_controller.TestGetAllStories" time="0.798"/>
-  <testcase name="getAllStories_status_404" classname="story_controller.TestGetAllStories" time="0.767"/>
+  <testcase name="getAllStories_status_200" classname="story_controller.TestGetAllStories" time="0.738"/>
+  <testcase name="getAllStories_status_401" classname="story_controller.TestGetAllStories" time="0.657"/>
+  <testcase name="getAllStories_status_404" classname="story_controller.TestGetAllStories" time="0.792"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/stories
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=F900F78BFF34A9516F53291174D7B83B;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=18DE97B16874BFE0431B6652913E9DAA;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:48:13 GMT
+Date: Thu, 17 Oct 2019 13:50:53 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -34,17 +34,31 @@ X-Frame-Options: SAMEORIGIN
     "areas": [
         {
             "id": 67,
-            "name": "JROgenrBsZFO",
+            "name": "YpLcUhOGwjLb",
             "activityIds": [
                 1053,
                 1639,
                 1643,
-                6958
+                6958,
+                6963
             ],
             "actors": [
                 
             ],
-            "checksum": "lSxytqmPoOHh",
+            "checksum": "ReEwmfkkmUon",
+            "action": "NONE",
+            "kind": "area"
+        },
+        {
+            "id": 1783,
+            "name": "YpLcUhOGwjLb",
+            "activityIds": [
+                
+            ],
+            "actors": [
+                
+            ],
+            "checksum": "MFlwTGNVaE9Hd2pMYm51bGxmYWxzZQ==",
             "action": "NONE",
             "kind": "area"
         },
@@ -76,7 +90,7 @@ X-Frame-Options: SAMEORIGIN
         },
         {
             "id": 1053,
-            "name": "EAlUTaOAtXxy",
+            "name": "zeVLBVBJilSm",
             "areaId": 67,
             "cardIds": [
                 6199,
@@ -85,9 +99,11 @@ X-Frame-Options: SAMEORIGIN
                 5278,
                 5279,
                 16681,
-                16682
+                16682,
+                16691,
+                16692
             ],
-            "checksum": "ReEwmfkkmUon",
+            "checksum": "doWKuihaqsAM",
             "action": "NONE",
             "kind": "activity"
         },
@@ -124,23 +140,34 @@ X-Frame-Options: SAMEORIGIN
             "checksum": "MEVBbFVUYU9BdFh4eW51bGxmYWxzZQ==",
             "action": "NONE",
             "kind": "activity"
+        },
+        {
+            "id": 6963,
+            "name": "zeVLBVBJilSm",
+            "areaId": 67,
+            "cardIds": [
+                
+            ],
+            "checksum": "MHplVkxCVkJKaWxTbW51bGxmYWxzZQ==",
+            "action": "NONE",
+            "kind": "activity"
         }
     ],
     "cards": [
         {
-            "id": 6199,
-            "name": "uebUtwyxjFDN",
+            "id": 6200,
+            "name": "CrtuWxqBeVKH",
             "activityIds": [
-                1053
+                1643
             ],
-            "description": "RcCUjSbriVSs",
+            "description": "sxpMercYFpgq",
             "majorReleaseId": 2216,
-            "state": "UNSTARTED",
+            "state": null,
             "dueDate": null,
             "deleted": false,
-            "checksum": "ReEwmfkkmUon",
+            "checksum": "doWKuihaqsAM",
             "action": "NONE",
-            "kind": "story"
+            "kind": "minorRelease"
         },
         {
             "id": 6201,
@@ -158,19 +185,19 @@ X-Frame-Options: SAMEORIGIN
             "kind": "story"
         },
         {
-            "id": 6200,
-            "name": "iAKNSYYsTPOu",
+            "id": 6199,
+            "name": "qNnxJTkROTGR",
             "activityIds": [
-                1643
+                1053
             ],
-            "description": "RcCUjSbriVSs",
+            "description": "sxpMercYFpgq",
             "majorReleaseId": 2216,
-            "state": null,
+            "state": "UNSTARTED",
             "dueDate": null,
             "deleted": false,
-            "checksum": "ReEwmfkkmUon",
+            "checksum": "doWKuihaqsAM",
             "action": "NONE",
-            "kind": "minorRelease"
+            "kind": "story"
         },
         {
             "id": 5280,
@@ -276,12 +303,42 @@ X-Frame-Options: SAMEORIGIN
             "checksum": "ME1JUFJSWnRNVlFRTW51bGwwbnVsbG51bGwwZmFsc2U=",
             "action": "NONE",
             "kind": "story"
+        },
+        {
+            "id": 16691,
+            "name": "CrtuWxqBeVKH",
+            "activityIds": [
+                1053
+            ],
+            "description": null,
+            "majorReleaseId": 2216,
+            "state": null,
+            "dueDate": null,
+            "deleted": false,
+            "checksum": "MENydHVXeHFCZVZLSG51bGxmYWxzZQ==",
+            "action": "NONE",
+            "kind": "minorRelease"
+        },
+        {
+            "id": 16692,
+            "name": "bnvUkEnZJBFO",
+            "activityIds": [
+                1053
+            ],
+            "description": null,
+            "majorReleaseId": 2216,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": false,
+            "checksum": "MGJudlVrRW5aSkJGT251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
         }
     ],
     "majorReleases": [
         {
             "id": 2216,
-            "name": "osssBOBrehwj",
+            "name": "earLyUCtYJpt",
             "checksum": "MHNUbnd5UW1lY1h2bw==",
             "activityStories": [
                 {
@@ -299,7 +356,9 @@ X-Frame-Options: SAMEORIGIN
                         5278,
                         5279,
                         16681,
-                        16682
+                        16682,
+                        16691,
+                        16692
                     ]
                 },
                 {
@@ -317,6 +376,12 @@ X-Frame-Options: SAMEORIGIN
                 },
                 {
                     "activityId": 6958,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 6963,
                     "cardIds": [
                         
                     ]
@@ -359,6 +424,12 @@ X-Frame-Options: SAMEORIGIN
                     "cardIds": [
                         
                     ]
+                },
+                {
+                    "activityId": 6963,
+                    "cardIds": [
+                        
+                    ]
                 }
             ],
             "action": "NONE",
@@ -395,6 +466,12 @@ X-Frame-Options: SAMEORIGIN
                 },
                 {
                     "activityId": 6958,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 6963,
                     "cardIds": [
                         
                     ]
@@ -437,6 +514,57 @@ X-Frame-Options: SAMEORIGIN
                     "cardIds": [
                         
                     ]
+                },
+                {
+                    "activityId": 6963,
+                    "cardIds": [
+                        
+                    ]
+                }
+            ],
+            "action": "NONE",
+            "kind": "majorRelease"
+        },
+        {
+            "id": 2540,
+            "name": "earLyUCtYJpt",
+            "checksum": "MGVhckx5VUN0WUpwdA==",
+            "activityStories": [
+                {
+                    "activityId": 1679,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 1053,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 1639,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 1643,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 6958,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 6963,
+                    "cardIds": [
+                        
+                    ]
                 }
             ],
             "action": "NONE",
@@ -458,7 +586,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:48:13 GMT
+Date: Thu, 17 Oct 2019 13:50:54 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -477,12 +605,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=F900F78BFF34A9516F53291174D7B83B;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=18DE97B16874BFE0431B6652913E9DAA;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:48:14 GMT
+Date: Thu, 17 Oct 2019 13:50:55 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

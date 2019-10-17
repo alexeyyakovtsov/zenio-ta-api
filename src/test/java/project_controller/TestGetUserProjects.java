@@ -2,12 +2,14 @@ package project_controller;
 
 import TestSuite.EndPoints;
 import TestSuite.SuiteTest;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 
 public class TestGetUserProjects extends SuiteTest {
 
     @Test
+    @DisplayName("GET User Projects status = 200")
     public void getUserProjects_status_200() {
         given()
                 .spec(spec)

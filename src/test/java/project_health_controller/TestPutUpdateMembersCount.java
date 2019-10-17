@@ -1,6 +1,7 @@
 package project_health_controller;
 
 import TestSuite.EndPoints;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
@@ -9,6 +10,7 @@ import static TestSuite.SuiteTest.*;
 public class TestPutUpdateMembersCount {
 
     @Test
+    @DisplayName("GET Project Health Members status = 200")
     public void putUpdateMembersCount_status_200() {
         given()
                 .spec(spec)
@@ -23,6 +25,7 @@ public class TestPutUpdateMembersCount {
     }
 
     @Test
+    @DisplayName("GET Project Health Members status = 401")
     public void putUpdateMembersCount_status_401() {
         given()
                 .spec(spec)
@@ -36,6 +39,7 @@ public class TestPutUpdateMembersCount {
     }
 
     @Test
+    @DisplayName("GET Project Health Members status = 404")
     public void putUpdateMembersCount_status_404() {
         given()
                 .spec(spec)

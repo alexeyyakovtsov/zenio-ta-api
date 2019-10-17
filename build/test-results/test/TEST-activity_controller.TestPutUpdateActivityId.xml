@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="activity_controller.TestPutUpdateActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T11:47:08" hostname="zenio" time="2.267">
+<testsuite name="activity_controller.TestPutUpdateActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:50:07" hostname="zenio" time="2.251">
   <properties/>
-  <testcase name="putUpdateActivity_status_200" classname="activity_controller.TestPutUpdateActivityId" time="0.811"/>
-  <testcase name="putUpdateActivity_status_401" classname="activity_controller.TestPutUpdateActivityId" time="0.681"/>
-  <testcase name="putUpdateActivity_status_404" classname="activity_controller.TestPutUpdateActivityId" time="0.77"/>
+  <testcase name="putUpdateActivity_status_200" classname="activity_controller.TestPutUpdateActivityId" time="0.818"/>
+  <testcase name="putUpdateActivity_status_401" classname="activity_controller.TestPutUpdateActivityId" time="0.694"/>
+  <testcase name="putUpdateActivity_status_404" classname="activity_controller.TestPutUpdateActivityId" time="0.735"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
 Proxy:			<none>
@@ -13,18 +13,18 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=8858187D741E4C1382BCFB02BF99911A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=DB27D102666EF0BAC790F303DEAE514C;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "areaId": "67",
-    "name": "EAlUTaOAtXxy",
-    "checksum": "ReEwmfkkmUon",
+    "name": "zeVLBVBJilSm",
+    "checksum": "doWKuihaqsAM",
     "description": "123"
 }
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:47:08 GMT
+Date: Thu, 17 Oct 2019 13:50:08 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -38,7 +38,7 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 1053,
-    "name": "EAlUTaOAtXxy",
+    "name": "zeVLBVBJilSm",
     "areaId": 67,
     "projectId": 31,
     "externalId": null,
@@ -46,13 +46,15 @@ X-Frame-Options: SAMEORIGIN
     "majorReleases": [
         {
             "id": 2216,
-            "name": "ASHaCyKRWPyu",
+            "name": "osssBOBrehwj",
             "cardIds": [
                 5276,
                 5278,
                 5279,
                 5277,
-                6199
+                6199,
+                16681,
+                16682
             ],
             "checksum": "MHNUbnd5UW1lY1h2bw=="
         },
@@ -71,9 +73,17 @@ X-Frame-Options: SAMEORIGIN
                 
             ],
             "checksum": "MEFTSGFDeUtSV1B5dQ=="
+        },
+        {
+            "id": 2531,
+            "name": "osssBOBrehwj",
+            "cardIds": [
+                
+            ],
+            "checksum": "MG9zc3NCT0JyZWh3ag=="
         }
     ],
-    "checksum": "ReEwmfkkmUon"
+    "checksum": "doWKuihaqsAM"
 }
 Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
@@ -88,13 +98,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "EAlUTaOAtXxy",
-    "checksum": "ReEwmfkkmUon",
+    "name": "zeVLBVBJilSm",
+    "checksum": "doWKuihaqsAM",
     "description": "123"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:47:09 GMT
+Date: Thu, 17 Oct 2019 13:50:08 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -113,17 +123,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=8858187D741E4C1382BCFB02BF99911A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=DB27D102666EF0BAC790F303DEAE514C;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "EAlUTaOAtXxy",
-    "checksum": "ReEwmfkkmUon",
+    "name": "zeVLBVBJilSm",
+    "checksum": "doWKuihaqsAM",
     "description": "123"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:47:10 GMT
+Date: Thu, 17 Oct 2019 13:50:09 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

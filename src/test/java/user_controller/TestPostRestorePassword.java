@@ -2,14 +2,15 @@ package user_controller;
 
 import TestSuite.EndPoints;
 import TestSuite.SuiteTest;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static parameters.Configurations.*;
 
 public class TestPostRestorePassword extends SuiteTest {
 
-
     @Test
+    @DisplayName("POST Restore password status = 200")
     public void postRestorePassword_status_200() {
         given()
                 .spec(spec)
@@ -22,6 +23,7 @@ public class TestPostRestorePassword extends SuiteTest {
     }
 
     @Test
+    @DisplayName("POST Restore password status = 404")
     public void postRestorePassword_status_404() {
         given()
                 .spec(spec)

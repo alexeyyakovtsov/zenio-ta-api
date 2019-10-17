@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user_controller.TestGetAllUsers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T11:48:20" hostname="zenio" time="3.395">
+<testsuite name="user_controller.TestGetAllUsers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:51:01" hostname="zenio" time="2.844">
   <properties/>
-  <testcase name="getAllUsers_status_200" classname="user_controller.TestGetAllUsers" time="1.568"/>
-  <testcase name="getAllUsers_status_401" classname="user_controller.TestGetAllUsers" time="0.705"/>
-  <testcase name="getAllUsers_status_404" classname="user_controller.TestGetAllUsers" time="1.119"/>
+  <testcase name="getAllUsers_status_200" classname="user_controller.TestGetAllUsers" time="1.506"/>
+  <testcase name="getAllUsers_status_401" classname="user_controller.TestGetAllUsers" time="0.649"/>
+  <testcase name="getAllUsers_status_404" classname="user_controller.TestGetAllUsers" time="0.683"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/users
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C4BB125B2D18ECA0FD5727519B08CD3D;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=93D51D4FF9DC1C2FCB26BC4CF6629EE3;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:48:21 GMT
+Date: Thu, 17 Oct 2019 13:51:02 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -307,6 +307,17 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
+        "id": 1,
+        "username": "zenio",
+        "email": "zenio@zensoft.io",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-10-17T13:51:01.668",
+        "roles": [
+            "ADMIN"
+        ]
+    },
+    {
         "id": 50,
         "username": "davina",
         "email": "davina@designwrench.com",
@@ -491,17 +502,6 @@ X-Frame-Options: SAMEORIGIN
         "lastVisit": "2019-07-11T14:54:34.713",
         "roles": [
             
-        ]
-    },
-    {
-        "id": 1,
-        "username": "zenio",
-        "email": "zenio@zensoft.io",
-        "active": true,
-        "enabled": true,
-        "lastVisit": "2019-10-17T11:48:20.406",
-        "roles": [
-            "ADMIN"
         ]
     },
     {
@@ -6555,17 +6555,6 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
-        "id": 651,
-        "username": "Anna",
-        "email": "anna@zenio.co",
-        "active": true,
-        "enabled": true,
-        "lastVisit": "2019-10-17T11:47:54.393",
-        "roles": [
-            "CLIENT"
-        ]
-    },
-    {
         "id": 70,
         "username": "Dzmitry Malinouski",
         "email": "dmitry.malinovskiy@zensoft.io",
@@ -6962,6 +6951,17 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
+        "id": 651,
+        "username": "Anna",
+        "email": "anna@zenio.co",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-10-17T12:35:01.298",
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
         "id": 691,
         "username": "fTKdXjXlOOiM",
         "email": "fTKdXjXlOOiM@gmail.com",
@@ -7309,17 +7309,6 @@ X-Frame-Options: SAMEORIGIN
         "active": false,
         "enabled": true,
         "lastVisit": null,
-        "roles": [
-            "CLIENT"
-        ]
-    },
-    {
-        "id": 678,
-        "username": "QA",
-        "email": "alexey.yakovtsov@zenio.co",
-        "active": true,
-        "enabled": true,
-        "lastVisit": "2019-10-16T07:05:29.464",
         "roles": [
             "CLIENT"
         ]
@@ -7994,6 +7983,28 @@ X-Frame-Options: SAMEORIGIN
         "roles": [
             "CLIENT"
         ]
+    },
+    {
+        "id": 678,
+        "username": "QA",
+        "email": "alexey.yakovtsov@zenio.co",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-10-17T12:15:41.075",
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 745,
+        "username": "sonakeYYTPrX",
+        "email": "sonakeYYTPrX@gmail.com",
+        "active": false,
+        "enabled": true,
+        "lastVisit": null,
+        "roles": [
+            "CLIENT"
+        ]
     }
 ]
 Request method:	GET
@@ -8010,7 +8021,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:48:22 GMT
+Date: Thu, 17 Oct 2019 13:51:03 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -8029,12 +8040,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C4BB125B2D18ECA0FD5727519B08CD3D;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=93D51D4FF9DC1C2FCB26BC4CF6629EE3;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:48:23 GMT
+Date: Thu, 17 Oct 2019 13:51:04 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

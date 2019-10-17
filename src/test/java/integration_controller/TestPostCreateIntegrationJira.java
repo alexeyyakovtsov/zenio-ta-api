@@ -2,6 +2,7 @@ package integration_controller;
 
 import TestSuite.EndPoints;
 import TestSuite.SuiteTest;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
@@ -11,6 +12,7 @@ import static TestSuite.SuiteTest.*;
 public class TestPostCreateIntegrationJira extends SuiteTest {
 
     @Test
+    @DisplayName("POST Create JIRA Integrations status = 200")
     public void postCreateIntegrationJira_status_200() {
         given()
                 .spec(spec)
@@ -32,6 +34,7 @@ public class TestPostCreateIntegrationJira extends SuiteTest {
     }
 
     @Test
+    @DisplayName("POST Create JIRA Integrations status = 401")
     public void postCreateIntegrationJira_status_401() {
         given()
                 .spec(spec)
@@ -49,6 +52,7 @@ public class TestPostCreateIntegrationJira extends SuiteTest {
     }
 
     @Test
+    @DisplayName("POST Create JIRA Integrations status = 404")
     public void postCreateIntegrationJira_status_404() {
         given()
                 .spec(spec)

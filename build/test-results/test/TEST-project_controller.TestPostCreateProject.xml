@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestPostCreateProject" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T11:48:40" hostname="zenio" time="2.207">
+<testsuite name="project_controller.TestPostCreateProject" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:51:23" hostname="zenio" time="2.086">
   <properties/>
-  <testcase name="postCreateProject_status_200" classname="project_controller.TestPostCreateProject" time="0.748"/>
-  <testcase name="postCreateProject_status_401" classname="project_controller.TestPostCreateProject" time="0.742"/>
-  <testcase name="postCreateProject_status_404" classname="project_controller.TestPostCreateProject" time="0.716"/>
+  <testcase name="postCreateProject_status_200" classname="project_controller.TestPostCreateProject" time="0.719"/>
+  <testcase name="postCreateProject_status_401" classname="project_controller.TestPostCreateProject" time="0.675"/>
+  <testcase name="postCreateProject_status_404" classname="project_controller.TestPostCreateProject" time="0.69"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects
 Proxy:			<none>
@@ -13,16 +13,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=AF70E37581C88A4F4C5EA000DA725EC7;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=3FF158614AD765D4875802779F952D4A;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "MIPRRZtMVQQM",
+    "name": "bnvUkEnZJBFO",
     "workspaceId": "4"
 }
 HTTP/1.1 201 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:48:41 GMT
+Date: Thu, 17 Oct 2019 13:51:24 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -35,9 +35,9 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 1501,
-    "name": "MIPRRZtMVQQM",
-    "acronym": "MIP",
+    "id": 1508,
+    "name": "bnvUkEnZJBFO",
+    "acronym": "BNV",
     "workspaceId": 4,
     "deleted": false,
     "ownerId": 1,
@@ -56,12 +56,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "MIPRRZtMVQQM",
+    "name": "bnvUkEnZJBFO",
     "workspaceId": "4"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:48:41 GMT
+Date: Thu, 17 Oct 2019 13:51:24 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -80,16 +80,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=AF70E37581C88A4F4C5EA000DA725EC7;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=3FF158614AD765D4875802779F952D4A;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "MIPRRZtMVQQM",
+    "name": "bnvUkEnZJBFO",
     "workspaceId": "4"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:48:42 GMT
+Date: Thu, 17 Oct 2019 13:51:25 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

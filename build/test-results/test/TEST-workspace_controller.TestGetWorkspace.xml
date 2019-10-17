@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestGetWorkspace" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T11:48:59" hostname="zenio" time="2.2">
+<testsuite name="workspace_controller.TestGetWorkspace" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:51:38" hostname="zenio" time="2.241">
   <properties/>
-  <testcase name="getUserWorkspaces_status_200" classname="workspace_controller.TestGetWorkspace" time="0.691"/>
-  <testcase name="getUserWorkspaces_status_401" classname="workspace_controller.TestGetWorkspace" time="0.693"/>
-  <testcase name="getUserWorkspaces_status_404" classname="workspace_controller.TestGetWorkspace" time="0.81"/>
+  <testcase name="getUserWorkspaces_status_200" classname="workspace_controller.TestGetWorkspace" time="0.708"/>
+  <testcase name="getUserWorkspaces_status_401" classname="workspace_controller.TestGetWorkspace" time="0.65"/>
+  <testcase name="getUserWorkspaces_status_404" classname="workspace_controller.TestGetWorkspace" time="0.878"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/workspaces
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=2014A48A3AF4B2EC4BE3DD1F1A340EA2;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=2460469BDA36B2D9E60BCE50C067AD9F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:49:00 GMT
+Date: Thu, 17 Oct 2019 13:51:39 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -36,6 +36,15 @@ X-Frame-Options: SAMEORIGIN
         "owned": true,
         "name": "AMpZDbKfyoOd",
         "projects": [
+            {
+                "id": 1502,
+                "name": "z11",
+                "acronym": "Z11",
+                "workspaceId": 31,
+                "deleted": false,
+                "ownerId": 1,
+                "membersCount": 1
+            },
             {
                 "id": 1431,
                 "name": "11",
@@ -80,7 +89,15 @@ X-Frame-Options: SAMEORIGIN
         "owned": true,
         "name": "EQrETHRQrhaj",
         "projects": [
-            
+            {
+                "id": 1507,
+                "name": "1111",
+                "acronym": "111",
+                "workspaceId": 30,
+                "deleted": false,
+                "ownerId": 1,
+                "membersCount": 1
+            }
         ],
         "membersCount": 1
     },
@@ -113,7 +130,7 @@ X-Frame-Options: SAMEORIGIN
     {
         "id": 27,
         "owned": true,
-        "name": "dTjTnusmYpCO",
+        "name": "DdAiNCxNwweJ",
         "projects": [
             {
                 "id": 1334,
@@ -150,9 +167,9 @@ X-Frame-Options: SAMEORIGIN
         "name": "Admin (test-test-test)",
         "projects": [
             {
-                "id": 1501,
-                "name": "MIPRRZtMVQQM",
-                "acronym": "MIP",
+                "id": 1508,
+                "name": "bnvUkEnZJBFO",
+                "acronym": "BNV",
                 "workspaceId": 4,
                 "deleted": false,
                 "ownerId": 1,
@@ -160,8 +177,8 @@ X-Frame-Options: SAMEORIGIN
             },
             {
                 "id": 1460,
-                "name": "vfELIOnYzPcs Update name",
-                "acronym": "VFE",
+                "name": "mMiMruCGVjVc Update name",
+                "acronym": "MMI",
                 "workspaceId": 4,
                 "deleted": false,
                 "ownerId": 1,
@@ -274,7 +291,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:49:00 GMT
+Date: Thu, 17 Oct 2019 13:51:39 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -293,12 +310,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=2014A48A3AF4B2EC4BE3DD1F1A340EA2;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=2460469BDA36B2D9E60BCE50C067AD9F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:49:01 GMT
+Date: Thu, 17 Oct 2019 13:51:40 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

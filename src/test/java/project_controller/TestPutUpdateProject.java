@@ -2,6 +2,7 @@ package project_controller;
 
 import TestSuite.EndPoints;
 import TestSuite.SuiteTest;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
@@ -10,6 +11,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
 public class TestPutUpdateProject extends SuiteTest {
 
     @Test
+    @DisplayName("PUT Update Project status = 200")
     public void putUpdateProject_status_200() {
         given()
                 .spec(spec)
@@ -28,6 +30,7 @@ public class TestPutUpdateProject extends SuiteTest {
     }
 
     @Test
+    @DisplayName("PUT Update Project status = 401")
     public void putUpdateProject_status_401() {
         given()
                 .spec(spec)
@@ -41,6 +44,7 @@ public class TestPutUpdateProject extends SuiteTest {
     }
 
     @Test
+    @DisplayName("PUT Update Project status = 404")
     public void putUpdateProject_status_404() {
         given()
                 .spec(spec)

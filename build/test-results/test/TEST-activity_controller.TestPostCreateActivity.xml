@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="activity_controller.TestPostCreateActivity" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T11:47:00" hostname="zenio" time="3.708">
+<testsuite name="activity_controller.TestPostCreateActivity" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:49:57" hostname="zenio" time="3.666">
   <properties/>
-  <testcase name="postCreateActivity_status_200" classname="activity_controller.TestPostCreateActivity" time="1.548"/>
-  <testcase name="postCreateActivity_status_401" classname="activity_controller.TestPostCreateActivity" time="0.939"/>
-  <testcase name="postCreateActivity_status_404" classname="activity_controller.TestPostCreateActivity" time="1.214"/>
+  <testcase name="postCreateActivity_status_200" classname="activity_controller.TestPostCreateActivity" time="1.805"/>
+  <testcase name="postCreateActivity_status_401" classname="activity_controller.TestPostCreateActivity" time="0.791"/>
+  <testcase name="postCreateActivity_status_404" classname="activity_controller.TestPostCreateActivity" time="1.051"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects/31/activities
 Proxy:			<none>
@@ -13,17 +13,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=B5E93ADBE55E84D6871A068252B00058;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=80A1804A50AFE48E4FC471444C89A2E1;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "EAlUTaOAtXxy",
+    "name": "zeVLBVBJilSm",
     "areaId": "67",
-    "checksum": "ReEwmfkkmUon"
+    "checksum": "doWKuihaqsAM"
 }
 HTTP/1.1 201 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:47:01 GMT
+Date: Thu, 17 Oct 2019 13:49:58 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -36,8 +36,8 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 6958,
-    "name": "EAlUTaOAtXxy",
+    "id": 6963,
+    "name": "zeVLBVBJilSm",
     "areaId": 67,
     "projectId": 31,
     "externalId": null,
@@ -45,7 +45,7 @@ X-Frame-Options: SAMEORIGIN
     "majorReleases": [
         {
             "id": 2216,
-            "name": "ASHaCyKRWPyu",
+            "name": "osssBOBrehwj",
             "cardIds": [
                 
             ],
@@ -66,9 +66,17 @@ X-Frame-Options: SAMEORIGIN
                 
             ],
             "checksum": "MEFTSGFDeUtSV1B5dQ=="
+        },
+        {
+            "id": 2531,
+            "name": "osssBOBrehwj",
+            "cardIds": [
+                
+            ],
+            "checksum": "MG9zc3NCT0JyZWh3ag=="
         }
     ],
-    "checksum": "MEVBbFVUYU9BdFh4eW51bGxmYWxzZQ=="
+    "checksum": "MHplVkxCVkJKaWxTbW51bGxmYWxzZQ=="
 }
 Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects/31/activities
@@ -83,12 +91,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "EAlUTaOAtXxy",
+    "name": "zeVLBVBJilSm",
     "areaId": "67"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:47:03 GMT
+Date: Thu, 17 Oct 2019 13:49:59 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -107,16 +115,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=B5E93ADBE55E84D6871A068252B00058;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=80A1804A50AFE48E4FC471444C89A2E1;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "EAlUTaOAtXxy",
+    "name": "zeVLBVBJilSm",
     "areaId": "67"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 11:47:04 GMT
+Date: Thu, 17 Oct 2019 13:50:00 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

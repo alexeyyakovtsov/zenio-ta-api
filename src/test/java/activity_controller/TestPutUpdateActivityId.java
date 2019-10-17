@@ -2,15 +2,16 @@ package activity_controller;
 
 import TestSuite.EndPoints;
 import TestSuite.SuiteTest;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static TestSuite.SuiteTest.*;
 
 public class TestPutUpdateActivityId extends SuiteTest {
 
     @Test
+    @DisplayName("PUT Update Activity status = 200")
     public void putUpdateActivity_status_200() {
         given()
                 .spec(spec)
@@ -31,6 +32,7 @@ public class TestPutUpdateActivityId extends SuiteTest {
     }
 
     @Test
+    @DisplayName("PUT Update Activity status = 401")
     public void putUpdateActivity_status_401() {
         given()
                 .spec(spec)
@@ -46,6 +48,7 @@ public class TestPutUpdateActivityId extends SuiteTest {
     }
 
     @Test
+    @DisplayName("PUT Update Activity status = 404")
     public void putUpdateActivity_status_404() {
         given()
                 .spec(spec)

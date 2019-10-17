@@ -2,15 +2,16 @@ package area_controller;
 
 import TestSuite.EndPoints;
 import TestSuite.SuiteTest;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
-import static TestSuite.SuiteTest.*;
 
 public class TestPostCreateArea extends SuiteTest {
 
     @Test
+    @DisplayName("POST Create Area status = 200")
     public void postCreateArea_status_200() {
         given()
                 .spec(spec)
@@ -29,6 +30,7 @@ public class TestPostCreateArea extends SuiteTest {
     }
 
     @Test
+    @DisplayName("POST Create Area status = 401")
     public void postCreateArea_status_401() {
         given()
                 .spec(spec)
@@ -45,6 +47,7 @@ public class TestPostCreateArea extends SuiteTest {
     }
 
     @Test
+    @DisplayName("POST Create Area status = 404")
     public void postCreateArea_status_404() {
         given()
                 .spec(spec)

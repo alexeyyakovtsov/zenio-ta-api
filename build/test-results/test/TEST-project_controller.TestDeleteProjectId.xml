@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestDeleteProjectId" tests="3" skipped="3" failures="0" errors="0" timestamp="2019-10-17T11:48:39" hostname="zenio" time="0.006">
+<testsuite name="project_controller.TestDeleteProjectId" tests="3" skipped="3" failures="0" errors="0" timestamp="2019-10-17T13:51:22" hostname="zenio" time="0.003">
   <properties/>
-  <testcase name="deleteProjectId_status_200" classname="project_controller.TestDeleteProjectId" time="0.001">
+  <testcase name="deleteProjectId_status_200" classname="project_controller.TestDeleteProjectId" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="deleteProjectId_status_401" classname="project_controller.TestDeleteProjectId" time="0.001">
+  <testcase name="deleteProjectId_status_401" classname="project_controller.TestDeleteProjectId" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="deleteProjectId_status_404" classname="project_controller.TestDeleteProjectId" time="0.0">
+  <testcase name="deleteProjectId_status_404" classname="project_controller.TestDeleteProjectId" time="0.001">
     <skipped/>
   </testcase>
   <system-out><![CDATA[]]></system-out>
