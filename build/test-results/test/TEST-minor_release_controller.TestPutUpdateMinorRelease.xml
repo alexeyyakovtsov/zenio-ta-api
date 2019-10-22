@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minor_release_controller.TestPutUpdateMinorRelease" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:26:03" hostname="zenio" time="2.023">
+<testsuite name="minor_release_controller.TestPutUpdateMinorRelease" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:12:56" hostname="zenio" time="1.989">
   <properties/>
-  <testcase name="putUpdateMinorRelease_status_200" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.71"/>
-  <testcase name="putUpdateMinorRelease_status_401" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.628"/>
-  <testcase name="putUpdateMinorRelease_status_404" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.682"/>
+  <testcase name="putUpdateMinorRelease_status_200" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.698"/>
+  <testcase name="putUpdateMinorRelease_status_401" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.65"/>
+  <testcase name="putUpdateMinorRelease_status_404" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.639"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/releases/minor/6200
 Proxy:			<none>
@@ -13,17 +13,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=B29C4C936ECCC05584A3477222969600;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=65117A2B73321B998C1CB1E8AAA658A4;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "cRlKXdqyHCVX",
-    "description": "XwvLIPZxFpmL",
-    "checksum": "GJjmpIFUaZVM"
+    "name": "dvoZfXRCydZf",
+    "description": "KPoHkNcbVTyY",
+    "checksum": "pzJsmIyupCBf"
 }
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:04 GMT
+Date: Tue, 22 Oct 2019 15:12:57 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -37,15 +37,15 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 6200,
-    "name": "cRlKXdqyHCVX",
+    "name": "dvoZfXRCydZf",
     "projectId": 31,
     "majorReleaseId": 2216,
     "activityIds": [
         1643
     ],
-    "description": "XwvLIPZxFpmL",
+    "description": "KPoHkNcbVTyY",
     "dueDate": null,
-    "checksum": "GJjmpIFUaZVM"
+    "checksum": "pzJsmIyupCBf"
 }
 Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/releases/minor/6200
@@ -60,13 +60,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "cRlKXdqyHCVX",
-    "description": "XwvLIPZxFpmL",
-    "checksum": "GJjmpIFUaZVM"
+    "name": "dvoZfXRCydZf",
+    "description": "KPoHkNcbVTyY",
+    "checksum": "pzJsmIyupCBf"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:04 GMT
+Date: Tue, 22 Oct 2019 15:12:58 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -85,17 +85,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=B29C4C936ECCC05584A3477222969600;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=65117A2B73321B998C1CB1E8AAA658A4;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "cRlKXdqyHCVX",
-    "description": "XwvLIPZxFpmL",
-    "checksum": "GJjmpIFUaZVM"
+    "name": "dvoZfXRCydZf",
+    "description": "KPoHkNcbVTyY",
+    "checksum": "pzJsmIyupCBf"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:05 GMT
+Date: Tue, 22 Oct 2019 15:12:58 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

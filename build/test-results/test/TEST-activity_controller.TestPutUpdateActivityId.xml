@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="activity_controller.TestPutUpdateActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:25:35" hostname="zenio" time="2.377">
+<testsuite name="activity_controller.TestPutUpdateActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:12:17" hostname="zenio" time="2.214">
   <properties/>
-  <testcase name="putUpdateActivity_status_200" classname="activity_controller.TestPutUpdateActivityId" time="0.752"/>
-  <testcase name="putUpdateActivity_status_401" classname="activity_controller.TestPutUpdateActivityId" time="0.904"/>
-  <testcase name="putUpdateActivity_status_404" classname="activity_controller.TestPutUpdateActivityId" time="0.71"/>
+  <testcase name="putUpdateActivity_status_200" classname="activity_controller.TestPutUpdateActivityId" time="0.73"/>
+  <testcase name="putUpdateActivity_status_401" classname="activity_controller.TestPutUpdateActivityId" time="0.807"/>
+  <testcase name="putUpdateActivity_status_404" classname="activity_controller.TestPutUpdateActivityId" time="0.676"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
 Proxy:			<none>
@@ -13,18 +13,18 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=8EA5577DDFFE434BD515BE4C892BB0E2;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=F9836462589E69B669FDD4570225F16A;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "areaId": "67",
-    "name": "BiAEdiDIFDeY",
-    "checksum": "GJjmpIFUaZVM",
+    "name": "bsSrUZBbheaj",
+    "checksum": "pzJsmIyupCBf",
     "description": "123"
 }
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:25:35 GMT
+Date: Tue, 22 Oct 2019 15:12:17 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -38,15 +38,15 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 1053,
-    "name": "BiAEdiDIFDeY",
+    "name": "bsSrUZBbheaj",
     "areaId": 67,
     "projectId": 31,
-    "externalId": null,
+    "externalId": 4442345,
     "description": "123",
     "majorReleases": [
         {
             "id": 2216,
-            "name": "gCcUYtszfRyP",
+            "name": "JhwtpjZSXsPo",
             "cardIds": [
                 5276,
                 5278,
@@ -57,15 +57,15 @@ X-Frame-Options: SAMEORIGIN
             "checksum": "MHNUbnd5UW1lY1h2bw=="
         },
         {
-            "id": 2551,
-            "name": "gCcUYtszfRyP",
+            "id": 2562,
+            "name": "JhwtpjZSXsPo",
             "cardIds": [
                 
             ],
-            "checksum": "MGdDY1VZdHN6ZlJ5UA=="
+            "checksum": "MEpod3RwalpTWHNQbw=="
         }
     ],
-    "checksum": "GJjmpIFUaZVM"
+    "checksum": "pzJsmIyupCBf"
 }
 Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
@@ -80,13 +80,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "BiAEdiDIFDeY",
-    "checksum": "GJjmpIFUaZVM",
+    "name": "bsSrUZBbheaj",
+    "checksum": "pzJsmIyupCBf",
     "description": "123"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:25:36 GMT
+Date: Tue, 22 Oct 2019 15:12:18 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -105,17 +105,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=8EA5577DDFFE434BD515BE4C892BB0E2;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=F9836462589E69B669FDD4570225F16A;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "BiAEdiDIFDeY",
-    "checksum": "GJjmpIFUaZVM",
+    "name": "bsSrUZBbheaj",
+    "checksum": "pzJsmIyupCBf",
     "description": "123"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:25:37 GMT
+Date: Tue, 22 Oct 2019 15:12:19 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

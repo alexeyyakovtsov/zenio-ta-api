@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">112</div>
+<div class="counter">153</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">4</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m19.05s</div>
+<div class="counter">1m48.13s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox skipped" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">97%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,16 +58,40 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Ignored tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Packages</a>
+<a href="#tab1">Ignored tests</a>
 </li>
 <li>
-<a href="#tab2">Classes</a>
+<a href="#tab2">Packages</a>
+</li>
+<li>
+<a href="#tab3">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/user_controller.TestPostRestorePassword.html">TestPostRestorePassword</a>.
+<a href="classes/user_controller.TestPostRestorePassword.html#postNegativeTest2_status_400">postNegativeTest2_status_400</a>
+</li>
+<li>
+<a href="classes/user_controller.TestPostRestorePassword.html">TestPostRestorePassword</a>.
+<a href="classes/user_controller.TestPostRestorePassword.html#postNegativeTest3_status_400">postNegativeTest3_status_400</a>
+</li>
+<li>
+<a href="classes/user_controller.TestPostRestorePassword.html">TestPostRestorePassword</a>.
+<a href="classes/user_controller.TestPostRestorePassword.html#postNegativeTest4_status_400">postNegativeTest4_status_400</a>
+</li>
+<li>
+<a href="classes/user_controller.TestPostRestorePassword.html">TestPostRestorePassword</a>.
+<a href="classes/user_controller.TestPostRestorePassword.html#postNegativeTest5_status_400">postNegativeTest5_status_400</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Ignored tests</h2>
 <ul class="linkList">
 <li>
@@ -92,7 +116,7 @@
 </li>
 </ul>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -113,57 +137,57 @@
 <td>14</td>
 <td>0</td>
 <td>0</td>
-<td>11.171s</td>
+<td>10.790s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/area_controller.html">area_controller</a>
 </td>
-<td>9</td>
+<td>13</td>
 <td>0</td>
 <td>0</td>
-<td>6.130s</td>
+<td>11.965s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/integration_controller.html">integration_controller</a>
 </td>
-<td>12</td>
+<td>20</td>
 <td>0</td>
 <td>0</td>
-<td>11.039s</td>
+<td>17.192s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/major_release_controller.html">major_release_controller</a>
 </td>
-<td>6</td>
+<td>8</td>
 <td>0</td>
 <td>0</td>
-<td>4.155s</td>
+<td>5.376s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/minor_release_controller.html">minor_release_controller</a>
 </td>
-<td>9</td>
+<td>15</td>
 <td>0</td>
 <td>0</td>
-<td>6.348s</td>
+<td>10.072s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="skipped">
 <a href="packages/project_controller.html">project_controller</a>
 </td>
-<td>18</td>
+<td>23</td>
 <td>0</td>
 <td>3</td>
-<td>10.928s</td>
+<td>13.869s</td>
 <td class="skipped">100%</td>
 </tr>
 <tr>
@@ -173,28 +197,28 @@
 <td>6</td>
 <td>0</td>
 <td>0</td>
-<td>4.085s</td>
+<td>4.014s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/story_controller.html">story_controller</a>
 </td>
-<td>14</td>
+<td>20</td>
 <td>0</td>
 <td>0</td>
-<td>9.763s</td>
+<td>13.409s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/user_controller.html">user_controller</a>
 </td>
-<td>11</td>
+<td>21</td>
+<td>4</td>
 <td>0</td>
-<td>0</td>
-<td>8.021s</td>
-<td class="success">100%</td>
+<td>14.257s</td>
+<td class="failures">80%</td>
 </tr>
 <tr>
 <td class="skipped">
@@ -203,13 +227,13 @@
 <td>13</td>
 <td>0</td>
 <td>2</td>
-<td>7.412s</td>
+<td>7.187s</td>
 <td class="skipped">100%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab3" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -230,7 +254,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.211s</td>
+<td>2.111s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -240,7 +264,7 @@
 <td>8</td>
 <td>0</td>
 <td>0</td>
-<td>6.594s</td>
+<td>6.466s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -250,7 +274,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.366s</td>
+<td>2.213s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -260,17 +284,17 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.091s</td>
+<td>1.946s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/area_controller.TestPostCreateArea.html">area_controller.TestPostCreateArea</a>
 </td>
-<td>3</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>2.002s</td>
+<td>8.030s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -280,7 +304,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.037s</td>
+<td>1.989s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -290,7 +314,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>4.223s</td>
+<td>5.181s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -300,37 +324,37 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.032s</td>
+<td>1.934s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/integration_controller.TestPostCreateIntegrationJira.html">integration_controller.TestPostCreateIntegrationJira</a>
 </td>
-<td>3</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>2.597s</td>
+<td>5.242s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/integration_controller.TestPostCreateIntegrationPivotal.html">integration_controller.TestPostCreateIntegrationPivotal</a>
 </td>
-<td>3</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>2.187s</td>
+<td>4.835s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/major_release_controller.TestPostCreateMajorRelease.html">major_release_controller.TestPostCreateMajorRelease</a>
 </td>
-<td>3</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
-<td>2.113s</td>
+<td>3.382s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -340,7 +364,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.042s</td>
+<td>1.994s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -350,17 +374,17 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.152s</td>
+<td>2.074s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/minor_release_controller.TestPostCreateMinorRelease.html">minor_release_controller.TestPostCreateMinorRelease</a>
 </td>
-<td>3</td>
+<td>9</td>
 <td>0</td>
 <td>0</td>
-<td>2.176s</td>
+<td>6.011s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -370,7 +394,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.020s</td>
+<td>1.987s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -390,7 +414,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.415s</td>
+<td>2.344s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -400,7 +424,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.043s</td>
+<td>2.059s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -410,17 +434,17 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.301s</td>
+<td>2.252s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/project_controller.TestPostCreateProject.html">project_controller.TestPostCreateProject</a>
 </td>
-<td>3</td>
+<td>8</td>
 <td>0</td>
 <td>0</td>
-<td>2.019s</td>
+<td>5.220s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -430,7 +454,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.150s</td>
+<td>1.994s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -440,7 +464,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.036s</td>
+<td>1.973s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -450,7 +474,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.049s</td>
+<td>2.041s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -460,7 +484,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.003s</td>
+<td>1.960s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -470,7 +494,7 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>1.548s</td>
+<td>1.488s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -480,17 +504,17 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.067s</td>
+<td>1.985s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/story_controller.TestPostCreateStory.html">story_controller.TestPostCreateStory</a>
 </td>
-<td>3</td>
+<td>9</td>
 <td>0</td>
 <td>0</td>
-<td>2.035s</td>
+<td>5.917s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -500,7 +524,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.110s</td>
+<td>2.059s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -510,7 +534,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.517s</td>
+<td>2.406s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -520,28 +544,28 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.024s</td>
+<td>2.004s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/user_controller.TestPostInviteUser.html">user_controller.TestPostInviteUser</a>
 </td>
-<td>3</td>
+<td>8</td>
 <td>0</td>
 <td>0</td>
-<td>2.097s</td>
+<td>5.283s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="classes/user_controller.TestPostRestorePassword.html">user_controller.TestPostRestorePassword</a>
 </td>
-<td>2</td>
+<td>7</td>
+<td>4</td>
 <td>0</td>
-<td>0</td>
-<td>1.383s</td>
-<td class="success">100%</td>
+<td>4.564s</td>
+<td class="failures">42%</td>
 </tr>
 <tr>
 <td class="success">
@@ -550,7 +574,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.044s</td>
+<td>1.984s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -560,7 +584,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.063s</td>
+<td>1.942s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -570,7 +594,7 @@
 <td>3</td>
 <td>0</td>
 <td>0</td>
-<td>1.958s</td>
+<td>1.991s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -580,7 +604,7 @@
 <td>2</td>
 <td>0</td>
 <td>2</td>
-<td>0.001s</td>
+<td>0s</td>
 <td class="skipped">-</td>
 </tr>
 <tr>
@@ -590,7 +614,7 @@
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>1.346s</td>
+<td>1.270s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
@@ -604,7 +628,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 22 окт. 2019 г., 14:27:07</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 22 окт. 2019 г., 18:14:22</p>
 </div>
 </div>
 </body>

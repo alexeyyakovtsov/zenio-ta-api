@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user_controller.TestPostInviteUser" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:26:19" hostname="zenio" time="2.1">
+<testsuite name="user_controller.TestPostInviteUser" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:13:20" hostname="zenio" time="5.296">
   <properties/>
-  <testcase name="postInviteUser_status_200" classname="user_controller.TestPostInviteUser" time="0.802"/>
-  <testcase name="postInviteUser_status_401" classname="user_controller.TestPostInviteUser" time="0.657"/>
-  <testcase name="postInviteUser_status_404" classname="user_controller.TestPostInviteUser" time="0.638"/>
+  <testcase name="postNegativeTest4_status_400" classname="user_controller.TestPostInviteUser" time="0.627"/>
+  <testcase name="postNegativeTest5_status_400" classname="user_controller.TestPostInviteUser" time="0.648"/>
+  <testcase name="postInviteUser_status_200" classname="user_controller.TestPostInviteUser" time="0.734"/>
+  <testcase name="postInviteUser_status_401" classname="user_controller.TestPostInviteUser" time="0.621"/>
+  <testcase name="postInviteUser_status_404" classname="user_controller.TestPostInviteUser" time="0.71"/>
+  <testcase name="postNegativeTest1_status_400" classname="user_controller.TestPostInviteUser" time="0.636"/>
+  <testcase name="postNegativeTest2_status_400" classname="user_controller.TestPostInviteUser" time="0.649"/>
+  <testcase name="postNegativeTest3_status_400" classname="user_controller.TestPostInviteUser" time="0.658"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/users/invite
 Proxy:			<none>
@@ -13,17 +18,107 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=1F3D9D7C5D761679482E9A488C8FC23F;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "emails": [
-        "nZuKoPvQpXXu@gmail.com"
+        "xxx@xx"
+    ]
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:20 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+
+{
+    "notFound": [
+        
+    ],
+    "invalid": [
+        "xxx@xx"
+    ],
+    "repeated": [
+        
+    ],
+    "existing": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/users/invite
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "emails": [
+        "@xx.com"
+    ]
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:21 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+
+{
+    "notFound": [
+        
+    ],
+    "invalid": [
+        "@xx.com"
+    ],
+    "repeated": [
+        
+    ],
+    "existing": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/users/invite
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "emails": [
+        "bTIWcUcnWXuK@gmail.com"
     ]
 }
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:20 GMT
+Date: Tue, 22 Oct 2019 15:13:21 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -47,7 +142,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:21 GMT
+Date: Tue, 22 Oct 2019 15:13:22 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -66,17 +161,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=1F3D9D7C5D761679482E9A488C8FC23F;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "emails": [
-        "nZuKoPvQpXXu@gmail.com"
+        "bTIWcUcnWXuK@gmail.com"
     ]
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:21 GMT
+Date: Tue, 22 Oct 2019 15:13:23 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -262,6 +357,131 @@ Content-Language: en-US
     <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
   </body>
 </html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/users/invite
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:23 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/users/invite
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "emails": [
+        "123"
+    ]
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:24 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+
+{
+    "notFound": [
+        
+    ],
+    "invalid": [
+        "123"
+    ],
+    "repeated": [
+        
+    ],
+    "existing": [
+        
+    ]
+}
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/users/invite
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "emails": [
+        "xxx.xx"
+    ]
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:25 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+
+{
+    "notFound": [
+        
+    ],
+    "invalid": [
+        "xxx.xx"
+    ],
+    "repeated": [
+        
+    ],
+    "existing": [
+        
+    ]
+}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

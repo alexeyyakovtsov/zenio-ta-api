@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="story_controller.TestPostCreateStory" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:26:14" hostname="zenio" time="2.037">
+<testsuite name="story_controller.TestPostCreateStory" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:13:10" hostname="zenio" time="5.93">
   <properties/>
-  <testcase name="postCreateStory_status_200" classname="story_controller.TestPostCreateStory" time="0.722"/>
-  <testcase name="postCreateStory_status_401" classname="story_controller.TestPostCreateStory" time="0.649"/>
-  <testcase name="postCreateStory_status_404" classname="story_controller.TestPostCreateStory" time="0.664"/>
+  <testcase name="postNegativeTest4_status_400" classname="story_controller.TestPostCreateStory" time="0.669"/>
+  <testcase name="postNegativeTest5_status_400" classname="story_controller.TestPostCreateStory" time="0.645"/>
+  <testcase name="postNegativeTest6_status_400" classname="story_controller.TestPostCreateStory" time="0.643"/>
+  <testcase name="postCreateStory_status_200" classname="story_controller.TestPostCreateStory" time="0.671"/>
+  <testcase name="postCreateStory_status_401" classname="story_controller.TestPostCreateStory" time="0.627"/>
+  <testcase name="postCreateStory_status_404" classname="story_controller.TestPostCreateStory" time="0.722"/>
+  <testcase name="postNegativeTest1_status_400" classname="story_controller.TestPostCreateStory" time="0.636"/>
+  <testcase name="postNegativeTest2_status_400" classname="story_controller.TestPostCreateStory" time="0.66"/>
+  <testcase name="postNegativeTest3_status_400" classname="story_controller.TestPostCreateStory" time="0.644"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects/31/stories
 Proxy:			<none>
@@ -13,18 +19,143 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=E8563500C8763617F32ED5825EC26F22;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=2A2A5D228397002E84AAB62029A3ED72;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "JDuVNYsjNNmr",
+    "name": "CFUrHVOIUZej",
+    "activityId": "1053",
+    "majorReleaseId": "QATest123",
+    "checksum": "pzJsmIyupCBf"
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:11 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/stories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=2A2A5D228397002E84AAB62029A3ED72;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "name": "CFUrHVOIUZej",
     "activityId": "1053",
     "majorReleaseId": "2216",
-    "checksum": "GJjmpIFUaZVM"
+    "anchorId": "QATest123",
+    "checksum": "pzJsmIyupCBf"
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:11 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/stories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=2A2A5D228397002E84AAB62029A3ED72;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "name": "CFUrHVOIUZej",
+    "activityId": "1053",
+    "majorReleaseId": "2216",
+    "position": "UP",
+    "checksum": "pzJsmIyupCBf"
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:12 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/stories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=2A2A5D228397002E84AAB62029A3ED72;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "name": "CFUrHVOIUZej",
+    "activityId": "1053",
+    "majorReleaseId": "2216",
+    "checksum": "pzJsmIyupCBf"
 }
 HTTP/1.1 201 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:15 GMT
+Date: Tue, 22 Oct 2019 15:13:13 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -37,8 +168,8 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 16718,
-    "name": "JDuVNYsjNNmr",
+    "id": 16724,
+    "name": "CFUrHVOIUZej",
     "projectId": 31,
     "activityIds": [
         1053
@@ -50,7 +181,7 @@ X-Frame-Options: SAMEORIGIN
     "assignee": null,
     "state": "UNSTARTED",
     "externalId": null,
-    "checksum": "MEpEdVZOWXNqTk5tcm51bGwwbnVsbG51bGwwZmFsc2U="
+    "checksum": "MENGVXJIVk9JVVplam51bGwwbnVsbG51bGwwZmFsc2U="
 }
 Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects/31/stories
@@ -65,14 +196,14 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "JDuVNYsjNNmr",
+    "name": "CFUrHVOIUZej",
     "activityId": "1053",
     "majorReleaseId": "2216",
-    "checksum": "GJjmpIFUaZVM"
+    "checksum": "pzJsmIyupCBf"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:15 GMT
+Date: Tue, 22 Oct 2019 15:13:13 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -91,18 +222,18 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=E8563500C8763617F32ED5825EC26F22;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=2A2A5D228397002E84AAB62029A3ED72;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "JDuVNYsjNNmr",
+    "name": "CFUrHVOIUZej",
     "activityId": "1053",
     "majorReleaseId": "2216",
-    "checksum": "GJjmpIFUaZVM"
+    "checksum": "pzJsmIyupCBf"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:16 GMT
+Date: Tue, 22 Oct 2019 15:13:14 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -286,6 +417,127 @@ Content-Language: en-US
     <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
     <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
     <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/stories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=2A2A5D228397002E84AAB62029A3ED72;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "activityId": "1053",
+    "majorReleaseId": "2216",
+    "checksum": "pzJsmIyupCBf"
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:15 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/stories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=2A2A5D228397002E84AAB62029A3ED72;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "name": "CFUrHVOIUZej",
+    "activityId": "1053",
+    "majorReleaseId": "2216"
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:15 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/stories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=2A2A5D228397002E84AAB62029A3ED72;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "name": "CFUrHVOIUZej",
+    "activityId": "QATest123",
+    "majorReleaseId": "2216",
+    "checksum": "pzJsmIyupCBf"
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 15:13:16 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
   </body>
 </html>
 ]]></system-out>

@@ -62,4 +62,77 @@ public class TestPostCreateIntegrationPivotal extends SuiteTest {
                 .then()
                 .statusCode(404);
     }
+
+    @Test
+    @DisplayName("POST Negative test 1 status = 400")
+    public void postNegativeTest1_status_400(){
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"emailNotEmpty\":" + "\"" + true + "\"," +
+                        "\"apiUrl\":" + "\"" + UrlJiraIntegration + "\"," +
+                        "\"email\":" + "\"" + EmailJiraIntegration + "\"," +
+                        "\"apiProvider\":" + "\"" + ApiProviderJira + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Integrations)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 2 status = 400")
+    public void postNegativeTest2_status_400(){
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"apiToken\":" + "\"" + ApiTokenJira + "\"," +
+                        "\"emailNotEmpty\":" + "\"" + true + "\"," +
+                        "\"email\":" + "\"" + EmailJiraIntegration + "\"," +
+                        "\"apiProvider\":" + "\"" + ApiProviderJira + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Integrations)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 3 status = 400")
+    public void postNegativeTest3_status_400(){
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"apiToken\":" + "\"" + ApiTokenJira + "\"," +
+                        "\"emailNotEmpty\":" + "\"" + true + "\"," +
+                        "\"apiUrl\":" + "\"" + UrlJiraIntegration + "\"," +
+                        "\"email\":" + "\"" + EmailJiraIntegration + "\"," +
+                        "}")
+                .when()
+                .post(EndPoints.Integrations)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 4 status = 400")
+    public void postNegativeTest4_status_400(){
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"apiToken\":" + "\"" + ApiTokenJira + "\"," +
+                        "\"emailNotEmpty\":" + "\"" + true + "\"," +
+                        "\"apiUrl\":" + "\"" + UrlJiraIntegration + "\"," +
+                        "\"email\":" + "\"" + EmailJiraIntegration + "\"," +
+                        "\"apiProvider\":" + "\"" + "QATest123" + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Integrations)
+                .then()
+                .statusCode(400);
+    }
 }

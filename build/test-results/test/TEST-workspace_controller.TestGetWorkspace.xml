@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestGetWorkspace" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:26:57" hostname="zenio" time="2.049">
+<testsuite name="workspace_controller.TestGetWorkspace" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:14:06" hostname="zenio" time="1.985">
   <properties/>
-  <testcase name="getUserWorkspaces_status_200" classname="workspace_controller.TestGetWorkspace" time="0.709"/>
-  <testcase name="getUserWorkspaces_status_401" classname="workspace_controller.TestGetWorkspace" time="0.65"/>
-  <testcase name="getUserWorkspaces_status_404" classname="workspace_controller.TestGetWorkspace" time="0.685"/>
+  <testcase name="getUserWorkspaces_status_200" classname="workspace_controller.TestGetWorkspace" time="0.663"/>
+  <testcase name="getUserWorkspaces_status_401" classname="workspace_controller.TestGetWorkspace" time="0.655"/>
+  <testcase name="getUserWorkspaces_status_404" classname="workspace_controller.TestGetWorkspace" time="0.666"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/workspaces
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=E8A839195EC47DD132742350593EF3D9;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=1BAA2561F087DDA9F315C600292D1D4B;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:57 GMT
+Date: Tue, 22 Oct 2019 15:14:06 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -130,7 +130,7 @@ X-Frame-Options: SAMEORIGIN
     {
         "id": 27,
         "owned": true,
-        "name": "pbKAkwMNnLyw",
+        "name": "ehXQBJzIyLkr",
         "projects": [
             {
                 "id": 1334,
@@ -167,9 +167,9 @@ X-Frame-Options: SAMEORIGIN
         "name": "Admin (test-test-test)",
         "projects": [
             {
-                "id": 1520,
-                "name": "JDuVNYsjNNmr",
-                "acronym": "JDU",
+                "id": 1524,
+                "name": "CFUrHVOIUZej",
+                "acronym": "CFU",
                 "workspaceId": 4,
                 "deleted": false,
                 "ownerId": 1,
@@ -177,8 +177,8 @@ X-Frame-Options: SAMEORIGIN
             },
             {
                 "id": 1460,
-                "name": "ESLKzeikvnTg Update name",
-                "acronym": "ESL",
+                "name": "xFbTDMcRhwJB Update name",
+                "acronym": "XFB",
                 "workspaceId": 4,
                 "deleted": false,
                 "ownerId": 1,
@@ -300,7 +300,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:58 GMT
+Date: Tue, 22 Oct 2019 15:14:07 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -319,12 +319,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=E8A839195EC47DD132742350593EF3D9;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=1BAA2561F087DDA9F315C600292D1D4B;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:59 GMT
+Date: Tue, 22 Oct 2019 15:14:08 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

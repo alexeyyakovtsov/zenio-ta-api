@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestGetUserProjects" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:26:39" hostname="zenio" time="2.303">
+<testsuite name="project_controller.TestGetUserProjects" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:13:45" hostname="zenio" time="2.254">
   <properties/>
-  <testcase name="getUserProjects_status_200" classname="project_controller.TestGetUserProjects" time="1.007"/>
-  <testcase name="getUserProjects_status_401" classname="project_controller.TestGetUserProjects" time="0.623"/>
-  <testcase name="getUserProjects_status_404" classname="project_controller.TestGetUserProjects" time="0.671"/>
+  <testcase name="getUserProjects_status_200" classname="project_controller.TestGetUserProjects" time="0.973"/>
+  <testcase name="getUserProjects_status_401" classname="project_controller.TestGetUserProjects" time="0.632"/>
+  <testcase name="getUserProjects_status_404" classname="project_controller.TestGetUserProjects" time="0.647"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=E19654AFF644B6EBCF242C66CEC87FC7;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=D901E08A382D0628D3C356AB6A1E26E1;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:40 GMT
+Date: Tue, 22 Oct 2019 15:13:46 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -31,7 +31,7 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "totalCount": 212,
+    "totalCount": 216,
     "list": [
         {
             "id": 16,
@@ -949,7 +949,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:41 GMT
+Date: Tue, 22 Oct 2019 15:13:47 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -968,12 +968,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=E19654AFF644B6EBCF242C66CEC87FC7;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=D901E08A382D0628D3C356AB6A1E26E1;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:26:41 GMT
+Date: Tue, 22 Oct 2019 15:13:47 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

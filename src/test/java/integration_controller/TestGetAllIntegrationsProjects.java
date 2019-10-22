@@ -5,7 +5,6 @@ import TestSuite.SuiteTest;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
-import static TestSuite.SuiteTest.*;
 
 public class TestGetAllIntegrationsProjects extends SuiteTest {
 

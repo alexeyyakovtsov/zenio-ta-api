@@ -7,7 +7,6 @@ import org.junit.Test;
 import static parameters.Configurations.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
-import static TestSuite.SuiteTest.*;
 
 public class TestPostCreateIntegrationJira extends SuiteTest {
 
@@ -68,5 +67,78 @@ public class TestPostCreateIntegrationJira extends SuiteTest {
                 .post("/api/integrationss")
                 .then()
                 .statusCode(404);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 1 status = 400")
+    public void postNegativeTest1_status_400(){
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"emailNotEmpty\":" + "\"" + true + "\"," +
+                        "\"apiUrl\":" + "\"" + UrlJiraIntegration + "\"," +
+                        "\"email\":" + "\"" + EmailJiraIntegration + "\"," +
+                        "\"apiProvider\":" + "\"" + ApiProviderJira + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Integrations)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 2 status = 400")
+    public void postNegativeTest2_status_400(){
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"apiToken\":" + "\"" + ApiTokenJira + "\"," +
+                        "\"emailNotEmpty\":" + "\"" + true + "\"," +
+                        "\"email\":" + "\"" + EmailJiraIntegration + "\"," +
+                        "\"apiProvider\":" + "\"" + ApiProviderJira + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Integrations)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 3 status = 400")
+    public void postNegativeTest3_status_400(){
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"apiToken\":" + "\"" + ApiTokenJira + "\"," +
+                        "\"emailNotEmpty\":" + "\"" + true + "\"," +
+                        "\"apiUrl\":" + "\"" + UrlJiraIntegration + "\"," +
+                        "\"email\":" + "\"" + EmailJiraIntegration + "\"," +
+                        "}")
+                .when()
+                .post(EndPoints.Integrations)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 4 status = 400")
+    public void postNegativeTest4_status_400(){
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"apiToken\":" + "\"" + ApiTokenJira + "\"," +
+                        "\"emailNotEmpty\":" + "\"" + true + "\"," +
+                        "\"apiUrl\":" + "\"" + UrlJiraIntegration + "\"," +
+                        "\"email\":" + "\"" + EmailJiraIntegration + "\"," +
+                        "\"apiProvider\":" + "\"" + "QATest123" + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Integrations)
+                .then()
+                .statusCode(400);
     }
 }

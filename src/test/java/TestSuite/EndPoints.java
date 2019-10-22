@@ -25,6 +25,7 @@ public class EndPoints {
             GetProjectId = "projects/" + Project_id,
             UserProjects = "projects",
             UpdateProjectId = "projects/" + Project_update_id,
+            ExportProject = "projects/" + Project_id + "/export",
 
             GetProjectHealth = "projects/" + Project_id + "/health",
             PutUpdateMembersCount = "projects/" + Project_id + "/health" + "/members",

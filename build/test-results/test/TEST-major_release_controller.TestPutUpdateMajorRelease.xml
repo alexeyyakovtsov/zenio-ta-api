@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="major_release_controller.TestPutUpdateMajorRelease" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:25:55" hostname="zenio" time="2.045">
+<testsuite name="major_release_controller.TestPutUpdateMajorRelease" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:12:44" hostname="zenio" time="1.998">
   <properties/>
-  <testcase name="putUpdateMajorRelease_status_200" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.676"/>
-  <testcase name="putUpdateMajorRelease_status_401" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.687"/>
-  <testcase name="putUpdateMajorRelease_status_404" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.679"/>
+  <testcase name="putUpdateMajorRelease_status_200" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.691"/>
+  <testcase name="putUpdateMajorRelease_status_401" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.626"/>
+  <testcase name="putUpdateMajorRelease_status_404" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.677"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/releases/major/2216
 Proxy:			<none>
@@ -13,15 +13,15 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=37731DAC20C4A3D8DF5DC1CA820998A5;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=C4FEDF02C9A94628FCCA9609B5413331;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "PbPFlXvpRspR"
+    "name": "dYHJPSRMDMPy"
 }
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:25:55 GMT
+Date: Tue, 22 Oct 2019 15:12:45 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -35,7 +35,7 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 2216,
-    "name": "PbPFlXvpRspR",
+    "name": "dYHJPSRMDMPy",
     "cardIds": [
         
     ],
@@ -54,11 +54,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "PbPFlXvpRspR"
+    "name": "dYHJPSRMDMPy"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:25:56 GMT
+Date: Tue, 22 Oct 2019 15:12:45 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -77,15 +77,15 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=37731DAC20C4A3D8DF5DC1CA820998A5;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=C4FEDF02C9A94628FCCA9609B5413331;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "PbPFlXvpRspR"
+    "name": "dYHJPSRMDMPy"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:25:57 GMT
+Date: Tue, 22 Oct 2019 15:12:46 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

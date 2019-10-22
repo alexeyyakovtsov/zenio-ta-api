@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="area_controller.TestGetAreaId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:27:05" hostname="zenio" time="2.094">
+<testsuite name="area_controller.TestGetAreaId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:14:20" hostname="zenio" time="1.949">
   <properties/>
-  <testcase name="getAreaId_status_200" classname="area_controller.TestGetAreaId" time="0.72"/>
-  <testcase name="getAreaId_status_401" classname="area_controller.TestGetAreaId" time="0.651"/>
-  <testcase name="getAreaId_status_404" classname="area_controller.TestGetAreaId" time="0.72"/>
+  <testcase name="getAreaId_status_200" classname="area_controller.TestGetAreaId" time="0.684"/>
+  <testcase name="getAreaId_status_401" classname="area_controller.TestGetAreaId" time="0.618"/>
+  <testcase name="getAreaId_status_404" classname="area_controller.TestGetAreaId" time="0.644"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/areas/67
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=EB7B47E68A6D3E21DCC3CE80249289E5;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=FD5102CD543FADA2796419FC9362BC2E;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:27:06 GMT
+Date: Tue, 22 Oct 2019 15:14:20 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -32,17 +32,15 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 67,
-    "name": "oLtejWFCdWrJ",
+    "name": "LQTriSbGcqXu",
     "projectId": 31,
     "description": "123",
-    "checksum": "GJjmpIFUaZVM",
+    "checksum": "pzJsmIyupCBf",
     "activityIds": [
+        1053,
         1639,
-        6984,
         1643,
-        6983,
-        6985,
-        1053
+        6988
     ],
     "actorIds": [
         
@@ -62,7 +60,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:27:06 GMT
+Date: Tue, 22 Oct 2019 15:14:21 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -81,12 +79,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=EB7B47E68A6D3E21DCC3CE80249289E5;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=FD5102CD543FADA2796419FC9362BC2E;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 11:27:07 GMT
+Date: Tue, 22 Oct 2019 15:14:22 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

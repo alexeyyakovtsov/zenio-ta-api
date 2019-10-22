@@ -64,4 +64,112 @@ public class TestPostCreateMinorRelease extends SuiteTest {
                 .then()
                 .statusCode(404);
     }
+
+    @Test
+    @DisplayName("POST Negative test 1 status = 400")
+    public void postNegativeTest1_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"activityId\":" + "\"" + ActivityId + "\"," +
+                        "\"majorReleaseId\":" + "\"" + MajorRelease + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.CreateMinorRelease)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 2 status = 400")
+    public void postNegativeTest2_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"activityId\":" + "\"" + ActivityId + "\"," +
+                        "\"majorReleaseId\":" + "\"" + MajorRelease + "\"," +
+                        "}")
+                .when()
+                .post(EndPoints.CreateMinorRelease)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 3 status = 400")
+    public void postNegativeTest3_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"activityId\":" + "\"" + "QATest123" + "\"," +
+                        "\"majorReleaseId\":" + "\"" + MajorRelease + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.CreateMinorRelease)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 3 status = 400")
+    public void postNegativeTest4_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"activityId\":" + "\"" + ActivityId + "\"," +
+                        "\"majorReleaseId\":" + "\"" + "QATest123" + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.CreateMinorRelease)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 5 status = 400")
+    public void postNegativeTest5_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"activityId\":" + "\"" + ActivityId + "\"," +
+                        "\"majorReleaseId\":" + "\"" + "QATest123" + "\"," +
+                        "\"anchorId\":" + "\"" + "QATest123" + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.CreateMinorRelease)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 6 status = 400")
+    public void postNegativeTest6_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"activityId\":" + "\"" + ActivityId + "\"," +
+                        "\"majorReleaseId\":" + "\"" + MajorRelease + "\"," +
+                        "\"position\":" + "\"" + "UP" + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.CreateMinorRelease)
+                .then()
+                .statusCode(400);
+    }
 }

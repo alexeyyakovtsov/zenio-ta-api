@@ -60,4 +60,86 @@ public class TestPostCreateProject extends SuiteTest {
                 .then()
                 .statusCode(404);
     }
+
+    @Test
+    @DisplayName("POST Negative Test 1 status = 400")
+    public void postNegativeTest1_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.UserProjects)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative Test 2 status = 400")
+    public void postNegativeTest2_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + ProjectName + "\"," +
+                        "\"workspaceId\":" + "\"" + "QATest123" + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.UserProjects)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative Test 3 status = 400")
+    public void postNegativeTest3_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + ProjectName + "\"," +
+                        "\"integrationId\":" + "\"" + "QATest123" + "\"," +
+                        "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.UserProjects)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative Test 4 status = 400")
+    public void postNegativeTest4_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + ProjectName + "\"," +
+                        "\"externalProjectId\":" + "\"" + "QATest123" + "\"," +
+                        "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.UserProjects)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative Test 5 status = 400")
+    public void postNegativeTest5_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + ProjectName + "\"," +
+                        "\"epicIds\":" + "\"" + "QATest123" + "\"," +
+                        "\"workspaceId\":" + "\"" + Workspace_id + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.UserProjects)
+                .then()
+                .statusCode(400);
+    }
 }
