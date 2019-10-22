@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestPostCreateProject" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:51:23" hostname="zenio" time="2.086">
+<testsuite name="project_controller.TestPostCreateProject" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:26:42" hostname="zenio" time="2.022">
   <properties/>
-  <testcase name="postCreateProject_status_200" classname="project_controller.TestPostCreateProject" time="0.719"/>
-  <testcase name="postCreateProject_status_401" classname="project_controller.TestPostCreateProject" time="0.675"/>
-  <testcase name="postCreateProject_status_404" classname="project_controller.TestPostCreateProject" time="0.69"/>
+  <testcase name="postCreateProject_status_200" classname="project_controller.TestPostCreateProject" time="0.735"/>
+  <testcase name="postCreateProject_status_401" classname="project_controller.TestPostCreateProject" time="0.624"/>
+  <testcase name="postCreateProject_status_404" classname="project_controller.TestPostCreateProject" time="0.66"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects
 Proxy:			<none>
@@ -13,16 +13,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=3FF158614AD765D4875802779F952D4A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=420BF976C1A753A6ED966B8D2B77B0E3;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "bnvUkEnZJBFO",
+    "name": "JDuVNYsjNNmr",
     "workspaceId": "4"
 }
 HTTP/1.1 201 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:24 GMT
+Date: Tue, 22 Oct 2019 11:26:43 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -35,9 +35,9 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 1508,
-    "name": "bnvUkEnZJBFO",
-    "acronym": "BNV",
+    "id": 1520,
+    "name": "JDuVNYsjNNmr",
+    "acronym": "JDU",
     "workspaceId": 4,
     "deleted": false,
     "ownerId": 1,
@@ -56,12 +56,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "bnvUkEnZJBFO",
+    "name": "JDuVNYsjNNmr",
     "workspaceId": "4"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:24 GMT
+Date: Tue, 22 Oct 2019 11:26:44 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -80,16 +80,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=3FF158614AD765D4875802779F952D4A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=420BF976C1A753A6ED966B8D2B77B0E3;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "bnvUkEnZJBFO",
+    "name": "JDuVNYsjNNmr",
     "workspaceId": "4"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:25 GMT
+Date: Tue, 22 Oct 2019 11:26:44 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -270,9 +270,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/vendor.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/main.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

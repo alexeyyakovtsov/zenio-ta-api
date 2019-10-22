@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.838s</div>
+<div class="counter">2.517s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">getAllUsers_status_200</td>
-<td class="success">1.506s</td>
+<td class="success">1.197s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getAllUsers_status_401</td>
-<td class="success">0.649s</td>
+<td class="success">0.640s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getAllUsers_status_404</td>
-<td class="success">0.683s</td>
+<td class="success">0.680s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -106,12 +106,12 @@ Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=93D51D4FF9DC1C2FCB26BC4CF6629EE3;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=0BE78A0FAF378ABCADA1CC49DD940D96;Path=/;Secure;HttpOnly
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:02 GMT
+Date: Tue, 22 Oct 2019 11:26:25 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -400,17 +400,6 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
-        &quot;id&quot;: 1,
-        &quot;username&quot;: &quot;zenio&quot;,
-        &quot;email&quot;: &quot;zenio@zensoft.io&quot;,
-        &quot;active&quot;: true,
-        &quot;enabled&quot;: true,
-        &quot;lastVisit&quot;: &quot;2019-10-17T13:51:01.668&quot;,
-        &quot;roles&quot;: [
-            &quot;ADMIN&quot;
-        ]
-    },
-    {
         &quot;id&quot;: 50,
         &quot;username&quot;: &quot;davina&quot;,
         &quot;email&quot;: &quot;davina@designwrench.com&quot;,
@@ -554,6 +543,17 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
+        &quot;id&quot;: 1,
+        &quot;username&quot;: &quot;zenio&quot;,
+        &quot;email&quot;: &quot;zenio@zensoft.io&quot;,
+        &quot;active&quot;: true,
+        &quot;enabled&quot;: true,
+        &quot;lastVisit&quot;: &quot;2019-10-22T11:26:24.853&quot;,
+        &quot;roles&quot;: [
+            &quot;ADMIN&quot;
+        ]
+    },
+    {
         &quot;id&quot;: 59,
         &quot;username&quot;: &quot;kevin&quot;,
         &quot;email&quot;: &quot;kevin@kfitz.me&quot;,
@@ -636,7 +636,7 @@ X-Frame-Options: SAMEORIGIN
         &quot;email&quot;: &quot;ian@zenio.co&quot;,
         &quot;active&quot;: true,
         &quot;enabled&quot;: true,
-        &quot;lastVisit&quot;: &quot;2019-10-14T16:02:28.324&quot;,
+        &quot;lastVisit&quot;: &quot;2019-10-22T05:54:39.755&quot;,
         &quot;roles&quot;: [
             &quot;ADMIN&quot;
         ]
@@ -7049,7 +7049,7 @@ X-Frame-Options: SAMEORIGIN
         &quot;email&quot;: &quot;anna@zenio.co&quot;,
         &quot;active&quot;: true,
         &quot;enabled&quot;: true,
-        &quot;lastVisit&quot;: &quot;2019-10-17T12:35:01.298&quot;,
+        &quot;lastVisit&quot;: &quot;2019-10-21T12:47:12.079&quot;,
         &quot;roles&quot;: [
             &quot;CLIENT&quot;
         ]
@@ -7407,6 +7407,17 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
+        &quot;id&quot;: 27,
+        &quot;username&quot;: &quot;QA&quot;,
+        &quot;email&quot;: &quot;alexey.yakovtsov@zensoft.io&quot;,
+        &quot;active&quot;: true,
+        &quot;enabled&quot;: true,
+        &quot;lastVisit&quot;: &quot;2019-10-18T08:10:55.277&quot;,
+        &quot;roles&quot;: [
+            &quot;CLIENT&quot;
+        ]
+    },
+    {
         &quot;id&quot;: 697,
         &quot;username&quot;: &quot;qpvQqsuWtRYO&quot;,
         &quot;email&quot;: &quot;qpvQqsuWtRYO@gmail.com&quot;,
@@ -7479,17 +7490,6 @@ X-Frame-Options: SAMEORIGIN
         &quot;active&quot;: false,
         &quot;enabled&quot;: true,
         &quot;lastVisit&quot;: null,
-        &quot;roles&quot;: [
-            &quot;CLIENT&quot;
-        ]
-    },
-    {
-        &quot;id&quot;: 27,
-        &quot;username&quot;: &quot;QA&quot;,
-        &quot;email&quot;: &quot;alexey.yakovtsov@zensoft.io&quot;,
-        &quot;active&quot;: true,
-        &quot;enabled&quot;: true,
-        &quot;lastVisit&quot;: &quot;2019-10-15T07:59:51.719&quot;,
         &quot;roles&quot;: [
             &quot;CLIENT&quot;
         ]
@@ -8078,20 +8078,42 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
-        &quot;id&quot;: 678,
-        &quot;username&quot;: &quot;QA&quot;,
-        &quot;email&quot;: &quot;alexey.yakovtsov@zenio.co&quot;,
-        &quot;active&quot;: true,
+        &quot;id&quot;: 745,
+        &quot;username&quot;: &quot;sonakeYYTPrX&quot;,
+        &quot;email&quot;: &quot;sonakeYYTPrX@gmail.com&quot;,
+        &quot;active&quot;: false,
         &quot;enabled&quot;: true,
-        &quot;lastVisit&quot;: &quot;2019-10-17T12:15:41.075&quot;,
+        &quot;lastVisit&quot;: null,
         &quot;roles&quot;: [
             &quot;CLIENT&quot;
         ]
     },
     {
-        &quot;id&quot;: 745,
-        &quot;username&quot;: &quot;sonakeYYTPrX&quot;,
-        &quot;email&quot;: &quot;sonakeYYTPrX@gmail.com&quot;,
+        &quot;id&quot;: 746,
+        &quot;username&quot;: &quot;YDiNgsYrdyUt&quot;,
+        &quot;email&quot;: &quot;YDiNgsYrdyUt@gmail.com&quot;,
+        &quot;active&quot;: false,
+        &quot;enabled&quot;: true,
+        &quot;lastVisit&quot;: null,
+        &quot;roles&quot;: [
+            &quot;CLIENT&quot;
+        ]
+    },
+    {
+        &quot;id&quot;: 678,
+        &quot;username&quot;: &quot;QA&quot;,
+        &quot;email&quot;: &quot;alexey.yakovtsov@zenio.co&quot;,
+        &quot;active&quot;: true,
+        &quot;enabled&quot;: true,
+        &quot;lastVisit&quot;: &quot;2019-10-22T09:37:46.611&quot;,
+        &quot;roles&quot;: [
+            &quot;CLIENT&quot;
+        ]
+    },
+    {
+        &quot;id&quot;: 747,
+        &quot;username&quot;: &quot;nZuKoPvQpXXu&quot;,
+        &quot;email&quot;: &quot;nZuKoPvQpXXu@gmail.com&quot;,
         &quot;active&quot;: false,
         &quot;enabled&quot;: true,
         &quot;lastVisit&quot;: null,
@@ -8114,7 +8136,7 @@ Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:03 GMT
+Date: Tue, 22 Oct 2019 11:26:26 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -8133,12 +8155,12 @@ Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=93D51D4FF9DC1C2FCB26BC4CF6629EE3;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=0BE78A0FAF378ABCADA1CC49DD940D96;Path=/;Secure;HttpOnly
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:04 GMT
+Date: Tue, 22 Oct 2019 11:26:27 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -8319,9 +8341,9 @@ Content-Language: en-US
     &lt;div id=&quot;popup-root&quot;/&gt;
     &lt;div id=&quot;split-text-container&quot;/&gt;
     &lt;div id=&quot;dnd-container&quot;/&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;/runtime.7d0f7c25f1b67a1ec5a8.bundle.js&quot;/&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;/vendor.7d0f7c25f1b67a1ec5a8.bundle.js&quot;/&gt;
-    &lt;script type=&quot;text/javascript&quot; src=&quot;/main.7d0f7c25f1b67a1ec5a8.bundle.js&quot;/&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/runtime.b573a6a15d5cefcb4f41.bundle.js&quot;/&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/vendor.b573a6a15d5cefcb4f41.bundle.js&quot;/&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/main.b573a6a15d5cefcb4f41.bundle.js&quot;/&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </pre>
@@ -8335,7 +8357,7 @@ Content-Language: en-US
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 17 окт. 2019 г., 16:51:51</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 22 окт. 2019 г., 14:27:07</p>
 </div>
 </div>
 </body>

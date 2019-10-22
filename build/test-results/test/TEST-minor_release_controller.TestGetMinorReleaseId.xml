@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minor_release_controller.TestGetMinorReleaseId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:50:30" hostname="zenio" time="2.256">
+<testsuite name="minor_release_controller.TestGetMinorReleaseId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:25:57" hostname="zenio" time="2.155">
   <properties/>
-  <testcase name="getMinorRelease_status_200" classname="minor_release_controller.TestGetMinorReleaseId" time="0.815"/>
-  <testcase name="getMinorRelease_status_401" classname="minor_release_controller.TestGetMinorReleaseId" time="0.646"/>
-  <testcase name="getMinorRelease_status_404" classname="minor_release_controller.TestGetMinorReleaseId" time="0.792"/>
+  <testcase name="getMinorRelease_status_200" classname="minor_release_controller.TestGetMinorReleaseId" time="0.816"/>
+  <testcase name="getMinorRelease_status_401" classname="minor_release_controller.TestGetMinorReleaseId" time="0.639"/>
+  <testcase name="getMinorRelease_status_404" classname="minor_release_controller.TestGetMinorReleaseId" time="0.697"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/releases/minor/6200
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0CE0DDE3A2640F431F55160F880D4971;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=3131339A07943EB6B72A83061C8BA4CE;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:31 GMT
+Date: Tue, 22 Oct 2019 11:25:58 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -32,15 +32,15 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 6200,
-    "name": "iAKNSYYsTPOu",
+    "name": "CVYEBpffOpop",
     "projectId": 31,
     "majorReleaseId": 2216,
     "activityIds": [
         1643
     ],
-    "description": "RcCUjSbriVSs",
+    "description": "lTYLjbYcsYlZ",
     "dueDate": null,
-    "checksum": "ReEwmfkkmUon"
+    "checksum": "SkPTAlXVEfed"
 }
 Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/releases/minor/6200
@@ -56,7 +56,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:32 GMT
+Date: Tue, 22 Oct 2019 11:25:59 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -75,12 +75,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0CE0DDE3A2640F431F55160F880D4971;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=3131339A07943EB6B72A83061C8BA4CE;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:32 GMT
+Date: Tue, 22 Oct 2019 11:25:59 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -261,9 +261,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/vendor.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/main.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

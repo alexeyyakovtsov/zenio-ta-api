@@ -12,7 +12,7 @@ public class TestPostCreateActivity extends SuiteTest {
 
     @Test
     @DisplayName("POST Create Activity status = 200")
-     public void postCreateActivity_status_200() {
+    public void postCreateActivity_status_200() {
         given()
                 .spec(spec)
                 .cookies(cookies)
@@ -58,5 +58,90 @@ public class TestPostCreateActivity extends SuiteTest {
                 .post("/api/projectss/" + Project_id + "/activities")
                 .then()
                 .statusCode(404);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 1 status = 400")
+    public void postNegativeTest1_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"areaId\":" + "\"" + AreaId + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Activity)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 2 status = 400")
+    public void postNegativeTest2_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"areaId\":" + "\"" + AreaId + "\"," +
+                        "}")
+                .when()
+                .post(EndPoints.Activity)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 3 status = 400")
+    public void postNegativeTest3_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"areaId\":" + "\"" + "QATest123" + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Activity)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 4 status = 400")
+    public void postNegativeTest4_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"areaId\":" + "\"" + AreaId + "\"," +
+                        "\"anchorId\":" + "\"" + "QATest123" + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Activity)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 5 status = 400")
+    public void postNegativeTest5_status_400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"areaId\":" + "\"" + AreaId + "\"," +
+                        "\"position\":" + "\"" + "UP" + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Activity)
+                .then()
+                .statusCode(400);
     }
 }

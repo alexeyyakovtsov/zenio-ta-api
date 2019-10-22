@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user_controller.TestPostInviteUser" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:50:56" hostname="zenio" time="2.217">
+<testsuite name="user_controller.TestPostInviteUser" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:26:19" hostname="zenio" time="2.1">
   <properties/>
-  <testcase name="postInviteUser_status_200" classname="user_controller.TestPostInviteUser" time="0.868"/>
-  <testcase name="postInviteUser_status_401" classname="user_controller.TestPostInviteUser" time="0.669"/>
-  <testcase name="postInviteUser_status_404" classname="user_controller.TestPostInviteUser" time="0.676"/>
+  <testcase name="postInviteUser_status_200" classname="user_controller.TestPostInviteUser" time="0.802"/>
+  <testcase name="postInviteUser_status_401" classname="user_controller.TestPostInviteUser" time="0.657"/>
+  <testcase name="postInviteUser_status_404" classname="user_controller.TestPostInviteUser" time="0.638"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/users/invite
 Proxy:			<none>
@@ -13,17 +13,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=EFC6BD7291199870C1DA950A2B1E1922;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=1F3D9D7C5D761679482E9A488C8FC23F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "emails": [
-        "sonakeYYTPrX@gmail.com"
+        "nZuKoPvQpXXu@gmail.com"
     ]
 }
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:57 GMT
+Date: Tue, 22 Oct 2019 11:26:20 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -47,7 +47,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:57 GMT
+Date: Tue, 22 Oct 2019 11:26:21 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -66,17 +66,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=EFC6BD7291199870C1DA950A2B1E1922;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=1F3D9D7C5D761679482E9A488C8FC23F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "emails": [
-        "sonakeYYTPrX@gmail.com"
+        "nZuKoPvQpXXu@gmail.com"
     ]
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:58 GMT
+Date: Tue, 22 Oct 2019 11:26:21 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -257,9 +257,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/vendor.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/main.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

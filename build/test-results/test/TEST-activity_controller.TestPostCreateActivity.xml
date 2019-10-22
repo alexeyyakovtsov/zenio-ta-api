@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="activity_controller.TestPostCreateActivity" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:49:57" hostname="zenio" time="3.666">
+<testsuite name="activity_controller.TestPostCreateActivity" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:25:24" hostname="zenio" time="6.611">
   <properties/>
-  <testcase name="postCreateActivity_status_200" classname="activity_controller.TestPostCreateActivity" time="1.805"/>
-  <testcase name="postCreateActivity_status_401" classname="activity_controller.TestPostCreateActivity" time="0.791"/>
-  <testcase name="postCreateActivity_status_404" classname="activity_controller.TestPostCreateActivity" time="1.051"/>
+  <testcase name="postNegativeTest4_status_400" classname="activity_controller.TestPostCreateActivity" time="1.083"/>
+  <testcase name="postNegativeTest5_status_400" classname="activity_controller.TestPostCreateActivity" time="0.77"/>
+  <testcase name="postCreateActivity_status_200" classname="activity_controller.TestPostCreateActivity" time="1.152"/>
+  <testcase name="postCreateActivity_status_401" classname="activity_controller.TestPostCreateActivity" time="0.66"/>
+  <testcase name="postCreateActivity_status_404" classname="activity_controller.TestPostCreateActivity" time="0.8"/>
+  <testcase name="postNegativeTest1_status_400" classname="activity_controller.TestPostCreateActivity" time="0.689"/>
+  <testcase name="postNegativeTest2_status_400" classname="activity_controller.TestPostCreateActivity" time="0.728"/>
+  <testcase name="postNegativeTest3_status_400" classname="activity_controller.TestPostCreateActivity" time="0.712"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects/31/activities
 Proxy:			<none>
@@ -13,17 +18,99 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=80A1804A50AFE48E4FC471444C89A2E1;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=7A0CAD32B437C1E754B8751A2B77E83F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "zeVLBVBJilSm",
+    "name": "BiAEdiDIFDeY",
     "areaId": "67",
-    "checksum": "doWKuihaqsAM"
+    "anchorId": "QATest123",
+    "checksum": "GJjmpIFUaZVM"
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 11:25:25 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/activities
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=7A0CAD32B437C1E754B8751A2B77E83F;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "name": "BiAEdiDIFDeY",
+    "areaId": "67",
+    "position": "UP",
+    "checksum": "GJjmpIFUaZVM"
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 11:25:26 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/activities
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=7A0CAD32B437C1E754B8751A2B77E83F;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "name": "BiAEdiDIFDeY",
+    "areaId": "67",
+    "checksum": "GJjmpIFUaZVM"
 }
 HTTP/1.1 201 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:49:58 GMT
+Date: Tue, 22 Oct 2019 11:25:27 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -36,8 +123,8 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 6963,
-    "name": "zeVLBVBJilSm",
+    "id": 6985,
+    "name": "BiAEdiDIFDeY",
     "areaId": 67,
     "projectId": 31,
     "externalId": null,
@@ -45,38 +132,22 @@ X-Frame-Options: SAMEORIGIN
     "majorReleases": [
         {
             "id": 2216,
-            "name": "osssBOBrehwj",
+            "name": "gCcUYtszfRyP",
             "cardIds": [
                 
             ],
             "checksum": "MHNUbnd5UW1lY1h2bw=="
         },
         {
-            "id": 2527,
-            "name": "hWffunLSnCWH",
+            "id": 2551,
+            "name": "gCcUYtszfRyP",
             "cardIds": [
                 
             ],
-            "checksum": "MGhXZmZ1bkxTbkNXSA=="
-        },
-        {
-            "id": 2529,
-            "name": "ASHaCyKRWPyu",
-            "cardIds": [
-                
-            ],
-            "checksum": "MEFTSGFDeUtSV1B5dQ=="
-        },
-        {
-            "id": 2531,
-            "name": "osssBOBrehwj",
-            "cardIds": [
-                
-            ],
-            "checksum": "MG9zc3NCT0JyZWh3ag=="
+            "checksum": "MGdDY1VZdHN6ZlJ5UA=="
         }
     ],
-    "checksum": "MHplVkxCVkJKaWxTbW51bGxmYWxzZQ=="
+    "checksum": "MEJpQUVkaURJRkRlWW51bGxmYWxzZQ=="
 }
 Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects/31/activities
@@ -91,12 +162,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "zeVLBVBJilSm",
+    "name": "BiAEdiDIFDeY",
     "areaId": "67"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:49:59 GMT
+Date: Tue, 22 Oct 2019 11:25:28 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -115,16 +186,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=80A1804A50AFE48E4FC471444C89A2E1;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=7A0CAD32B437C1E754B8751A2B77E83F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "zeVLBVBJilSm",
+    "name": "BiAEdiDIFDeY",
     "areaId": "67"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:00 GMT
+Date: Tue, 22 Oct 2019 11:25:29 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -305,9 +376,128 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/vendor.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/main.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/activities
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=7A0CAD32B437C1E754B8751A2B77E83F;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "areaId": "67",
+    "checksum": "GJjmpIFUaZVM"
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 11:25:29 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/activities
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=7A0CAD32B437C1E754B8751A2B77E83F;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "name": "BiAEdiDIFDeY",
+    "areaId": "67",
+    
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 11:25:30 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
+  </body>
+</html>
+Request method:	POST
+Request URI:	https://dev.zenio.co/api/projects/31/activities
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=7A0CAD32B437C1E754B8751A2B77E83F;Path=/;Secure;HttpOnly
+Multiparts:		<none>
+Body:
+{
+    "name": "BiAEdiDIFDeY",
+    "areaId": "QATest123",
+    "checksum": "GJjmpIFUaZVM"
+}
+HTTP/1.1 400 
+Server: nginx/1.17.4
+Date: Tue, 22 Oct 2019 11:25:31 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 247
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-US
+
+<html>
+  <body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+    <div id="created">null</div>
+    <div>There was an unexpected error (type=null, status=null).</div>
   </body>
 </html>
 ]]></system-out>

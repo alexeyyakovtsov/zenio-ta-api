@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="integration_controller.TestPostCreateIntegrationPivotal" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:50:18" hostname="zenio" time="2.237">
+<testsuite name="integration_controller.TestPostCreateIntegrationPivotal" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:25:46" hostname="zenio" time="2.19">
   <properties/>
-  <testcase name="postCreateIntegrationPivotal_status_200" classname="integration_controller.TestPostCreateIntegrationPivotal" time="0.905"/>
-  <testcase name="postCreateIntegrationPivotal_status_401" classname="integration_controller.TestPostCreateIntegrationPivotal" time="0.65"/>
-  <testcase name="postCreateIntegrationPivotal_status_404" classname="integration_controller.TestPostCreateIntegrationPivotal" time="0.678"/>
+  <testcase name="postCreateIntegrationPivotal_status_200" classname="integration_controller.TestPostCreateIntegrationPivotal" time="0.823"/>
+  <testcase name="postCreateIntegrationPivotal_status_401" classname="integration_controller.TestPostCreateIntegrationPivotal" time="0.658"/>
+  <testcase name="postCreateIntegrationPivotal_status_404" classname="integration_controller.TestPostCreateIntegrationPivotal" time="0.706"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/integrations
 Proxy:			<none>
@@ -13,7 +13,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=366852558C51DAFB93B586D74C590320;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=4A4885CE27B6759AD76F2B1D2FE0F2AA;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -23,7 +23,7 @@ Body:
 }
 HTTP/1.1 201 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:19 GMT
+Date: Tue, 22 Oct 2019 11:25:47 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -36,15 +36,16 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 802,
-    "name": "Pivotal Token 50",
+    "id": 807,
+    "name": "Pivotal Token 52",
     "apiToken": "3901cf4de092d5cbe830d88f977ee565",
     "apiUrl": "https://www.pivotaltracker.com/services/v5/",
     "apiProvider": "PIVOTAL",
     "valid": true,
     "projects": [
         
-    ]
+    ],
+    "externalId": null
 }
 Request method:	POST
 Request URI:	https://dev.zenio.co/api/integrations
@@ -65,7 +66,7 @@ Body:
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:20 GMT
+Date: Tue, 22 Oct 2019 11:25:47 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -84,7 +85,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=366852558C51DAFB93B586D74C590320;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=4A4885CE27B6759AD76F2B1D2FE0F2AA;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -94,7 +95,7 @@ Body:
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:20 GMT
+Date: Tue, 22 Oct 2019 11:25:48 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -275,9 +276,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/vendor.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/main.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

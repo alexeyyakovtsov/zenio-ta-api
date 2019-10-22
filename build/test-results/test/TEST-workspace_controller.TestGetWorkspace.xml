@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestGetWorkspace" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:51:38" hostname="zenio" time="2.241">
+<testsuite name="workspace_controller.TestGetWorkspace" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:26:57" hostname="zenio" time="2.049">
   <properties/>
-  <testcase name="getUserWorkspaces_status_200" classname="workspace_controller.TestGetWorkspace" time="0.708"/>
+  <testcase name="getUserWorkspaces_status_200" classname="workspace_controller.TestGetWorkspace" time="0.709"/>
   <testcase name="getUserWorkspaces_status_401" classname="workspace_controller.TestGetWorkspace" time="0.65"/>
-  <testcase name="getUserWorkspaces_status_404" classname="workspace_controller.TestGetWorkspace" time="0.878"/>
+  <testcase name="getUserWorkspaces_status_404" classname="workspace_controller.TestGetWorkspace" time="0.685"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/workspaces
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=2460469BDA36B2D9E60BCE50C067AD9F;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=E8A839195EC47DD132742350593EF3D9;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:39 GMT
+Date: Tue, 22 Oct 2019 11:26:57 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -130,7 +130,7 @@ X-Frame-Options: SAMEORIGIN
     {
         "id": 27,
         "owned": true,
-        "name": "DdAiNCxNwweJ",
+        "name": "pbKAkwMNnLyw",
         "projects": [
             {
                 "id": 1334,
@@ -167,9 +167,9 @@ X-Frame-Options: SAMEORIGIN
         "name": "Admin (test-test-test)",
         "projects": [
             {
-                "id": 1508,
-                "name": "bnvUkEnZJBFO",
-                "acronym": "BNV",
+                "id": 1520,
+                "name": "JDuVNYsjNNmr",
+                "acronym": "JDU",
                 "workspaceId": 4,
                 "deleted": false,
                 "ownerId": 1,
@@ -177,8 +177,8 @@ X-Frame-Options: SAMEORIGIN
             },
             {
                 "id": 1460,
-                "name": "mMiMruCGVjVc Update name",
-                "acronym": "MMI",
+                "name": "ESLKzeikvnTg Update name",
+                "acronym": "ESL",
                 "workspaceId": 4,
                 "deleted": false,
                 "ownerId": 1,
@@ -238,6 +238,15 @@ X-Frame-Options: SAMEORIGIN
         "name": "My Projects",
         "projects": [
             {
+                "id": 1514,
+                "name": "фвар",
+                "acronym": "ФВА",
+                "workspaceId": 10,
+                "deleted": false,
+                "ownerId": 1,
+                "membersCount": 2
+            },
+            {
                 "id": 1122,
                 "name": "443",
                 "acronym": "443",
@@ -291,7 +300,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:39 GMT
+Date: Tue, 22 Oct 2019 11:26:58 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -310,12 +319,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=2460469BDA36B2D9E60BCE50C067AD9F;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=E8A839195EC47DD132742350593EF3D9;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:40 GMT
+Date: Tue, 22 Oct 2019 11:26:59 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -496,9 +505,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/vendor.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/main.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

@@ -63,4 +63,74 @@ public class TestPostCreateArea extends SuiteTest {
                 .then()
                 .statusCode(404);
     }
+
+    @Test
+    @DisplayName("POST Negative test 1 status = 400")
+    public void postNegativeTest1_status400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"checksum\":" + "\"" + Checksum + "\"," +
+                        "\"anchorId\":" + "\"" + AreaId + "\"," +
+                        "\"position\":" + "\"" + "AFTER" + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Area)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 2 status = 400")
+    public void postNegativeTest2_status400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"anchorId\":" + "\"" + AreaId + "\"," +
+                        "\"position\":" + "\"" + "AFTER" + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Area)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 3 status = 400")
+    public void postNegativeTest3_status400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"," +
+                        "\"anchorId\":" + "\"" + "QATest123" + "\"," +
+                        "\"position\":" + "\"" + "AFTER" + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Area)
+                .then()
+                .statusCode(400);
+    }
+
+    @Test
+    @DisplayName("POST Negative test 4 status = 400")
+    public void postNegativeTest4_status400() {
+        given()
+                .spec(spec)
+                .cookies(cookies)
+                .body("{" +
+                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"checksum\":" + "\"" + Checksum + "\"," +
+                        "\"anchorId\":" + "\"" + AreaId + "\"," +
+                        "\"position\":" + "\"" + "UP" + "\"" +
+                        "}")
+                .when()
+                .post(EndPoints.Area)
+                .then()
+                .statusCode(400);
+    }
 }

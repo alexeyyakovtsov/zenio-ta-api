@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="story_controller.TestGetStoryId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:50:42" hostname="zenio" time="2.053">
+<testsuite name="story_controller.TestGetStoryId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:26:06" hostname="zenio" time="2.071">
   <properties/>
-  <testcase name="getStoryId_status_200" classname="story_controller.TestGetStoryId" time="0.72"/>
-  <testcase name="getStoryId_status_401" classname="story_controller.TestGetStoryId" time="0.651"/>
+  <testcase name="getStoryId_status_200" classname="story_controller.TestGetStoryId" time="0.762"/>
+  <testcase name="getStoryId_status_401" classname="story_controller.TestGetStoryId" time="0.625"/>
   <testcase name="getStoryId_status_404" classname="story_controller.TestGetStoryId" time="0.68"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/stories/6199
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C04169FC4EE13E17332FC5669C58F29C;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=E2453A7B80090E3CB39199EAEC6EBC6A;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:42 GMT
+Date: Tue, 22 Oct 2019 11:26:07 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -32,19 +32,19 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 6199,
-    "name": "uebUtwyxjFDN",
+    "name": "EUyhGLLOIZBV",
     "projectId": 31,
     "activityIds": [
         1053
     ],
     "majorReleaseId": 2216,
-    "description": "RcCUjSbriVSs",
+    "description": "lTYLjbYcsYlZ",
     "estimate": 0,
     "issuer": "Sample issuer",
     "assignee": null,
     "state": "UNSTARTED",
     "externalId": null,
-    "checksum": "ReEwmfkkmUon"
+    "checksum": "SkPTAlXVEfed"
 }
 Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/stories/6199
@@ -60,7 +60,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:43 GMT
+Date: Tue, 22 Oct 2019 11:26:07 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -79,12 +79,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C04169FC4EE13E17332FC5669C58F29C;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=E2453A7B80090E3CB39199EAEC6EBC6A;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:44 GMT
+Date: Tue, 22 Oct 2019 11:26:08 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -265,9 +265,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/vendor.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/main.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

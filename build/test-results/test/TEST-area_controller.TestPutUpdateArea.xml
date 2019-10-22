@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="area_controller.TestPutUpdateArea" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:51:44" hostname="zenio" time="3.053">
+<testsuite name="area_controller.TestPutUpdateArea" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:27:02" hostname="zenio" time="2.04">
   <properties/>
-  <testcase name="putUpdateArea_status_200" classname="area_controller.TestPutUpdateArea" time="0.721"/>
-  <testcase name="putUpdateArea_status_401" classname="area_controller.TestPutUpdateArea" time="1.359"/>
-  <testcase name="putUpdateArea_status_404" classname="area_controller.TestPutUpdateArea" time="0.971"/>
+  <testcase name="putUpdateArea_status_200" classname="area_controller.TestPutUpdateArea" time="0.728"/>
+  <testcase name="putUpdateArea_status_401" classname="area_controller.TestPutUpdateArea" time="0.632"/>
+  <testcase name="putUpdateArea_status_404" classname="area_controller.TestPutUpdateArea" time="0.677"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/areas/67
 Proxy:			<none>
@@ -13,17 +13,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=00E39846412B2FFADC0D4F54ACBB1791;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=81E64157E411C28D7C5F7F88BA1D5DDA;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "nrdXRXvqhzgC",
-    "checksum": "doWKuihaqsAM",
+    "name": "oLtejWFCdWrJ",
+    "checksum": "GJjmpIFUaZVM",
     "description": "123"
 }
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:45 GMT
+Date: Tue, 22 Oct 2019 11:27:03 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -37,18 +37,19 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 67,
-    "name": "nrdXRXvqhzgC",
+    "name": "oLtejWFCdWrJ",
     "projectId": 31,
     "description": "123",
-    "checksum": "doWKuihaqsAM",
+    "checksum": "GJjmpIFUaZVM",
     "activityIds": [
-        6963,
         1639,
+        6983,
+        6984,
         1641,
+        6985,
         1642,
         1643,
-        1053,
-        6958
+        1053
     ],
     "actorIds": [
         
@@ -67,13 +68,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "nrdXRXvqhzgC",
-    "checksum": "doWKuihaqsAM",
+    "name": "oLtejWFCdWrJ",
+    "checksum": "GJjmpIFUaZVM",
     "description": "123"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:45 GMT
+Date: Tue, 22 Oct 2019 11:27:04 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -92,17 +93,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=00E39846412B2FFADC0D4F54ACBB1791;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=81E64157E411C28D7C5F7F88BA1D5DDA;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "nrdXRXvqhzgC",
-    "checksum": "doWKuihaqsAM",
+    "name": "oLtejWFCdWrJ",
+    "checksum": "GJjmpIFUaZVM",
     "description": "123"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:51:47 GMT
+Date: Tue, 22 Oct 2019 11:27:04 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -283,9 +284,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/vendor.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/main.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

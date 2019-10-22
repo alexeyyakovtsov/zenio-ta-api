@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="integration_controller.TestGetIntegrations" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-17T13:50:21" hostname="zenio" time="2.251">
+<testsuite name="integration_controller.TestGetIntegrations" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T11:25:49" hostname="zenio" time="2.038">
   <properties/>
-  <testcase name="getIntegrations_status_200" classname="integration_controller.TestGetIntegrations" time="0.692"/>
-  <testcase name="getIntegrations_status_401" classname="integration_controller.TestGetIntegrations" time="0.67"/>
-  <testcase name="getIntegrations_status_404" classname="integration_controller.TestGetIntegrations" time="0.886"/>
+  <testcase name="getIntegrations_status_200" classname="integration_controller.TestGetIntegrations" time="0.691"/>
+  <testcase name="getIntegrations_status_401" classname="integration_controller.TestGetIntegrations" time="0.671"/>
+  <testcase name="getIntegrations_status_404" classname="integration_controller.TestGetIntegrations" time="0.67"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/integrations
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C2E0FB119032FE2682E0B7B1DE7329E6;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=C608162DFF299F145FF56BBB530F7EFA;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:22 GMT
+Date: Tue, 22 Oct 2019 11:25:50 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -41,7 +41,8 @@ X-Frame-Options: SAMEORIGIN
         "projects": [
             "My_project",
             "pt"
-        ]
+        ],
+        "externalId": null
     },
     {
         "id": 738,
@@ -52,7 +53,8 @@ X-Frame-Options: SAMEORIGIN
         "valid": false,
         "projects": [
             "z11"
-        ]
+        ],
+        "externalId": null
     },
     {
         "id": 686,
@@ -64,7 +66,8 @@ X-Frame-Options: SAMEORIGIN
         "projects": [
             "1111",
             "3232"
-        ]
+        ],
+        "externalId": null
     },
     {
         "id": 802,
@@ -75,7 +78,8 @@ X-Frame-Options: SAMEORIGIN
         "valid": true,
         "projects": [
             
-        ]
+        ],
+        "externalId": null
     },
     {
         "id": 55,
@@ -87,7 +91,8 @@ X-Frame-Options: SAMEORIGIN
         "projects": [
             "====",
             "proto"
-        ]
+        ],
+        "externalId": null
     },
     {
         "id": 690,
@@ -98,7 +103,32 @@ X-Frame-Options: SAMEORIGIN
         "valid": false,
         "projects": [
             "Pivotal QA"
-        ]
+        ],
+        "externalId": null
+    },
+    {
+        "id": 805,
+        "name": "Pivotal Token 51",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "externalId": null
+    },
+    {
+        "id": 807,
+        "name": "Pivotal Token 52",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "externalId": null
     },
     {
         "id": 177,
@@ -109,7 +139,8 @@ X-Frame-Options: SAMEORIGIN
         "valid": true,
         "projects": [
             "Very QImport Very Very"
-        ]
+        ],
+        "externalId": null
     },
     {
         "id": 544,
@@ -120,7 +151,8 @@ X-Frame-Options: SAMEORIGIN
         "valid": true,
         "projects": [
             "443"
-        ]
+        ],
+        "externalId": null
     },
     {
         "id": 801,
@@ -131,7 +163,8 @@ X-Frame-Options: SAMEORIGIN
         "valid": true,
         "projects": [
             
-        ]
+        ],
+        "externalId": null
     },
     {
         "id": 691,
@@ -142,7 +175,32 @@ X-Frame-Options: SAMEORIGIN
         "valid": true,
         "projects": [
             "Zenio Test JIRA"
-        ]
+        ],
+        "externalId": null
+    },
+    {
+        "id": 804,
+        "name": "Jira Token 45",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "externalId": null
+    },
+    {
+        "id": 806,
+        "name": "Jira Token 46",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "externalId": null
     }
 ]
 Request method:	GET
@@ -159,7 +217,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:23 GMT
+Date: Tue, 22 Oct 2019 11:25:50 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -178,12 +236,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C2E0FB119032FE2682E0B7B1DE7329E6;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=C608162DFF299F145FF56BBB530F7EFA;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.4
-Date: Thu, 17 Oct 2019 13:50:23 GMT
+Date: Tue, 22 Oct 2019 11:25:51 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -364,9 +422,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/vendor.7d0f7c25f1b67a1ec5a8.bundle.js"/>
-    <script type="text/javascript" src="/main.7d0f7c25f1b67a1ec5a8.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
   </body>
 </html>
 ]]></system-out>
