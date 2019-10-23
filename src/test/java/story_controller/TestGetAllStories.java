@@ -12,6 +12,7 @@ public class TestGetAllStories extends SuiteTest {
     @Test
     @DisplayName("GET All Stories status = 200")
     public void getAllStories_status_200() {
+
         given()
                 .spec(spec)
                 .cookies(cookies)
