@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestPostCreateProject" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:13:48" hostname="zenio" time="5.229">
+<testsuite name="project_controller.TestPostCreateProject" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:28:02" hostname="zenio" time="5.525">
   <properties/>
-  <testcase name="postNegativeTest4_status_400" classname="project_controller.TestPostCreateProject" time="0.661"/>
-  <testcase name="postNegativeTest5_status_400" classname="project_controller.TestPostCreateProject" time="0.646"/>
-  <testcase name="postCreateProject_status_200" classname="project_controller.TestPostCreateProject" time="0.674"/>
-  <testcase name="postCreateProject_status_401" classname="project_controller.TestPostCreateProject" time="0.653"/>
-  <testcase name="postCreateProject_status_404" classname="project_controller.TestPostCreateProject" time="0.639"/>
-  <testcase name="postNegativeTest1_status_400" classname="project_controller.TestPostCreateProject" time="0.648"/>
-  <testcase name="postNegativeTest2_status_400" classname="project_controller.TestPostCreateProject" time="0.664"/>
-  <testcase name="postNegativeTest3_status_400" classname="project_controller.TestPostCreateProject" time="0.635"/>
+  <testcase name="postNegativeTest4_status_400" classname="project_controller.TestPostCreateProject" time="0.705"/>
+  <testcase name="postNegativeTest5_status_400" classname="project_controller.TestPostCreateProject" time="0.688"/>
+  <testcase name="postCreateProject_status_200" classname="project_controller.TestPostCreateProject" time="0.797"/>
+  <testcase name="postCreateProject_status_401" classname="project_controller.TestPostCreateProject" time="0.631"/>
+  <testcase name="postCreateProject_status_404" classname="project_controller.TestPostCreateProject" time="0.678"/>
+  <testcase name="postNegativeTest1_status_400" classname="project_controller.TestPostCreateProject" time="0.673"/>
+  <testcase name="postNegativeTest2_status_400" classname="project_controller.TestPostCreateProject" time="0.674"/>
+  <testcase name="postNegativeTest3_status_400" classname="project_controller.TestPostCreateProject" time="0.667"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects
 Proxy:			<none>
@@ -18,17 +18,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=4E4A7527B10A54BEDF441D6CF6826E0B;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=66191C420DA8481DBF6B288225927ED0;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "CFUrHVOIUZej",
+    "name": "jemSfcWZCXZK",
     "externalProjectId": "QATest123",
     "workspaceId": "4"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:49 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:03 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -58,17 +58,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=4E4A7527B10A54BEDF441D6CF6826E0B;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=66191C420DA8481DBF6B288225927ED0;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "CFUrHVOIUZej",
+    "name": "jemSfcWZCXZK",
     "epicIds": "QATest123",
     "workspaceId": "4"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:50 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:03 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -98,16 +98,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=4E4A7527B10A54BEDF441D6CF6826E0B;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=66191C420DA8481DBF6B288225927ED0;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "CFUrHVOIUZej",
+    "name": "jemSfcWZCXZK",
     "workspaceId": "4"
 }
 HTTP/1.1 201 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:50 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:04 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -120,9 +120,9 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 1524,
-    "name": "CFUrHVOIUZej",
-    "acronym": "CFU",
+    "id": 1528,
+    "name": "jemSfcWZCXZK",
+    "acronym": "JEM",
     "workspaceId": 4,
     "deleted": false,
     "ownerId": 1,
@@ -141,12 +141,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "CFUrHVOIUZej",
+    "name": "jemSfcWZCXZK",
     "workspaceId": "4"
 }
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:51 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:05 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -165,16 +165,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=4E4A7527B10A54BEDF441D6CF6826E0B;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=66191C420DA8481DBF6B288225927ED0;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "CFUrHVOIUZej",
+    "name": "jemSfcWZCXZK",
     "workspaceId": "4"
 }
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:51 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:06 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -355,9 +355,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 Request method:	POST
@@ -369,15 +369,15 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=4E4A7527B10A54BEDF441D6CF6826E0B;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=66191C420DA8481DBF6B288225927ED0;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "workspaceId": "4"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:52 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:06 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -407,16 +407,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=4E4A7527B10A54BEDF441D6CF6826E0B;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=66191C420DA8481DBF6B288225927ED0;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "CFUrHVOIUZej",
+    "name": "jemSfcWZCXZK",
     "workspaceId": "QATest123"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:53 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:07 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -446,17 +446,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=4E4A7527B10A54BEDF441D6CF6826E0B;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=66191C420DA8481DBF6B288225927ED0;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "CFUrHVOIUZej",
+    "name": "jemSfcWZCXZK",
     "integrationId": "QATest123",
     "workspaceId": "4"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:53 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:08 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive

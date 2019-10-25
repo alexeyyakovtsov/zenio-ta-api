@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="integration_controller.TestGetAllIntegrationsProjects" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:12:20" hostname="zenio" time="5.184">
+<testsuite name="integration_controller.TestGetAllIntegrationsProjects" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:26:31" hostname="zenio" time="5.71">
   <properties/>
-  <testcase name="getAllIntegrationsProjects_status_200" classname="integration_controller.TestGetAllIntegrationsProjects" time="3.669"/>
-  <testcase name="getAllIntegrationsProjects__status_401" classname="integration_controller.TestGetAllIntegrationsProjects" time="0.768"/>
-  <testcase name="getAllIntegrationsProjects__status_404" classname="integration_controller.TestGetAllIntegrationsProjects" time="0.744"/>
+  <testcase name="getAllIntegrationsProjects_status_200" classname="integration_controller.TestGetAllIntegrationsProjects" time="4.052"/>
+  <testcase name="getAllIntegrationsProjects__status_401" classname="integration_controller.TestGetAllIntegrationsProjects" time="0.81"/>
+  <testcase name="getAllIntegrationsProjects__status_404" classname="integration_controller.TestGetAllIntegrationsProjects" time="0.844"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/integrations/projects
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=554B3179CC111A8394EB85BA1D82E6D2;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=EB1D076421DDB91004A0F600B1D6E7DF;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:23 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:26:35 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -45,8 +45,20 @@ X-Frame-Options: SAMEORIGIN
     },
     {
         "integrationId": 812,
+        "projectId": 2406642,
+        "name": "Test No integration",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 812,
         "projectId": 2318794,
         "name": "Zenio",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 812,
+        "projectId": 2400115,
+        "name": "Zenio_QA",
         "apiProvider": "PIVOTAL"
     },
     {
@@ -63,24 +75,96 @@ X-Frame-Options: SAMEORIGIN
     },
     {
         "integrationId": 812,
-        "projectId": 2406642,
-        "name": "Test No integration",
-        "apiProvider": "PIVOTAL"
-    },
-    {
-        "integrationId": 812,
-        "projectId": 2400115,
-        "name": "Zenio_QA",
-        "apiProvider": "PIVOTAL"
-    },
-    {
-        "integrationId": 812,
         "projectId": 2400406,
         "name": "TTI",
         "apiProvider": "PIVOTAL"
     },
     {
         "integrationId": 812,
+        "projectId": 2380005,
+        "name": "Zenio. Support issues",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 814,
+        "projectId": 2406642,
+        "name": "Test No integration",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 814,
+        "projectId": 2318794,
+        "name": "Zenio",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 814,
+        "projectId": 2400115,
+        "name": "Zenio_QA",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 814,
+        "projectId": 2324613,
+        "name": "zenio_team",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 814,
+        "projectId": 2398035,
+        "name": "TMC Discv5",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 814,
+        "projectId": 2400406,
+        "name": "TTI",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 814,
+        "projectId": 2380005,
+        "name": "Zenio. Support issues",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 816,
+        "projectId": 2406642,
+        "name": "Test No integration",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 816,
+        "projectId": 2318794,
+        "name": "Zenio",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 816,
+        "projectId": 2400115,
+        "name": "Zenio_QA",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 816,
+        "projectId": 2324613,
+        "name": "zenio_team",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 816,
+        "projectId": 2398035,
+        "name": "TMC Discv5",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 816,
+        "projectId": 2400406,
+        "name": "TTI",
+        "apiProvider": "PIVOTAL"
+    },
+    {
+        "integrationId": 816,
         "projectId": 2380005,
         "name": "Zenio. Support issues",
         "apiProvider": "PIVOTAL"
@@ -348,6 +432,186 @@ X-Frame-Options: SAMEORIGIN
         "projectId": 10000,
         "name": "zenio test",
         "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10003,
+        "name": "Anna's Test Project",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10015,
+        "name": "ewrrrrrrrrrrrrrr",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10012,
+        "name": "Ex1ported2",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10011,
+        "name": "Exported",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10007,
+        "name": "Kanban project",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10014,
+        "name": "MyNewStoryMap",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10004,
+        "name": "Next get project",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10013,
+        "name": "Not imported",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10008,
+        "name": "QA Test",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10006,
+        "name": "Scrum project",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10010,
+        "name": "Test Add project",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10009,
+        "name": "test111",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10016,
+        "name": "WErt",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10001,
+        "name": "Zenio bugs",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 813,
+        "projectId": 10000,
+        "name": "zenio test",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10003,
+        "name": "Anna's Test Project",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10015,
+        "name": "ewrrrrrrrrrrrrrr",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10012,
+        "name": "Ex1ported2",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10011,
+        "name": "Exported",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10007,
+        "name": "Kanban project",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10014,
+        "name": "MyNewStoryMap",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10004,
+        "name": "Next get project",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10013,
+        "name": "Not imported",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10008,
+        "name": "QA Test",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10006,
+        "name": "Scrum project",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10010,
+        "name": "Test Add project",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10009,
+        "name": "test111",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10016,
+        "name": "WErt",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10001,
+        "name": "Zenio bugs",
+        "apiProvider": "JIRA"
+    },
+    {
+        "integrationId": 815,
+        "projectId": 10000,
+        "name": "zenio test",
+        "apiProvider": "JIRA"
     }
 ]
 Request method:	GET
@@ -363,8 +627,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:24 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:26:36 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -383,12 +647,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=554B3179CC111A8394EB85BA1D82E6D2;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=EB1D076421DDB91004A0F600B1D6E7DF;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:25 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:26:37 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -569,9 +833,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

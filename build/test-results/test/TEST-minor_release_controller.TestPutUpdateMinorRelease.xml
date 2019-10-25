@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="minor_release_controller.TestPutUpdateMinorRelease" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:12:56" hostname="zenio" time="1.989">
+<testsuite name="minor_release_controller.TestPutUpdateMinorRelease" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:27:10" hostname="zenio" time="2.09">
   <properties/>
-  <testcase name="putUpdateMinorRelease_status_200" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.698"/>
-  <testcase name="putUpdateMinorRelease_status_401" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.65"/>
-  <testcase name="putUpdateMinorRelease_status_404" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.639"/>
+  <testcase name="putUpdateMinorRelease_status_200" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.783"/>
+  <testcase name="putUpdateMinorRelease_status_401" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.624"/>
+  <testcase name="putUpdateMinorRelease_status_404" classname="minor_release_controller.TestPutUpdateMinorRelease" time="0.679"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/releases/minor/6200
 Proxy:			<none>
@@ -13,17 +13,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=65117A2B73321B998C1CB1E8AAA658A4;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=A76E478AA0ECA2257C414D6E7C231F5C;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "dvoZfXRCydZf",
-    "description": "KPoHkNcbVTyY",
-    "checksum": "pzJsmIyupCBf"
+    "name": "GEpLNVKHKPDU",
+    "description": "ttlOvoFAiCyP",
+    "checksum": "BCWbBwTqvLxx"
 }
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:57 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:11 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -37,15 +37,15 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 6200,
-    "name": "dvoZfXRCydZf",
+    "name": "GEpLNVKHKPDU",
     "projectId": 31,
     "majorReleaseId": 2216,
     "activityIds": [
         1643
     ],
-    "description": "KPoHkNcbVTyY",
+    "description": "ttlOvoFAiCyP",
     "dueDate": null,
-    "checksum": "pzJsmIyupCBf"
+    "checksum": "BCWbBwTqvLxx"
 }
 Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/releases/minor/6200
@@ -60,13 +60,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "dvoZfXRCydZf",
-    "description": "KPoHkNcbVTyY",
-    "checksum": "pzJsmIyupCBf"
+    "name": "GEpLNVKHKPDU",
+    "description": "ttlOvoFAiCyP",
+    "checksum": "BCWbBwTqvLxx"
 }
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:58 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:12 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -85,17 +85,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=65117A2B73321B998C1CB1E8AAA658A4;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=A76E478AA0ECA2257C414D6E7C231F5C;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "dvoZfXRCydZf",
-    "description": "KPoHkNcbVTyY",
-    "checksum": "pzJsmIyupCBf"
+    "name": "GEpLNVKHKPDU",
+    "description": "ttlOvoFAiCyP",
+    "checksum": "BCWbBwTqvLxx"
 }
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:58 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:12 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -276,9 +276,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

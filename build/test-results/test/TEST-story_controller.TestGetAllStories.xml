@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="story_controller.TestGetAllStories" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:13:17" hostname="zenio" time="1.963">
+<testsuite name="story_controller.TestGetAllStories" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:27:29" hostname="zenio" time="2.217">
   <properties/>
-  <testcase name="getAllStories_status_200" classname="story_controller.TestGetAllStories" time="0.688"/>
-  <testcase name="getAllStories_status_401" classname="story_controller.TestGetAllStories" time="0.627"/>
-  <testcase name="getAllStories_status_404" classname="story_controller.TestGetAllStories" time="0.645"/>
+  <testcase name="getAllStories_status_200" classname="story_controller.TestGetAllStories" time="0.752"/>
+  <testcase name="getAllStories_status_401" classname="story_controller.TestGetAllStories" time="0.671"/>
+  <testcase name="getAllStories_status_404" classname="story_controller.TestGetAllStories" time="0.79"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/stories
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=01BF0A215A80215AB22C499E5B053DD7;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=FE6A01D093301F664FAE93D48F940605;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:17 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:29 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -34,17 +34,17 @@ X-Frame-Options: SAMEORIGIN
     "areas": [
         {
             "id": 67,
-            "name": "mGBxaCBsEJIn",
+            "name": "LJGKTmacFCFk",
             "activityIds": [
                 1053,
                 1639,
                 1643,
-                6988
+                6992
             ],
             "actors": [
                 
             ],
-            "checksum": "CBgxZzLJvhpF",
+            "checksum": "JVqFWiyaEUOz",
             "action": "NONE",
             "kind": "area"
         },
@@ -76,7 +76,7 @@ X-Frame-Options: SAMEORIGIN
         },
         {
             "id": 1053,
-            "name": "bsSrUZBbheaj",
+            "name": "evHXXXLpacgC",
             "areaId": 67,
             "cardIds": [
                 6199,
@@ -84,10 +84,10 @@ X-Frame-Options: SAMEORIGIN
                 5277,
                 5278,
                 5279,
-                16723,
-                16724
+                16742,
+                16743
             ],
-            "checksum": "pzJsmIyupCBf",
+            "checksum": "BCWbBwTqvLxx",
             "action": "NONE",
             "kind": "activity"
         },
@@ -115,13 +115,13 @@ X-Frame-Options: SAMEORIGIN
             "kind": "activity"
         },
         {
-            "id": 6988,
-            "name": "bsSrUZBbheaj",
+            "id": 6992,
+            "name": "evHXXXLpacgC",
             "areaId": 67,
             "cardIds": [
                 
             ],
-            "checksum": "MGJzU3JVWkJiaGVham51bGxmYWxzZQ==",
+            "checksum": "MGV2SFhYWExwYWNnQ251bGxmYWxzZQ==",
             "action": "NONE",
             "kind": "activity"
         }
@@ -129,18 +129,33 @@ X-Frame-Options: SAMEORIGIN
     "cards": [
         {
             "id": 6199,
-            "name": "kjvbmCSfPbbC",
+            "name": "fyCSSrSuymoZ",
             "activityIds": [
                 1053
             ],
-            "description": "KPoHkNcbVTyY",
+            "description": "ttlOvoFAiCyP",
             "majorReleaseId": 2216,
             "state": "UNSTARTED",
             "dueDate": null,
             "deleted": false,
-            "checksum": "pzJsmIyupCBf",
+            "checksum": "BCWbBwTqvLxx",
             "action": "NONE",
             "kind": "story"
+        },
+        {
+            "id": 6200,
+            "name": "GEpLNVKHKPDU",
+            "activityIds": [
+                1643
+            ],
+            "description": "ttlOvoFAiCyP",
+            "majorReleaseId": 2216,
+            "state": null,
+            "dueDate": null,
+            "deleted": false,
+            "checksum": "BCWbBwTqvLxx",
+            "action": "NONE",
+            "kind": "minorRelease"
         },
         {
             "id": 6201,
@@ -158,19 +173,19 @@ X-Frame-Options: SAMEORIGIN
             "kind": "story"
         },
         {
-            "id": 6200,
-            "name": "dvoZfXRCydZf",
+            "id": 5276,
+            "name": "dsf",
             "activityIds": [
-                1643
+                1053
             ],
-            "description": "KPoHkNcbVTyY",
+            "description": null,
             "majorReleaseId": 2216,
-            "state": null,
+            "state": "UNSTARTED",
             "dueDate": null,
             "deleted": false,
-            "checksum": "pzJsmIyupCBf",
+            "checksum": "",
             "action": "NONE",
-            "kind": "minorRelease"
+            "kind": "story"
         },
         {
             "id": 5280,
@@ -184,21 +199,6 @@ X-Frame-Options: SAMEORIGIN
             "dueDate": null,
             "deleted": false,
             "checksum": "MTYzOTEzMTU2NDA3MzcxMjkwMQ==",
-            "action": "NONE",
-            "kind": "story"
-        },
-        {
-            "id": 5276,
-            "name": "dsf",
-            "activityIds": [
-                1053
-            ],
-            "description": null,
-            "majorReleaseId": 2216,
-            "state": "UNSTARTED",
-            "dueDate": null,
-            "deleted": false,
-            "checksum": "",
             "action": "NONE",
             "kind": "story"
         },
@@ -248,8 +248,8 @@ X-Frame-Options: SAMEORIGIN
             "kind": "story"
         },
         {
-            "id": 16723,
-            "name": "dvoZfXRCydZf",
+            "id": 16742,
+            "name": "GEpLNVKHKPDU",
             "activityIds": [
                 1053
             ],
@@ -258,13 +258,13 @@ X-Frame-Options: SAMEORIGIN
             "state": null,
             "dueDate": null,
             "deleted": false,
-            "checksum": "MGR2b1pmWFJDeWRaZm51bGxmYWxzZQ==",
+            "checksum": "MEdFcExOVktIS1BEVW51bGxmYWxzZQ==",
             "action": "NONE",
             "kind": "minorRelease"
         },
         {
-            "id": 16724,
-            "name": "CFUrHVOIUZej",
+            "id": 16743,
+            "name": "jemSfcWZCXZK",
             "activityIds": [
                 1053
             ],
@@ -273,7 +273,7 @@ X-Frame-Options: SAMEORIGIN
             "state": "UNSTARTED",
             "dueDate": null,
             "deleted": false,
-            "checksum": "MENGVXJIVk9JVVplam51bGwwbnVsbG51bGwwZmFsc2U=",
+            "checksum": "MGplbVNmY1daQ1haS251bGwwbnVsbG51bGwwZmFsc2U=",
             "action": "NONE",
             "kind": "story"
         }
@@ -281,7 +281,7 @@ X-Frame-Options: SAMEORIGIN
     "majorReleases": [
         {
             "id": 2216,
-            "name": "dYHJPSRMDMPy",
+            "name": "sHxUjfoSVyfn",
             "checksum": "MHNUbnd5UW1lY1h2bw==",
             "activityStories": [
                 {
@@ -298,8 +298,8 @@ X-Frame-Options: SAMEORIGIN
                         5277,
                         5278,
                         5279,
-                        16723,
-                        16724
+                        16742,
+                        16743
                     ]
                 },
                 {
@@ -316,7 +316,7 @@ X-Frame-Options: SAMEORIGIN
                     ]
                 },
                 {
-                    "activityId": 6988,
+                    "activityId": 6992,
                     "cardIds": [
                         
                     ]
@@ -326,9 +326,9 @@ X-Frame-Options: SAMEORIGIN
             "kind": "majorRelease"
         },
         {
-            "id": 2562,
-            "name": "JhwtpjZSXsPo",
-            "checksum": "MEpod3RwalpTWHNQbw==",
+            "id": 2567,
+            "name": "ShShemogpUgS",
+            "checksum": "MFNoU2hlbW9ncFVnUw==",
             "activityStories": [
                 {
                     "activityId": 1679,
@@ -355,7 +355,7 @@ X-Frame-Options: SAMEORIGIN
                     ]
                 },
                 {
-                    "activityId": 6988,
+                    "activityId": 6992,
                     "cardIds": [
                         
                     ]
@@ -365,9 +365,9 @@ X-Frame-Options: SAMEORIGIN
             "kind": "majorRelease"
         },
         {
-            "id": 2565,
-            "name": "dYHJPSRMDMPy",
-            "checksum": "MGRZSEpQU1JNRE1QeQ==",
+            "id": 2571,
+            "name": "sHxUjfoSVyfn",
+            "checksum": "MHNIeFVqZm9TVnlmbg==",
             "activityStories": [
                 {
                     "activityId": 1679,
@@ -394,7 +394,7 @@ X-Frame-Options: SAMEORIGIN
                     ]
                 },
                 {
-                    "activityId": 6988,
+                    "activityId": 6992,
                     "cardIds": [
                         
                     ]
@@ -418,8 +418,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:18 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:30 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -438,12 +438,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=01BF0A215A80215AB22C499E5B053DD7;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=FE6A01D093301F664FAE93D48F940605;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:19 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:31 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -624,9 +624,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

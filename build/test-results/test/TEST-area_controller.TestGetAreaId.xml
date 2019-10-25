@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="area_controller.TestGetAreaId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:14:20" hostname="zenio" time="1.949">
+<testsuite name="area_controller.TestGetAreaId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:28:32" hostname="zenio" time="2.215">
   <properties/>
-  <testcase name="getAreaId_status_200" classname="area_controller.TestGetAreaId" time="0.684"/>
-  <testcase name="getAreaId_status_401" classname="area_controller.TestGetAreaId" time="0.618"/>
-  <testcase name="getAreaId_status_404" classname="area_controller.TestGetAreaId" time="0.644"/>
+  <testcase name="getAreaId_status_200" classname="area_controller.TestGetAreaId" time="0.794"/>
+  <testcase name="getAreaId_status_401" classname="area_controller.TestGetAreaId" time="0.633"/>
+  <testcase name="getAreaId_status_404" classname="area_controller.TestGetAreaId" time="0.786"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/areas/67
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=FD5102CD543FADA2796419FC9362BC2E;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=6DBBCD9572D6456983FFA041A1FB30E8;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:14:20 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:32 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -32,15 +32,15 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 67,
-    "name": "LQTriSbGcqXu",
+    "name": "pATvFxKDpFth",
     "projectId": 31,
     "description": "123",
-    "checksum": "pzJsmIyupCBf",
+    "checksum": "BCWbBwTqvLxx",
     "activityIds": [
         1053,
         1639,
         1643,
-        6988
+        6992
     ],
     "actorIds": [
         
@@ -59,8 +59,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:14:21 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:33 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -79,12 +79,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=FD5102CD543FADA2796419FC9362BC2E;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=6DBBCD9572D6456983FFA041A1FB30E8;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:14:22 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:34 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -265,9 +265,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

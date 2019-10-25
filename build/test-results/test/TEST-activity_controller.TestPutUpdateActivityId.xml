@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="activity_controller.TestPutUpdateActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:12:17" hostname="zenio" time="2.214">
+<testsuite name="activity_controller.TestPutUpdateActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:26:28" hostname="zenio" time="2.396">
   <properties/>
-  <testcase name="putUpdateActivity_status_200" classname="activity_controller.TestPutUpdateActivityId" time="0.73"/>
-  <testcase name="putUpdateActivity_status_401" classname="activity_controller.TestPutUpdateActivityId" time="0.807"/>
-  <testcase name="putUpdateActivity_status_404" classname="activity_controller.TestPutUpdateActivityId" time="0.676"/>
+  <testcase name="putUpdateActivity_status_200" classname="activity_controller.TestPutUpdateActivityId" time="0.843"/>
+  <testcase name="putUpdateActivity_status_401" classname="activity_controller.TestPutUpdateActivityId" time="0.836"/>
+  <testcase name="putUpdateActivity_status_404" classname="activity_controller.TestPutUpdateActivityId" time="0.716"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
 Proxy:			<none>
@@ -13,18 +13,18 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=F9836462589E69B669FDD4570225F16A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=06769897298B7DA041D5636CA96D93DC;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "areaId": "67",
-    "name": "bsSrUZBbheaj",
-    "checksum": "pzJsmIyupCBf",
+    "name": "evHXXXLpacgC",
+    "checksum": "BCWbBwTqvLxx",
     "description": "123"
 }
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:17 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:26:29 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -38,7 +38,7 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 1053,
-    "name": "bsSrUZBbheaj",
+    "name": "evHXXXLpacgC",
     "areaId": 67,
     "projectId": 31,
     "externalId": 4442345,
@@ -46,7 +46,7 @@ X-Frame-Options: SAMEORIGIN
     "majorReleases": [
         {
             "id": 2216,
-            "name": "JhwtpjZSXsPo",
+            "name": "ShShemogpUgS",
             "cardIds": [
                 5276,
                 5278,
@@ -57,15 +57,15 @@ X-Frame-Options: SAMEORIGIN
             "checksum": "MHNUbnd5UW1lY1h2bw=="
         },
         {
-            "id": 2562,
-            "name": "JhwtpjZSXsPo",
+            "id": 2567,
+            "name": "ShShemogpUgS",
             "cardIds": [
                 
             ],
-            "checksum": "MEpod3RwalpTWHNQbw=="
+            "checksum": "MFNoU2hlbW9ncFVnUw=="
         }
     ],
-    "checksum": "pzJsmIyupCBf"
+    "checksum": "BCWbBwTqvLxx"
 }
 Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
@@ -80,13 +80,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "bsSrUZBbheaj",
-    "checksum": "pzJsmIyupCBf",
+    "name": "evHXXXLpacgC",
+    "checksum": "BCWbBwTqvLxx",
     "description": "123"
 }
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:18 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:26:29 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -105,17 +105,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=F9836462589E69B669FDD4570225F16A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=06769897298B7DA041D5636CA96D93DC;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "bsSrUZBbheaj",
-    "checksum": "pzJsmIyupCBf",
+    "name": "evHXXXLpacgC",
+    "checksum": "BCWbBwTqvLxx",
     "description": "123"
 }
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:19 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:26:30 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -296,9 +296,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

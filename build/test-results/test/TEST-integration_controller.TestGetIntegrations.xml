@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="integration_controller.TestGetIntegrations" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:12:37" hostname="zenio" time="1.935">
+<testsuite name="integration_controller.TestGetIntegrations" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:26:50" hostname="zenio" time="2.228">
   <properties/>
-  <testcase name="getIntegrations_status_200" classname="integration_controller.TestGetIntegrations" time="0.65"/>
-  <testcase name="getIntegrations_status_401" classname="integration_controller.TestGetIntegrations" time="0.633"/>
-  <testcase name="getIntegrations_status_404" classname="integration_controller.TestGetIntegrations" time="0.651"/>
+  <testcase name="getIntegrations_status_200" classname="integration_controller.TestGetIntegrations" time="0.738"/>
+  <testcase name="getIntegrations_status_401" classname="integration_controller.TestGetIntegrations" time="0.674"/>
+  <testcase name="getIntegrations_status_404" classname="integration_controller.TestGetIntegrations" time="0.814"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/integrations
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=56250956E6B8C11F1F5CBD350B7343EE;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=B17DEB0B0EF394ED5112063A233C5D07;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:38 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:26:51 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -120,6 +120,30 @@ X-Frame-Options: SAMEORIGIN
         "externalId": null
     },
     {
+        "id": 816,
+        "name": "Pivotal Token 56",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "externalId": null
+    },
+    {
+        "id": 819,
+        "name": "Pivotal Token 57",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "externalId": null
+    },
+    {
         "id": 177,
         "name": "Pivotal Token 6",
         "apiToken": "dfe3d38b2a1065fc25f4960da291bd0b",
@@ -178,6 +202,30 @@ X-Frame-Options: SAMEORIGIN
             
         ],
         "externalId": null
+    },
+    {
+        "id": 815,
+        "name": "Jira Token 51",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "externalId": null
+    },
+    {
+        "id": 818,
+        "name": "Jira Token 52",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "externalId": null
     }
 ]
 Request method:	GET
@@ -193,8 +241,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:38 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:26:51 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -213,12 +261,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=56250956E6B8C11F1F5CBD350B7343EE;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=B17DEB0B0EF394ED5112063A233C5D07;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:12:39 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:26:52 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -399,9 +447,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

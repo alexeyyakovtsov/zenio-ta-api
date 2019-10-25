@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user_controller.TestGetAllUsers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:13:31" hostname="zenio" time="2.428">
+<testsuite name="user_controller.TestGetAllUsers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:27:44" hostname="zenio" time="2.622">
   <properties/>
-  <testcase name="getAllUsers_status_200" classname="user_controller.TestGetAllUsers" time="0.997"/>
-  <testcase name="getAllUsers_status_401" classname="user_controller.TestGetAllUsers" time="0.671"/>
-  <testcase name="getAllUsers_status_404" classname="user_controller.TestGetAllUsers" time="0.738"/>
+  <testcase name="getAllUsers_status_200" classname="user_controller.TestGetAllUsers" time="1.228"/>
+  <testcase name="getAllUsers_status_401" classname="user_controller.TestGetAllUsers" time="0.62"/>
+  <testcase name="getAllUsers_status_404" classname="user_controller.TestGetAllUsers" time="0.77"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/users
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=DE565C5F5C248C76E8B1DFB9C0C2C805;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=9F473400E437FB5A3B214317659E77A7;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:31 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:44 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -307,12 +307,12 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
-        "id": 1,
-        "username": "zenio",
-        "email": "zenio@zensoft.io",
+        "id": 2,
+        "username": "Ian McFarland",
+        "email": "ian@zenio.co",
         "active": true,
         "enabled": true,
-        "lastVisit": "2019-10-22T15:13:31.282",
+        "lastVisit": "2019-10-24T11:14:40.399",
         "roles": [
             "ADMIN"
         ]
@@ -494,6 +494,17 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
+        "id": 1,
+        "username": "zenio",
+        "email": "zenio@zensoft.io",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-10-25T09:27:44.075",
+        "roles": [
+            "ADMIN"
+        ]
+    },
+    {
         "id": 55,
         "username": "jeff",
         "email": "jeff@jpattonassociates.com",
@@ -535,17 +546,6 @@ X-Frame-Options: SAMEORIGIN
         "lastVisit": "2019-09-06T16:59:38.946",
         "roles": [
             "CLIENT"
-        ]
-    },
-    {
-        "id": 2,
-        "username": "Ian McFarland",
-        "email": "ian@zenio.co",
-        "active": true,
-        "enabled": true,
-        "lastVisit": "2019-10-22T05:54:39.755",
-        "roles": [
-            "ADMIN"
         ]
     },
     {
@@ -1749,11 +1749,11 @@ X-Frame-Options: SAMEORIGIN
     },
     {
         "id": 157,
-        "username": "annshunko",
+        "username": "Anna",
         "email": "annshunko@gmail.com",
-        "active": false,
+        "active": true,
         "enabled": true,
-        "lastVisit": null,
+        "lastVisit": "2019-10-25T07:40:00.835",
         "roles": [
             "CLIENT"
         ]
@@ -6560,7 +6560,7 @@ X-Frame-Options: SAMEORIGIN
         "email": "anna@zenio.co",
         "active": true,
         "enabled": true,
-        "lastVisit": "2019-10-22T13:04:31.64",
+        "lastVisit": "2019-10-25T07:24:50.298",
         "roles": [
             "CLIENT"
         ]
@@ -7319,7 +7319,7 @@ X-Frame-Options: SAMEORIGIN
         "email": "alexey.yakovtsov@zensoft.io",
         "active": true,
         "enabled": true,
-        "lastVisit": "2019-10-18T08:10:55.277",
+        "lastVisit": "2019-10-25T08:00:24.392",
         "roles": [
             "CLIENT"
         ]
@@ -8001,7 +8001,18 @@ X-Frame-Options: SAMEORIGIN
         "email": "alexey.yakovtsov@zenio.co",
         "active": true,
         "enabled": true,
-        "lastVisit": "2019-10-22T12:59:43.375",
+        "lastVisit": "2019-10-25T08:03:25.09",
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 756,
+        "username": "EtntVczaGceQ",
+        "email": "EtntVczaGceQ@gmail.com",
+        "active": false,
+        "enabled": true,
+        "lastVisit": null,
         "roles": [
             "CLIENT"
         ]
@@ -8040,10 +8051,43 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
+        "id": 751,
+        "username": "dFfyIEBxmTAi",
+        "email": "dFfyIEBxmTAi@gmail.com",
+        "active": false,
+        "enabled": true,
+        "lastVisit": null,
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 755,
+        "username": "siwigibad",
+        "email": "siwigibad@netmail8.com",
+        "active": false,
+        "enabled": true,
+        "lastVisit": null,
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
         "id": 746,
         "username": "YDiNgsYrdyUt",
         "email": "YDiNgsYrdyUt@gmail.com",
         "active": false,
+        "enabled": true,
+        "lastVisit": null,
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 754,
+        "username": "ssds",
+        "email": "darelafey@mail8app.com",
+        "active": true,
         "enabled": true,
         "lastVisit": null,
         "roles": [
@@ -8075,8 +8119,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:32 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:45 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -8095,12 +8139,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=DE565C5F5C248C76E8B1DFB9C0C2C805;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=9F473400E437FB5A3B214317659E77A7;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:33 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:46 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -8281,9 +8325,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

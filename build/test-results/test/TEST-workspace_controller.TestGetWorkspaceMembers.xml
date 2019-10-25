@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestGetWorkspaceMembers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:14:03" hostname="zenio" time="1.995">
+<testsuite name="workspace_controller.TestGetWorkspaceMembers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:28:18" hostname="zenio" time="1.995">
   <properties/>
-  <testcase name="getWorkspaceMembers_status_200" classname="workspace_controller.TestGetWorkspaceMembers" time="0.633"/>
-  <testcase name="getWorkspaceMembers_status_401" classname="workspace_controller.TestGetWorkspaceMembers" time="0.651"/>
-  <testcase name="getWorkspaceMembers_status_404" classname="workspace_controller.TestGetWorkspaceMembers" time="0.707"/>
+  <testcase name="getWorkspaceMembers_status_200" classname="workspace_controller.TestGetWorkspaceMembers" time="0.674"/>
+  <testcase name="getWorkspaceMembers_status_401" classname="workspace_controller.TestGetWorkspaceMembers" time="0.636"/>
+  <testcase name="getWorkspaceMembers_status_404" classname="workspace_controller.TestGetWorkspaceMembers" time="0.682"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/workspaces/4/users
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=5EA7BA1BD17406254BE1479BD643464E;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=B1AB5B7E11939C3A64E5E08F536FC4CD;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:14:03 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:18 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -77,8 +77,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:14:04 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:19 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -97,12 +97,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=5EA7BA1BD17406254BE1479BD643464E;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=B1AB5B7E11939C3A64E5E08F536FC4CD;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:14:05 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:28:20 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -283,9 +283,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

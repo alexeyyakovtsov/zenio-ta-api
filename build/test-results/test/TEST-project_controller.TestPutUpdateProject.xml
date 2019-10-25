@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestPutUpdateProject" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:13:37" hostname="zenio" time="1.999">
+<testsuite name="project_controller.TestPutUpdateProject" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:27:50" hostname="zenio" time="2.122">
   <properties/>
-  <testcase name="putUpdateProject_status_200" classname="project_controller.TestPutUpdateProject" time="0.714"/>
-  <testcase name="putUpdateProject_status_401" classname="project_controller.TestPutUpdateProject" time="0.615"/>
-  <testcase name="putUpdateProject_status_404" classname="project_controller.TestPutUpdateProject" time="0.665"/>
+  <testcase name="putUpdateProject_status_200" classname="project_controller.TestPutUpdateProject" time="0.778"/>
+  <testcase name="putUpdateProject_status_401" classname="project_controller.TestPutUpdateProject" time="0.659"/>
+  <testcase name="putUpdateProject_status_404" classname="project_controller.TestPutUpdateProject" time="0.682"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/1460
 Proxy:			<none>
@@ -13,15 +13,15 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=BB999E330492D7355B7A35A81FC4569E;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=114B3C747A0C2267D3FC5EBF62D7B7FF;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "xFbTDMcRhwJB Update name"
+    "name": "nhDuhAAqfnDc Update name"
 }
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:37 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:51 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -35,8 +35,8 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 1460,
-    "name": "xFbTDMcRhwJB Update name",
-    "acronym": "XFB",
+    "name": "nhDuhAAqfnDc Update name",
+    "acronym": "NHD",
     "workspaceId": 4,
     "deleted": false,
     "ownerId": 1,
@@ -55,11 +55,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "xFbTDMcRhwJB Update name"
+    "name": "nhDuhAAqfnDc Update name"
 }
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:38 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:51 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -78,15 +78,15 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=BB999E330492D7355B7A35A81FC4569E;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=114B3C747A0C2267D3FC5EBF62D7B7FF;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "xFbTDMcRhwJB Update name"
+    "name": "nhDuhAAqfnDc Update name"
 }
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:39 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:52 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -267,9 +267,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

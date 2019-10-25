@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user_controller.TestPostInviteUser" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:13:20" hostname="zenio" time="5.296">
+<testsuite name="user_controller.TestPostInviteUser" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:27:32" hostname="zenio" time="5.753">
   <properties/>
-  <testcase name="postNegativeTest4_status_400" classname="user_controller.TestPostInviteUser" time="0.627"/>
-  <testcase name="postNegativeTest5_status_400" classname="user_controller.TestPostInviteUser" time="0.648"/>
-  <testcase name="postInviteUser_status_200" classname="user_controller.TestPostInviteUser" time="0.734"/>
-  <testcase name="postInviteUser_status_401" classname="user_controller.TestPostInviteUser" time="0.621"/>
-  <testcase name="postInviteUser_status_404" classname="user_controller.TestPostInviteUser" time="0.71"/>
-  <testcase name="postNegativeTest1_status_400" classname="user_controller.TestPostInviteUser" time="0.636"/>
-  <testcase name="postNegativeTest2_status_400" classname="user_controller.TestPostInviteUser" time="0.649"/>
-  <testcase name="postNegativeTest3_status_400" classname="user_controller.TestPostInviteUser" time="0.658"/>
+  <testcase name="postNegativeTest4_status_400" classname="user_controller.TestPostInviteUser" time="0.735"/>
+  <testcase name="postNegativeTest5_status_400" classname="user_controller.TestPostInviteUser" time="0.672"/>
+  <testcase name="postInviteUser_status_200" classname="user_controller.TestPostInviteUser" time="0.827"/>
+  <testcase name="postInviteUser_status_401" classname="user_controller.TestPostInviteUser" time="0.631"/>
+  <testcase name="postInviteUser_status_404" classname="user_controller.TestPostInviteUser" time="0.846"/>
+  <testcase name="postNegativeTest1_status_400" classname="user_controller.TestPostInviteUser" time="0.688"/>
+  <testcase name="postNegativeTest2_status_400" classname="user_controller.TestPostInviteUser" time="0.654"/>
+  <testcase name="postNegativeTest3_status_400" classname="user_controller.TestPostInviteUser" time="0.68"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/users/invite
 Proxy:			<none>
@@ -18,7 +18,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=5B6C63BAB4FE0612B87BDAB7CEEE5903;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -27,8 +27,8 @@ Body:
     ]
 }
 HTTP/1.1 400 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:20 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:32 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -41,9 +41,6 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "notFound": [
-        
-    ],
     "invalid": [
         "xxx@xx"
     ],
@@ -63,7 +60,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=5B6C63BAB4FE0612B87BDAB7CEEE5903;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -72,8 +69,8 @@ Body:
     ]
 }
 HTTP/1.1 400 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:21 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:33 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -86,9 +83,6 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "notFound": [
-        
-    ],
     "invalid": [
         "@xx.com"
     ],
@@ -108,17 +102,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=5B6C63BAB4FE0612B87BDAB7CEEE5903;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "emails": [
-        "bTIWcUcnWXuK@gmail.com"
+        "EtntVczaGceQ@gmail.com"
     ]
 }
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:21 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:34 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -141,8 +135,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:22 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:35 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -161,17 +155,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=5B6C63BAB4FE0612B87BDAB7CEEE5903;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "emails": [
-        "bTIWcUcnWXuK@gmail.com"
+        "EtntVczaGceQ@gmail.com"
     ]
 }
 HTTP/1.1 404 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:23 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:35 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -352,9 +346,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b573a6a15d5cefcb4f41.bundle.js"/>
-    <script type="text/javascript" src="/main.b573a6a15d5cefcb4f41.bundle.js"/>
+    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
   </body>
 </html>
 Request method:	POST
@@ -366,12 +360,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=5B6C63BAB4FE0612B87BDAB7CEEE5903;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 400 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:23 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:36 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -401,7 +395,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=5B6C63BAB4FE0612B87BDAB7CEEE5903;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -410,8 +404,8 @@ Body:
     ]
 }
 HTTP/1.1 400 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:24 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:37 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -424,9 +418,6 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "notFound": [
-        
-    ],
     "invalid": [
         "123"
     ],
@@ -446,7 +437,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=26913B236F86141F5C6110401B2495B0;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=5B6C63BAB4FE0612B87BDAB7CEEE5903;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -455,8 +446,8 @@ Body:
     ]
 }
 HTTP/1.1 400 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:25 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:37 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -469,9 +460,6 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "notFound": [
-        
-    ],
     "invalid": [
         "xxx.xx"
     ],

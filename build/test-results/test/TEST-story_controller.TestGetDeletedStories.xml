@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="story_controller.TestGetDeletedStories" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-22T15:13:02" hostname="zenio" time="1.489">
+<testsuite name="story_controller.TestGetDeletedStories" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:27:17" hostname="zenio" time="1.548">
   <properties/>
-  <testcase name="getDeletedStories_status_200" classname="story_controller.TestGetDeletedStories" time="0.842"/>
-  <testcase name="getDeletedStories_status_401" classname="story_controller.TestGetDeletedStories" time="0.646"/>
+  <testcase name="getDeletedStories_status_200" classname="story_controller.TestGetDeletedStories" time="0.889"/>
+  <testcase name="getDeletedStories_status_401" classname="story_controller.TestGetDeletedStories" time="0.657"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/stories/deleted
 Proxy:			<none>
@@ -12,12 +12,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=7AD9C05CADD2C350E3C41B473CF40AAF;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=F1AF3B73959D259944353E763F00A00B;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:02 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:17 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -163,6 +163,21 @@ X-Frame-Options: SAMEORIGIN
             "dueDate": null,
             "deleted": true,
             "checksum": "MGtrYmZrWmJnTlRGd251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16726,
+            "name": "jenWVKUNWnok",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGplbldWS1VOV25va251bGwwbnVsbG51bGwwZmFsc2U=",
             "action": "NONE",
             "kind": "story"
         },
@@ -1290,6 +1305,21 @@ X-Frame-Options: SAMEORIGIN
             "checksum": "MEJCT09mZ25kWU5IaW51bGwwbnVsbG51bGwwZmFsc2U=",
             "action": "NONE",
             "kind": "story"
+        },
+        {
+            "id": 16724,
+            "name": "CFUrHVOIUZej",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MENGVXJIVk9JVVplam51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
         }
     ]
 }
@@ -1306,8 +1336,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.4
-Date: Tue, 22 Oct 2019 15:13:03 GMT
+Server: nginx/1.17.5
+Date: Fri, 25 Oct 2019 09:27:18 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
