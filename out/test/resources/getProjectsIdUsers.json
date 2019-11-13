@@ -1,7 +1,0 @@
-  {
-    "id": "integer",
-    "username": "string",
-    "email": "string",
-    "owner": "boolean",
-    "active": "boolean"
-  }
