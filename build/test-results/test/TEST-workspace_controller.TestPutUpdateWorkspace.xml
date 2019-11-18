@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestPutUpdateWorkspace" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:28:13" hostname="zenio" time="1.343">
+<testsuite name="workspace_controller.TestPutUpdateWorkspace" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:57:33" hostname="qa-System-Product-Name" time="1.565">
   <properties/>
-  <testcase name="putUpdateWorkspace_status_200" classname="workspace_controller.TestPutUpdateWorkspace" time="0.685"/>
-  <testcase name="putUpdateWorkspace_status_401" classname="workspace_controller.TestPutUpdateWorkspace" time="0.655"/>
+  <testcase name="putUpdateWorkspace_status_200" classname="workspace_controller.TestPutUpdateWorkspace" time="0.79"/>
+  <testcase name="putUpdateWorkspace_status_401" classname="workspace_controller.TestPutUpdateWorkspace" time="0.774"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/workspaces/27
 Proxy:			<none>
@@ -12,15 +12,15 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0ABA51E6C95B5B76956C9441964A9076;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=100087701DB921470914239E357B6BD8;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "nZjWHAhoCFiy"
+    "name": "KqrINzkFCrsI"
 }
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:28:13 GMT
+Date: Mon, 18 Nov 2019 09:57:34 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -35,7 +35,7 @@ X-Frame-Options: SAMEORIGIN
 {
     "id": 27,
     "owned": true,
-    "name": "nZjWHAhoCFiy",
+    "name": "KqrINzkFCrsI",
     "projects": [
         {
             "id": 1334,
@@ -62,11 +62,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "nZjWHAhoCFiy"
+    "name": "KqrINzkFCrsI"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:28:14 GMT
+Date: Mon, 18 Nov 2019 09:57:35 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff

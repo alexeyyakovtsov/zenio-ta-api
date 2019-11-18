@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="integration_controller.TestGetIntegrations" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:26:50" hostname="zenio" time="2.228">
+<testsuite name="integration_controller.TestGetIntegrations" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:56:25" hostname="qa-System-Product-Name" time="2.242">
   <properties/>
-  <testcase name="getIntegrations_status_200" classname="integration_controller.TestGetIntegrations" time="0.738"/>
-  <testcase name="getIntegrations_status_401" classname="integration_controller.TestGetIntegrations" time="0.674"/>
-  <testcase name="getIntegrations_status_404" classname="integration_controller.TestGetIntegrations" time="0.814"/>
+  <testcase name="getIntegrations_status_200" classname="integration_controller.TestGetIntegrations" time="0.757"/>
+  <testcase name="getIntegrations_status_401" classname="integration_controller.TestGetIntegrations" time="0.723"/>
+  <testcase name="getIntegrations_status_404" classname="integration_controller.TestGetIntegrations" time="0.759"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/integrations
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=B17DEB0B0EF394ED5112063A233C5D07;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=3E28056ABFC0D084B8540214BB76859F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:51 GMT
+Date: Mon, 18 Nov 2019 09:56:26 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -42,7 +42,7 @@ X-Frame-Options: SAMEORIGIN
             "My_project",
             "pt"
         ],
-        "externalId": null
+        "url": null
     },
     {
         "id": 738,
@@ -53,9 +53,10 @@ X-Frame-Options: SAMEORIGIN
         "valid": false,
         "projects": [
             "z11",
-            "QA Test API"
+            "QA Test API",
+            "1212121"
         ],
-        "externalId": null
+        "url": null
     },
     {
         "id": 686,
@@ -68,7 +69,7 @@ X-Frame-Options: SAMEORIGIN
             "1111",
             "3232"
         ],
-        "externalId": null
+        "url": null
     },
     {
         "id": 55,
@@ -81,7 +82,7 @@ X-Frame-Options: SAMEORIGIN
             "====",
             "proto"
         ],
-        "externalId": null
+        "url": null
     },
     {
         "id": 690,
@@ -93,55 +94,7 @@ X-Frame-Options: SAMEORIGIN
         "projects": [
             "Pivotal QA"
         ],
-        "externalId": null
-    },
-    {
-        "id": 812,
-        "name": "Pivotal Token 54",
-        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
-        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
-        "apiProvider": "PIVOTAL",
-        "valid": true,
-        "projects": [
-            
-        ],
-        "externalId": null
-    },
-    {
-        "id": 814,
-        "name": "Pivotal Token 55",
-        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
-        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
-        "apiProvider": "PIVOTAL",
-        "valid": true,
-        "projects": [
-            
-        ],
-        "externalId": null
-    },
-    {
-        "id": 816,
-        "name": "Pivotal Token 56",
-        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
-        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
-        "apiProvider": "PIVOTAL",
-        "valid": true,
-        "projects": [
-            
-        ],
-        "externalId": null
-    },
-    {
-        "id": 819,
-        "name": "Pivotal Token 57",
-        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
-        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
-        "apiProvider": "PIVOTAL",
-        "valid": true,
-        "projects": [
-            
-        ],
-        "externalId": null
+        "url": null
     },
     {
         "id": 177,
@@ -153,7 +106,7 @@ X-Frame-Options: SAMEORIGIN
         "projects": [
             "Very QImport Very Very"
         ],
-        "externalId": null
+        "url": null
     },
     {
         "id": 544,
@@ -165,7 +118,19 @@ X-Frame-Options: SAMEORIGIN
         "projects": [
             "443"
         ],
-        "externalId": null
+        "url": null
+    },
+    {
+        "id": 826,
+        "name": "Pivotal Token 58",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
     },
     {
         "id": 691,
@@ -175,57 +140,10 @@ X-Frame-Options: SAMEORIGIN
         "apiProvider": "JIRA",
         "valid": true,
         "projects": [
-            "Zenio Test JIRA"
+            "Zenio Test JIRA",
+            "фвар"
         ],
-        "externalId": null
-    },
-    {
-        "id": 811,
-        "name": "Jira Token 49",
-        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
-        "apiUrl": "https://zenio.atlassian.net/",
-        "apiProvider": "JIRA",
-        "valid": true,
-        "projects": [
-            
-        ],
-        "externalId": null
-    },
-    {
-        "id": 813,
-        "name": "Jira Token 50",
-        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
-        "apiUrl": "https://zenio.atlassian.net/",
-        "apiProvider": "JIRA",
-        "valid": true,
-        "projects": [
-            
-        ],
-        "externalId": null
-    },
-    {
-        "id": 815,
-        "name": "Jira Token 51",
-        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
-        "apiUrl": "https://zenio.atlassian.net/",
-        "apiProvider": "JIRA",
-        "valid": true,
-        "projects": [
-            
-        ],
-        "externalId": null
-    },
-    {
-        "id": 818,
-        "name": "Jira Token 52",
-        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
-        "apiUrl": "https://zenio.atlassian.net/",
-        "apiProvider": "JIRA",
-        "valid": true,
-        "projects": [
-            
-        ],
-        "externalId": null
+        "url": null
     }
 ]
 Request method:	GET
@@ -242,7 +160,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:51 GMT
+Date: Mon, 18 Nov 2019 09:56:26 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -261,12 +179,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=B17DEB0B0EF394ED5112063A233C5D07;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=3E28056ABFC0D084B8540214BB76859F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:52 GMT
+Date: Mon, 18 Nov 2019 09:56:27 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -447,9 +365,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

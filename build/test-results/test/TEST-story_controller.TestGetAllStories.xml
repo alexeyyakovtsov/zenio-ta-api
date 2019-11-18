@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="story_controller.TestGetAllStories" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:27:29" hostname="zenio" time="2.217">
+<testsuite name="story_controller.TestGetAllStories" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:55:58" hostname="qa-System-Product-Name" time="2.27">
   <properties/>
-  <testcase name="getAllStories_status_200" classname="story_controller.TestGetAllStories" time="0.752"/>
-  <testcase name="getAllStories_status_401" classname="story_controller.TestGetAllStories" time="0.671"/>
-  <testcase name="getAllStories_status_404" classname="story_controller.TestGetAllStories" time="0.79"/>
+  <testcase name="getAllStories_status_200" classname="story_controller.TestGetAllStories" time="0.819"/>
+  <testcase name="getAllStories_status_401" classname="story_controller.TestGetAllStories" time="0.735"/>
+  <testcase name="getAllStories_status_404" classname="story_controller.TestGetAllStories" time="0.714"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/stories
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=FE6A01D093301F664FAE93D48F940605;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=9D06D549C9F93C054B16E3EB8F666A97;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:27:29 GMT
+Date: Mon, 18 Nov 2019 09:55:59 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -34,7 +34,7 @@ X-Frame-Options: SAMEORIGIN
     "areas": [
         {
             "id": 67,
-            "name": "LJGKTmacFCFk",
+            "name": "EYLEpkASiBli",
             "activityIds": [
                 1053,
                 1639,
@@ -44,7 +44,33 @@ X-Frame-Options: SAMEORIGIN
             "actors": [
                 
             ],
-            "checksum": "JVqFWiyaEUOz",
+            "checksum": "qXzfUKJuBKZS",
+            "action": "NONE",
+            "kind": "area"
+        },
+        {
+            "id": 1805,
+            "name": "EYLEpkASiBli",
+            "activityIds": [
+                
+            ],
+            "actors": [
+                
+            ],
+            "checksum": "MEVZTEVwa0FTaUJsaW51bGxmYWxzZQ==",
+            "action": "NONE",
+            "kind": "area"
+        },
+        {
+            "id": 1798,
+            "name": "pATvFxKDpFth",
+            "activityIds": [
+                
+            ],
+            "actors": [
+                
+            ],
+            "checksum": "MHBBVHZGeEtEcEZ0aG51bGxmYWxzZQ==",
             "action": "NONE",
             "kind": "area"
         },
@@ -128,21 +154,6 @@ X-Frame-Options: SAMEORIGIN
     ],
     "cards": [
         {
-            "id": 6199,
-            "name": "fyCSSrSuymoZ",
-            "activityIds": [
-                1053
-            ],
-            "description": "ttlOvoFAiCyP",
-            "majorReleaseId": 2216,
-            "state": "UNSTARTED",
-            "dueDate": null,
-            "deleted": false,
-            "checksum": "BCWbBwTqvLxx",
-            "action": "NONE",
-            "kind": "story"
-        },
-        {
             "id": 6200,
             "name": "GEpLNVKHKPDU",
             "activityIds": [
@@ -156,6 +167,21 @@ X-Frame-Options: SAMEORIGIN
             "checksum": "BCWbBwTqvLxx",
             "action": "NONE",
             "kind": "minorRelease"
+        },
+        {
+            "id": 6199,
+            "name": "ydvVVrCxGTSd",
+            "activityIds": [
+                1053
+            ],
+            "description": "ZFGmDzSclbLg",
+            "majorReleaseId": 2216,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": false,
+            "checksum": "qXzfUKJuBKZS",
+            "action": "NONE",
+            "kind": "story"
         },
         {
             "id": 6201,
@@ -281,7 +307,7 @@ X-Frame-Options: SAMEORIGIN
     "majorReleases": [
         {
             "id": 2216,
-            "name": "sHxUjfoSVyfn",
+            "name": "JcvtNhNNmKhL",
             "checksum": "MHNUbnd5UW1lY1h2bw==",
             "activityStories": [
                 {
@@ -402,6 +428,45 @@ X-Frame-Options: SAMEORIGIN
             ],
             "action": "NONE",
             "kind": "majorRelease"
+        },
+        {
+            "id": 2588,
+            "name": "JcvtNhNNmKhL",
+            "checksum": "MEpjdnROaE5ObUtoTA==",
+            "activityStories": [
+                {
+                    "activityId": 1679,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 1053,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 1639,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 1643,
+                    "cardIds": [
+                        
+                    ]
+                },
+                {
+                    "activityId": 6992,
+                    "cardIds": [
+                        
+                    ]
+                }
+            ],
+            "action": "NONE",
+            "kind": "majorRelease"
         }
     ]
 }
@@ -419,7 +484,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:27:30 GMT
+Date: Mon, 18 Nov 2019 09:55:59 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -438,12 +503,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=FE6A01D093301F664FAE93D48F940605;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=9D06D549C9F93C054B16E3EB8F666A97;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:27:31 GMT
+Date: Mon, 18 Nov 2019 09:56:00 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -624,9 +689,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

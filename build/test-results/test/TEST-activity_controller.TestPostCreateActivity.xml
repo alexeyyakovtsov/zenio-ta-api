@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="activity_controller.TestPostCreateActivity" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:26:17" hostname="zenio" time="7.291">
+<testsuite name="activity_controller.TestPostCreateActivity" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:56:54" hostname="qa-System-Product-Name" time="6.067">
   <properties/>
-  <testcase name="postNegativeTest4_status_400" classname="activity_controller.TestPostCreateActivity" time="1.158"/>
-  <testcase name="postNegativeTest5_status_400" classname="activity_controller.TestPostCreateActivity" time="0.844"/>
-  <testcase name="postCreateActivity_status_200" classname="activity_controller.TestPostCreateActivity" time="1.438"/>
-  <testcase name="postCreateActivity_status_401" classname="activity_controller.TestPostCreateActivity" time="0.687"/>
-  <testcase name="postCreateActivity_status_404" classname="activity_controller.TestPostCreateActivity" time="0.918"/>
-  <testcase name="postNegativeTest1_status_400" classname="activity_controller.TestPostCreateActivity" time="0.756"/>
-  <testcase name="postNegativeTest2_status_400" classname="activity_controller.TestPostCreateActivity" time="0.742"/>
-  <testcase name="postNegativeTest3_status_400" classname="activity_controller.TestPostCreateActivity" time="0.735"/>
+  <testcase name="postNegativeTest4_status_400" classname="activity_controller.TestPostCreateActivity" time="0.766"/>
+  <testcase name="postNegativeTest5_status_400" classname="activity_controller.TestPostCreateActivity" time="0.772"/>
+  <testcase name="postCreateActivity_status_200" classname="activity_controller.TestPostCreateActivity" time="0.838"/>
+  <testcase name="postCreateActivity_status_401" classname="activity_controller.TestPostCreateActivity" time="0.725"/>
+  <testcase name="postCreateActivity_status_404" classname="activity_controller.TestPostCreateActivity" time="0.728"/>
+  <testcase name="postNegativeTest1_status_400" classname="activity_controller.TestPostCreateActivity" time="0.717"/>
+  <testcase name="postNegativeTest2_status_400" classname="activity_controller.TestPostCreateActivity" time="0.747"/>
+  <testcase name="postNegativeTest3_status_400" classname="activity_controller.TestPostCreateActivity" time="0.765"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects/31/activities
 Proxy:			<none>
@@ -18,18 +18,18 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C0E483E81EC8EC74308594416D2456DC;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=95EDA9C0D8BC99F2E03B712E74AD9867;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "evHXXXLpacgC",
+    "name": "RBsbYpdElULQ",
     "areaId": "67",
     "anchorId": "QATest123",
-    "checksum": "BCWbBwTqvLxx"
+    "checksum": "qXzfUKJuBKZS"
 }
 HTTP/1.1 400 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:17 GMT
+Date: Mon, 18 Nov 2019 09:56:55 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -59,18 +59,18 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C0E483E81EC8EC74308594416D2456DC;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=95EDA9C0D8BC99F2E03B712E74AD9867;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "evHXXXLpacgC",
+    "name": "RBsbYpdElULQ",
     "areaId": "67",
     "position": "UP",
-    "checksum": "BCWbBwTqvLxx"
+    "checksum": "qXzfUKJuBKZS"
 }
 HTTP/1.1 400 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:19 GMT
+Date: Mon, 18 Nov 2019 09:56:55 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -100,17 +100,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C0E483E81EC8EC74308594416D2456DC;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=95EDA9C0D8BC99F2E03B712E74AD9867;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "evHXXXLpacgC",
+    "name": "RBsbYpdElULQ",
     "areaId": "67",
-    "checksum": "BCWbBwTqvLxx"
+    "checksum": "qXzfUKJuBKZS"
 }
 HTTP/1.1 201 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:20 GMT
+Date: Mon, 18 Nov 2019 09:56:56 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -123,8 +123,8 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 6992,
-    "name": "evHXXXLpacgC",
+    "id": 7022,
+    "name": "RBsbYpdElULQ",
     "areaId": 67,
     "projectId": 31,
     "externalId": null,
@@ -132,7 +132,7 @@ X-Frame-Options: SAMEORIGIN
     "majorReleases": [
         {
             "id": 2216,
-            "name": "ShShemogpUgS",
+            "name": "JcvtNhNNmKhL",
             "cardIds": [
                 
             ],
@@ -145,9 +145,25 @@ X-Frame-Options: SAMEORIGIN
                 
             ],
             "checksum": "MFNoU2hlbW9ncFVnUw=="
+        },
+        {
+            "id": 2571,
+            "name": "sHxUjfoSVyfn",
+            "cardIds": [
+                
+            ],
+            "checksum": "MHNIeFVqZm9TVnlmbg=="
+        },
+        {
+            "id": 2588,
+            "name": "JcvtNhNNmKhL",
+            "cardIds": [
+                
+            ],
+            "checksum": "MEpjdnROaE5ObUtoTA=="
         }
     ],
-    "checksum": "MGV2SFhYWExwYWNnQ251bGxmYWxzZQ=="
+    "checksum": "MFJCc2JZcGRFbFVMUW51bGxmYWxzZQ=="
 }
 Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects/31/activities
@@ -162,12 +178,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "evHXXXLpacgC",
+    "name": "RBsbYpdElULQ",
     "areaId": "67"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:21 GMT
+Date: Mon, 18 Nov 2019 09:56:57 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -186,16 +202,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C0E483E81EC8EC74308594416D2456DC;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=95EDA9C0D8BC99F2E03B712E74AD9867;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "evHXXXLpacgC",
+    "name": "RBsbYpdElULQ",
     "areaId": "67"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:22 GMT
+Date: Mon, 18 Nov 2019 09:56:58 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -376,9 +392,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
   </body>
 </html>
 Request method:	POST
@@ -390,16 +406,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C0E483E81EC8EC74308594416D2456DC;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=95EDA9C0D8BC99F2E03B712E74AD9867;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "areaId": "67",
-    "checksum": "BCWbBwTqvLxx"
+    "checksum": "qXzfUKJuBKZS"
 }
 HTTP/1.1 400 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:22 GMT
+Date: Mon, 18 Nov 2019 09:56:58 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -429,17 +445,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C0E483E81EC8EC74308594416D2456DC;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=95EDA9C0D8BC99F2E03B712E74AD9867;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "evHXXXLpacgC",
+    "name": "RBsbYpdElULQ",
     "areaId": "67",
     
 }
 HTTP/1.1 400 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:23 GMT
+Date: Mon, 18 Nov 2019 09:56:59 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -469,17 +485,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=C0E483E81EC8EC74308594416D2456DC;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=95EDA9C0D8BC99F2E03B712E74AD9867;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "evHXXXLpacgC",
+    "name": "RBsbYpdElULQ",
     "areaId": "QATest123",
-    "checksum": "BCWbBwTqvLxx"
+    "checksum": "qXzfUKJuBKZS"
 }
 HTTP/1.1 400 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:24 GMT
+Date: Mon, 18 Nov 2019 09:57:00 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -501,8 +517,5 @@ Content-Language: en-US
   </body>
 </html>
 ]]></system-out>
-  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.apache.http.impl.conn.BasicClientConnectionManager).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

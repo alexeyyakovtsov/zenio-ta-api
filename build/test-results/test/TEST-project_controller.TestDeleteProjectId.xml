@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestDeleteProjectId" tests="3" skipped="3" failures="0" errors="0" timestamp="2019-10-25T09:28:01" hostname="zenio" time="0.002">
+<testsuite name="project_controller.TestDeleteProjectId" tests="3" skipped="3" failures="0" errors="0" timestamp="2019-11-18T09:57:09" hostname="qa-System-Product-Name" time="0.001">
   <properties/>
   <testcase name="deleteProjectId_status_200" classname="project_controller.TestDeleteProjectId" time="0.0">
     <skipped/>

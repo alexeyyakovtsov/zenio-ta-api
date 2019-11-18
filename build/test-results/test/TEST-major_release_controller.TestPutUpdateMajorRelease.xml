@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="major_release_controller.TestPutUpdateMajorRelease" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:26:57" hostname="zenio" time="2.11">
+<testsuite name="major_release_controller.TestPutUpdateMajorRelease" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:55:12" hostname="qa-System-Product-Name" time="4.335">
   <properties/>
-  <testcase name="putUpdateMajorRelease_status_200" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.717"/>
-  <testcase name="putUpdateMajorRelease_status_401" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.663"/>
-  <testcase name="putUpdateMajorRelease_status_404" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.725"/>
+  <testcase name="putUpdateMajorRelease_status_200" classname="major_release_controller.TestPutUpdateMajorRelease" time="2.055"/>
+  <testcase name="putUpdateMajorRelease_status_401" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.914"/>
+  <testcase name="putUpdateMajorRelease_status_404" classname="major_release_controller.TestPutUpdateMajorRelease" time="1.303"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/releases/major/2216
 Proxy:			<none>
@@ -13,15 +13,15 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=9A44F4763BE4895BE8F5E98B9AFF1990;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=3C52D4EB211DB401CEFF521D0E9A0C50;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "sHxUjfoSVyfn"
+    "name": "JcvtNhNNmKhL"
 }
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:58 GMT
+Date: Mon, 18 Nov 2019 09:55:13 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -35,7 +35,7 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 2216,
-    "name": "sHxUjfoSVyfn",
+    "name": "JcvtNhNNmKhL",
     "cardIds": [
         
     ],
@@ -54,11 +54,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "sHxUjfoSVyfn"
+    "name": "JcvtNhNNmKhL"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:59 GMT
+Date: Mon, 18 Nov 2019 09:55:15 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -77,15 +77,15 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=9A44F4763BE4895BE8F5E98B9AFF1990;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=3C52D4EB211DB401CEFF521D0E9A0C50;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "sHxUjfoSVyfn"
+    "name": "JcvtNhNNmKhL"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:59 GMT
+Date: Mon, 18 Nov 2019 09:55:16 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -266,11 +266,14 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
   </body>
 </html>
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.apache.http.impl.conn.BasicClientConnectionManager).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+]]></system-err>
 </testsuite>

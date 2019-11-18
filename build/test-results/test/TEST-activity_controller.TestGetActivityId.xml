@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="activity_controller.TestGetActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:26:25" hostname="zenio" time="2.381">
+<testsuite name="activity_controller.TestGetActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:57:04" hostname="qa-System-Product-Name" time="2.261">
   <properties/>
-  <testcase name="getActivityId_status_200" classname="activity_controller.TestGetActivityId" time="0.819"/>
-  <testcase name="getActivityId_status_401" classname="activity_controller.TestGetActivityId" time="0.67"/>
-  <testcase name="getActivityId_status_404" classname="activity_controller.TestGetActivityId" time="0.883"/>
+  <testcase name="getActivityId_status_200" classname="activity_controller.TestGetActivityId" time="0.793"/>
+  <testcase name="getActivityId_status_401" classname="activity_controller.TestGetActivityId" time="0.712"/>
+  <testcase name="getActivityId_status_404" classname="activity_controller.TestGetActivityId" time="0.755"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=B1466E39FAC3F39866BCC8BAC693B958;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=1D194C65A46FD478A51AA01CF2622F7D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:25 GMT
+Date: Mon, 18 Nov 2019 09:57:05 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -32,7 +32,7 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 1053,
-    "name": "NNiSuzbtLxWN",
+    "name": "RBsbYpdElULQ",
     "areaId": 67,
     "projectId": 31,
     "externalId": 4442345,
@@ -40,13 +40,17 @@ X-Frame-Options: SAMEORIGIN
     "majorReleases": [
         {
             "id": 2216,
-            "name": "ShShemogpUgS",
+            "name": "JcvtNhNNmKhL",
             "cardIds": [
                 5276,
                 5278,
                 5279,
                 5277,
-                6199
+                6199,
+                16742,
+                16743,
+                16841,
+                16842
             ],
             "checksum": "MHNUbnd5UW1lY1h2bw=="
         },
@@ -57,9 +61,25 @@ X-Frame-Options: SAMEORIGIN
                 
             ],
             "checksum": "MFNoU2hlbW9ncFVnUw=="
+        },
+        {
+            "id": 2571,
+            "name": "sHxUjfoSVyfn",
+            "cardIds": [
+                
+            ],
+            "checksum": "MHNIeFVqZm9TVnlmbg=="
+        },
+        {
+            "id": 2588,
+            "name": "JcvtNhNNmKhL",
+            "cardIds": [
+                
+            ],
+            "checksum": "MEpjdnROaE5ObUtoTA=="
         }
     ],
-    "checksum": "JVqFWiyaEUOz"
+    "checksum": "qXzfUKJuBKZS"
 }
 Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
@@ -75,7 +95,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:26 GMT
+Date: Mon, 18 Nov 2019 09:57:05 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -94,12 +114,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=B1466E39FAC3F39866BCC8BAC693B958;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=1D194C65A46FD478A51AA01CF2622F7D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:26:27 GMT
+Date: Mon, 18 Nov 2019 09:57:06 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -280,9 +300,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

@@ -29,7 +29,6 @@ allure {
     version = '2.13.0'
     autoconfigure = true
     aspectjweaver = true
-    resultsDir = file('/home/alexey/Projects/zenio-ta-api/build/allure-results')
     reportDir = file('build/reports/allure-report')
 }
 

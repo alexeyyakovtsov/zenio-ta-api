@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="story_controller.TestPutUpdateStory" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-25T09:27:19" hostname="zenio" time="2.04">
+<testsuite name="story_controller.TestPutUpdateStory" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:55:55" hostname="qa-System-Product-Name" time="2.365">
   <properties/>
-  <testcase name="putUpdateStory_status_200" classname="story_controller.TestPutUpdateStory" time="0.695"/>
-  <testcase name="putUpdateStory_status_401" classname="story_controller.TestPutUpdateStory" time="0.638"/>
-  <testcase name="putUpdateStory_status_404" classname="story_controller.TestPutUpdateStory" time="0.704"/>
+  <testcase name="putUpdateStory_status_200" classname="story_controller.TestPutUpdateStory" time="0.902"/>
+  <testcase name="putUpdateStory_status_401" classname="story_controller.TestPutUpdateStory" time="0.725"/>
+  <testcase name="putUpdateStory_status_404" classname="story_controller.TestPutUpdateStory" time="0.735"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/stories/6199
 Proxy:			<none>
@@ -13,20 +13,20 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=4398470FF3E88A69C4B3DBBE59DFC5D3;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=3237BE9B5F58F8ACE5C8B1434BE34CAF;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "fyCSSrSuymoZ",
-    "description": "ttlOvoFAiCyP",
-    "checksum": "BCWbBwTqvLxx",
+    "name": "ydvVVrCxGTSd",
+    "description": "ZFGmDzSclbLg",
+    "checksum": "qXzfUKJuBKZS",
     "activityIds": [
         1053
     ]
 }
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:27:20 GMT
+Date: Mon, 18 Nov 2019 09:55:55 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -40,19 +40,19 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 6199,
-    "name": "fyCSSrSuymoZ",
+    "name": "ydvVVrCxGTSd",
     "projectId": 31,
     "activityIds": [
         1053
     ],
     "majorReleaseId": 2216,
-    "description": "ttlOvoFAiCyP",
+    "description": "ZFGmDzSclbLg",
     "estimate": 0,
     "issuer": "Sample issuer",
     "assignee": null,
     "state": "UNSTARTED",
     "externalId": 169290605,
-    "checksum": "BCWbBwTqvLxx"
+    "checksum": "qXzfUKJuBKZS"
 }
 Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/stories/6199
@@ -67,16 +67,16 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "fyCSSrSuymoZ",
-    "description": "ttlOvoFAiCyP",
-    "checksum": "BCWbBwTqvLxx",
+    "name": "ydvVVrCxGTSd",
+    "description": "ZFGmDzSclbLg",
+    "checksum": "qXzfUKJuBKZS",
     "activityIds": [
         1053
     ]
 }
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:27:20 GMT
+Date: Mon, 18 Nov 2019 09:55:56 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -95,20 +95,20 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=4398470FF3E88A69C4B3DBBE59DFC5D3;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=3237BE9B5F58F8ACE5C8B1434BE34CAF;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "fyCSSrSuymoZ",
-    "description": "ttlOvoFAiCyP",
-    "checksum": "BCWbBwTqvLxx",
+    "name": "ydvVVrCxGTSd",
+    "description": "ZFGmDzSclbLg",
+    "checksum": "qXzfUKJuBKZS",
     "activityIds": [
         1053
     ]
 }
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Fri, 25 Oct 2019 09:27:21 GMT
+Date: Mon, 18 Nov 2019 09:55:57 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -289,9 +289,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/vendor.b99d50183315e6126a38.bundle.js"/>
-    <script type="text/javascript" src="/main.b99d50183315e6126a38.bundle.js"/>
+    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
   </body>
 </html>
 ]]></system-out>
