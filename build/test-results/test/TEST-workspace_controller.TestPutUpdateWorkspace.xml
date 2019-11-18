@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestPutUpdateWorkspace" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:57:33" hostname="qa-System-Product-Name" time="1.565">
+<testsuite name="workspace_controller.TestPutUpdateWorkspace" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:31" hostname="qa-System-Product-Name" time="1.488">
   <properties/>
-  <testcase name="putUpdateWorkspace_status_200" classname="workspace_controller.TestPutUpdateWorkspace" time="0.79"/>
-  <testcase name="putUpdateWorkspace_status_401" classname="workspace_controller.TestPutUpdateWorkspace" time="0.774"/>
+  <testcase name="putUpdateWorkspace_status_200" classname="workspace_controller.TestPutUpdateWorkspace" time="0.751"/>
+  <testcase name="putUpdateWorkspace_status_401" classname="workspace_controller.TestPutUpdateWorkspace" time="0.736"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/workspaces/27
 Proxy:			<none>
@@ -12,15 +12,15 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=100087701DB921470914239E357B6BD8;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=BBCAC3B130ED63712A5917E04459D60F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "KqrINzkFCrsI"
+    "name": "FFCPRcmnyIKH"
 }
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:34 GMT
+Date: Mon, 18 Nov 2019 12:14:32 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -35,7 +35,7 @@ X-Frame-Options: SAMEORIGIN
 {
     "id": 27,
     "owned": true,
-    "name": "KqrINzkFCrsI",
+    "name": "FFCPRcmnyIKH",
     "projects": [
         {
             "id": 1334,
@@ -62,11 +62,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "KqrINzkFCrsI"
+    "name": "FFCPRcmnyIKH"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:35 GMT
+Date: Mon, 18 Nov 2019 12:14:32 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff

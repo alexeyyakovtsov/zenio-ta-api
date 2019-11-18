@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestGetWorkspace" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:57:27" hostname="qa-System-Product-Name" time="2.331">
+<testsuite name="workspace_controller.TestGetWorkspace" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:24" hostname="qa-System-Product-Name" time="2.457">
   <properties/>
-  <testcase name="getUserWorkspaces_status_200" classname="workspace_controller.TestGetWorkspace" time="0.821"/>
-  <testcase name="getUserWorkspaces_status_401" classname="workspace_controller.TestGetWorkspace" time="0.739"/>
-  <testcase name="getUserWorkspaces_status_404" classname="workspace_controller.TestGetWorkspace" time="0.769"/>
+  <testcase name="getUserWorkspaces_status_200" classname="workspace_controller.TestGetWorkspace" time="0.849"/>
+  <testcase name="getUserWorkspaces_status_401" classname="workspace_controller.TestGetWorkspace" time="0.807"/>
+  <testcase name="getUserWorkspaces_status_404" classname="workspace_controller.TestGetWorkspace" time="0.799"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/workspaces
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=50D70FB553E976B0835CD170E857523E;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=69FBE0CD938F9F3B5812B290F0A18F3E;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:28 GMT
+Date: Mon, 18 Nov 2019 12:14:25 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -36,6 +36,15 @@ X-Frame-Options: SAMEORIGIN
         "owned": true,
         "name": "THE BEST TEAM Workspace! :)",
         "projects": [
+            {
+                "id": 1535,
+                "name": "Contakt",
+                "acronym": "CON",
+                "workspaceId": 31,
+                "deleted": false,
+                "ownerId": 1,
+                "membersCount": 1
+            },
             {
                 "id": 1529,
                 "name": "1212121",
@@ -139,7 +148,7 @@ X-Frame-Options: SAMEORIGIN
     {
         "id": 27,
         "owned": true,
-        "name": "nZjWHAhoCFiy",
+        "name": "KqrINzkFCrsI",
         "projects": [
             {
                 "id": 1334,
@@ -176,18 +185,9 @@ X-Frame-Options: SAMEORIGIN
         "name": "Admin (test-test-test)",
         "projects": [
             {
-                "id": 1534,
-                "name": "fuOMdIzOfgHR",
-                "acronym": "FUO",
-                "workspaceId": 4,
-                "deleted": false,
-                "ownerId": 1,
-                "membersCount": 1
-            },
-            {
                 "id": 1460,
-                "name": "lIAVjONqwdlu Update name",
-                "acronym": "LIA",
+                "name": "xVLXYyeNeUDb Update name",
+                "acronym": "XVL",
                 "workspaceId": 4,
                 "deleted": false,
                 "ownerId": 1,
@@ -309,7 +309,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:28 GMT
+Date: Mon, 18 Nov 2019 12:14:25 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -328,12 +328,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=50D70FB553E976B0835CD170E857523E;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=69FBE0CD938F9F3B5812B290F0A18F3E;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:29 GMT
+Date: Mon, 18 Nov 2019 12:14:26 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

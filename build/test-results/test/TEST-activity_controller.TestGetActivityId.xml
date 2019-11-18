@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="activity_controller.TestGetActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:57:04" hostname="qa-System-Product-Name" time="2.261">
+<testsuite name="activity_controller.TestGetActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:13:59" hostname="qa-System-Product-Name" time="2.463">
   <properties/>
-  <testcase name="getActivityId_status_200" classname="activity_controller.TestGetActivityId" time="0.793"/>
-  <testcase name="getActivityId_status_401" classname="activity_controller.TestGetActivityId" time="0.712"/>
-  <testcase name="getActivityId_status_404" classname="activity_controller.TestGetActivityId" time="0.755"/>
+  <testcase name="getActivityId_status_200" classname="activity_controller.TestGetActivityId" time="0.845"/>
+  <testcase name="getActivityId_status_401" classname="activity_controller.TestGetActivityId" time="0.755"/>
+  <testcase name="getActivityId_status_404" classname="activity_controller.TestGetActivityId" time="0.861"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=1D194C65A46FD478A51AA01CF2622F7D;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=D29824B04487B77E1F9E3270C7249970;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:05 GMT
+Date: Mon, 18 Nov 2019 12:13:59 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -32,7 +32,7 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 1053,
-    "name": "RBsbYpdElULQ",
+    "name": "kkUCDFoIqdeV",
     "areaId": 67,
     "projectId": 31,
     "externalId": 4442345,
@@ -40,7 +40,7 @@ X-Frame-Options: SAMEORIGIN
     "majorReleases": [
         {
             "id": 2216,
-            "name": "JcvtNhNNmKhL",
+            "name": "yzhMdEKwkRVA",
             "cardIds": [
                 5276,
                 5278,
@@ -55,31 +55,15 @@ X-Frame-Options: SAMEORIGIN
             "checksum": "MHNUbnd5UW1lY1h2bw=="
         },
         {
-            "id": 2567,
-            "name": "ShShemogpUgS",
+            "id": 2591,
+            "name": "yzhMdEKwkRVA",
             "cardIds": [
                 
             ],
-            "checksum": "MFNoU2hlbW9ncFVnUw=="
-        },
-        {
-            "id": 2571,
-            "name": "sHxUjfoSVyfn",
-            "cardIds": [
-                
-            ],
-            "checksum": "MHNIeFVqZm9TVnlmbg=="
-        },
-        {
-            "id": 2588,
-            "name": "JcvtNhNNmKhL",
-            "cardIds": [
-                
-            ],
-            "checksum": "MEpjdnROaE5ObUtoTA=="
+            "checksum": "MHl6aE1kRUt3a1JWQQ=="
         }
     ],
-    "checksum": "qXzfUKJuBKZS"
+    "checksum": "JMzWWDnsvtUf"
 }
 Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
@@ -95,7 +79,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:05 GMT
+Date: Mon, 18 Nov 2019 12:14:00 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -114,12 +98,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=1D194C65A46FD478A51AA01CF2622F7D;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=D29824B04487B77E1F9E3270C7249970;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:06 GMT
+Date: Mon, 18 Nov 2019 12:14:01 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

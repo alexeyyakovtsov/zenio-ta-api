@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="area_controller.TestPutUpdateArea" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:55:25" hostname="qa-System-Product-Name" time="2.517">
+<testsuite name="area_controller.TestPutUpdateArea" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:12:17" hostname="qa-System-Product-Name" time="2.51">
   <properties/>
-  <testcase name="putUpdateArea_status_200" classname="area_controller.TestPutUpdateArea" time="0.983"/>
-  <testcase name="putUpdateArea_status_401" classname="area_controller.TestPutUpdateArea" time="0.741"/>
-  <testcase name="putUpdateArea_status_404" classname="area_controller.TestPutUpdateArea" time="0.791"/>
+  <testcase name="putUpdateArea_status_200" classname="area_controller.TestPutUpdateArea" time="0.999"/>
+  <testcase name="putUpdateArea_status_401" classname="area_controller.TestPutUpdateArea" time="0.739"/>
+  <testcase name="putUpdateArea_status_404" classname="area_controller.TestPutUpdateArea" time="0.771"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/areas/67
 Proxy:			<none>
@@ -13,17 +13,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=8D481C23F1A7C7E57ADCAE7473DA1582;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=2C42E026F0B1AF2716DCFA2065EED598;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "EYLEpkASiBli",
-    "checksum": "qXzfUKJuBKZS",
+    "name": "PbnfohPkbZEH",
+    "checksum": "JMzWWDnsvtUf",
     "description": "123"
 }
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:55:26 GMT
+Date: Mon, 18 Nov 2019 12:12:18 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -37,17 +37,18 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 67,
-    "name": "EYLEpkASiBli",
+    "name": "PbnfohPkbZEH",
     "projectId": 31,
     "description": "123",
-    "checksum": "qXzfUKJuBKZS",
+    "checksum": "JMzWWDnsvtUf",
     "activityIds": [
         6992,
         1639,
         1641,
         1642,
         1643,
-        1053
+        1053,
+        7022
     ],
     "actorIds": [
         
@@ -66,13 +67,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "EYLEpkASiBli",
-    "checksum": "qXzfUKJuBKZS",
+    "name": "PbnfohPkbZEH",
+    "checksum": "JMzWWDnsvtUf",
     "description": "123"
 }
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:55:27 GMT
+Date: Mon, 18 Nov 2019 12:12:19 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -91,17 +92,17 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=8D481C23F1A7C7E57ADCAE7473DA1582;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=2C42E026F0B1AF2716DCFA2065EED598;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "EYLEpkASiBli",
-    "checksum": "qXzfUKJuBKZS",
+    "name": "PbnfohPkbZEH",
+    "checksum": "JMzWWDnsvtUf",
     "description": "123"
 }
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:55:27 GMT
+Date: Mon, 18 Nov 2019 12:12:19 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

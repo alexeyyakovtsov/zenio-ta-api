@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestGetWorkspaceMembers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:57:36" hostname="qa-System-Product-Name" time="2.198">
+<testsuite name="workspace_controller.TestGetWorkspaceMembers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:33" hostname="qa-System-Product-Name" time="2.787">
   <properties/>
-  <testcase name="getWorkspaceMembers_status_200" classname="workspace_controller.TestGetWorkspaceMembers" time="0.736"/>
-  <testcase name="getWorkspaceMembers_status_401" classname="workspace_controller.TestGetWorkspaceMembers" time="0.715"/>
-  <testcase name="getWorkspaceMembers_status_404" classname="workspace_controller.TestGetWorkspaceMembers" time="0.743"/>
+  <testcase name="getWorkspaceMembers_status_200" classname="workspace_controller.TestGetWorkspaceMembers" time="0.803"/>
+  <testcase name="getWorkspaceMembers_status_401" classname="workspace_controller.TestGetWorkspaceMembers" time="0.759"/>
+  <testcase name="getWorkspaceMembers_status_404" classname="workspace_controller.TestGetWorkspaceMembers" time="1.223"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/workspaces/4/users
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=281AF29C884E41454CBA357EE003ACE1;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=8B890C19754713EEE736885DDE15523D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:36 GMT
+Date: Mon, 18 Nov 2019 12:14:34 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -70,7 +70,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:37 GMT
+Date: Mon, 18 Nov 2019 12:14:35 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -89,12 +89,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=281AF29C884E41454CBA357EE003ACE1;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=8B890C19754713EEE736885DDE15523D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:38 GMT
+Date: Mon, 18 Nov 2019 12:14:36 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

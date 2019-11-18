@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestGetProjectIdUser" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:57:13" hostname="qa-System-Product-Name" time="2.54">
+<testsuite name="project_controller.TestGetProjectIdUser" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:09" hostname="qa-System-Product-Name" time="2.983">
   <properties/>
-  <testcase name="getProjectIdUser_status_200" classname="project_controller.TestGetProjectIdUser" time="1.084"/>
-  <testcase name="getProjectIdUser_status_401" classname="project_controller.TestGetProjectIdUser" time="0.721"/>
-  <testcase name="getProjectIdUser_status_404" classname="project_controller.TestGetProjectIdUser" time="0.73"/>
+  <testcase name="getProjectIdUser_status_200" classname="project_controller.TestGetProjectIdUser" time="1.163"/>
+  <testcase name="getProjectIdUser_status_401" classname="project_controller.TestGetProjectIdUser" time="0.73"/>
+  <testcase name="getProjectIdUser_status_404" classname="project_controller.TestGetProjectIdUser" time="1.088"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/users
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=E9D49CF1A59DAD767AD40B0519757988;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=9128B47C2B576942F870AE3D6BE24381;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:14 GMT
+Date: Mon, 18 Nov 2019 12:14:09 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -53,7 +53,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:15 GMT
+Date: Mon, 18 Nov 2019 12:14:11 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -72,12 +72,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=E9D49CF1A59DAD767AD40B0519757988;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=9128B47C2B576942F870AE3D6BE24381;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:57:16 GMT
+Date: Mon, 18 Nov 2019 12:14:12 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

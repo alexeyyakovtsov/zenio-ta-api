@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="integration_controller.TestGetIntegrations" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:56:25" hostname="qa-System-Product-Name" time="2.242">
+<testsuite name="integration_controller.TestGetIntegrations" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:13:18" hostname="qa-System-Product-Name" time="2.308">
   <properties/>
-  <testcase name="getIntegrations_status_200" classname="integration_controller.TestGetIntegrations" time="0.757"/>
+  <testcase name="getIntegrations_status_200" classname="integration_controller.TestGetIntegrations" time="0.803"/>
   <testcase name="getIntegrations_status_401" classname="integration_controller.TestGetIntegrations" time="0.723"/>
-  <testcase name="getIntegrations_status_404" classname="integration_controller.TestGetIntegrations" time="0.759"/>
+  <testcase name="getIntegrations_status_404" classname="integration_controller.TestGetIntegrations" time="0.778"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/integrations
 Proxy:			<none>
@@ -13,12 +13,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=3E28056ABFC0D084B8540214BB76859F;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=1A7E614252F4D38AEBFD0B9EC1258F2F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:56:26 GMT
+Date: Mon, 18 Nov 2019 12:13:19 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -133,6 +133,18 @@ X-Frame-Options: SAMEORIGIN
         "url": null
     },
     {
+        "id": 828,
+        "name": "Pivotal Token 59",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
         "id": 691,
         "name": "Jira Token 1",
         "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
@@ -142,6 +154,18 @@ X-Frame-Options: SAMEORIGIN
         "projects": [
             "Zenio Test JIRA",
             "фвар"
+        ],
+        "url": null
+    },
+    {
+        "id": 827,
+        "name": "Jira Token 53",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
         ],
         "url": null
     }
@@ -160,7 +184,7 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:56:26 GMT
+Date: Mon, 18 Nov 2019 12:13:19 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -179,12 +203,12 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=3E28056ABFC0D084B8540214BB76859F;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=1A7E614252F4D38AEBFD0B9EC1258F2F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:56:27 GMT
+Date: Mon, 18 Nov 2019 12:13:20 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive

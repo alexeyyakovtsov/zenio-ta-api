@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="integration_controller.TestPostCreateIntegrationJira" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-11-18T09:56:28" hostname="qa-System-Product-Name" time="5.952">
+<testsuite name="integration_controller.TestPostCreateIntegrationJira" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:13:21" hostname="qa-System-Product-Name" time="5.938">
   <properties/>
-  <testcase name="postNegativeTest4_status_400" classname="integration_controller.TestPostCreateIntegrationJira" time="0.732"/>
-  <testcase name="postCreateIntegrationJira_status_200" classname="integration_controller.TestPostCreateIntegrationJira" time="1.455"/>
-  <testcase name="postCreateIntegrationJira_status_401" classname="integration_controller.TestPostCreateIntegrationJira" time="0.744"/>
-  <testcase name="postCreateIntegrationJira_status_404" classname="integration_controller.TestPostCreateIntegrationJira" time="0.753"/>
-  <testcase name="postNegativeTest1_status_400" classname="integration_controller.TestPostCreateIntegrationJira" time="0.763"/>
-  <testcase name="postNegativeTest2_status_400" classname="integration_controller.TestPostCreateIntegrationJira" time="0.767"/>
-  <testcase name="postNegativeTest3_status_400" classname="integration_controller.TestPostCreateIntegrationJira" time="0.731"/>
+  <testcase name="postNegativeTest4_status_400" classname="integration_controller.TestPostCreateIntegrationJira" time="0.779"/>
+  <testcase name="postCreateIntegrationJira_status_200" classname="integration_controller.TestPostCreateIntegrationJira" time="1.413"/>
+  <testcase name="postCreateIntegrationJira_status_401" classname="integration_controller.TestPostCreateIntegrationJira" time="0.735"/>
+  <testcase name="postCreateIntegrationJira_status_404" classname="integration_controller.TestPostCreateIntegrationJira" time="0.749"/>
+  <testcase name="postNegativeTest1_status_400" classname="integration_controller.TestPostCreateIntegrationJira" time="0.748"/>
+  <testcase name="postNegativeTest2_status_400" classname="integration_controller.TestPostCreateIntegrationJira" time="0.747"/>
+  <testcase name="postNegativeTest3_status_400" classname="integration_controller.TestPostCreateIntegrationJira" time="0.756"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/integrations
 Proxy:			<none>
@@ -17,7 +17,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=79A14FF250A8EF04B549E1171402747A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=6B140A7500E9E4D24B60C992261D4B3E;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -29,7 +29,7 @@ Body:
 }
 HTTP/1.1 400 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:56:29 GMT
+Date: Mon, 18 Nov 2019 12:13:22 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -59,7 +59,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=79A14FF250A8EF04B549E1171402747A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=6B140A7500E9E4D24B60C992261D4B3E;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -71,7 +71,7 @@ Body:
 }
 HTTP/1.1 201 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:56:30 GMT
+Date: Mon, 18 Nov 2019 12:13:23 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -84,8 +84,8 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 827,
-    "name": "Jira Token 53",
+    "id": 829,
+    "name": "Jira Token 54",
     "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
     "apiUrl": "https://zenio.atlassian.net/",
     "apiProvider": "JIRA",
@@ -116,7 +116,7 @@ Body:
 }
 HTTP/1.1 401 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:56:31 GMT
+Date: Mon, 18 Nov 2019 12:13:24 GMT
 Content-Length: 0
 Connection: keep-alive
 X-Content-Type-Options: nosniff
@@ -135,7 +135,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=79A14FF250A8EF04B549E1171402747A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=6B140A7500E9E4D24B60C992261D4B3E;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -147,7 +147,7 @@ Body:
 }
 HTTP/1.1 404 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:56:32 GMT
+Date: Mon, 18 Nov 2019 12:13:25 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -342,7 +342,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=79A14FF250A8EF04B549E1171402747A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=6B140A7500E9E4D24B60C992261D4B3E;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -353,7 +353,7 @@ Body:
 }
 HTTP/1.1 400 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:56:32 GMT
+Date: Mon, 18 Nov 2019 12:13:26 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -383,7 +383,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=79A14FF250A8EF04B549E1171402747A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=6B140A7500E9E4D24B60C992261D4B3E;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -394,7 +394,7 @@ Body:
 }
 HTTP/1.1 400 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:56:33 GMT
+Date: Mon, 18 Nov 2019 12:13:26 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
@@ -424,7 +424,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=79A14FF250A8EF04B549E1171402747A;Path=/;Secure;HttpOnly
+Cookies:		JSESSIONID=6B140A7500E9E4D24B60C992261D4B3E;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -436,7 +436,7 @@ Body:
 }
 HTTP/1.1 400 
 Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 09:56:34 GMT
+Date: Mon, 18 Nov 2019 12:13:27 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
