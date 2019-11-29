@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="integration_controller.TestGetIntegrations" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:13:18" hostname="qa-System-Product-Name" time="2.308">
+<testsuite name="integration_controller.TestGetIntegrations" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:36:22" hostname="qa-System-Product-Name" time="2.344">
   <properties/>
-  <testcase name="getIntegrations_status_200" classname="integration_controller.TestGetIntegrations" time="0.803"/>
-  <testcase name="getIntegrations_status_401" classname="integration_controller.TestGetIntegrations" time="0.723"/>
-  <testcase name="getIntegrations_status_404" classname="integration_controller.TestGetIntegrations" time="0.778"/>
+  <testcase name="getIntegrations_status_200" classname="integration_controller.TestGetIntegrations" time="0.98"/>
+  <testcase name="getIntegrations_status_401" classname="integration_controller.TestGetIntegrations" time="0.643"/>
+  <testcase name="getIntegrations_status_404" classname="integration_controller.TestGetIntegrations" time="0.719"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/integrations
 Proxy:			<none>
@@ -13,15 +13,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=1A7E614252F4D38AEBFD0B9EC1258F2F;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=ToAUQ3Myv+BcZ+XqvKH1gGkSD1455HZ43RhyvIBnzpHlBnkNys1nZY0zvEqVwTMVxEWfcr/Pn8RdrID/n0d+MsJLNt1tk1S/FUknwm0ow8r/ch/uzOzP2Wwu0g2s;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=AFF20FD4CD6A381C1C49D2B792926265;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:19 GMT
+Date: Fri, 29 Nov 2019 12:36:23 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=jzxHM74BLk+l3n+KWWK1hi7rOS+/ilrswC8Kqk5P5hGznwyuPPqqLxmjzkt5xsdXWFS3Et6dSUn3Y+Bf4iHDdWzDTPLYDHaUtEM/8IfVMK2DR7roHW1pgpj26HtH; Expires=Fri, 06 Dec 2019 12:36:23 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -39,8 +40,8 @@ X-Frame-Options: SAMEORIGIN
         "apiProvider": "PIVOTAL",
         "valid": false,
         "projects": [
-            "My_project",
-            "pt"
+            "pt",
+            "My_project"
         ],
         "url": null
     },
@@ -52,9 +53,33 @@ X-Frame-Options: SAMEORIGIN
         "apiProvider": "PIVOTAL",
         "valid": false,
         "projects": [
-            "z11",
+            "test anna",
             "QA Test API",
             "1212121"
+        ],
+        "url": null
+    },
+    {
+        "id": 736,
+        "name": "Pivotal Token 18",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 740,
+        "name": "Pivotal Token 20",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
         ],
         "url": null
     },
@@ -66,8 +91,33 @@ X-Frame-Options: SAMEORIGIN
         "apiProvider": "PIVOTAL",
         "valid": true,
         "projects": [
-            "1111",
-            "3232"
+            "test",
+            "3232",
+            "1111"
+        ],
+        "url": null
+    },
+    {
+        "id": 802,
+        "name": "Pivotal Token 50",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 742,
+        "name": "Pivotal Token 21",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
         ],
         "url": null
     },
@@ -92,7 +142,524 @@ X-Frame-Options: SAMEORIGIN
         "apiProvider": "PIVOTAL",
         "valid": false,
         "projects": [
+            "пфывпфывп",
             "Pivotal QA"
+        ],
+        "url": null
+    },
+    {
+        "id": 744,
+        "name": "Pivotal Token 22",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 805,
+        "name": "Pivotal Token 51",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 746,
+        "name": "Pivotal Token 23",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 748,
+        "name": "Pivotal Token 24",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 750,
+        "name": "Pivotal Token 25",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 752,
+        "name": "Pivotal Token 26",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 754,
+        "name": "Pivotal Token 27",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 807,
+        "name": "Pivotal Token 52",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 756,
+        "name": "Pivotal Token 28",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 810,
+        "name": "Pivotal Token 53",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 812,
+        "name": "Pivotal Token 54",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 758,
+        "name": "Pivotal Token 29",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 814,
+        "name": "Pivotal Token 55",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 760,
+        "name": "Pivotal Token 30",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 764,
+        "name": "Pivotal Token 32",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 816,
+        "name": "Pivotal Token 56",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 762,
+        "name": "Pivotal Token 31",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 766,
+        "name": "Pivotal Token 33",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 819,
+        "name": "Pivotal Token 57",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 768,
+        "name": "Pivotal Token 34",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 718,
+        "name": "Pivotal Token 9",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 770,
+        "name": "Pivotal Token 35",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 772,
+        "name": "Pivotal Token 36",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 774,
+        "name": "Pivotal Token 37",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 777,
+        "name": "Pivotal Token 38",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 720,
+        "name": "Pivotal Token 10",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 779,
+        "name": "Pivotal Token 39",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 682,
+        "name": "Pivotal Token 5",
+        "apiToken": "6c144da54942bc9734c1483ecc2c8b99",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 722,
+        "name": "Pivotal Token 11",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 724,
+        "name": "Pivotal Token 12",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 781,
+        "name": "Pivotal Token 40",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 726,
+        "name": "Pivotal Token 13",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 783,
+        "name": "Pivotal Token 41",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 785,
+        "name": "Pivotal Token 42",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 728,
+        "name": "Pivotal Token 14",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 787,
+        "name": "Pivotal Token 43",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 789,
+        "name": "Pivotal Token 44",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 791,
+        "name": "Pivotal Token 45",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 730,
+        "name": "Pivotal Token 15",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 732,
+        "name": "Pivotal Token 16",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 734,
+        "name": "Pivotal Token 17",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 793,
+        "name": "Pivotal Token 46",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 795,
+        "name": "Pivotal Token 47",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
         ],
         "url": null
     },
@@ -104,7 +671,32 @@ X-Frame-Options: SAMEORIGIN
         "apiProvider": "PIVOTAL",
         "valid": true,
         "projects": [
-            "Very QImport Very Very"
+            "Very QImport Very Very",
+            "Это не на фронте точно говорю"
+        ],
+        "url": null
+    },
+    {
+        "id": 797,
+        "name": "Pivotal Token 48",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 799,
+        "name": "Pivotal Token 49",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
         ],
         "url": null
     },
@@ -116,7 +708,20 @@ X-Frame-Options: SAMEORIGIN
         "apiProvider": "PIVOTAL",
         "valid": true,
         "projects": [
-            "443"
+            "443",
+            "Front"
+        ],
+        "url": null
+    },
+    {
+        "id": 151,
+        "name": "Pivotal Token 8",
+        "apiToken": "99214ab4614da3901863517e97d77b42",
+        "apiUrl": "https://www.pivotaltracker.com/n/projects",
+        "apiProvider": "PIVOTAL",
+        "valid": false,
+        "projects": [
+            
         ],
         "url": null
     },
@@ -140,6 +745,102 @@ X-Frame-Options: SAMEORIGIN
         "apiProvider": "PIVOTAL",
         "valid": true,
         "projects": [
+            "QA"
+        ],
+        "url": null
+    },
+    {
+        "id": 9,
+        "name": "Pivotal Token 59",
+        "apiToken": "e731a1dad0de32af0c58c8625b3e9621",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 10,
+        "name": "Pivotal Token 60",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 12,
+        "name": "Pivotal Token 61",
+        "apiToken": "3901cf4de092d5cbe830d88f977ee565",
+        "apiUrl": "https://www.pivotaltracker.com/services/v5/",
+        "apiProvider": "PIVOTAL",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 801,
+        "name": "Jira Token 44",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 737,
+        "name": "Jira Token 12",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 739,
+        "name": "Jira Token 13",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 741,
+        "name": "Jira Token 14",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 743,
+        "name": "Jira Token 15",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
             
         ],
         "url": null
@@ -158,8 +859,584 @@ X-Frame-Options: SAMEORIGIN
         "url": null
     },
     {
+        "id": 745,
+        "name": "Jira Token 16",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 747,
+        "name": "Jira Token 17",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 749,
+        "name": "Jira Token 18",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 751,
+        "name": "Jira Token 19",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 753,
+        "name": "Jira Token 20",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 755,
+        "name": "Jira Token 21",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 804,
+        "name": "Jira Token 45",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 806,
+        "name": "Jira Token 46",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 757,
+        "name": "Jira Token 22",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 809,
+        "name": "Jira Token 48",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 808,
+        "name": "Jira Token 47",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 759,
+        "name": "Jira Token 23",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 811,
+        "name": "Jira Token 49",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 761,
+        "name": "Jira Token 24",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 763,
+        "name": "Jira Token 25",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 813,
+        "name": "Jira Token 50",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 765,
+        "name": "Jira Token 26",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 815,
+        "name": "Jira Token 51",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 767,
+        "name": "Jira Token 27",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 818,
+        "name": "Jira Token 52",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 769,
+        "name": "Jira Token 28",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 771,
+        "name": "Jira Token 29",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 773,
+        "name": "Jira Token 30",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 775,
+        "name": "Jira Token 31",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 776,
+        "name": "Jira Token 32",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 778,
+        "name": "Jira Token 33",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 719,
+        "name": "Jira Token 3",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 721,
+        "name": "Jira Token 4",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 780,
+        "name": "Jira Token 34",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 723,
+        "name": "Jira Token 5",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 725,
+        "name": "Jira Token 6",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 782,
+        "name": "Jira Token 35",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 727,
+        "name": "Jira Token 7",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 784,
+        "name": "Jira Token 36",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 786,
+        "name": "Jira Token 37",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 729,
+        "name": "Jira Token 8",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 788,
+        "name": "Jira Token 38",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 790,
+        "name": "Jira Token 39",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 792,
+        "name": "Jira Token 40",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 794,
+        "name": "Jira Token 41",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 731,
+        "name": "Jira Token 9",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 733,
+        "name": "Jira Token 10",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 735,
+        "name": "Jira Token 11",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 796,
+        "name": "Jira Token 42",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 798,
+        "name": "Jira Token 43",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 639,
+        "name": "Jira Token 2",
+        "apiToken": "nikita@zenio.co:iZp8hQROQB1T8Gcn3YFZC262",
+        "apiUrl": "https://test-project-1.atlassian.net",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
         "id": 827,
         "name": "Jira Token 53",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 829,
+        "name": "Jira Token 54",
+        "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
+        "apiUrl": "https://zenio.atlassian.net/",
+        "apiProvider": "JIRA",
+        "valid": true,
+        "projects": [
+            
+        ],
+        "url": null
+    },
+    {
+        "id": 11,
+        "name": "Jira Token 54",
         "apiToken": "alexey.yakovtsov@zenio.co:ZwapUqRrCnWXbzXZKJRQFEC6",
         "apiUrl": "https://zenio.atlassian.net/",
         "apiProvider": "JIRA",
@@ -183,10 +1460,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:19 GMT
+Date: Fri, 29 Nov 2019 12:36:24 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=IDOELqJucqgq680Ugj0/aKrwXoAqfGWYtgEGGr6lIsUArR1Y6hAuR5IPWgYOCKfliQLLZ3gyNV3R39KmopgMl2Lvz9CaSqx0TJrwN6Ed3YdPgyaATrGNItBJtdBb; Expires=Fri, 06 Dec 2019 12:36:24 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -203,15 +1480,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=1A7E614252F4D38AEBFD0B9EC1258F2F;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=ToAUQ3Myv+BcZ+XqvKH1gGkSD1455HZ43RhyvIBnzpHlBnkNys1nZY0zvEqVwTMVxEWfcr/Pn8RdrID/n0d+MsJLNt1tk1S/FUknwm0ow8r/ch/uzOzP2Wwu0g2s;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=AFF20FD4CD6A381C1C49D2B792926265;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:20 GMT
+Date: Fri, 29 Nov 2019 12:36:25 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=v0aPN1ghCUYJe9ksEFiND0Nc5fkaPB+PRMJBshkz8g9Ov92nRCKqa6wqnVrx1SheOBWEo8/xJoncOE+QbVIqupLkKsVOs9ZpyZjoRFTr24EvvINlGa9DBZtex5nC; Expires=Fri, 06 Dec 2019 12:36:25 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -389,9 +1667,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

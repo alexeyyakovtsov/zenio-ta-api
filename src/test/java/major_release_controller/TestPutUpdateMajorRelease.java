@@ -17,7 +17,7 @@ public class TestPutUpdateMajorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MajorReleaseName + "\"" +
+                        "\"name\":" + "\"" + fake_name + "\"" +
                         "}")
                 .when()
                 .put(EndPoints.PutUpdateMajorRelease)
@@ -32,7 +32,7 @@ public class TestPutUpdateMajorRelease extends SuiteTest {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"name\":" + "\"" + MajorReleaseName + "\"" +
+                        "\"name\":" + "\"" + fake_name + "\"" +
                         "}")
                 .when()
                 .put(EndPoints.PutUpdateMajorRelease)
@@ -47,7 +47,7 @@ public class TestPutUpdateMajorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MajorReleaseName + "\"" +
+                        "\"name\":" + "\"" + fake_name + "\"" +
                         "}")
                 .when()
                 .put("/api/projects/" + Project_id + "/releases/majorr/" + MajorRelease)

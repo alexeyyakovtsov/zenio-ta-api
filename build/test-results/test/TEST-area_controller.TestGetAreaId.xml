@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="area_controller.TestGetAreaId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:12:14" hostname="qa-System-Product-Name" time="2.368">
+<testsuite name="area_controller.TestGetAreaId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:35:26" hostname="qa-System-Product-Name" time="2.186">
   <properties/>
-  <testcase name="getAreaId_status_200" classname="area_controller.TestGetAreaId" time="0.854"/>
-  <testcase name="getAreaId_status_401" classname="area_controller.TestGetAreaId" time="0.755"/>
-  <testcase name="getAreaId_status_404" classname="area_controller.TestGetAreaId" time="0.757"/>
+  <testcase name="getAreaId_status_200" classname="area_controller.TestGetAreaId" time="0.8"/>
+  <testcase name="getAreaId_status_401" classname="area_controller.TestGetAreaId" time="0.677"/>
+  <testcase name="getAreaId_status_404" classname="area_controller.TestGetAreaId" time="0.705"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/areas/67
 Proxy:			<none>
@@ -13,15 +13,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=3263ACC2F7483900B08076FB2975A8C8;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=wnqS+MK4E9eKrdF/QiZ6mfY3nNIhxiK9eJuHAW18YGTV7YC3NPw62ccM59ysnXX1/KB5rxWCGXH/tuZPj55d/Y3GbaomhJI/7wL2dg6qEfBbXmDyFj49VCLM3RhR;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=B9A92E00886175161431EF08F5ECE34A;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:14 GMT
+Date: Fri, 29 Nov 2019 12:35:26 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=093NtZS+pmIzR5e9h4fef+ONSKRjtmj5gpSIwj5JgpNhDQUjCjgYNIXCOtgu3bQuw5xIxZ2DDgzXKBOoGoDegTa9WCA3EhFN5d9x4P0UHqbQ/HlgYy/FnHaag0vy; Expires=Fri, 06 Dec 2019 12:35:26 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -32,16 +33,14 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 67,
-    "name": "EYLEpkASiBli",
+    "name": "Flowdesk",
     "projectId": 31,
     "description": "123",
-    "checksum": "qXzfUKJuBKZS",
+    "checksum": "bvcEHdybkrBD",
     "activityIds": [
         1053,
         1639,
-        1643,
-        6992,
-        7022
+        1643
     ],
     "actorIds": [
         
@@ -60,10 +59,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:15 GMT
+Date: Fri, 29 Nov 2019 12:35:27 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=oil7/ZnA2nShmDtdcMk1YVg3zdIFWGrz3ZVwcrk2KQDHolZuAZSHnr1iymKl8cYtWRocxwZYsC4ECQeNy2z54c7uFtWvNONfwpWcfMQk7mPeliBwUKehXYD0vHKL; Expires=Fri, 06 Dec 2019 12:35:27 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -80,15 +79,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=3263ACC2F7483900B08076FB2975A8C8;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=wnqS+MK4E9eKrdF/QiZ6mfY3nNIhxiK9eJuHAW18YGTV7YC3NPw62ccM59ysnXX1/KB5rxWCGXH/tuZPj55d/Y3GbaomhJI/7wL2dg6qEfBbXmDyFj49VCLM3RhR;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=B9A92E00886175161431EF08F5ECE34A;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:16 GMT
+Date: Fri, 29 Nov 2019 12:35:28 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=GNAJB0fQ/gCxuaxMVzA8Bc2P57En2vwBAAKAGWds9H10OesG7R1kdrPgPI013Y7jW2ECf55WrEZlWnFC4iS/FAdjPBcWwiR7KLdqG3fpeBL37q/owA14ivd7omlL; Expires=Fri, 06 Dec 2019 12:35:28 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -266,9 +266,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

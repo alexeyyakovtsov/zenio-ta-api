@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestGetWorkspace" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:24" hostname="qa-System-Product-Name" time="2.457">
+<testsuite name="workspace_controller.TestGetWorkspace" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:37:18" hostname="qa-System-Product-Name" time="2.024">
   <properties/>
-  <testcase name="getUserWorkspaces_status_200" classname="workspace_controller.TestGetWorkspace" time="0.849"/>
-  <testcase name="getUserWorkspaces_status_401" classname="workspace_controller.TestGetWorkspace" time="0.807"/>
-  <testcase name="getUserWorkspaces_status_404" classname="workspace_controller.TestGetWorkspace" time="0.799"/>
+  <testcase name="getUserWorkspaces_status_200" classname="workspace_controller.TestGetWorkspace" time="0.757"/>
+  <testcase name="getUserWorkspaces_status_401" classname="workspace_controller.TestGetWorkspace" time="0.627"/>
+  <testcase name="getUserWorkspaces_status_404" classname="workspace_controller.TestGetWorkspace" time="0.638"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/workspaces
 Proxy:			<none>
@@ -13,15 +13,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=69FBE0CD938F9F3B5812B290F0A18F3E;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=BMogR9XvGuNSBGcIfrgDShudmM4YRKDhQrKpdij2jBvAUHo10WQK+8Kn/VU7g0hs9ivuDM7FMQ6we0EDpADphvJTre5/vnvz5mJdyFtpeKDm3keutsu+qylXeOMm;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=3772E4B04FFFB5285E7E465BF5B1C300;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:25 GMT
+Date: Fri, 29 Nov 2019 12:37:19 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=JwoTHxFJ/O1E35cARPAo+KR06GxORSvOiKpJh2L4+AK/ze2+BvXTVnS2NdNjrzwKauSvJMqgbeg3utUcASowqwaxbPBM/Fyx6H3ab8zSMmuVCgLZA5OjsRtINefL; Expires=Fri, 06 Dec 2019 12:37:19 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -36,6 +37,24 @@ X-Frame-Options: SAMEORIGIN
         "owned": true,
         "name": "THE BEST TEAM Workspace! :)",
         "projects": [
+            {
+                "id": 1542,
+                "name": "QA",
+                "acronym": "QA",
+                "workspaceId": 31,
+                "deleted": false,
+                "ownerId": 1,
+                "membersCount": 1
+            },
+            {
+                "id": 1541,
+                "name": "Front",
+                "acronym": "FRO",
+                "workspaceId": 31,
+                "deleted": false,
+                "ownerId": 1,
+                "membersCount": 1
+            },
             {
                 "id": 1535,
                 "name": "Contakt",
@@ -53,15 +72,6 @@ X-Frame-Options: SAMEORIGIN
                 "deleted": false,
                 "ownerId": 1,
                 "membersCount": 2
-            },
-            {
-                "id": 1502,
-                "name": "z11",
-                "acronym": "Z11",
-                "workspaceId": 31,
-                "deleted": false,
-                "ownerId": 1,
-                "membersCount": 1
             },
             {
                 "id": 1431,
@@ -143,12 +153,12 @@ X-Frame-Options: SAMEORIGIN
                 "membersCount": 1
             }
         ],
-        "membersCount": 1
+        "membersCount": 2
     },
     {
         "id": 27,
         "owned": true,
-        "name": "KqrINzkFCrsI",
+        "name": "Otcom",
         "projects": [
             {
                 "id": 1334,
@@ -185,9 +195,36 @@ X-Frame-Options: SAMEORIGIN
         "name": "Admin (test-test-test)",
         "projects": [
             {
+                "id": 1551,
+                "name": "Tres-Zap",
+                "acronym": "TRE",
+                "workspaceId": 4,
+                "deleted": false,
+                "ownerId": 1,
+                "membersCount": 1
+            },
+            {
+                "id": 1550,
+                "name": "Duobam",
+                "acronym": "DUO",
+                "workspaceId": 4,
+                "deleted": false,
+                "ownerId": 1,
+                "membersCount": 1
+            },
+            {
+                "id": 1547,
+                "name": "GBzSLmzFfeJM",
+                "acronym": "GBZ",
+                "workspaceId": 4,
+                "deleted": false,
+                "ownerId": 1,
+                "membersCount": 1
+            },
+            {
                 "id": 1460,
-                "name": "xVLXYyeNeUDb Update name",
-                "acronym": "XVL",
+                "name": "Keylex Update name",
+                "acronym": "KEY",
                 "workspaceId": 4,
                 "deleted": false,
                 "ownerId": 1,
@@ -308,10 +345,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:25 GMT
+Date: Fri, 29 Nov 2019 12:37:19 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=QFCqSi4PB2VkPu0xmTccUraML48d/c1m4Q6AvwPyLMvQzDyc2m4nkaMZnzaYOIwD6ZV7n9QkKDdHZU1LGDdb2FRzcJioh1OMDnQD+m8bdlBtw7Vr9aoj6J/nYf73; Expires=Fri, 06 Dec 2019 12:37:19 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -328,15 +365,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=69FBE0CD938F9F3B5812B290F0A18F3E;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=BMogR9XvGuNSBGcIfrgDShudmM4YRKDhQrKpdij2jBvAUHo10WQK+8Kn/VU7g0hs9ivuDM7FMQ6we0EDpADphvJTre5/vnvz5mJdyFtpeKDm3keutsu+qylXeOMm;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=3772E4B04FFFB5285E7E465BF5B1C300;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:26 GMT
+Date: Fri, 29 Nov 2019 12:37:20 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=iKpzVjV1OHwTA8/2EvOVdkL3uV5MTt6l/szGacH0UWiUlT4jPsxuOT6H/V4aKKKSaDIi8pEKpa7+ps2b5ijeSXVQ9Y02cXO+RsvaYY7CzRWravFbf3o4oRkGbMtj; Expires=Fri, 06 Dec 2019 12:37:20 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -514,9 +552,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

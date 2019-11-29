@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestGetWorkspaceMembers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:33" hostname="qa-System-Product-Name" time="2.787">
+<testsuite name="workspace_controller.TestGetWorkspaceMembers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:37:26" hostname="qa-System-Product-Name" time="2.016">
   <properties/>
-  <testcase name="getWorkspaceMembers_status_200" classname="workspace_controller.TestGetWorkspaceMembers" time="0.803"/>
-  <testcase name="getWorkspaceMembers_status_401" classname="workspace_controller.TestGetWorkspaceMembers" time="0.759"/>
-  <testcase name="getWorkspaceMembers_status_404" classname="workspace_controller.TestGetWorkspaceMembers" time="1.223"/>
+  <testcase name="getWorkspaceMembers_status_200" classname="workspace_controller.TestGetWorkspaceMembers" time="0.654"/>
+  <testcase name="getWorkspaceMembers_status_401" classname="workspace_controller.TestGetWorkspaceMembers" time="0.636"/>
+  <testcase name="getWorkspaceMembers_status_404" classname="workspace_controller.TestGetWorkspaceMembers" time="0.726"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/workspaces/4/users
 Proxy:			<none>
@@ -13,15 +13,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=8B890C19754713EEE736885DDE15523D;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=y7/8O6dI0JGFB9ZyVbxdFnjx7BfKEXzcWskq8KyWBcfcarE+mw/ogJ4dy3O6fZRPLjpOglgg6ZNWc+9dtlwFOFIEiVsHIhOyuAhkjkVsO6dAqzE4bq2p1mAF5TfH;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=AD84051AD7883F03903F2229C35D8EC4;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:34 GMT
+Date: Fri, 29 Nov 2019 12:37:26 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=nRKKEHpLqWKeu8X55XelBSA8xia19prQxiU9Ton2l5fTaEs6i/ixBnhldyRCI05GuF6UYXzj3qkhwl7yeUJA4Wd15Iy1wLcmzZ42iHR38hduhfJi1M7XHbOkYofK; Expires=Fri, 06 Dec 2019 12:37:26 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -69,10 +70,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:35 GMT
+Date: Fri, 29 Nov 2019 12:37:27 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=cB2eaaYNOPxbImJ5JCZV5FdsHf417GpjHMhZqIFtnhnzlWRrFz8pvwQJ4Un+GcZtW8q4FRy7toaoyIbEu5y8QlSocmsCSwtT3tOFp+HC9xSRQYWnYhP7ejtpNOgA; Expires=Fri, 06 Dec 2019 12:37:27 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -89,15 +90,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=8B890C19754713EEE736885DDE15523D;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=y7/8O6dI0JGFB9ZyVbxdFnjx7BfKEXzcWskq8KyWBcfcarE+mw/ogJ4dy3O6fZRPLjpOglgg6ZNWc+9dtlwFOFIEiVsHIhOyuAhkjkVsO6dAqzE4bq2p1mAF5TfH;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=AD84051AD7883F03903F2229C35D8EC4;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:36 GMT
+Date: Fri, 29 Nov 2019 12:37:28 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=uAHLPJKzsPwfOuW7fEqiqe82Bba7sWbPafwVOHXBALrpV2wrmWssSSAtRRNlwi4ayNI6VzaEiF1B/EMksk6t/rJKLSm/+GayL5a5Lxdoka962/Bq59Si0VM8ve/y; Expires=Fri, 06 Dec 2019 12:37:28 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -275,9 +277,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

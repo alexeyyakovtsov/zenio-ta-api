@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestGetUserProjects" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:20" hostname="qa-System-Product-Name" time="2.925">
+<testsuite name="project_controller.TestGetUserProjects" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:37:15" hostname="qa-System-Product-Name" time="2.53">
   <properties/>
-  <testcase name="getUserProjects_status_200" classname="project_controller.TestGetUserProjects" time="1.203"/>
-  <testcase name="getUserProjects_status_401" classname="project_controller.TestGetUserProjects" time="0.78"/>
-  <testcase name="getUserProjects_status_404" classname="project_controller.TestGetUserProjects" time="0.94"/>
+  <testcase name="getUserProjects_status_200" classname="project_controller.TestGetUserProjects" time="1.097"/>
+  <testcase name="getUserProjects_status_401" classname="project_controller.TestGetUserProjects" time="0.634"/>
+  <testcase name="getUserProjects_status_404" classname="project_controller.TestGetUserProjects" time="0.797"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects
 Proxy:			<none>
@@ -13,15 +13,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=5FA16706B290D72DF7F840416DEB46AE;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=GsPvznpOPH9rwBl2AebeLpThM9YwVV41a2YSGZpTh5yeNiCbfXEcGei7GDRQaNSAYjvIMzT2slGBIwgEaKBzajAJ7sxGM+zTevb9DXuN3iT2syYvgZ8//rVwiX5j;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=AB78EF1D7D0707094D00E6911594B5EA;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:21 GMT
+Date: Fri, 29 Nov 2019 12:37:16 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=2AgjO2mJXn57FFavKhgJgTGhjJatJi4OsOc1QYyOrnHf2kczz9sgPDdoNTe264wqtYNDntSJeUULto2NCHy8P/57fQr/yPrS8wfnqStW7ni5MLNFDLTHzPsjN6DA; Expires=Fri, 06 Dec 2019 12:37:15 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -31,7 +32,7 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "totalCount": 223,
+    "totalCount": 228,
     "list": [
         {
             "id": 16,
@@ -948,10 +949,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:22 GMT
+Date: Fri, 29 Nov 2019 12:37:17 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=4Uxf+6lTljWxhsiEIXmh7IWezfd5so9AFAJRwPFIzusWISmPcXdwWHSIJJss99SmmBqNbGsLJ0kSXlpKJ90bt3koBns1fO30MmpsnJnZsGUM5bqNOpdyOeIN5p6K; Expires=Fri, 06 Dec 2019 12:37:17 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -968,15 +969,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=5FA16706B290D72DF7F840416DEB46AE;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=GsPvznpOPH9rwBl2AebeLpThM9YwVV41a2YSGZpTh5yeNiCbfXEcGei7GDRQaNSAYjvIMzT2slGBIwgEaKBzajAJ7sxGM+zTevb9DXuN3iT2syYvgZ8//rVwiX5j;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=AB78EF1D7D0707094D00E6911594B5EA;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:23 GMT
+Date: Fri, 29 Nov 2019 12:37:17 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=6wslGxN2VWzFvzihL7KUcMv5fkOwaAiYUty/6B4TFAourYmt3cBFZD9c7smv1whuZrl4Fpqd6WNo9UrsbF7cukdHhcUzRFnv/UA+FCOISGRe5RBe+dVDejgmWKbL; Expires=Fri, 06 Dec 2019 12:37:17 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1154,9 +1156,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

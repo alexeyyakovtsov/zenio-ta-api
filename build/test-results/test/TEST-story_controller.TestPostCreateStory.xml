@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="story_controller.TestPostCreateStory" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:12:59" hostname="qa-System-Product-Name" time="7.071">
+<testsuite name="story_controller.TestPostCreateStory" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:36:06" hostname="qa-System-Product-Name" time="6.047">
   <properties/>
-  <testcase name="postNegativeTest4_status_400" classname="story_controller.TestPostCreateStory" time="0.789"/>
-  <testcase name="postNegativeTest5_status_400" classname="story_controller.TestPostCreateStory" time="0.766"/>
-  <testcase name="postNegativeTest6_status_400" classname="story_controller.TestPostCreateStory" time="0.761"/>
-  <testcase name="postCreateStory_status_200" classname="story_controller.TestPostCreateStory" time="0.778"/>
-  <testcase name="postCreateStory_status_401" classname="story_controller.TestPostCreateStory" time="0.77"/>
-  <testcase name="postCreateStory_status_404" classname="story_controller.TestPostCreateStory" time="0.808"/>
-  <testcase name="postNegativeTest1_status_400" classname="story_controller.TestPostCreateStory" time="0.775"/>
-  <testcase name="postNegativeTest2_status_400" classname="story_controller.TestPostCreateStory" time="0.844"/>
-  <testcase name="postNegativeTest3_status_400" classname="story_controller.TestPostCreateStory" time="0.766"/>
+  <testcase name="postNegativeTest4_status_400" classname="story_controller.TestPostCreateStory" time="0.652"/>
+  <testcase name="postNegativeTest5_status_400" classname="story_controller.TestPostCreateStory" time="0.649"/>
+  <testcase name="postNegativeTest6_status_400" classname="story_controller.TestPostCreateStory" time="0.669"/>
+  <testcase name="postCreateStory_status_200" classname="story_controller.TestPostCreateStory" time="0.712"/>
+  <testcase name="postCreateStory_status_401" classname="story_controller.TestPostCreateStory" time="0.637"/>
+  <testcase name="postCreateStory_status_404" classname="story_controller.TestPostCreateStory" time="0.724"/>
+  <testcase name="postNegativeTest1_status_400" classname="story_controller.TestPostCreateStory" time="0.678"/>
+  <testcase name="postNegativeTest2_status_400" classname="story_controller.TestPostCreateStory" time="0.67"/>
+  <testcase name="postNegativeTest3_status_400" classname="story_controller.TestPostCreateStory" time="0.649"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects/31/stories
 Proxy:			<none>
@@ -19,21 +19,22 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0A38BEEB165DFBECF45EF7603697E20D;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=ZuPqsTWsyyATz1LrkozutrkVHiI7WFUpwQ7RirMYWIpkLCoexR8JwPxzT5AmEBsf44Q4X4jzCxv4re/RsymkGHSXr0ePieYOccLlzhoQ4ZdM8MrZIAu1Egq7xJIu;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=6C7E650EA6BC064ECF681494A96EDAAD;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "activityId": "1053",
     "majorReleaseId": "QATest123",
-    "checksum": "JMzWWDnsvtUf"
+    "checksum": "FUZbJwAKqMqn"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:00 GMT
+Date: Fri, 29 Nov 2019 12:36:07 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=pMpQkhtppbBcU8GYqAWCs/Tn2PMwvQ3/F4tA1vrcfOEiI1OFRwuQRH4rYyQ7Vi9SdAtkCqyuh4UgUbi677ozJNHjyNqeeiXMO7dk7FW0OK9knmXe7ZNp6IdJnkSv; Expires=Fri, 06 Dec 2019 12:36:07 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -60,22 +61,23 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0A38BEEB165DFBECF45EF7603697E20D;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=ZuPqsTWsyyATz1LrkozutrkVHiI7WFUpwQ7RirMYWIpkLCoexR8JwPxzT5AmEBsf44Q4X4jzCxv4re/RsymkGHSXr0ePieYOccLlzhoQ4ZdM8MrZIAu1Egq7xJIu;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=6C7E650EA6BC064ECF681494A96EDAAD;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "activityId": "1053",
     "majorReleaseId": "2216",
     "anchorId": "QATest123",
-    "checksum": "JMzWWDnsvtUf"
+    "checksum": "FUZbJwAKqMqn"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:00 GMT
+Date: Fri, 29 Nov 2019 12:36:07 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=VGafwAryiLvEh3fgZyGv/Kwn9Jla94sN1XaVyVxdx8ovKxMEDDcUvdnoDdb8SIYs8nueDpuovY3kVaC1CGJ6Ec0j+sWfbjvCYWZuDebZNXJo/4G36q0ry4duaMZz; Expires=Fri, 06 Dec 2019 12:36:07 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -102,22 +104,23 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0A38BEEB165DFBECF45EF7603697E20D;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=ZuPqsTWsyyATz1LrkozutrkVHiI7WFUpwQ7RirMYWIpkLCoexR8JwPxzT5AmEBsf44Q4X4jzCxv4re/RsymkGHSXr0ePieYOccLlzhoQ4ZdM8MrZIAu1Egq7xJIu;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=6C7E650EA6BC064ECF681494A96EDAAD;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "activityId": "1053",
     "majorReleaseId": "2216",
     "position": "UP",
-    "checksum": "JMzWWDnsvtUf"
+    "checksum": "FUZbJwAKqMqn"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:01 GMT
+Date: Fri, 29 Nov 2019 12:36:08 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=bKDS8kn749VODtfVuaKsXrjoSHbgcKqKo9pgAFUI5g0ogtSEjyeyrGfpjur5pjRzEBpstjINNwNMXcPfxqjiAEM9Mv22VJY714wG72Hn650KcDqiMLCcp8VA6TYg; Expires=Fri, 06 Dec 2019 12:36:08 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -144,21 +147,22 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0A38BEEB165DFBECF45EF7603697E20D;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=ZuPqsTWsyyATz1LrkozutrkVHiI7WFUpwQ7RirMYWIpkLCoexR8JwPxzT5AmEBsf44Q4X4jzCxv4re/RsymkGHSXr0ePieYOccLlzhoQ4ZdM8MrZIAu1Egq7xJIu;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=6C7E650EA6BC064ECF681494A96EDAAD;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "activityId": "1053",
     "majorReleaseId": "2216",
-    "checksum": "JMzWWDnsvtUf"
+    "checksum": "FUZbJwAKqMqn"
 }
 HTTP/1.1 201 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:02 GMT
+Date: Fri, 29 Nov 2019 12:36:09 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=XL0EhAvW4SHGSoCopsU7po5iKINQ73wRtvFv1vtOJXAEJyqEwOMlutyRlA3jgHs1LwUZ+/6ZYSD3x4iw/dj1BdXJzk66tc5agV08/iPOtfO8rllhMUDTUcHexrAw; Expires=Fri, 06 Dec 2019 12:36:09 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -168,8 +172,8 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 16845,
-    "name": "lBueFztBCMNe",
+    "id": 17084,
+    "name": "Tres-Zap",
     "projectId": 31,
     "activityIds": [
         1053
@@ -180,8 +184,7 @@ X-Frame-Options: SAMEORIGIN
     "issuer": "Sample issuer",
     "assignee": null,
     "state": "UNSTARTED",
-    "externalId": null,
-    "checksum": "MGxCdWVGenRCQ01OZW51bGwwbnVsbG51bGwwZmFsc2U="
+    "checksum": "MFRyZXMtWmFwbnVsbDBudWxsbnVsbDBmYWxzZQ=="
 }
 Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects/31/stories
@@ -196,16 +199,16 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "activityId": "1053",
     "majorReleaseId": "2216",
-    "checksum": "JMzWWDnsvtUf"
+    "checksum": "FUZbJwAKqMqn"
 }
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:03 GMT
+Date: Fri, 29 Nov 2019 12:36:09 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=szRc5gbeUMBE3pbexSEV0mzkxlhZXvTGqJ1nNhFyIsKHyJsLVdvP5aOKQ6aZDt4NEWXO5WzORrX1clit/rKaqDkP6E0BbNQDczuZNgHt9NEMylOeRdytyC7gJrVb; Expires=Fri, 06 Dec 2019 12:36:09 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -222,21 +225,22 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0A38BEEB165DFBECF45EF7603697E20D;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=ZuPqsTWsyyATz1LrkozutrkVHiI7WFUpwQ7RirMYWIpkLCoexR8JwPxzT5AmEBsf44Q4X4jzCxv4re/RsymkGHSXr0ePieYOccLlzhoQ4ZdM8MrZIAu1Egq7xJIu;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=6C7E650EA6BC064ECF681494A96EDAAD;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "activityId": "1053",
     "majorReleaseId": "2216",
-    "checksum": "JMzWWDnsvtUf"
+    "checksum": "FUZbJwAKqMqn"
 }
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:04 GMT
+Date: Fri, 29 Nov 2019 12:36:10 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=LowNeArb8eAfzfItDWPkV3lZ71fN1917bi5fJE9+mY5HR6vnOBDtGGsURSKKJX0n9tsZeyprLcepygMSEBj6asfmPCX+CQhmvaPQugZMMMfb5S80wJm+yYZSzODU; Expires=Fri, 06 Dec 2019 12:36:10 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -414,9 +418,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 Request method:	POST
@@ -428,20 +432,21 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0A38BEEB165DFBECF45EF7603697E20D;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=ZuPqsTWsyyATz1LrkozutrkVHiI7WFUpwQ7RirMYWIpkLCoexR8JwPxzT5AmEBsf44Q4X4jzCxv4re/RsymkGHSXr0ePieYOccLlzhoQ4ZdM8MrZIAu1Egq7xJIu;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=6C7E650EA6BC064ECF681494A96EDAAD;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "activityId": "1053",
     "majorReleaseId": "2216",
-    "checksum": "JMzWWDnsvtUf"
+    "checksum": "FUZbJwAKqMqn"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:04 GMT
+Date: Fri, 29 Nov 2019 12:36:11 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=8G4YSj5KCw5V+ei2KY4aRV6WKJ9HLtSWHKr7VQge7mi+x+nypIJqJUaW/pqQaCibfo+kOV0/F50+EUFffwmLT96/dRPZApgeB1SqzeFdt/rnco9AUSIJWORwhC9X; Expires=Fri, 06 Dec 2019 12:36:11 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -468,20 +473,21 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0A38BEEB165DFBECF45EF7603697E20D;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=ZuPqsTWsyyATz1LrkozutrkVHiI7WFUpwQ7RirMYWIpkLCoexR8JwPxzT5AmEBsf44Q4X4jzCxv4re/RsymkGHSXr0ePieYOccLlzhoQ4ZdM8MrZIAu1Egq7xJIu;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=6C7E650EA6BC064ECF681494A96EDAAD;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "activityId": "1053",
     "majorReleaseId": "2216"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:05 GMT
+Date: Fri, 29 Nov 2019 12:36:12 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=0WM4mfOCT2ZtUJk6pE9j/wjcUi1spEfsh8RaQ1C47sPrqLYsvC3tF0ip4H0pkEAaMvi+tt1Y4LBaCs9hkSrbgb4xgcceeo6EBlxmr/hawPMHueyHtcWJGmJFpwnk; Expires=Fri, 06 Dec 2019 12:36:12 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -508,21 +514,22 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=0A38BEEB165DFBECF45EF7603697E20D;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=ZuPqsTWsyyATz1LrkozutrkVHiI7WFUpwQ7RirMYWIpkLCoexR8JwPxzT5AmEBsf44Q4X4jzCxv4re/RsymkGHSXr0ePieYOccLlzhoQ4ZdM8MrZIAu1Egq7xJIu;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=6C7E650EA6BC064ECF681494A96EDAAD;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "activityId": "QATest123",
     "majorReleaseId": "2216",
-    "checksum": "JMzWWDnsvtUf"
+    "checksum": "FUZbJwAKqMqn"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:06 GMT
+Date: Fri, 29 Nov 2019 12:36:12 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=LQiKmi/aEGQ3Epx9JZzaQDXHBYuQbsPw+iokqroHMJ+8d+sWTovGdXxUOfCUE6s0R6HE+b0cQiEMefBExp9RDf0HYrJ8mkY+Q0iNm05wsORnNu+TwwMOr3Vrvrjq; Expires=Fri, 06 Dec 2019 12:36:12 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate

@@ -12,5 +12,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: io.qameta.allure:allure-junit4:2.13.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.rest-assured:rest-assured:4.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: io.rest-assured:json-schema-validator:4.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.javafaker:javafaker:1.0.1" level="project" />
   </component>
 </module>

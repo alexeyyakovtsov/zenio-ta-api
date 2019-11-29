@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="major_release_controller.TestPutUpdateMajorRelease" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:12:05" hostname="qa-System-Product-Name" time="3.32">
+<testsuite name="major_release_controller.TestPutUpdateMajorRelease" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:35:17" hostname="qa-System-Product-Name" time="3.375">
   <properties/>
-  <testcase name="putUpdateMajorRelease_status_200" classname="major_release_controller.TestPutUpdateMajorRelease" time="1.5"/>
-  <testcase name="putUpdateMajorRelease_status_401" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.801"/>
-  <testcase name="putUpdateMajorRelease_status_404" classname="major_release_controller.TestPutUpdateMajorRelease" time="1.011"/>
+  <testcase name="putUpdateMajorRelease_status_200" classname="major_release_controller.TestPutUpdateMajorRelease" time="1.664"/>
+  <testcase name="putUpdateMajorRelease_status_401" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.763"/>
+  <testcase name="putUpdateMajorRelease_status_404" classname="major_release_controller.TestPutUpdateMajorRelease" time="0.942"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/31/releases/major/2216
 Proxy:			<none>
@@ -13,18 +13,19 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=E270E29F678C74C4E2AAA9092060F4E7;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=QkE779IaenAyYAZz7nYcYPcU3tcgGUIJ4VhanPYBoU6myB4Aq6ny1M8IHPlr67VzdukStUUS2Uc1KDjG8xPgVdRtLPoq1OGOBW4M5rcK4UY0U5GVmRj2jqOrxJzW;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=19B381D305D3941EC00576B2D70BD2C8;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "yzhMdEKwkRVA"
+    "name": "Bigtax"
 }
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:06 GMT
+Date: Fri, 29 Nov 2019 12:35:18 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=RadvPBWXxaNrSqJmaIIU9iiLHppLr95IbUfevEQ+etDlgCJSjD+IdXiXfjfGZGzvh4+aeGdmNPZgDvWCx38mY7gdzjtd8TNhPLAOdq2UYS0iLYjIDflT/jzrSIkI; Expires=Fri, 06 Dec 2019 12:35:18 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -35,7 +36,7 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 2216,
-    "name": "yzhMdEKwkRVA",
+    "name": "Bigtax",
     "cardIds": [
         
     ],
@@ -54,13 +55,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "yzhMdEKwkRVA"
+    "name": "Bigtax"
 }
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:07 GMT
+Date: Fri, 29 Nov 2019 12:35:19 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=PsUi5RJ8Ha6mriPS/T8STPU1zfRUN4SDo+AHl6t+F0jQO10EhH1aoEKm3CEoC3zP2qohtHusydqFJRdKGT1HRWf099VU++tvUJ0/UOYGquYtgHH25s89kvv1AM2G; Expires=Fri, 06 Dec 2019 12:35:19 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -77,18 +78,19 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=E270E29F678C74C4E2AAA9092060F4E7;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=QkE779IaenAyYAZz7nYcYPcU3tcgGUIJ4VhanPYBoU6myB4Aq6ny1M8IHPlr67VzdukStUUS2Uc1KDjG8xPgVdRtLPoq1OGOBW4M5rcK4UY0U5GVmRj2jqOrxJzW;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=19B381D305D3941EC00576B2D70BD2C8;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "yzhMdEKwkRVA"
+    "name": "Bigtax"
 }
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:08 GMT
+Date: Fri, 29 Nov 2019 12:35:20 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=YFu6Q156xGfnmVUk71YyTpq57xiOqwLH+GhYZYuDeSnc256xRKGUuRDLVNTgl0rfYwRy9z0zCa/rPCW55FSXNJlodOnSUoLMUMZ+noM/c4UgI5OA2s+O2P4Upz2E; Expires=Fri, 06 Dec 2019 12:35:20 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -266,9 +268,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

@@ -17,7 +17,7 @@ public class TestPostCreateActivity extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
@@ -35,7 +35,7 @@ public class TestPostCreateActivity extends SuiteTest {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"" +
                         "}")
                 .when()
@@ -51,7 +51,7 @@ public class TestPostCreateActivity extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"" +
                         "}")
                 .when()
@@ -83,7 +83,7 @@ public class TestPostCreateActivity extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"," +
                         "}")
                 .when()
@@ -99,7 +99,7 @@ public class TestPostCreateActivity extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"areaId\":" + "\"" + "QATest123" + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
@@ -116,7 +116,7 @@ public class TestPostCreateActivity extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"," +
                         "\"anchorId\":" + "\"" + "QATest123" + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
@@ -134,7 +134,7 @@ public class TestPostCreateActivity extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"areaId\":" + "\"" + AreaId + "\"," +
                         "\"position\":" + "\"" + "UP" + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +

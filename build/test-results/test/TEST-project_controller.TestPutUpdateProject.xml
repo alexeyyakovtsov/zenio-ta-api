@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestPutUpdateProject" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:02" hostname="qa-System-Product-Name" time="2.38">
+<testsuite name="project_controller.TestPutUpdateProject" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:37:00" hostname="qa-System-Product-Name" time="1.969">
   <properties/>
-  <testcase name="putUpdateProject_status_200" classname="project_controller.TestPutUpdateProject" time="0.877"/>
-  <testcase name="putUpdateProject_status_401" classname="project_controller.TestPutUpdateProject" time="0.749"/>
-  <testcase name="putUpdateProject_status_404" classname="project_controller.TestPutUpdateProject" time="0.752"/>
+  <testcase name="putUpdateProject_status_200" classname="project_controller.TestPutUpdateProject" time="0.699"/>
+  <testcase name="putUpdateProject_status_401" classname="project_controller.TestPutUpdateProject" time="0.63"/>
+  <testcase name="putUpdateProject_status_404" classname="project_controller.TestPutUpdateProject" time="0.637"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/projects/1460
 Proxy:			<none>
@@ -13,18 +13,19 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=1C149D5162713A3028744F9D98BC785C;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=13XAx/c5nCOqYkCLCmeNN+FgmLL7c2ayWShidGbitwLc2hw7He87IXR23aOLkCMC8ipE9WpFxB9Q1nBsjJVS+na53aTAfOFpUf7wf5PMI2qFGYY10JeBF4+MhqOP;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=688C8949675782F32471FE476AECA349;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "xVLXYyeNeUDb Update name"
+    "name": "Keylex Update name"
 }
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:03 GMT
+Date: Fri, 29 Nov 2019 12:37:01 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=x0jIg602GuRZMpNhBrVdk9mytDmYU/bYGCVlgl38Uns4nLknUl12rqtVN/tlo60rIvUFwc/+V9jR6t/A3XHvtiIJNQmjhdASyM9t3i7qSgutnVBU5ox4FjF8Dqyj; Expires=Fri, 06 Dec 2019 12:37:01 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -35,8 +36,8 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 1460,
-    "name": "xVLXYyeNeUDb Update name",
-    "acronym": "XVL",
+    "name": "Keylex Update name",
+    "acronym": "KEY",
     "workspaceId": 4,
     "deleted": false,
     "ownerId": 1,
@@ -55,13 +56,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "xVLXYyeNeUDb Update name"
+    "name": "Keylex Update name"
 }
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:04 GMT
+Date: Fri, 29 Nov 2019 12:37:01 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=+6BeMldOoEZcrtGHfC6G9GC33m7F50V32UauqwcR4M5MNitF/3Z9cZP6KqxjGrcD9phr4zsWRsKFr7RC83srXed5zL2jUzMBHXrec2o5ET/XQQto3ADthxso2j0H; Expires=Fri, 06 Dec 2019 12:37:01 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -78,18 +79,19 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=1C149D5162713A3028744F9D98BC785C;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=13XAx/c5nCOqYkCLCmeNN+FgmLL7c2ayWShidGbitwLc2hw7He87IXR23aOLkCMC8ipE9WpFxB9Q1nBsjJVS+na53aTAfOFpUf7wf5PMI2qFGYY10JeBF4+MhqOP;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=688C8949675782F32471FE476AECA349;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "xVLXYyeNeUDb Update name"
+    "name": "Keylex Update name"
 }
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:04 GMT
+Date: Fri, 29 Nov 2019 12:37:02 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=+XjfkAeDJfzCuTcI6QWZQZ8D19LpChH+G9ArkPRq+TZfmnpw6oZjVq8L++SkqRZDQOpdeQI0wGbf7l2bamUOhE5tyQ7KebVX6kUsG94qSXe+Arul8/whQbrzCZNv; Expires=Fri, 06 Dec 2019 12:37:02 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -267,9 +269,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

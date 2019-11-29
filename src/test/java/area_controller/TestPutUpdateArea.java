@@ -17,7 +17,7 @@ public class TestPutUpdateArea extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")
@@ -36,7 +36,7 @@ public class TestPutUpdateArea extends SuiteTest {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")
@@ -53,7 +53,7 @@ public class TestPutUpdateArea extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")

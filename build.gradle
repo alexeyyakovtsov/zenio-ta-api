@@ -44,4 +44,5 @@ dependencies {
     testCompile group: 'io.qameta.allure', name: 'allure-model', version: '2.13.0'
     testCompile group: 'io.qameta.allure', name: 'allure-junit4', version: '2.13.0'
     testCompile group: 'io.qameta.allure', name: 'allure-java-commons', version: '2.13.0'
+    testCompile group: 'com.github.javafaker', name: 'javafaker', version: '1.0.1'
 }

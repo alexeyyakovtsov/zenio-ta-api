@@ -17,7 +17,7 @@ public class TestPostCreateMinorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"activityId\":" + "\"" + ActivityId + "\"," +
                         "\"majorReleaseId\":" + "\"" + MajorRelease + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
@@ -36,7 +36,7 @@ public class TestPostCreateMinorRelease extends SuiteTest {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"activityId\":" + "\"" + ActivityId + "\"," +
                         "\"majorReleaseId\":" + "\"" + MajorRelease + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
@@ -54,7 +54,7 @@ public class TestPostCreateMinorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"activityId\":" + "\"" + ActivityId + "\"," +
                         "\"majorReleaseId\":" + "\"" + MajorRelease + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
@@ -89,7 +89,7 @@ public class TestPostCreateMinorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"activityId\":" + "\"" + ActivityId + "\"," +
                         "\"majorReleaseId\":" + "\"" + MajorRelease + "\"," +
                         "}")
@@ -106,7 +106,7 @@ public class TestPostCreateMinorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"activityId\":" + "\"" + "QATest123" + "\"," +
                         "\"majorReleaseId\":" + "\"" + MajorRelease + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
@@ -124,7 +124,7 @@ public class TestPostCreateMinorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"activityId\":" + "\"" + ActivityId + "\"," +
                         "\"majorReleaseId\":" + "\"" + "QATest123" + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
@@ -142,7 +142,7 @@ public class TestPostCreateMinorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"activityId\":" + "\"" + ActivityId + "\"," +
                         "\"majorReleaseId\":" + "\"" + "QATest123" + "\"," +
                         "\"anchorId\":" + "\"" + "QATest123" + "\"," +
@@ -161,7 +161,7 @@ public class TestPostCreateMinorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"activityId\":" + "\"" + ActivityId + "\"," +
                         "\"majorReleaseId\":" + "\"" + MajorRelease + "\"," +
                         "\"position\":" + "\"" + "UP" + "\"," +

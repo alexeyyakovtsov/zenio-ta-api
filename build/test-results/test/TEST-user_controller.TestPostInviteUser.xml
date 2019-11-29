@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user_controller.TestPostInviteUser" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:12:37" hostname="qa-System-Product-Name" time="6.264">
+<testsuite name="user_controller.TestPostInviteUser" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:35:46" hostname="qa-System-Product-Name" time="5.395">
   <properties/>
-  <testcase name="postNegativeTest4_status_400" classname="user_controller.TestPostInviteUser" time="0.765"/>
-  <testcase name="postNegativeTest5_status_400" classname="user_controller.TestPostInviteUser" time="0.76"/>
-  <testcase name="postInviteUser_status_200" classname="user_controller.TestPostInviteUser" time="0.832"/>
-  <testcase name="postInviteUser_status_401" classname="user_controller.TestPostInviteUser" time="0.779"/>
-  <testcase name="postInviteUser_status_404" classname="user_controller.TestPostInviteUser" time="0.837"/>
-  <testcase name="postNegativeTest1_status_400" classname="user_controller.TestPostInviteUser" time="0.777"/>
-  <testcase name="postNegativeTest2_status_400" classname="user_controller.TestPostInviteUser" time="0.749"/>
-  <testcase name="postNegativeTest3_status_400" classname="user_controller.TestPostInviteUser" time="0.75"/>
+  <testcase name="postNegativeTest4_status_400" classname="user_controller.TestPostInviteUser" time="0.655"/>
+  <testcase name="postNegativeTest5_status_400" classname="user_controller.TestPostInviteUser" time="0.656"/>
+  <testcase name="postInviteUser_status_200" classname="user_controller.TestPostInviteUser" time="0.761"/>
+  <testcase name="postInviteUser_status_401" classname="user_controller.TestPostInviteUser" time="0.669"/>
+  <testcase name="postInviteUser_status_404" classname="user_controller.TestPostInviteUser" time="0.644"/>
+  <testcase name="postNegativeTest1_status_400" classname="user_controller.TestPostInviteUser" time="0.688"/>
+  <testcase name="postNegativeTest2_status_400" classname="user_controller.TestPostInviteUser" time="0.671"/>
+  <testcase name="postNegativeTest3_status_400" classname="user_controller.TestPostInviteUser" time="0.637"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/users/invite
 Proxy:			<none>
@@ -18,7 +18,8 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=AB4FBA192A03671D6837BC7B8982A3D4;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=N3KOf3jxdQIwYE/RHPPyVLt0Ee2jol/V7dZIUojqdrxnN1BzDkrinFGSP1qwtVdWIkaoH1PPe2MNNHzoblMBdeHMVe6VIhjjmeoTndPT+xqTd2yOyqMryiWfeVkq;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=6FCCC2C3773310B6BF5325C1212F2E5D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -27,11 +28,11 @@ Body:
     ]
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:37 GMT
+Date: Fri, 29 Nov 2019 12:35:47 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=2L2UaxRC0s2JFnWO1VDSGmeAU0+nxKja52UU6WCd5tFPWwMQZUFByCFRtOU7tCsvG/BiZDKnaW1vOvvbcseSrT+Og/eB/w3q72zFpWviH7IY/vpRTTxOE5QPU4Aj; Expires=Fri, 06 Dec 2019 12:35:47 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -60,7 +61,8 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=AB4FBA192A03671D6837BC7B8982A3D4;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=N3KOf3jxdQIwYE/RHPPyVLt0Ee2jol/V7dZIUojqdrxnN1BzDkrinFGSP1qwtVdWIkaoH1PPe2MNNHzoblMBdeHMVe6VIhjjmeoTndPT+xqTd2yOyqMryiWfeVkq;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=6FCCC2C3773310B6BF5325C1212F2E5D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -69,11 +71,11 @@ Body:
     ]
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:38 GMT
+Date: Fri, 29 Nov 2019 12:35:47 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=fFcwSTIciYtFQRql/POGim8ghrPSMY5Zf/jzfzvNwFC8TLBxGfcfquh2QanMx4SQ61VWH0LV9qINrq3qFOfFfqTw7qhfujzE0hsZae6Hkg8o1XoV1vdD7PoLd8YI; Expires=Fri, 06 Dec 2019 12:35:47 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -102,19 +104,20 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=AB4FBA192A03671D6837BC7B8982A3D4;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=N3KOf3jxdQIwYE/RHPPyVLt0Ee2jol/V7dZIUojqdrxnN1BzDkrinFGSP1qwtVdWIkaoH1PPe2MNNHzoblMBdeHMVe6VIhjjmeoTndPT+xqTd2yOyqMryiWfeVkq;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=6FCCC2C3773310B6BF5325C1212F2E5D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "emails": [
-        "kynnhztPTzNw@gmail.com"
+        "adria.bechtelar@hotmail.com"
     ]
 }
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:39 GMT
+Date: Fri, 29 Nov 2019 12:35:48 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=oA75V3SmHGFPfWiiUxeSCkMKuqv2dnyJWIRjvDOGe39VOlYBg/eP5PuHOj1wb1hw4Cv8eNfY1UUdFJ6roD4d3BKE3sqWyIQt9nqWKrv2pz+3V1pCcMewiInDBa4x; Expires=Fri, 06 Dec 2019 12:35:48 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -135,10 +138,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:40 GMT
+Date: Fri, 29 Nov 2019 12:35:49 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=29tOzwNDS55qBIZA4JSgCskQ5qNVXomVg+rkO/10dSWZ9+VVMAER2kjL3tArNbWNcRy34xX5RyIlRgfu4zAUis7xtyYqOedqb428i6B38P0IqdrhuCfoNk4NoBSf; Expires=Fri, 06 Dec 2019 12:35:49 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -155,20 +158,21 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=AB4FBA192A03671D6837BC7B8982A3D4;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=N3KOf3jxdQIwYE/RHPPyVLt0Ee2jol/V7dZIUojqdrxnN1BzDkrinFGSP1qwtVdWIkaoH1PPe2MNNHzoblMBdeHMVe6VIhjjmeoTndPT+xqTd2yOyqMryiWfeVkq;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=6FCCC2C3773310B6BF5325C1212F2E5D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "emails": [
-        "kynnhztPTzNw@gmail.com"
+        "adria.bechtelar@hotmail.com"
     ]
 }
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:41 GMT
+Date: Fri, 29 Nov 2019 12:35:50 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=i8dGy3VCFWX+PpRhR9STwCndrgcN6nsGyTyW3Y16ubnuy7IlXE8e2CQ5kdaxy8UD01SlffJjk+cf9ohuwagXPQweYSxvuTs0fUVsQBMdYlFn+40iFcm4UWhMM2oh; Expires=Fri, 06 Dec 2019 12:35:50 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -346,9 +350,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 Request method:	POST
@@ -360,15 +364,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=AB4FBA192A03671D6837BC7B8982A3D4;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=N3KOf3jxdQIwYE/RHPPyVLt0Ee2jol/V7dZIUojqdrxnN1BzDkrinFGSP1qwtVdWIkaoH1PPe2MNNHzoblMBdeHMVe6VIhjjmeoTndPT+xqTd2yOyqMryiWfeVkq;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=6FCCC2C3773310B6BF5325C1212F2E5D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:41 GMT
+Date: Fri, 29 Nov 2019 12:35:50 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=0JFxWn+NDi29FwWqcnH1aaBwNrlgj0dEkXCuF8WGK8OwPLjAUDPcD/9PwLjlolHU8lsGm7y/XGxE3zDM3iq/wyOehwERoifpsn5wxL8dPn/m1pBDgdPzj7Nzr61o; Expires=Fri, 06 Dec 2019 12:35:50 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -395,7 +400,8 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=AB4FBA192A03671D6837BC7B8982A3D4;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=N3KOf3jxdQIwYE/RHPPyVLt0Ee2jol/V7dZIUojqdrxnN1BzDkrinFGSP1qwtVdWIkaoH1PPe2MNNHzoblMBdeHMVe6VIhjjmeoTndPT+xqTd2yOyqMryiWfeVkq;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=6FCCC2C3773310B6BF5325C1212F2E5D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -404,11 +410,11 @@ Body:
     ]
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:42 GMT
+Date: Fri, 29 Nov 2019 12:35:51 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=EEl3qq79prtWaFxCClv5sjWGTxVbVa1Zi8HXUw2XKbvusQTxDH+xulsMHZA2Fgy3A7PrSCvbONnd7dcLDbTx4GUT5+4ya8IhNP+rNluu3kNhQCDav6kXmAVzLUON; Expires=Fri, 06 Dec 2019 12:35:51 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -437,7 +443,8 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=AB4FBA192A03671D6837BC7B8982A3D4;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=N3KOf3jxdQIwYE/RHPPyVLt0Ee2jol/V7dZIUojqdrxnN1BzDkrinFGSP1qwtVdWIkaoH1PPe2MNNHzoblMBdeHMVe6VIhjjmeoTndPT+xqTd2yOyqMryiWfeVkq;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=6FCCC2C3773310B6BF5325C1212F2E5D;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
@@ -446,11 +453,11 @@ Body:
     ]
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:43 GMT
+Date: Fri, 29 Nov 2019 12:35:52 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=oqz7o0G9Lk37oxPdB0WTOHZhbfTwH4cxbAsZopRt9d0AUCYKY1rf9uV4gteY5QOqsJ268cFB9PksCsnOfdVX1FTlukEodmoBCJRRxk67gP68bTGuR8umY0cjOt5L; Expires=Fri, 06 Dec 2019 12:35:52 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate

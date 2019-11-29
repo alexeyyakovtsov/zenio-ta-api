@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="activity_controller.TestGetActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:13:59" hostname="qa-System-Product-Name" time="2.463">
+<testsuite name="activity_controller.TestGetActivityId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:36:57" hostname="qa-System-Product-Name" time="2.055">
   <properties/>
-  <testcase name="getActivityId_status_200" classname="activity_controller.TestGetActivityId" time="0.845"/>
-  <testcase name="getActivityId_status_401" classname="activity_controller.TestGetActivityId" time="0.755"/>
-  <testcase name="getActivityId_status_404" classname="activity_controller.TestGetActivityId" time="0.861"/>
+  <testcase name="getActivityId_status_200" classname="activity_controller.TestGetActivityId" time="0.719"/>
+  <testcase name="getActivityId_status_401" classname="activity_controller.TestGetActivityId" time="0.624"/>
+  <testcase name="getActivityId_status_404" classname="activity_controller.TestGetActivityId" time="0.71"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
 Proxy:			<none>
@@ -13,15 +13,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=D29824B04487B77E1F9E3270C7249970;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=KJeA2Il/+UxInYxO5+Is9ZhzHJJCOnVPa3cHXwE2npF6q6xLi5b2B8yMyD+SDJKMAkda2G51E4d6WbxII6AImodljVrQNbqD45ML+IRRXks9d1islFc1nODuvvbY;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=365B8C8C6EC68F3E497A33119795D29A;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:13:59 GMT
+Date: Fri, 29 Nov 2019 12:36:58 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=XWQPIffFiAJKLxKZrbGj9J6RG0jLQxJuI5ms+kuFSGKCLoT/3pjoSxWE916Na/p006fbie3iOKFG2Zs/h/idtGxGI5j6E1gjTAxO+5bVM8BWkmOE0vV95Z+utA/B; Expires=Fri, 06 Dec 2019 12:36:58 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -32,38 +33,47 @@ X-Frame-Options: SAMEORIGIN
 
 {
     "id": 1053,
-    "name": "kkUCDFoIqdeV",
+    "name": "Bigtax",
     "areaId": 67,
     "projectId": 31,
-    "externalId": 4442345,
     "description": "123",
     "majorReleases": [
         {
             "id": 2216,
-            "name": "yzhMdEKwkRVA",
+            "name": "Bigtax",
             "cardIds": [
                 5276,
                 5278,
                 5279,
                 5277,
                 6199,
-                16742,
-                16743,
-                16841,
-                16842
+                17073,
+                17074,
+                17082,
+                17083,
+                17084,
+                17085
             ],
             "checksum": "MHNUbnd5UW1lY1h2bw=="
         },
         {
-            "id": 2591,
-            "name": "yzhMdEKwkRVA",
+            "id": 2631,
+            "name": "Bamity",
             "cardIds": [
                 
             ],
-            "checksum": "MHl6aE1kRUt3a1JWQQ=="
+            "checksum": "MEJhbWl0eQ=="
+        },
+        {
+            "id": 2633,
+            "name": "Bigtax",
+            "cardIds": [
+                
+            ],
+            "checksum": "MEJpZ3RheA=="
         }
     ],
-    "checksum": "JMzWWDnsvtUf"
+    "checksum": "FUZbJwAKqMqn"
 }
 Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/activities/1053
@@ -78,10 +88,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:00 GMT
+Date: Fri, 29 Nov 2019 12:36:59 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=ZSH4EmW2cqWF96t67H0sTNs2xcCc57GAcNadhAaGg54rpGh2+b2zh64TPg8MpSCof2lSI4adqXRYTFYGt5PnAfoFju/0Y+ap6HbfbHDrNCKHDJksjhUGMiQPBJYG; Expires=Fri, 06 Dec 2019 12:36:59 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -98,15 +108,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=D29824B04487B77E1F9E3270C7249970;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=KJeA2Il/+UxInYxO5+Is9ZhzHJJCOnVPa3cHXwE2npF6q6xLi5b2B8yMyD+SDJKMAkda2G51E4d6WbxII6AImodljVrQNbqD45ML+IRRXks9d1islFc1nODuvvbY;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=365B8C8C6EC68F3E497A33119795D29A;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:01 GMT
+Date: Fri, 29 Nov 2019 12:36:59 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=03iw/W8Pf1PIXvy+ljBD5hGMZTAQrKd/ZM931e5tyw8C3bk9mI/EJueDTYL9uq0IrzUo09ZtoGDLkK4yBz4sUMOjcHKoevkzVyQn3Qgy1q2gpcQ3wUvuPizRYGWU; Expires=Fri, 06 Dec 2019 12:36:59 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -284,9 +295,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestGetProjectsId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:05" hostname="qa-System-Product-Name" time="2.404">
+<testsuite name="project_controller.TestGetProjectsId" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:37:03" hostname="qa-System-Product-Name" time="2.1">
   <properties/>
-  <testcase name="getProjectId_status_200" classname="project_controller.TestGetProjectsId" time="0.862"/>
-  <testcase name="getProjectId_status_401" classname="project_controller.TestGetProjectsId" time="0.767"/>
-  <testcase name="getProjectId_status_404" classname="project_controller.TestGetProjectsId" time="0.773"/>
+  <testcase name="getProjectId_status_200" classname="project_controller.TestGetProjectsId" time="0.71"/>
+  <testcase name="getProjectId_status_401" classname="project_controller.TestGetProjectsId" time="0.646"/>
+  <testcase name="getProjectId_status_404" classname="project_controller.TestGetProjectsId" time="0.742"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31
 Proxy:			<none>
@@ -13,15 +13,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=101EE896E779F5255953D8370B36DC05;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=HtSJzjn/yb8kaZo4L8p4jGeh71qWxhY3uNWV3YPS9YRStEFgy7lqUS7eVOCt9CJPrq2g6dXCoYgS+BcfZVZDu4GLIpb6kRshcotFLEiMqfzGNgA41/4IZhrNxpi1;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=FDE0FCFDDF3268A479DCD53F881DBE5F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:06 GMT
+Date: Fri, 29 Nov 2019 12:37:04 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=edoExL+X/BijC3/o+VHFaf44ShgDRRD9r3chgA3DkTKV61CsalJFulhywyerBaGSACZY7ch2ebulOmJCJXTTq2XHV8vN4qGs79ujH8mNi0/Wur4L8kK3MQK28C2j; Expires=Fri, 06 Dec 2019 12:37:04 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -52,10 +53,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:07 GMT
+Date: Fri, 29 Nov 2019 12:37:04 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=/OuRLyANp9mKW/vFOWGqsQcocUX9Mb3gmr2tLLaZ5XRT3Z8et8S/b62BxVjnj8ycP434woTGyPNE+FrQakpSt92ESLAiAWiPgSfCxaZyIbsdOq0OqWKTlwng0EAH; Expires=Fri, 06 Dec 2019 12:37:04 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -72,15 +73,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=101EE896E779F5255953D8370B36DC05;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=HtSJzjn/yb8kaZo4L8p4jGeh71qWxhY3uNWV3YPS9YRStEFgy7lqUS7eVOCt9CJPrq2g6dXCoYgS+BcfZVZDu4GLIpb6kRshcotFLEiMqfzGNgA41/4IZhrNxpi1;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=FDE0FCFDDF3268A479DCD53F881DBE5F;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:08 GMT
+Date: Fri, 29 Nov 2019 12:37:05 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=B9uLd18PA8xY6/U7L+56RG5u9Ty6YJqnDe5Mwo/yGkd2f9uBXSF1eq65lzNSKSM5TNvHDdRdzzL0/16tsD1H6YzpeBhbAXN+xmALoOpkfSXZKyWxYx71WqHynzPT; Expires=Fri, 06 Dec 2019 12:37:05 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -258,9 +260,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

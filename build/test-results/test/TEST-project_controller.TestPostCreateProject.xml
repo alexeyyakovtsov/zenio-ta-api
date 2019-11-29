@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="project_controller.TestPostCreateProject" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:13" hostname="qa-System-Product-Name" time="6.236">
+<testsuite name="project_controller.TestPostCreateProject" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:37:09" hostname="qa-System-Product-Name" time="5.279">
   <properties/>
-  <testcase name="postNegativeTest4_status_400" classname="project_controller.TestPostCreateProject" time="0.797"/>
-  <testcase name="postNegativeTest5_status_400" classname="project_controller.TestPostCreateProject" time="0.78"/>
-  <testcase name="postCreateProject_status_200" classname="project_controller.TestPostCreateProject" time="0.821"/>
-  <testcase name="postCreateProject_status_401" classname="project_controller.TestPostCreateProject" time="0.746"/>
-  <testcase name="postCreateProject_status_404" classname="project_controller.TestPostCreateProject" time="0.765"/>
-  <testcase name="postNegativeTest1_status_400" classname="project_controller.TestPostCreateProject" time="0.761"/>
-  <testcase name="postNegativeTest2_status_400" classname="project_controller.TestPostCreateProject" time="0.782"/>
-  <testcase name="postNegativeTest3_status_400" classname="project_controller.TestPostCreateProject" time="0.773"/>
+  <testcase name="postNegativeTest4_status_400" classname="project_controller.TestPostCreateProject" time="0.658"/>
+  <testcase name="postNegativeTest5_status_400" classname="project_controller.TestPostCreateProject" time="0.64"/>
+  <testcase name="postCreateProject_status_200" classname="project_controller.TestPostCreateProject" time="0.733"/>
+  <testcase name="postCreateProject_status_401" classname="project_controller.TestPostCreateProject" time="0.642"/>
+  <testcase name="postCreateProject_status_404" classname="project_controller.TestPostCreateProject" time="0.657"/>
+  <testcase name="postNegativeTest1_status_400" classname="project_controller.TestPostCreateProject" time="0.657"/>
+  <testcase name="postNegativeTest2_status_400" classname="project_controller.TestPostCreateProject" time="0.638"/>
+  <testcase name="postNegativeTest3_status_400" classname="project_controller.TestPostCreateProject" time="0.639"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://dev.zenio.co/api/projects
 Proxy:			<none>
@@ -18,20 +18,21 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=D9050504C9BEC9AEB5C1B5E5178DAA67;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=4j8y3pmEPHp8gkZqm22t7zB4C0Nm8JPB2QKtE4xDv8cLI0lDaUPJQ15oWK10DbCVJ0OQckVJ7KTmwef2ByygKdsq1z4+hldsa5ssif/EzcDD6Wwm5wL/n0EGR9xw;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=625049C6A652C8CB19E925E1B27BA540;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "externalProjectId": "QATest123",
     "workspaceId": "4"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:13 GMT
+Date: Fri, 29 Nov 2019 12:37:09 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=S45c9rAd1GYYDWA8EpIMfsm1cqQmUp30O6CuZ/IGNF0KephWAf2B+OPfyR6dVP7rCCuNP2auxweTyXHZhq0erWFVacUiQBinr2mjN8q1HADfpeNR0OIYBG1YuHQT; Expires=Fri, 06 Dec 2019 12:37:09 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -58,20 +59,21 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=D9050504C9BEC9AEB5C1B5E5178DAA67;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=4j8y3pmEPHp8gkZqm22t7zB4C0Nm8JPB2QKtE4xDv8cLI0lDaUPJQ15oWK10DbCVJ0OQckVJ7KTmwef2ByygKdsq1z4+hldsa5ssif/EzcDD6Wwm5wL/n0EGR9xw;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=625049C6A652C8CB19E925E1B27BA540;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "epicIds": "QATest123",
     "workspaceId": "4"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:14 GMT
+Date: Fri, 29 Nov 2019 12:37:10 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=ZiFdE1fzpIR7eKu2BZBd8sGXdaHA1biSZG9U4RriG7yRKIQTcDIpeoN0p82QNWGWoLjaaVBQ/TFRMbYnLfC35EIOoJgzhhYqE4nCCcwSrTaiUmV4+rvFVxfQoG87; Expires=Fri, 06 Dec 2019 12:37:10 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -98,19 +100,20 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=D9050504C9BEC9AEB5C1B5E5178DAA67;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=4j8y3pmEPHp8gkZqm22t7zB4C0Nm8JPB2QKtE4xDv8cLI0lDaUPJQ15oWK10DbCVJ0OQckVJ7KTmwef2ByygKdsq1z4+hldsa5ssif/EzcDD6Wwm5wL/n0EGR9xw;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=625049C6A652C8CB19E925E1B27BA540;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "workspaceId": "4"
 }
 HTTP/1.1 201 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:15 GMT
+Date: Fri, 29 Nov 2019 12:37:11 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=8bkVs/Bj8eXMb3N8WML/3NMuVyC/DOajFGEU+HrPFp6x67ulzwpMPMDdIiz6iidCuXG5C8ZaivlJJ5ThJB6w7VsEUjExfgLzjFHyrNqjN9pGP0HfJTmsrBew71j1; Expires=Fri, 06 Dec 2019 12:37:11 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -120,9 +123,9 @@ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 X-Frame-Options: SAMEORIGIN
 
 {
-    "id": 1536,
-    "name": "lBueFztBCMNe",
-    "acronym": "LBU",
+    "id": 1551,
+    "name": "Tres-Zap",
+    "acronym": "TRE",
     "workspaceId": 4,
     "deleted": false,
     "ownerId": 1,
@@ -141,14 +144,14 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "workspaceId": "4"
 }
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:16 GMT
+Date: Fri, 29 Nov 2019 12:37:12 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=MxZ1CecYgjFhf8nmRDhIOUVidYh3EP6CYzPOVSqq7t4cP1p7ibzUdha22YP1WJh8CAUgHai2GBg7zkRjWrPywd11q4lj8OpytwGDgD+r3SASDMOx7w9wwDqmLCd1; Expires=Fri, 06 Dec 2019 12:37:12 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -165,19 +168,20 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=D9050504C9BEC9AEB5C1B5E5178DAA67;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=4j8y3pmEPHp8gkZqm22t7zB4C0Nm8JPB2QKtE4xDv8cLI0lDaUPJQ15oWK10DbCVJ0OQckVJ7KTmwef2ByygKdsq1z4+hldsa5ssif/EzcDD6Wwm5wL/n0EGR9xw;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=625049C6A652C8CB19E925E1B27BA540;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "workspaceId": "4"
 }
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:17 GMT
+Date: Fri, 29 Nov 2019 12:37:12 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=6HYj8AfitxXwC/Z12bAHEXnG90RAbn/N4VczjiZ5tQmgSuf89e7pnvpyghs4ICJabH93gEn+GbVCiWnAerWBea810PP1DWVGw0ATvVk7QZlW+RDCrlzyrUfSQgeV; Expires=Fri, 06 Dec 2019 12:37:12 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -355,9 +359,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 Request method:	POST
@@ -369,18 +373,19 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=D9050504C9BEC9AEB5C1B5E5178DAA67;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=4j8y3pmEPHp8gkZqm22t7zB4C0Nm8JPB2QKtE4xDv8cLI0lDaUPJQ15oWK10DbCVJ0OQckVJ7KTmwef2ByygKdsq1z4+hldsa5ssif/EzcDD6Wwm5wL/n0EGR9xw;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=625049C6A652C8CB19E925E1B27BA540;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
     "workspaceId": "4"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:17 GMT
+Date: Fri, 29 Nov 2019 12:37:13 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=pPu1f+ubKfw562CX04A24W1vi9nPWPrZQOoeLpJW3l9OYwyNVVh83GNqtoJVkX9GW/LnrYk9NFTS8P52Uu5+oQMAyr5Uakf/Bv6Ey2l6RCLb80zw1D7XiTpvx27u; Expires=Fri, 06 Dec 2019 12:37:13 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -407,19 +412,20 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=D9050504C9BEC9AEB5C1B5E5178DAA67;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=4j8y3pmEPHp8gkZqm22t7zB4C0Nm8JPB2QKtE4xDv8cLI0lDaUPJQ15oWK10DbCVJ0OQckVJ7KTmwef2ByygKdsq1z4+hldsa5ssif/EzcDD6Wwm5wL/n0EGR9xw;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=625049C6A652C8CB19E925E1B27BA540;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "workspaceId": "QATest123"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:18 GMT
+Date: Fri, 29 Nov 2019 12:37:13 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=GkZ4IXPHrOg1N6Z7UWaj37aCl98KR0rvNEjFGkEUZQiuhphZf46+fwcnT2UewS1mXT9leMXRUxLYKdJ4a6CRkSjEFSFhV/YEZ1xRLRHVn7yOrrgEpH69gOPrzi0Y; Expires=Fri, 06 Dec 2019 12:37:13 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -446,20 +452,21 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=D9050504C9BEC9AEB5C1B5E5178DAA67;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=4j8y3pmEPHp8gkZqm22t7zB4C0Nm8JPB2QKtE4xDv8cLI0lDaUPJQ15oWK10DbCVJ0OQckVJ7KTmwef2ByygKdsq1z4+hldsa5ssif/EzcDD6Wwm5wL/n0EGR9xw;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=625049C6A652C8CB19E925E1B27BA540;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "lBueFztBCMNe",
+    "name": "Tres-Zap",
     "integrationId": "QATest123",
     "workspaceId": "4"
 }
 HTTP/1.1 400 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:19 GMT
+Date: Fri, 29 Nov 2019 12:37:14 GMT
 Content-Type: text/html;charset=UTF-8
 Content-Length: 247
 Connection: keep-alive
+Set-Cookie: AWSALB=7sz7Z1+pnkLzrx1DJFrcOIQ3YdYwFKpgyezj0KvfIOXAgeYj1+fm6z2vzTrKKq+YVUXpbsLghBSKNQA9LBFdJOVKGZv4xGnfJjezsCfgF/bci1NOocRBUPudLSB/; Expires=Fri, 06 Dec 2019 12:37:14 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate

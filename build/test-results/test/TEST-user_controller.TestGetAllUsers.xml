@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user_controller.TestGetAllUsers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:12:33" hostname="qa-System-Product-Name" time="2.959">
+<testsuite name="user_controller.TestGetAllUsers" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:35:42" hostname="qa-System-Product-Name" time="3.071">
   <properties/>
-  <testcase name="getAllUsers_status_200" classname="user_controller.TestGetAllUsers" time="1.388"/>
-  <testcase name="getAllUsers_status_401" classname="user_controller.TestGetAllUsers" time="0.737"/>
-  <testcase name="getAllUsers_status_404" classname="user_controller.TestGetAllUsers" time="0.831"/>
+  <testcase name="getAllUsers_status_200" classname="user_controller.TestGetAllUsers" time="1.707"/>
+  <testcase name="getAllUsers_status_401" classname="user_controller.TestGetAllUsers" time="0.655"/>
+  <testcase name="getAllUsers_status_404" classname="user_controller.TestGetAllUsers" time="0.708"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/users
 Proxy:			<none>
@@ -13,15 +13,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=CCD12718669FCD3BC0A52F87110C39F2;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=LtSGbYmc+gtXsbp9zBxSnbN/+CM76k+oc7My0Jg++NSQqtuxgF0R5sHutyv8dDPVi6AMtf/wM/KsIltLkzQ00BkkVF8gqbbQe3u6/M5RYoDKx7dLude2BYH+Rqzy;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=93EA19D9606C49B862AD1D181EF0D6B8;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:34 GMT
+Date: Fri, 29 Nov 2019 12:35:44 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=xQjqFdyplF1ImHGhfuyU3vPiOn71T974VoDL/kZj0iYdfYR6rVguaa9x7hsi1hAsJvY/EruP5M6bYZ0USTRQLkP86NY7qI38OKRpQ2BRo+TTFEczwJQHZtHgDRT4; Expires=Fri, 06 Dec 2019 12:35:43 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -450,17 +451,6 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
-        "id": 2,
-        "username": "Ian McFarland",
-        "email": "ian@zenio.co",
-        "active": true,
-        "enabled": true,
-        "lastVisit": "2019-11-15T16:43:15.052",
-        "roles": [
-            "ADMIN"
-        ]
-    },
-    {
         "id": 59,
         "username": "kevin",
         "email": "kevin@kfitz.me",
@@ -678,6 +668,17 @@ X-Frame-Options: SAMEORIGIN
         "lastVisit": null,
         "roles": [
             "CLIENT"
+        ]
+    },
+    {
+        "id": 2,
+        "username": "Ian McFarland",
+        "email": "ian@zenio.co",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-11-27T17:46:45.157",
+        "roles": [
+            "ADMIN"
         ]
     },
     {
@@ -1721,17 +1722,6 @@ X-Frame-Options: SAMEORIGIN
         "active": false,
         "enabled": true,
         "lastVisit": null,
-        "roles": [
-            "CLIENT"
-        ]
-    },
-    {
-        "id": 157,
-        "username": "Anna",
-        "email": "annshunko@gmail.com",
-        "active": true,
-        "enabled": true,
-        "lastVisit": "2019-11-14T08:59:33.434",
         "roles": [
             "CLIENT"
         ]
@@ -6918,17 +6908,6 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
-        "id": 651,
-        "username": "Anna",
-        "email": "anna@zenio.co",
-        "active": true,
-        "enabled": true,
-        "lastVisit": "2019-11-14T09:20:48.581",
-        "roles": [
-            "CLIENT"
-        ]
-    },
-    {
         "id": 691,
         "username": "fTKdXjXlOOiM",
         "email": "fTKdXjXlOOiM@gmail.com",
@@ -8051,23 +8030,12 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
-        "id": 27,
-        "username": "QA",
-        "email": "alexey.yakovtsov@zensoft.io",
-        "active": true,
+        "id": 762,
+        "username": "socor18059",
+        "email": "socor18059@4xmail.net",
+        "active": false,
         "enabled": true,
-        "lastVisit": "2019-11-18T08:18:09.771",
-        "roles": [
-            "CLIENT"
-        ]
-    },
-    {
-        "id": 155,
-        "username": "Alexey",
-        "email": "hannisolo93@gmail.com",
-        "active": true,
-        "enabled": true,
-        "lastVisit": "2019-11-18T08:21:42.303",
+        "lastVisit": null,
         "roles": [
             "CLIENT"
         ]
@@ -8084,23 +8052,111 @@ X-Frame-Options: SAMEORIGIN
         ]
     },
     {
-        "id": 755,
-        "username": "Test Name",
-        "email": "siwigibad@netmail8.com",
-        "active": true,
+        "id": 760,
+        "username": "qa",
+        "email": "qa@qa.com",
+        "active": false,
         "enabled": true,
-        "lastVisit": "2019-11-18T08:53:03.284",
+        "lastVisit": null,
         "roles": [
             "CLIENT"
         ]
     },
     {
-        "id": 678,
-        "username": "QA",
-        "email": "alexey.yakovtsov@zenio.co",
+        "id": 759,
+        "username": "kynnhztPTzNw",
+        "email": "kynnhztPTzNw@gmail.com",
+        "active": false,
+        "enabled": true,
+        "lastVisit": null,
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 755,
+        "username": "Test Name",
+        "email": "siwigibad@netmail8.com",
         "active": true,
         "enabled": true,
-        "lastVisit": "2019-11-18T08:53:18.185",
+        "lastVisit": "2019-11-19T14:16:22.502",
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 758,
+        "username": "JqIaIEBPTOxm",
+        "email": "JqIaIEBPTOxm@gmail.com",
+        "active": false,
+        "enabled": true,
+        "lastVisit": null,
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 155,
+        "username": "Alexey",
+        "email": "hannisolo93@gmail.com",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-11-19T14:17:56.512",
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 766,
+        "username": "stuart.zboncak",
+        "email": "stuart.zboncak@gmail.com",
+        "active": false,
+        "enabled": true,
+        "lastVisit": null,
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 157,
+        "username": "Anna",
+        "email": "annshunko@gmail.com",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-11-29T10:30:28.052",
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 651,
+        "username": "Anna",
+        "email": "anna@zenio.co",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-11-29T09:00:16.066",
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 27,
+        "username": "QA",
+        "email": "alexey.yakovtsov@zensoft.io",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-11-29T09:09:07.328",
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 761,
+        "username": "QA",
+        "email": "zenio.qa@gmail.com",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-11-29T10:41:20.227",
         "roles": [
             "CLIENT"
         ]
@@ -8111,15 +8167,48 @@ X-Frame-Options: SAMEORIGIN
         "email": "zenio@zensoft.io",
         "active": true,
         "enabled": true,
-        "lastVisit": "2019-11-18T12:12:33.311",
+        "lastVisit": "2019-11-29T12:35:42.832",
         "roles": [
             "ADMIN"
         ]
     },
     {
-        "id": 758,
-        "username": "JqIaIEBPTOxm",
-        "email": "JqIaIEBPTOxm@gmail.com",
+        "id": 764,
+        "username": "QA Test",
+        "email": "xebani6794@exserver.top",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-11-29T10:46:32.856",
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 678,
+        "username": "QA",
+        "email": "alexey.yakovtsov@zenio.co",
+        "active": true,
+        "enabled": true,
+        "lastVisit": "2019-11-29T10:47:13.394",
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 763,
+        "username": "iZpwRejPhRzE",
+        "email": "iZpwRejPhRzE@gmail.com",
+        "active": false,
+        "enabled": true,
+        "lastVisit": null,
+        "roles": [
+            "CLIENT"
+        ]
+    },
+    {
+        "id": 765,
+        "username": "vetic68661",
+        "email": "vetic68661@tmail1.com",
         "active": false,
         "enabled": true,
         "lastVisit": null,
@@ -8141,10 +8230,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:35 GMT
+Date: Fri, 29 Nov 2019 12:35:45 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=v4k0gWwRApD66q6F2O/6QgkCajDrU8Gr1mZTGEpLx8JESNAnfifLyStY7vTSHI7s/09JNYIOICs2O9o69sqbKFqxo/DyUbhHXb+hXvWOIdxujNTm1LtoO8WuEGuD; Expires=Fri, 06 Dec 2019 12:35:45 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -8161,15 +8250,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=CCD12718669FCD3BC0A52F87110C39F2;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=LtSGbYmc+gtXsbp9zBxSnbN/+CM76k+oc7My0Jg++NSQqtuxgF0R5sHutyv8dDPVi6AMtf/wM/KsIltLkzQ00BkkVF8gqbbQe3u6/M5RYoDKx7dLude2BYH+Rqzy;Path=/;Expires=12/6/19, 12:35 PM
+				JSESSIONID=93EA19D9606C49B862AD1D181EF0D6B8;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:36 GMT
+Date: Fri, 29 Nov 2019 12:35:45 GMT
 Content-Type: text/html;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=NPS0JBUutYweRXwiXQ5YRW+Q9L7UWiM7qbLQIu/nPkwEe3mR3qMGnZRT0Pq7xKs/AWrTh+lFtpK/ksZ+bLENWtxzP3fjNaV17Qf8Ojhv590mvoBYN2Xoz6VfaeT5; Expires=Fri, 06 Dec 2019 12:35:45 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -8347,9 +8437,9 @@ Content-Language: en-US
     <div id="popup-root"/>
     <div id="split-text-container"/>
     <div id="dnd-container"/>
-    <script type="text/javascript" src="/runtime.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/vendor.279a5f24618d60be03a0.bundle.js"/>
-    <script type="text/javascript" src="/main.279a5f24618d60be03a0.bundle.js"/>
+    <script type="text/javascript" src="/runtime.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/vendor.49eebb4d0e7b7c14b71c.bundle.js"/>
+    <script type="text/javascript" src="/main.49eebb4d0e7b7c14b71c.bundle.js"/>
   </body>
 </html>
 ]]></system-out>

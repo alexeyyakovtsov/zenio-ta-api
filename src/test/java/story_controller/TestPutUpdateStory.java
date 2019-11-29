@@ -17,7 +17,7 @@ public class TestPutUpdateStory extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + StoryName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"description\":" + "\"" + Description + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"activityIds\":" + "[" + ActivityId + "]" +
@@ -37,7 +37,7 @@ public class TestPutUpdateStory extends SuiteTest {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"name\":" + "\"" + StoryName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"description\":" + "\"" + Description + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"activityIds\":" + "[" + ActivityId + "]" +
@@ -55,7 +55,7 @@ public class TestPutUpdateStory extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + StoryName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"description\":" + "\"" + Description + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"activityIds\":" + "[" + ActivityId + "]" +

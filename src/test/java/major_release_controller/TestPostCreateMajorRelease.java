@@ -16,7 +16,7 @@ public class TestPostCreateMajorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MajorReleaseName + "\"" +
+                        "\"name\":" + "\"" + fake_name + "\"" +
                         "}")
                 .when()
                 .post(EndPoints.PostCreateMajorRelease)
@@ -30,7 +30,7 @@ public class TestPostCreateMajorRelease extends SuiteTest {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"name\":" + "\"" + MajorReleaseName + "\"" +
+                        "\"name\":" + "\"" + fake_name + "\"" +
                         "}")
                 .when()
                 .post(EndPoints.PostCreateMajorRelease)
@@ -45,7 +45,7 @@ public class TestPostCreateMajorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MajorReleaseName + "\"" +
+                        "\"name\":" + "\"" + fake_name + "\"" +
                         "}")
                 .when()
                 .post("/api/projects/" + Project_id + "/releases/majorr")
@@ -61,7 +61,7 @@ public class TestPostCreateMajorRelease extends SuiteTest {
                 .cookies(cookies)
                 .body("{" +
                         "\"anchorId\":" + "\"" + "QATest1" + "\"," +
-                        "\"name\":" + "\"" + MajorReleaseName + "\"" +
+                        "\"name\":" + "\"" + fake_name + "\"" +
                         "}")
                 .when()
                 .post(EndPoints.PostCreateMajorRelease)
@@ -77,7 +77,7 @@ public class TestPostCreateMajorRelease extends SuiteTest {
                 .cookies(cookies)
                 .body("{" +
                         "\"cardIds\":" + "\"" + "QATest1" + "\"," +
-                        "\"name\":" + "\"" + MajorReleaseName + "\"" +
+                        "\"name\":" + "\"" + fake_name + "\"" +
                         "}")
                 .when()
                 .post(EndPoints.PostCreateMajorRelease)

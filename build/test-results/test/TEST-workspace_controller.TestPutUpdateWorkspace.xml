@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="workspace_controller.TestPutUpdateWorkspace" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:14:31" hostname="qa-System-Product-Name" time="1.488">
+<testsuite name="workspace_controller.TestPutUpdateWorkspace" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:37:24" hostname="qa-System-Product-Name" time="1.297">
   <properties/>
-  <testcase name="putUpdateWorkspace_status_200" classname="workspace_controller.TestPutUpdateWorkspace" time="0.751"/>
-  <testcase name="putUpdateWorkspace_status_401" classname="workspace_controller.TestPutUpdateWorkspace" time="0.736"/>
+  <testcase name="putUpdateWorkspace_status_200" classname="workspace_controller.TestPutUpdateWorkspace" time="0.658"/>
+  <testcase name="putUpdateWorkspace_status_401" classname="workspace_controller.TestPutUpdateWorkspace" time="0.638"/>
   <system-out><![CDATA[Request method:	PUT
 Request URI:	https://dev.zenio.co/api/workspaces/27
 Proxy:			<none>
@@ -12,18 +12,19 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=BBCAC3B130ED63712A5917E04459D60F;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=sj2y8LTnhcg3pWaHRoq/XxwGO6XxR1SUt+eA4Cmo3PE9i96KxhOJOBZup8sl9WtewVm3Vn/+ohC0nVDhE7XgECDY02bsdoOgkcON5cDbRYG9uX6qbYPTTXdp6XUF;Path=/;Expires=12/6/19, 12:37 PM
+				JSESSIONID=21BA185873CC6EC0F0ED9FBA7C4A5E21;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:
 {
-    "name": "FFCPRcmnyIKH"
+    "name": "Cardguard"
 }
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:32 GMT
+Date: Fri, 29 Nov 2019 12:37:24 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=V+2osuQkaAOf5kcbrVj9Sk30jo8FDA4GvPBrcPdW1VIShkA6KM6hZvIsSa6AXl6Yk1yG7FEYA7T5s2Vz7jJBq+33LCXwowg06B8oKvq16td5GlVwlHf/mZSG1GAb; Expires=Fri, 06 Dec 2019 12:37:24 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -35,7 +36,7 @@ X-Frame-Options: SAMEORIGIN
 {
     "id": 27,
     "owned": true,
-    "name": "FFCPRcmnyIKH",
+    "name": "Cardguard",
     "projects": [
         {
             "id": 1334,
@@ -62,13 +63,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "FFCPRcmnyIKH"
+    "name": "Cardguard"
 }
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:14:32 GMT
+Date: Fri, 29 Nov 2019 12:37:25 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=V71csnttUczTVGAud4wD0ADqVsCtxXSm4JERnliHUwEQ3c9d8iBwGH6lzfUXO7SyDuBkK83Lw/7Vxwivr2qrmvLFLr2vxqwq5LVusgjYF6dz02d73SGUg7gjn33m; Expires=Fri, 06 Dec 2019 12:37:25 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate

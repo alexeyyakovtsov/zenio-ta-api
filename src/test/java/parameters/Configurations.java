@@ -1,8 +1,11 @@
 package parameters;
 
+import com.github.javafaker.Faker;
 import org.apache.commons.lang3.RandomStringUtils;
 
 public class Configurations {
+
+    static Faker faker = new Faker();
 
     private static String randomString() {
         return (RandomStringUtils.randomAlphabetic(12));
@@ -13,12 +16,14 @@ public class Configurations {
 
         User_restore_password_email = "alexey.yakovtsov@mail.ru",
 
-        email = randomString() + "@gmail.com",
-        WorkspaceName = randomString(),
-        ProjectName = randomString(),
-        ProjectUpdateName = randomString() + " Update name",
-        BodyEmail = ("{\"emails\":" + "[\"" + email + "\"]}"),
-        WorkspaceNew = ("{\"name\":" + "\"" + WorkspaceName + "\"}"),
+        fake_email = faker.internet().emailAddress(),
+        fake_workspace_name = faker.app().name(),
+        fake_name = faker.app().name(),
+
+        ProjectName = faker.app().name(),
+        ProjectUpdateName = faker.app().name() + " Update name",
+        BodyEmail = ("{\"emails\":" + "[\"" + fake_email + "\"]}"),
+        WorkspaceNew = ("{\"name\":" + "\"" + fake_workspace_name + "\"}"),
 
         ApiTokenPivotal = "3901cf4de092d5cbe830d88f977ee565",
         ApiTokenJira = "ZwapUqRrCnWXbzXZKJRQFEC6",
@@ -29,12 +34,8 @@ public class Configurations {
         ApiProviderJira = "JIRA",
 
         Checksum = randomString(),
-        AreaName = randomString(),
-        ActivityName = randomString(),
-        StoryName = randomString(),
-        Description = randomString(),
-        MajorReleaseName = randomString(),
-        MinorReleaseName = randomString();
+
+        Description = faker.chuckNorris().fact();
 
     public static int
             Workspace_update_id = 27,

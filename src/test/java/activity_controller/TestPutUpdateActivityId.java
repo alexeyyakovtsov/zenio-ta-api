@@ -18,7 +18,7 @@ public class TestPutUpdateActivityId extends SuiteTest {
                 .cookies(cookies)
                 .body("{" +
                         "\"areaId\":" + "\"" + AreaId + "\"," +
-                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")
@@ -37,7 +37,7 @@ public class TestPutUpdateActivityId extends SuiteTest {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")
@@ -54,7 +54,7 @@ public class TestPutUpdateActivityId extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + ActivityName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"description\":" + "\"" + "123" + "\"" +
                         "}")

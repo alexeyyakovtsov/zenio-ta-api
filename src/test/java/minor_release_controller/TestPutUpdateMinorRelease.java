@@ -17,7 +17,7 @@ public class TestPutUpdateMinorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"description\":" + "\"" + Description + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
@@ -36,7 +36,7 @@ public class TestPutUpdateMinorRelease extends SuiteTest {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"description\":" + "\"" + Description + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")
@@ -53,7 +53,7 @@ public class TestPutUpdateMinorRelease extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + MinorReleaseName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"description\":" + "\"" + Description + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "}")

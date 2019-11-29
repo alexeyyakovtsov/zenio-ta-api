@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="story_controller.TestGetDeletedStories" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-18T12:12:56" hostname="qa-System-Product-Name" time="1.708">
+<testsuite name="story_controller.TestGetDeletedStories" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:36:04" hostname="qa-System-Product-Name" time="1.531">
   <properties/>
-  <testcase name="getDeletedStories_status_200" classname="story_controller.TestGetDeletedStories" time="0.961"/>
-  <testcase name="getDeletedStories_status_401" classname="story_controller.TestGetDeletedStories" time="0.746"/>
+  <testcase name="getDeletedStories_status_200" classname="story_controller.TestGetDeletedStories" time="0.886"/>
+  <testcase name="getDeletedStories_status_401" classname="story_controller.TestGetDeletedStories" time="0.644"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://dev.zenio.co/api/projects/31/stories/deleted
 Proxy:			<none>
@@ -12,15 +12,16 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json; charset=UTF-8
-Cookies:		JSESSIONID=B2F40259FA2CD6ED4ABEB71B6BDD9A6F;Path=/;Secure;HttpOnly
+Cookies:		AWSALB=MANUJpXPyibgVt1jihEZuOcdQWJqPdOZJlodi0ZdwkaFT6QC+GVdUOvSjerPnApfZ0LU/zITN8wwHLO9pF5nY6Fm3lEefPnkSsgtZu0xW4I7GMp+jexVTxs3vkBt;Path=/;Expires=12/6/19, 12:36 PM
+				JSESSIONID=3D8D07758E2DC4F8C946EF9AAEE5E092;Path=/;Secure;HttpOnly
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:57 GMT
+Date: Fri, 29 Nov 2019 12:36:05 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
+Set-Cookie: AWSALB=lrupGINhWtDop5gC8UIL1avH2QEGYzzn4z5toqmxWbbcAHsGPltfz4qTTVFD0oe9gNHlcP4NqCQAqUD8YzeJcT7hwHeTGStiqx78se90AtA7ttVkBYodoOv/oF/x; Expires=Fri, 06 Dec 2019 12:36:05 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1320,6 +1321,51 @@ X-Frame-Options: SAMEORIGIN
             "checksum": "MENGVXJIVk9JVVplam51bGwwbnVsbG51bGwwZmFsc2U=",
             "action": "NONE",
             "kind": "story"
+        },
+        {
+            "id": 16845,
+            "name": "lBueFztBCMNe",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGxCdWVGenRCQ01OZW51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16841,
+            "name": "fuOMdIzOfgHR",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGZ1T01kSXpPZmdIUm51bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
+        },
+        {
+            "id": 16743,
+            "name": "jemSfcWZCXZK",
+            "activityIds": [
+                
+            ],
+            "description": null,
+            "majorReleaseId": null,
+            "state": "UNSTARTED",
+            "dueDate": null,
+            "deleted": true,
+            "checksum": "MGplbVNmY1daQ1haS251bGwwbnVsbG51bGwwZmFsc2U=",
+            "action": "NONE",
+            "kind": "story"
         }
     ]
 }
@@ -1336,10 +1382,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 401 
-Server: nginx/1.17.5
-Date: Mon, 18 Nov 2019 12:12:58 GMT
+Date: Fri, 29 Nov 2019 12:36:05 GMT
 Content-Length: 0
 Connection: keep-alive
+Set-Cookie: AWSALB=kcsiHEpr5weY85essuWgVAG3cdh1F/51eMB7f0uf1yBwAApPHvpBGa9D1w+3CrfkYVrghu01bvCZDUFopixwNoGiKs4u7VLCTHWQrg6RKvzqQ0mzcNVdQopfym6v; Expires=Fri, 06 Dec 2019 12:36:05 GMT; Path=/
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate

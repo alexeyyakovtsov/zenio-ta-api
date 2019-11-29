@@ -17,7 +17,7 @@ public class TestPostCreateArea extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"anchorId\":" + "\"" + AreaId + "\"," +
                         "\"position\":" + "\"" + "AFTER" + "\"" +
@@ -35,7 +35,7 @@ public class TestPostCreateArea extends SuiteTest {
         given()
                 .spec(spec)
                 .body("{" +
-                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "\"anchorId\":" + "\"" + AreaId + "\"" +
                         "\"position\":" + "\"" + "AFTER" + "\"" +
@@ -53,7 +53,7 @@ public class TestPostCreateArea extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"" +
                         "\"anchorId\":" + "\"" + AreaId + "\"" +
                         "\"position\":" + "\"" + "AFTER" + "\"" +
@@ -88,7 +88,7 @@ public class TestPostCreateArea extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"anchorId\":" + "\"" + AreaId + "\"," +
                         "\"position\":" + "\"" + "AFTER" + "\"" +
                         "}")
@@ -105,7 +105,7 @@ public class TestPostCreateArea extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"anchorId\":" + "\"" + "QATest123" + "\"," +
                         "\"position\":" + "\"" + "AFTER" + "\"" +
@@ -123,7 +123,7 @@ public class TestPostCreateArea extends SuiteTest {
                 .spec(spec)
                 .cookies(cookies)
                 .body("{" +
-                        "\"name\":" + "\"" + AreaName + "\"," +
+                        "\"name\":" + "\"" + fake_name + "\"," +
                         "\"checksum\":" + "\"" + Checksum + "\"," +
                         "\"anchorId\":" + "\"" + AreaId + "\"," +
                         "\"position\":" + "\"" + "UP" + "\"" +
